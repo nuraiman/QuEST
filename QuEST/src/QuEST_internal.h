@@ -7,8 +7,8 @@
 # ifndef QUEST_INTERNAL_H
 # define QUEST_INTERNAL_H
 
-# include "QuEST.h"
-# include "QuEST_precision.h"
+# include "../include/QuEST.h"
+# include "../include/QuEST_precision.h"
 
 # ifdef __cplusplus
 extern "C" {
