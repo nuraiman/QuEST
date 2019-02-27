@@ -1,0 +1,5 @@
+*.o
+demo
+*.script
+*.out
+tutorial_example.c
