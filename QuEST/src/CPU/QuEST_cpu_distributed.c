@@ -12,8 +12,12 @@
 
 # include "QuEST_cpu_internal.h"
 
-#define _BSD_SOURCE
+#ifdef _WIN32
+//# include "unistd.h"
+#else
+//#define _BSD_SOURCE
 # include <unistd.h>
+#endif
 # include <mpi.h>
 # include <stdlib.h>
 # include <stdio.h>
@@ -197,7 +201,9 @@ void reportQuESTEnv(QuESTEnv env){
 
 void reportNodeList(QuESTEnv env){
     char hostName[256];
+#ifdef _BSD_SOURCE
     gethostname(hostName, 255);
+#endif
     printf("hostname on rank %d: %s\n", env.rank, hostName);
 }
 
