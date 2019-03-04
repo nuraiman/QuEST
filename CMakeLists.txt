@@ -4,6 +4,9 @@ cmake_minimum_required(VERSION 3.1)
 # Project name
 project(QuEST_Project)
 
+set(CXX_FLAGS ${CXX_FLAGS} -std=c++11)
+add_compile_options(${CXX_FLAGS})
+
 # -----------------------------------------------------------------------------
 # ----- QuEST LIBRARY ---------------------------------------------------------
 # -----------------------------------------------------------------------------
@@ -29,11 +32,11 @@ add_executable(demo ${CMAKE_SOURCE_DIR}/examples/tutorial_example.c)
 target_link_libraries(demo QuEST m)
 
 # My programs (giulia)
-add_executable(gtest ${CMAKE_SOURCE_DIR}/examples_giulia/gtest.c)
+add_executable(gtest ${CMAKE_SOURCE_DIR}/examples_giulia/gtest.cpp)
 target_link_libraries(gtest QuEST m)
 
 
-add_executable(ghad ${CMAKE_SOURCE_DIR}/examples_giulia/ghadamard.c)
+add_executable(ghad ${CMAKE_SOURCE_DIR}/examples_giulia/ghadamard.cpp)
 target_link_libraries(ghad QuEST m)
 
 
