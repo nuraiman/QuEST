@@ -4,7 +4,17 @@ cmake_minimum_required(VERSION 3.1)
 # Project name
 project(QuEST_Project)
 
-set(CXX_FLAGS ${CXX_FLAGS} -std=c++11)
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE "Release" CACHE STRING
+            "Choose the type of build, options are: None(CMAKE_CXX_FLAGS or CMAKE_C_FLAGS used) Debug Release." FORCE)
+endif()
+
+if (CMAKE_BUILD_TYPE STREQUAL "Debug")
+    set(CXX_FLAGS ${CXX_FLAGS} -Wall -O0 -std=c++11 -DDEBUG)
+else ()
+    set(CXX_FLAGS ${CXX_FLAGS} -O3 -std=c++11)
+endif ()
+
 add_compile_options(${CXX_FLAGS})
 
 # -----------------------------------------------------------------------------
