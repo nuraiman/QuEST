@@ -4,38 +4,37 @@
 
 #include <iostream>
 #include <QuEST.h>
-#include <ctime>
 #include <chrono>
+#include <random>
 
-#include <stdlib.h>
+// samples uniformly at random from {low, low+1,..., high}
+int sample_uniformly(int low = 0, int high = 1) {
+    // use random device to seed the random number generator named mt.
+    // it requests random data from the operating system
+    // static means that it will be created only once and then will be reused 
+    // in all further calls of this function
+    static std::random_device rd;
+    static std::mt19937 mt(rd()); // random number generator
+    std::uniform_int_distribution<int> distribution(low, high);
+
+    return distribution(mt);
+}
 
 int main(int narg, char *varg[]) {
     //load quest
     QuESTEnv env = createQuESTEnv();
 
     int n = 13; // length of the boolean function f (~ number of qubits)
-    //std::cout << "Insert the length of the n-bit string function f: n = " << std::endl;
-    //std::cin >> n;
 
     // Create a type of function (either constant or balanced) at random (oracle)
-    double oracleType = drand48(), oracleValue = drand48();
-    std::cout << oracleType << " " << oracleValue << std::endl;
-    if (oracleValue < 0.5){
-        oracleValue = 0;
-    }
-    else {
-        oracleValue = 1;
-    }
-    long int f = (long int) (1<<n)*drand48(); // choose a balanced function at random and represent it by the long integer f
-    std::cout << f << std::endl;
-    if (oracleType < 0.5) {
-        oracleType = 0;
-        std::cout << "The oracle returns the constant value " << oracleValue << std::endl;
-    }
-    else {
-        std::cout << "The oracle returns a balanced function" << std::endl;
-        oracleType =1;
-    }
+    int oracleType = sample_uniformly();
+    int oracleValue = sample_uniformly();
+    std::cout << "oracleType = " << oracleType << ", oracleValue = " << oracleValue << std::endl;
+
+    long long f = sample_uniformly(1, 1 <<n); // choose a balanced function at random and represent it by the long long value f
+    std::cout << "f = " << f << std::endl;
+    std::string type = oracleType == 0 ? "the constant value" : "a balanced function";
+    std::cout << "The oracle returns " << type << std::endl;
 
     // Construct the circuit
     // creating registers
