@@ -50,6 +50,8 @@ add_executable(ghad ${CMAKE_SOURCE_DIR}/examples_giulia/ghadamard.cpp)
 target_link_libraries(ghad QuEST m)
 
 
+add_executable(dj ${CMAKE_SOURCE_DIR}/examples_giulia/dj.cpp)
+target_link_libraries(dj QuEST m)
 # -----------------------------------------------------------------------------
 # ----- TESTS -----------------------------------------------------------------
 # -----------------------------------------------------------------------------
