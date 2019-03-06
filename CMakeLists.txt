@@ -52,6 +52,9 @@ target_link_libraries(ghad QuEST m)
 
 add_executable(dj ${CMAKE_SOURCE_DIR}/examples_giulia/dj.cpp)
 target_link_libraries(dj QuEST m)
+
+add_executable(bernstein ${CMAKE_SOURCE_DIR}/examples/bernstein_vazirani_circuit.c)
+target_link_libraries(bernstein QuEST m)
 # -----------------------------------------------------------------------------
 # ----- TESTS -----------------------------------------------------------------
 # -----------------------------------------------------------------------------
