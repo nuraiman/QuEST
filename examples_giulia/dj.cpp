@@ -30,11 +30,12 @@ int main(int narg, char *varg[]) {
     int oracleType = sample_uniformly();
     int oracleValue = sample_uniformly();
     std::cout << "oracleType = " << oracleType << ", oracleValue = " << oracleValue << std::endl;
-
-    long long f = sample_uniformly(1, 1 <<n); // choose a balanced function at random and represent it by the long long value f
-    std::cout << "f = " << f << std::endl;
     std::string type = oracleType == 0 ? "the constant value" : "a balanced function";
     std::cout << "The oracle returns " << type << std::endl;
+
+    // choose a balanced function at random and represent it by the long long value f
+    long long f = sample_uniformly(1, (1 << n) - 1); 
+    std::cout << "f = " << f << std::endl;
 
     // Construct the circuit
     // creating registers
