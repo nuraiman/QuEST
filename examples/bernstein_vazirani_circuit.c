@@ -16,7 +16,7 @@ int main (int narg, char** varg) {
      */
 
     // model parameters
-    int numQubits = 9;
+    int numQubits = 30;
     int secretNum = pow(2,4) + 1;
 
     // prepare QuEST

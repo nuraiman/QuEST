@@ -1,13 +1,12 @@
-rm -fr CMake*
-cmake ../QuEST/ -DCMAKE_VERBOSE_MAKEFILE:BOOL=TRUE \
-                -DCMAKE_BUILD_TYPE=DEBUG \
-                -DCMAKE_INSTALL_PREFIX=~ \
-                -DDISTRIBUTED:BOOL=FALSE \
-                -DMULTITHREADED:BOOL=0 \
-                -DGPUACCELERATED:BOOL=TRUE \ 
-                -DCUDA_VERBOSE_BUILD:BOOL=TRUE \
-                -DCMAKE_CXX_FLAGS='-fPIC' \
-                -DGPU_COMPUTE_CAPABILITY=60 \
-                -DPRECISION=2 \
-                -DQuEST_DIR='QuEST' \
-                -DQuEST_TEST_DIR='tests'
+cmake .. -DCMAKE_VERBOSE_MAKEFILE:BOOL=TRUE \
+         -DCMAKE_BUILD_TYPE=DEBUG \
+         -DCMAKE_INSTALL_PREFIX=~ \
+         -DDISTRIBUTED:BOOL=FALSE \
+         -DMULTITHREADED:BOOL=0 \
+         -DGPUACCELERATED:BOOL=TRUE \ 
+         -DCUDA_VERBOSE_BUILD:BOOL=TRUE \
+         -DCMAKE_CXX_FLAGS='-fPIC' \
+         -DGPU_COMPUTE_CAPABILITY=60 \
+         -DPRECISION=2 \
+         -DQuEST_DIR='QuEST' \
+         -DQuEST_TEST_DIR='tests'

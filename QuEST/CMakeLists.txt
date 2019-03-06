@@ -49,11 +49,11 @@ set(GPU_COMPUTE_CAPABILITY 30 CACHE STRING "GPU hardware dependent, lookup at ht
 
 # ----- FATAL -----------------------------------------------------------------
 
-if (${DISTRIBUTED} AND ${GPUACCELERATED})
-    message(FATAL_ERROR "DISTRIBUTED=${DISTRIBUTED} and \
-        GPUACCELERATED=${GPUACCELERATED} set but \
-        distributed GPU acceleration not supported. Aborting")
-endif()
+# if (${DISTRIBUTED} AND ${GPUACCELERATED})
+#     message(FATAL_ERROR "DISTRIBUTED=${DISTRIBUTED} and \
+#         GPUACCELERATED=${GPUACCELERATED} set but \
+#         distributed GPU acceleration not supported. Aborting")
+# endif()
 
 if ( NOT(${PRECISION} EQUAL 1) AND
      NOT(${PRECISION} EQUAL 2) AND 
@@ -71,11 +71,11 @@ endif()
 
 # ----- WARNINGS --------------------------------------------------------------
 
-if (${GPUACCELERATED} AND ${MULTITHREADED})
-    message(WARNING "MULTITHREADED=${MULTITHREADED} and \
-        GPUACCELERATED=${GPUACCELERATED} set but GPU \
-        version makes no use of multithreading. Ignoring multithreading settings")
-endif()
+# if (${GPUACCELERATED} AND ${MULTITHREADED})
+#     message(WARNING "MULTITHREADED=${MULTITHREADED} and \
+#         GPUACCELERATED=${GPUACCELERATED} set but GPU \
+#         version makes no use of multithreading. Ignoring multithreading settings")
+# endif()
 
 #TODO Add other supported Clang versions if found
 if ( ("${CMAKE_C_COMPILER_ID}" STREQUAL "Clang") AND 
