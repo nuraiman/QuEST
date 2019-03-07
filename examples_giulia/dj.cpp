@@ -65,10 +65,12 @@ int main(int narg, char *varg[]) {
     }
 
     // measure the qubits
-    qreal realprob = getProbAmp(qureg, 0) + getProbAmp(qureg,1<<n); // get the probability amplitude of state |00.....0> // TODO: find a better way to ignore the ancilla qubit!!
+    qreal realprob = getProbAmp(qureg, 0) + getProbAmp(qureg,1<<n); // get the probability amplitude of state |00.....0>
+    // TODO: find a better way to ignore the ancilla qubit!
+    // NOTE: If the algorithm runs with real hardware backend, need to change the above line and measure all qubits separately.
+
     //int prob = int(realprob);
-    //std::cout << realprob << std::endl;
-    //std::cout << prob << std::endl;
+
 
     if (realprob > 0.5){
         std::cout << "The DJ Algorithm finds the function f to be constant with value " << oracleValue << std::endl;
