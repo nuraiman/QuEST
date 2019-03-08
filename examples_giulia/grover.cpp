@@ -4,6 +4,7 @@
 
 // Implementation of Grover's algorithm
 // For ONE marked element
+// NOTE: it would be possible to extend the algorithm to include arrays with MULTIPLE marked elements
 
 // Input: an Array of length N with exactly one marked element
 // Output: Grover finds this marked Element (unstructured search) using O(sqrt(N)) queries
@@ -107,6 +108,8 @@ int main(int narg, char *varg[]) {
         GroverStep(qureg, n);
     }
 
+
+    // measure all the qubits and save their values in the variable 'result'
     qreal success = getProbAmp(qureg, x0);
 
     long long result = 0;
@@ -119,6 +122,7 @@ int main(int narg, char *varg[]) {
     }
 
     std::cout << "The algorithm found x0 = " << result << " with success probability " << success << std::endl;
+
 
     destroyQureg(qureg, env);
     destroyQuESTEnv(env);

@@ -58,6 +58,11 @@ target_link_libraries(grover QuEST m)
 
 add_executable(bernstein ${CMAKE_SOURCE_DIR}/examples/bernstein_vazirani_circuit.c)
 target_link_libraries(bernstein QuEST m)
+
+add_executable(qft ${CMAKE_SOURCE_DIR}/examples_giulia/qft.cpp)
+target_link_libraries(qft QuEST m)
+
+
 # -----------------------------------------------------------------------------
 # ----- TESTS -----------------------------------------------------------------
 # -----------------------------------------------------------------------------
