@@ -4,60 +4,48 @@
 // Implementation of the Quantum Fourier Transform
 // (e.g., this is used in Shor's factoring algorithm)
 #include <iostream>
-#include <vector>
-#include <numeric>
+//#include <vector>
+//#include <numeric>
 #include <cmath>
 #include <QuEST.h>
-#include <chrono>
-#include <random>
+//#include <chrono>
+//#include <random>
 
 const double pi = 3.14159265358979323846;
 
+// Implementation of a SWAP gate between two qubits
+void swap(Qureg &qr, const int qubit1, const int qubit2){
+    controlledNot(qr, qubit1, qubit2);
+    controlledNot(qr, qubit2, qubit1);
+    controlledNot(qr, qubit1, qubit2);
+}
+
+
 // Generic textbook approach for implementing the QFT
 // Require N = 2^n, where n = number of qubits
-
-// circuit performing the QFT
 void QFT(Qureg &qr, int n){
+    // qft circuit
     for (int j = 0; j < n ; ++j) {
         for (int k = 0; k < j; ++k) {
             controlledPhaseShift(qr, (n-1)-j, (n-1)-k, pi/(1<<(j-k)));
         }
         hadamard(qr, (n-1)-j);
     }
+    //reverse the order of the qubits
+    for (int i = 0; i < n/2 ; ++i) {
+        swap(qr, i, (n-1)-i);
+    }
 }
 
 
 // Kitaev's approach for implementing the QFT
+
+// If only the classical information of the QFT
+// (such as the period r) is of interest, 2n qubit
+// subject to a QFT can be replaced by a single qubit.
+// (However, this approach requires qubit recycling (specifically, in-sequence single-qubit readout and
+// state reinitialization) paired with feed-forward behavior to compensate for the reduced system size.)
 void KQFT(Qureg &qr){
-
+    // ...not yet clear how the general circuit looks like, and if it scales better for larger number of qubits
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// check functions
-int main(int narg, char *varg[]) {
-    //load quest
-    int n = 13;
-    QuESTEnv env = createQuESTEnv();
-
-    Qureg qureg = createQureg(n, env);
-    initZeroState(qureg);
-
-    QFT(qureg, n);
-
-    destroyQureg(qureg, env);
-    destroyQuESTEnv(env);
-    return 0;
-}

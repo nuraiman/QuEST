@@ -81,13 +81,8 @@ int main(int narg, char *varg[]) {
     long long N = 1 << 13;
 
     // find smallest natural number n such that N <= 2^n
-    int n = 0;
-    while(true){
-        if (N <= 1<<n){
-            break;
-        }
-        ++n;
-    }
+    int n = int(ceil(log2(N)));
+
     std::cout << "n = " << n << std::endl;
     // choose marked element at random
     long long x0 = sample_uniformly(0,N-1);
