@@ -62,6 +62,8 @@ target_link_libraries(bernstein QuEST m)
 add_executable(qft ${CMAKE_SOURCE_DIR}/examples_giulia/qft.cpp)
 target_link_libraries(qft QuEST m)
 
+add_executable(period-finding ${CMAKE_SOURCE_DIR}/examples_giulia/period-finding.cpp)
+target_link_libraries(period-finding QuEST m)
 
 # -----------------------------------------------------------------------------
 # ----- TESTS -----------------------------------------------------------------

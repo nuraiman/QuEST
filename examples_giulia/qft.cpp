@@ -4,10 +4,10 @@
 // Implementation of the Quantum Fourier Transform
 // (e.g., this is used in Shor's factoring algorithm)
 #include <iostream>
-//#include <vector>
-//#include <numeric>
 #include <cmath>
 #include <QuEST.h>
+//#include <vector>
+//#include <numeric>
 //#include <chrono>
 //#include <random>
 
@@ -23,17 +23,17 @@ void swap(Qureg &qr, const int qubit1, const int qubit2){
 
 // Generic textbook approach for implementing the QFT
 // Require N = 2^n, where n = number of qubits
-void QFT(Qureg &qr, int n){
+void QFT(Qureg &qr, int numQubits, int smallest=0){
     // qft circuit
-    for (int j = 0; j < n ; ++j) {
+    for (int j = smallest; j < numQubits ; ++j) {
         for (int k = 0; k < j; ++k) {
-            controlledPhaseShift(qr, (n-1)-j, (n-1)-k, pi/(1<<(j-k)));
+            controlledPhaseShift(qr, (numQubits-1)-j, (numQubits-1)-k, pi/(1<<(j-k)));
         }
-        hadamard(qr, (n-1)-j);
+        hadamard(qr, (numQubits-1)-j);
     }
     //reverse the order of the qubits
-    for (int i = 0; i < n/2 ; ++i) {
-        swap(qr, i, (n-1)-i);
+    for (int i = 0; i < numQubits/2 ; ++i) {
+        swap(qr, i, (numQubits-1)-i);
     }
 }
 
