@@ -62,7 +62,7 @@ int PeriodFinding(int a, int M, int N){ // M should be a power of 2
          qreal ar=0; qreal ai=0;
          setAmps(qureg, i, &ar, &ai,1);
          f = ModExp(a, N, i);
-         std::cout << i << "  " << f << "  " << (f<<m) + i << std::endl;
+         // std::cout << i << "  " << f << "  " << (f<<m) + i << std::endl;
          setAmps(qureg, (f<<m) + i, &amp.real, &amp.imag,1);
      }
 
@@ -85,9 +85,10 @@ int PeriodFinding(int a, int M, int N){ // M should be a power of 2
     }
 
     // determine the period r
-    int temp = gcd(k, N);
-    N /= temp;
-    int r = N;
+    std::cout << "k = " << k << "  M = "<< M << std::endl;
+    int temp = gcd(k, M);
+    M /= temp;
+    int r = M;
 
     destroyQureg(qureg, env);
     destroyQuESTEnv(env);
@@ -97,9 +98,9 @@ int PeriodFinding(int a, int M, int N){ // M should be a power of 2
 // What is the best way to
 int main(int narg, char *varg[]) {
 
-    int r = PeriodFinding(7,8,15);
+    int r = PeriodFinding(7,16,15);
 
-    std::cout << r << std::endl;
+    std::cout << "r = "<< r << std::endl;
 
     return 0;
 }
