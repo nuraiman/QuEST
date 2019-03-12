@@ -10,7 +10,7 @@
 #include <random>
 
 #include "qft.cpp"
-// Input: We are given access to a function f : Z_M --> Z_N (for some integers M, N)
+// Input: We are given access to a function f : Z_M --> Z_N, f = a^x mod N (for some integers M, N)
 // The function f must have the following properties:
 // (1) f is PERIODIC: There exists r such that r divides M and f(x+r) = f(x) for all x in Z_M .
 // (2) f is ONE-TO-ONE on each period: for all pairs (x, y) such that |x-y| < r, f(x) != f(y) .
@@ -29,7 +29,7 @@ int gcd(int x, int y){
 // define the function for modular exponentiation
 int ModExp(int a, int N, int x){
 
-    return int((long long) pow(a,x) % N);
+    return int((long long) pow(a,x) % N); // TODO: Use library for big number
 }
 
 
