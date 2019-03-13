@@ -48,4 +48,3 @@ void QFT(Qureg &qr, int numQubits, int smallest=0){
 void KQFT(Qureg &qr){
     // ...not yet clear how the general circuit looks like, and if it scales better for larger number of qubits
 }
-

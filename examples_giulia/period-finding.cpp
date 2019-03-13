@@ -9,7 +9,7 @@
 #include <chrono>
 #include <random>
 
-#include "qft.cpp"
+#include "qft.hpp"
 // Input: We are given access to a function f : Z_M --> Z_N, f = a^x mod N (for some integers M, N)
 // The function f must have the following properties:
 // (1) f is PERIODIC: There exists r such that r divides M and f(x+r) = f(x) for all x in Z_M .
