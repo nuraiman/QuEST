@@ -66,7 +66,7 @@ int PeriodFinding(int a, int M, int N){ // M should be a power of 2
          setAmps(qureg, (f<<m) + i, &amp.real, &amp.imag,1);
      }
 
-    // measure the second register
+    // measure the second register (and collapse the full wavefunction)
     for (int j = m; j < m + n ; ++j) {
         measure(qureg,j);
     }
@@ -77,7 +77,7 @@ int PeriodFinding(int a, int M, int N){ // M should be a power of 2
     // measure the first register, find answer k
     int k = 0;
     int result;
-    for (int j = 0; j < n ; ++j) {
+    for (int j = 0; j < m ; ++j) {
         result = measure(qureg,j);
         if (result==1){
             k = k | (1 << j);

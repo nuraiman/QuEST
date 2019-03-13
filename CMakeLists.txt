@@ -45,7 +45,6 @@ target_link_libraries(demo QuEST m)
 add_executable(gtest ${CMAKE_SOURCE_DIR}/examples_giulia/gtest.cpp)
 target_link_libraries(gtest QuEST m)
 
-
 add_executable(ghad ${CMAKE_SOURCE_DIR}/examples_giulia/ghadamard.cpp)
 target_link_libraries(ghad QuEST m)
 
@@ -64,6 +63,9 @@ target_link_libraries(qft QuEST m)
 
 add_executable(period-finding ${CMAKE_SOURCE_DIR}/examples_giulia/period-finding.cpp)
 target_link_libraries(period-finding QuEST m)
+
+add_executable(approx-pf ${CMAKE_SOURCE_DIR}/examples_giulia/approx-pf.cpp)
+target_link_libraries(approx-pf QuEST m)
 
 # -----------------------------------------------------------------------------
 # ----- TESTS -----------------------------------------------------------------
