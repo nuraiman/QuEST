@@ -11,12 +11,12 @@
 // Therefore, the algorithm must be applied multiple times in order to find r.
 
 // implement the bit oracle O_f on both registers
-void applyModExpOracle(Qureg& qureg, int m, int a, int N) {
-    for (int i = 0; i < (1<<m); ++i) {
+void applyModExpOracle(Qureg& qureg, int m, long long a, long long N) {
+    for (long long i = 0; i < (1<<m); ++i) {
         Complex amp = getAmp(qureg, i); 
         qreal nreal=0; qreal nimag=0;
         setAmps(qureg, i, &nreal, &nimag,1);
-        int f = modExp(a, N, i);
+        long long f = modExp(a, N, i);
         // std::cout << i << "  " << f << "  " << (f<<m) + i << std::endl;
         setAmps(qureg, (f<<m) + i, &amp.real, &amp.imag,1);
     }
@@ -24,16 +24,16 @@ void applyModExpOracle(Qureg& qureg, int m, int a, int N) {
 
 // determines the period r from z = y/M using continued fraction expansion (CFE)
 // or return -1 if unsuccessful
-int periodUsingCFE(int y, int M, int a, int N) {
-    int r = 0;
+long long periodUsingCFE(long long y, long long M, long long a, long long N) {
+    long long r = 0;
     // z = y/M
     // In theory, we know that y < M, therefore a0 = 0
     // index i starting from 0.
-    int hi_1 = 0, hi_2 = 1, ki_1 = 1, ki_2 = 0; // initial conditions, given that a0 = 0
-    int zi_nom, zi_denom; // inverted parameter, zi = ai + bi, with integer ai and bi < 1
+    long long hi_1 = 0, hi_2 = 1, ki_1 = 1, ki_2 = 0; // initial conditions, given that a0 = 0
+    long long zi_nom, zi_denom; // inverted parameter, zi = ai + bi, with integer ai and bi < 1
     // std::cout << " z = " << y << "/" << M << std::endl;
-    int ai, hi, ki; // The convergents of z are of the form hi/ki
-    int bi_nom = y, bi_denom = M;
+    long long ai, hi, ki; // The convergents of z are of the form hi/ki
+    long long bi_nom = y, bi_denom = M;
     while (true){
         if (y == 0){ // to prevent from division by 0
             // std::cout << "Algorithm failed, y = 0!" << std::endl;
@@ -67,13 +67,13 @@ int periodUsingCFE(int y, int M, int a, int N) {
 
 }
 
-int PeriodFinding(QuESTEnv& env, int a, int N){
+long long PeriodFinding(QuESTEnv& env, long long a, long long N){
 
     // find smallest natural number n such that N <= 2^n
-    int n = ceil_log2(N);
+    int n = (int) ceil_log2(N);
     // find smallest natural number m such that N^2 <= 2^m
     int m = 2 * n;
-    int M = 1 << m;
+    long long M = 1 << m;
 
     // create quantum register (with two 'subregisters')
     Qureg qureg = createQureg(m+n, env);
@@ -95,7 +95,7 @@ int PeriodFinding(QuESTEnv& env, int a, int N){
     QFT(qureg, m);
 
     // measure the first register, find answer y
-    int y = 0;
+    long long y = 0;
     int result;
     for (int j = 0; j < m ; ++j) {
         result = measure(qureg,j);
@@ -105,7 +105,7 @@ int PeriodFinding(QuESTEnv& env, int a, int N){
     }
 
     // determine the period r from z = y/M using continued fraction expansion (CFE)
-    int r = periodUsingCFE(y, M, a, N);
+    long long r = periodUsingCFE(y, M, a, N);
 
     destroyQureg(qureg, env);
     return r;

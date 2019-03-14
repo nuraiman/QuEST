@@ -46,7 +46,7 @@ void GroverStep(Qureg &qr, int n){
     }
 
     // apply -id operator
-    for (int k = 0; k < (1<<n) ; ++k) {
+    for (long long k = 0; k < (1<<n) ; ++k) {
         amp = getAmp(qr,k);
         amp.real = -amp.real;
         amp.imag = -amp.imag;

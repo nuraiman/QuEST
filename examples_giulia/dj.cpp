@@ -7,8 +7,8 @@ int main(int narg, char *varg[]) {
     int n = 13; // length of the boolean function f (~ number of qubits)
 
     // Create a type of function (either constant or balanced) at random (oracle)
-    int oracleType = sample_uniformly();
-    int oracleValue = sample_uniformly();
+    int oracleType = (int) sample_uniformly();
+    int oracleValue = (int) sample_uniformly();
     std::cout << "oracleType = " << oracleType << ", oracleValue = " << oracleValue << std::endl;
     std::string type = oracleType == 0 ? "the constant value" : "a balanced function";
     std::cout << "The oracle returns " << type << std::endl;

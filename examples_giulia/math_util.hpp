@@ -12,7 +12,7 @@
 // Therefore, the algorithm must be applied multiple times in order to find r.
 
 // define gcd
-int gcd(int x, int y){
+long long gcd(long long x, long long y){
     while (y != 0){
         int r = x % y;
         x = y;
@@ -22,29 +22,30 @@ int gcd(int x, int y){
 }
 
 // Cancel the fractions, for rational numbers z = x/y
-void cancelFraction(int &x, int &y){
-    int temp = gcd(x, y);
+void cancelFraction(long long &x, long long &y){
+    long long temp = gcd(x, y);
     x /= temp;
     y /= temp;
 }
 
 // define the function for modular exponentiation
-int modExp(int a, int N, int x){
+long long modExp(long long a, long long N, int x){
     // we use the identity: a^(i+1) % N = a*(a^i % N) % N to avoid overflow
-    int r = 1;
+    long long r = 1ll;
     for (int i = 0; i < x; ++i) {
         r = r * a % N;
     }
     return r;
 }
 
-int ceil_log2(int n) {
-    return (int) std::ceil(std::log2(n));
+template<typename T>
+T ceil_log2(T n) {
+    return std::ceil(std::log2<T>(n));
 }
 
 const double pi = 3.14159265358979323846;
 
-long long sample_uniformly(int low = 0, long long high = 1) {
+long long sample_uniformly(long long low = 0, long long high = 1) {
     // use random device to seed the random number generator named mt.
     // it requests random data from the operating system
     // static means that it will be created only once and then will be reused
