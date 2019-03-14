@@ -65,7 +65,7 @@ int ShorFactoring(int N) {
 }
 
 int main(int narg, char *varg[]) {
-    int N = 21;
+    int N = 87;
     int factor = ShorFactoring(N);
     if (factor > 0) {
         std::cout << "Factors found: " << factor << ",  " << N / factor << std::endl;
