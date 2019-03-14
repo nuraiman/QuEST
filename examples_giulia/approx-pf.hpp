@@ -12,7 +12,7 @@
 
 // implement the bit oracle O_f on both registers
 void applyModExpOracle(Qureg& qureg, int m, long long a, long long N) {
-    for (long long i = 0; i < (1<<m); ++i) {
+    for (long long i = 0L; i < (1L<<m); ++i) {
         Complex amp = getAmp(qureg, i); 
         qreal nreal=0; qreal nimag=0;
         setAmps(qureg, i, &nreal, &nimag,1);
@@ -73,7 +73,7 @@ long long PeriodFinding(QuESTEnv& env, long long a, long long N){
     int n = (int) ceil_log2(N);
     // find smallest natural number m such that N^2 <= 2^m
     int m = 2 * n;
-    long long M = 1 << m;
+    long long M = 1L << m;
 
     // create quantum register (with two 'subregisters')
     Qureg qureg = createQureg(m+n, env);

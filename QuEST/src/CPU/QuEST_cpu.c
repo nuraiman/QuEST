@@ -1071,12 +1071,20 @@ void statevec_createQureg(Qureg *qureg, int numQubits, QuESTEnv env)
     if ( (!(qureg->stateVec.real) || !(qureg->stateVec.imag))
             && numAmpsPerRank ) {
         printf("Could not allocate memory!");
+        // printf("numQubits = %lld", numQubits);
+        // printf("numAmpsPerRank = %lld", numAmpsPerRank);
+        // printf("numRanks = %i", env.numRanks);
+        // printf("numAmps = %lld", numAmps);
         exit (EXIT_FAILURE);
     }
 
     if ( env.numRanks>1 && (!(qureg->pairStateVec.real) || !(qureg->pairStateVec.imag))
             && numAmpsPerRank ) {
         printf("Could not allocate memory!");
+        // printf("numQubits = %lld", numQubits);
+        // printf("numAmpsPerRank = %lld", numAmpsPerRank);
+        // printf("numRanks = %i", env.numRanks);
+        // printf("numAmps = %lld", numAmps);
         exit (EXIT_FAILURE);
     }
 

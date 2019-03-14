@@ -6,7 +6,7 @@
 #include "approx-pf.hpp"
 
 // The Algorithm assumes that N is odd and not a power of a prime
-long long ShorFactoring(long long N) {
+long long ShorFactoring(QuESTEnv& env, long long N) {
     // check if N is odd
     if (N % 2 == 0) {
         return 2;
@@ -28,20 +28,15 @@ long long ShorFactoring(long long N) {
         return b;
     }
 
-    //load quest
-    QuESTEnv env = createQuESTEnv();
     long long r = PeriodFinding(env, a, N);
     if (r % 2 == 1){
-        destroyQuESTEnv(env);
         return -1;
     }
     r /= 2;
     b = std::pow(a,r);;
     long long s = gcd(b, N);
     if (s == 1){
-        destroyQuESTEnv(env);
         return -1;
     }
-    destroyQuESTEnv(env);
     return s;
 }
