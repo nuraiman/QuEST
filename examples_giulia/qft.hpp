@@ -1,17 +1,12 @@
 //
 // Created by giuli on 08/03/2019.
 //
+
+#pragma once
+#include "math_util.hpp"
+
 // Implementation of the Quantum Fourier Transform
 // (e.g., this is used in Shor's factoring algorithm)
-#include <iostream>
-#include <cmath>
-#include <QuEST.h>
-//#include <vector>
-//#include <numeric>
-//#include <chrono>
-//#include <random>
-
-const double pi = 3.14159265358979323846;
 
 // Implementation of a SWAP gate between two qubits
 void swap(Qureg &qr, const int qubit1, const int qubit2){

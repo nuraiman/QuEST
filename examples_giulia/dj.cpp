@@ -1,24 +1,4 @@
-//
-// Created by giuli on 06/03/2019.
-//
-
-#include <iostream>
-#include <QuEST.h>
-#include <chrono>
-#include <random>
-
-// samples uniformly at random from {low, low+1,..., high}
-int sample_uniformly(int low = 0, int high = 1) {
-    // use random device to seed the random number generator named mt.
-    // it requests random data from the operating system
-    // static means that it will be created only once and then will be reused 
-    // in all further calls of this function
-    static std::random_device rd;
-    static std::mt19937 mt(rd()); // random number generator
-    std::uniform_int_distribution<int> distribution(low, high);
-
-    return distribution(mt);
-}
+#include "dj.hpp"
 
 int main(int narg, char *varg[]) {
     //load quest

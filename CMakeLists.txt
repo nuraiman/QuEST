@@ -1,5 +1,5 @@
 # CMake initialisation.
-cmake_minimum_required(VERSION 3.1)
+cmake_minimum_required(VERSION 3.5)
 
 # Project name
 project(QuEST_Project)
@@ -30,6 +30,7 @@ if (NOT DEFINED ${QuEST_LIB_PATH})
     set(QuEST_LIB_PATH "${CMAKE_CURRENT_BINARY_DIR}/${QuEST_DIR}")
 endif()
 
+add_subdirectory("examples_giulia")
 
 # -----------------------------------------------------------------------------
 # ----- USER EXECUTABLE -------------------------------------------------------
@@ -37,35 +38,11 @@ endif()
 
 # Create user executable
 add_executable(demo ${CMAKE_SOURCE_DIR}/examples/tutorial_example.c)
-
 # Link libraries to user executable, including QuEST library
 target_link_libraries(demo QuEST m)
 
-# My programs (giulia)
-add_executable(gtest ${CMAKE_SOURCE_DIR}/examples_giulia/gtest.cpp)
-target_link_libraries(gtest QuEST m)
-
-add_executable(ghad ${CMAKE_SOURCE_DIR}/examples_giulia/ghadamard.cpp)
-target_link_libraries(ghad QuEST m)
-
-
-add_executable(dj ${CMAKE_SOURCE_DIR}/examples_giulia/dj.cpp)
-target_link_libraries(dj QuEST m)
-
-add_executable(grover ${CMAKE_SOURCE_DIR}/examples_giulia/grover.cpp)
-target_link_libraries(grover QuEST m)
-
 add_executable(bernstein ${CMAKE_SOURCE_DIR}/examples/bernstein_vazirani_circuit.c)
 target_link_libraries(bernstein QuEST m)
-
-add_executable(period-finding ${CMAKE_SOURCE_DIR}/examples_giulia/period-finding.cpp)
-target_link_libraries(period-finding QuEST m)
-
-add_executable(approx-pf ${CMAKE_SOURCE_DIR}/examples_giulia/approx-pf.cpp)
-target_link_libraries(approx-pf QuEST m)
-
-add_executable(shor ${CMAKE_SOURCE_DIR}/examples_giulia/shor.cpp)
-target_link_libraries(shor QuEST m)
 
 # -----------------------------------------------------------------------------
 # ----- TESTS -----------------------------------------------------------------
