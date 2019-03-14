@@ -49,7 +49,7 @@ int ceil_log2(int n) {
 }
 
 // implement the bit oracle O_f on both registers
-void apply_modexp_oracle(Qureg& qureg, int m, int n, int a, int N) {
+void apply_modexp_oracle(Qureg& qureg, int m, int a, int N) {
     for (int i = 0; i < (1<<m); ++i) {
         Complex amp = getAmp(qureg, i); 
         qreal nreal=0; qreal nimag=0;
@@ -62,7 +62,7 @@ void apply_modexp_oracle(Qureg& qureg, int m, int n, int a, int N) {
 
 // determines the period r from z = y/M using continued fraction expansion (CFE)
 // or return -1 if unsuccessful
-int period_using_CFE(int y, int a, int M, int N) {
+int period_using_CFE(int y, int M, int a, int N) {
     int r = 0;
     // z = y/M
     // In theory, we know that y < M, therefore a0 = 0
@@ -116,7 +116,7 @@ int PeriodFinding(QuESTEnv& env, int a, int N){
     // create quantum register (with two 'subregisters')
     Qureg qureg = createQureg(m+n, env);
     // MK: this is not necessary as createQureg already invokes this
-    initZeroState(qureg);
+    // initZeroState(qureg);
 
     // perform QFT to the first register
     QFT(qureg, m);
@@ -124,7 +124,7 @@ int PeriodFinding(QuESTEnv& env, int a, int N){
     // for (int j = 0; j < m ; ++j) {
     //     hadamard(qureg, j);
     // }
-    apply_modexp_oracle(qureg, m, n, a, N);
+    apply_modexp_oracle(qureg, m, a, N);
 
     // measure the second register (and collapse the full wavefunction)
     for (int j = m; j < m + n ; ++j) {
@@ -145,37 +145,41 @@ int PeriodFinding(QuESTEnv& env, int a, int N){
     }
 
     // determine the period r from z = y/M using continued fraction expansion (CFE)
-    int r = period_using_CFE(y, a, M, N);
+    int r = period_using_CFE(y, M, a, N);
 
     destroyQureg(qureg, env);
     return r;
 }
 
 // test the functions
-int main(int narg, char *varg[]) {
-    // load quest
-    QuESTEnv env = createQuESTEnv();
-
-    // number of repetitions of the algorithms
-    int n_rep = 150;
-
-    // counts how many times the algorithm was successful
-    int counter = 0;
-
-    for (int i = 0; i < n_rep; ++i) {
-        int r = PeriodFinding(env, 10,21);
-        counter += (r > -1) ? 1 : 0;
-    }
-
-    double success_probability = (100.0 * counter) / n_rep;
-
-    std::cout << "The probability of finding the right solution, based on " << n_rep << " repetitions, is approximatelly = " << success_probability << std::endl;
-
-    double target_probability = 100.0 * 4.0/(pi*pi);
-
-    std::cout << "\nTarget probability = " << target_probability << std::endl;
-
-    destroyQuESTEnv(env);
-
-    return 0;
-}
+//int main(int narg, char *varg[]) {
+//    // load quest
+//    QuESTEnv env = createQuESTEnv();
+//
+//    // number of repetitions of the algorithms
+//    int n_rep = 100;
+//
+//    // counts how many times the algorithm was successful
+//    int counter = 0;
+//
+//    int period = 0;
+//    for (int i = 0; i < n_rep; ++i) {
+//        int r = PeriodFinding(env, 10,21);
+//        counter += (r > -1) ? 1 : 0;
+//        if (r> -1){ period = r;}
+//    }
+//
+//    double success_probability = (100.0 * counter) / n_rep;
+//
+//    std::cout << "The probability of finding the right solution, based on " << n_rep << " repetitions, is approximatelly = " << success_probability << std::endl;
+//
+//    double target_probability = 100.0 * 4.0/(pi*pi);
+//
+//    std::cout << "\nTarget probability = " << target_probability << std::endl;
+//
+//    std::cout << "r = " << period << std::endl;
+//
+//    destroyQuESTEnv(env);
+//
+//    return 0;
+//}

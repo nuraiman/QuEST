@@ -64,6 +64,9 @@ target_link_libraries(period-finding QuEST m)
 add_executable(approx-pf ${CMAKE_SOURCE_DIR}/examples_giulia/approx-pf.cpp)
 target_link_libraries(approx-pf QuEST m)
 
+add_executable(shor ${CMAKE_SOURCE_DIR}/examples_giulia/shor.cpp)
+target_link_libraries(shor QuEST m)
+
 # -----------------------------------------------------------------------------
 # ----- TESTS -----------------------------------------------------------------
 # -----------------------------------------------------------------------------
