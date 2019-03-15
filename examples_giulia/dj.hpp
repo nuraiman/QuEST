@@ -3,8 +3,7 @@
 //
 #pragma once
 #include "math_util.hpp"
-void dj(QuESTEnv& env) {
-    int n = 13; // length of the boolean function f (~ number of qubits)
+void dj(QuESTEnv& env, int n) {
 
     // Create a type of function (either constant or balanced) at random (oracle)
     int oracleType = (int) sample_uniformly();

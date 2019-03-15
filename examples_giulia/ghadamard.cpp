@@ -6,14 +6,28 @@
 #include <QuEST.h>
 #include <ctime>
 #include <chrono>
+#include "math_util.hpp"
 
 int main(int narg, char *varg[]) {
     // load QuEST
     QuESTEnv env = createQuESTEnv();
 
-    // choose number of qubits
-    int n = 5;
+    // command lines
+    cxxopts::Options desc(varg[0], "Allowed Options");
+    desc.add_options()
+            ("help", "produce help message")
+            ("N,number", "Number of qubits", cxxopts::value<int>()->default_value("5"))
+            ("r,repetitions", "Number of repetitions", cxxopts::value<int>()->default_value("1"));
 
+    auto vm = desc.parse(narg, varg);
+
+    if (vm.count("help")) {
+        std::cout << desc.help() << std::endl;
+        return 1;
+    }
+
+    const int n = vm["N"].as<int>();
+    const int nrep = vm["r"].as<int>();
 
     // create n qubits, Method 1
     Qureg qubits1 = createQureg(n, env);

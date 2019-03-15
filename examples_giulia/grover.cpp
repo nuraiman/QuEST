@@ -3,11 +3,25 @@
 int main(int narg, char *varg[]) {
     //load quest
     QuESTEnv env = createQuESTEnv();
+    //command lines
+    cxxopts::Options desc(varg[0], "Allowed Options");
+    desc.add_options()
+            ("help", "produce help message")
+            ("N,number", "Size of the array with one marked element", cxxopts::value<long long>()->default_value("1<<13"))
+            ("r,repetitions", "Number of repetitions", cxxopts::value<int>()->default_value("1"));
+
+    auto vm = desc.parse(narg, varg);
+
+    if (vm.count("help")) {
+        std::cout << desc.help() << std::endl;
+        return 1;
+    }
+
+    const long long N = vm["N"].as<long long>();
+    const int nrep = vm["r"].as<int>();
 
     syncQuESTEnv(env);
     auto start = std::chrono::steady_clock::now();
-    long long N = 1 << 13;
-
     // find smallest natural number n such that N <= 2^n
     int n = int(ceil(log2(N)));
 

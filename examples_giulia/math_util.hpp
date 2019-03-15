@@ -5,6 +5,22 @@
 #include <numeric>
 #include <chrono>
 #include <random>
+#include "cxxopts.hpp"
+#include <algorithm>
+
+bool isPrime(long long n) { // TODO: Change this function, because we are cheating!
+    if (n == 1) {
+        return false;
+    }
+
+    auto max_divisor = (long long) std::ceil(std::sqrt(n));
+    for (long long i = 2; i <= max_divisor; ++i) {
+        if (n % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
 
 // Input: We are given access to a function f : Z_M --> Z_N, f = a^x mod N (for some integers M, N)
 // M is chosen such that: M = 2^m >= N^2
@@ -14,7 +30,7 @@
 // define gcd
 long long gcd(long long x, long long y){
     while (y != 0){
-        int r = x % y;
+        long long r = x % y;
         x = y;
         y = r;
     }
