@@ -33,7 +33,7 @@ long long ShorFactoring(QuESTEnv& env, long long N) {
         return -1;
     }
     r /= 2;
-    b = std::pow(a,r);;
+    b = (long long) std::pow(a,r);;
     long long s = gcd(b, N);
     if (s == 1){
         return -1;

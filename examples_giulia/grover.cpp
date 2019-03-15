@@ -4,6 +4,8 @@ int main(int narg, char *varg[]) {
     //load quest
     QuESTEnv env = createQuESTEnv();
 
+    syncQuESTEnv(env);
+    auto start = std::chrono::steady_clock::now();
     long long N = 1 << 13;
 
     // find smallest natural number n such that N <= 2^n
@@ -41,8 +43,11 @@ int main(int narg, char *varg[]) {
         }
     }
 
+    syncQuESTEnv(env);
+    auto end = std::chrono::steady_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
     std::cout << "The algorithm found x0 = " << result << " with success probability " << success << std::endl;
-
+    std::cout << "Duration [ns] = " << duration << std::endl;
 
     destroyQureg(qureg, env);
     destroyQuESTEnv(env);

@@ -9,15 +9,12 @@
 // (2) f is ONE-TO-ONE on each period: for all pairs (x, y) such that |x-y| < r, f(x) != f(y) .
 // Output: The algorithm finds the period r
 
-int PeriodFinding(int a, int M, int N){ // M should be a power of 2
+long long PeriodFinding(QuESTEnv &env, int a, int M, int N){ // M must be divisible by the period r! Otherwise use approx-pf
 
     // find smallest natural number m such that M <= 2^m
     int m = int(ceil(log2(M)));
     // find smallest natural number n such that N <= 2^n
     int n = int(ceil(log2(N)));
-
-    //load quest
-    QuESTEnv env = createQuESTEnv();
 
     // perform QFT to the first register
     Qureg qureg = createQureg(m+n, env);
@@ -32,7 +29,7 @@ int PeriodFinding(int a, int M, int N){ // M should be a power of 2
     // }
 
     // implement the bit oracle O_f on both registers
-    int f;
+    long long f;
     for (int i = 0; i < (1<<m); ++i) {
          Complex amp = getAmp(qureg, i);
          qreal ar=0; qreal ai=0;
@@ -62,11 +59,10 @@ int PeriodFinding(int a, int M, int N){ // M should be a power of 2
 
     // determine the period r
     std::cout << "k = " << k << "  M = "<< M << std::endl;
-    int temp = gcd(k, M);
+    long long temp = gcd(k, M);
     M /= temp;
-    int r = M;
+    long long r = M;
 
     destroyQureg(qureg, env);
-    destroyQuESTEnv(env);
     return r;
 }

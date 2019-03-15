@@ -43,3 +43,5 @@ Thumbs.db
 
 build*
 .idea/*
+
+ubuntu_setup_env.sh

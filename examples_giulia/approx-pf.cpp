@@ -11,9 +11,9 @@ int main(int narg, char *varg[]) {
     // counts how many times the algorithm was successful
     int counter = 0;
 
-    int period = 0;
+    long long period = 0;
     for (int i = 0; i < n_rep; ++i) {
-        int r = PeriodFinding(env, 10,21);
+        long long r = PeriodFinding(env, 10,21);
         counter += (r > -1) ? 1 : 0;
 
         if (r > -1) { 
