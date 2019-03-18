@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <QuEST.h>
 
+#include "shor.hpp"
+
 int main(int narg, char *varg[]) {
 
     // load QuEST
@@ -32,6 +34,9 @@ int main(int narg, char *varg[]) {
 
     // unload QuEST
     destroyQureg(qubits, env);
+
+    long long x = gcdForShor(175,4,21843958);
+    std::cout << "x = " << x << std::endl;
     destroyQuESTEnv(env);
     return 0;
 }

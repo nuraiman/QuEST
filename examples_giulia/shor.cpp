@@ -1,5 +1,5 @@
 #include "shor.hpp"
-
+typedef unsigned int uint;
 int main(int narg, char *varg[]) {
     //load quest
     QuESTEnv env = createQuESTEnv();

@@ -5,6 +5,17 @@
 #pragma once
 #include "approx-pf.hpp"
 
+// compute gcd(pow(a,r)-1,N) avoiding overflow // y == N
+long long gcdForShor(long long a, long long r, long long y){
+    long long x = (modExp(a,y,r)-1 + y) ;
+    while (y != 0){
+        long long t = x % y; // compute tem = (a^r-1) mod N = (a^r mod N) - 1 = (a^r mod N - 1 + N) mod N
+        x = y;
+        y = t;
+    }
+    return x;
+}
+
 // The Algorithm assumes that N is odd and not a power of an integer
 std::vector<long long> ShorFactoring(QuESTEnv& env,const long long N) {
     // recursion stopping criteria
@@ -56,8 +67,8 @@ std::vector<long long> ShorFactoring(QuESTEnv& env,const long long N) {
         return ShorFactoring(env, N);
     }
     r /= 2;
-    b = (long long) std::pow(a,r);;
-    long long s = gcd(b, N);
+    // b = (long long) std::pow(a,r); long long s = gcd(b - 1, N); // --> get overflow...
+    long long s = gcdForShor(a, r, N);
     if (s == 1){
         return ShorFactoring(env, N);
     }

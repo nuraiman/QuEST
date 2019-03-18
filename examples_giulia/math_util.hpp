@@ -8,7 +8,7 @@
 #include "cxxopts.hpp"
 #include <algorithm>
 
-bool isPrime(long long n) { // TODO: Change this function, because we are cheating!
+bool isPrime(long long n) { // TODO: Change this function, need something with complexity O(log(N))
     if (n == 1) {
         return false;
     }
@@ -45,10 +45,10 @@ void cancelFraction(long long &x, long long &y){
 }
 
 // define the function for modular exponentiation
-long long modExp(long long a, long long N, int x){
+long long modExp(long long a, long long N, long long x){
     // we use the identity: a^(i+1) % N = a*(a^i % N) % N to avoid overflow
-    long long r = 1ll;
-    for (int i = 0; i < x; ++i) {
+    long long r = 1;
+    for (long long i = 0; i < x; ++i) {
         r = r * a % N;
     }
     return r;
