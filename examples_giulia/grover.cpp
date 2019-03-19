@@ -7,7 +7,7 @@ int main(int narg, char *varg[]) {
     cxxopts::Options desc(varg[0], "Allowed Options");
     desc.add_options()
             ("help", "produce help message")
-            ("N,number", "Size of the array with one marked element", cxxopts::value<long long>()->default_value("1<<13"))
+            ("N,number", "Size of the array with one marked element", cxxopts::value<qInt>()->default_value("1<<13"))
             ("r,repetitions", "Number of repetitions", cxxopts::value<int>()->default_value("1"));
 
     auto vm = desc.parse(narg, varg);
@@ -17,7 +17,7 @@ int main(int narg, char *varg[]) {
         return 1;
     }
 
-    const long long N = vm["N"].as<long long>();
+    const qInt N = vm["N"].as<qInt>();
     const int nrep = vm["r"].as<int>();
 
     syncQuESTEnv(env);
@@ -27,7 +27,7 @@ int main(int narg, char *varg[]) {
 
     std::cout << "n = " << n << std::endl;
     // choose marked element at random
-    long long x0 = sample_uniformly(0,N-1);
+    qInt x0 = sample_uniformly(0,N-1);
     std::cout << "Test x0 = " << x0 << std::endl;
 
 
@@ -48,7 +48,7 @@ int main(int narg, char *varg[]) {
     // measure all the qubits and save their values in the variable 'result'
     qreal success = getProbAmp(qureg, x0);
 
-    long long result = 0;
+    qInt result = 0;
     int a;
     for (int j = 0; j < n ; ++j) {
         a = measure(qureg,j);

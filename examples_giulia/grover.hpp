@@ -14,7 +14,7 @@
 
 // here we are cheating a little bit... (i guess because it makes no sense to simulate quantum parallelism)
 // Implement the phase oracle U_f with f(x0) = 1 and f(x) = 0 when x != x0.
-void PhaseOracle(Qureg &qr, long long x0){
+void PhaseOracle(Qureg &qr, qInt x0){
 
     Complex amp = getAmp(qr,x0);
     amp.real = -amp.real;
@@ -46,7 +46,7 @@ void GroverStep(Qureg &qr, int n){
     }
 
     // apply -id operator
-    for (long long k = 0; k < (1<<n) ; ++k) {
+    for (qInt k = 0; k < (1<<n) ; ++k) {
         amp = getAmp(qr,k);
         amp.real = -amp.real;
         amp.imag = -amp.imag;

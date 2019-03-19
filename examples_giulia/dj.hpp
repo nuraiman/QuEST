@@ -3,18 +3,19 @@
 //
 #pragma once
 #include "math_util.hpp"
+
 void dj(QuESTEnv& env, int n) {
 
     // Create a type of function (either constant or balanced) at random (oracle)
     int oracleType = (int) sample_uniformly();
     int oracleValue = (int) sample_uniformly();
     std::cout << "oracleType = " << oracleType << ", oracleValue = " << oracleValue << std::endl;
-    std::string type = oracleType == 0 ? "the constant value" : "a balanced function";
+    std::string type = oracleType == 0 ? "a constant valued function" : "a balanced function";
     std::cout << "The oracle returns " << type << std::endl;
 
     // choose a balanced function at random and represent it by the long long value f
-    long long f = sample_uniformly(1, (1 << n) - 1); 
-    std::cout << "f = " << f << std::endl;
+    qInt f = sample_uniformly(1, (1 << n) - 1);
+    // std::cout << "f = " << f << std::endl;
 
     // Construct the circuit
     // creating registers

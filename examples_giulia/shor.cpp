@@ -1,12 +1,12 @@
 #include "shor.hpp"
-typedef unsigned int uint;
+
 int main(int narg, char *varg[]) {
     //load quest
     QuESTEnv env = createQuESTEnv();
     cxxopts::Options desc(varg[0], "Allowed Options");
     desc.add_options()
         ("help", "produce help message")
-        ("N,number", "Number to factorize.", cxxopts::value<long long>()->default_value("21"))
+        ("N,number", "Number to factorize.", cxxopts::value<qInt>()->default_value("21"))
         ("r,repetitions", "Number of repetitions", cxxopts::value<int>()->default_value("1"));
 
     auto vm = desc.parse(narg, varg);
@@ -16,12 +16,12 @@ int main(int narg, char *varg[]) {
         return 1;
     }
 
-    const long long N = vm["N"].as<long long>();
+    const qInt N = vm["N"].as<qInt>();
     const int nrep = vm["r"].as<int>();
 
     syncQuESTEnv(env);
     auto start = std::chrono::steady_clock::now();
-    std::vector<long long> factors = ShorFactoring(env, N);
+    std::vector<qInt> factors = ShorFactoring(env, N);
     syncQuESTEnv(env);
     auto end = std::chrono::steady_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
