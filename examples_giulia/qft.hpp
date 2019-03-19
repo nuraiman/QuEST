@@ -21,7 +21,7 @@ void swap(Qureg &qr, const int qubit1, const int qubit2){
 void QFT(Qureg &qr, int numQubits, int smallest=0){
     // qft circuit
     for (int j = smallest; j < numQubits ; ++j) {
-        for (int k = 0; k < j; ++k) {
+        for (int k = smallest; k < j; ++k) {
             controlledPhaseShift(qr, (numQubits-1)-j, (numQubits-1)-k, pi/(1<<(j-k)));
         }
         hadamard(qr, (numQubits-1)-j);
@@ -31,7 +31,21 @@ void QFT(Qureg &qr, int numQubits, int smallest=0){
         swap(qr, i, (numQubits-1)-i);
     }
 }
+// Implementation of the inverse QFT (Same circuit as QFT, just reversed order)
+void invQFT(Qureg &qr, int numQubits, int smallest=0){
+    //reverse the order of the qubits
+    for (int i = 0; i < numQubits/2 ; ++i) {
+        swap(qr, i, (numQubits-1)-i);
+    }
+    // qft circuit
+    for (int j = smallest; j < numQubits ; ++j) {
+        for (int k = smallest; k < j; ++k) {
+            controlledPhaseShift(qr, k, j, pi/(1<<(j-k)));
+        }
+        hadamard(qr, j);
+    }
 
+}
 
 // Kitaev's approach for implementing the QFT
 
