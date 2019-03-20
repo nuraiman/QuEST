@@ -58,14 +58,19 @@ T ceil_log2(T n) {
 
 const double pi = 3.14159265358979323846;
 
-qInt sample_uniformly(qInt low = 0, qInt high = 1) {
+qInt sample_uniformly(qInt low = 0, qInt high = 1, int s=-1) {
     // use random device to seed the random number generator named mt.
     // it requests random data from the operating system
     // static means that it will be created only once and then will be reused
     // in all further calls of this function
     static std::random_device rd;
-    static std::mt19937 mt(rd()); // random number generator
+    int seed = s;
+    if (s == -1) {
+        seed = rd();
+    }
+    static std::mt19937 mt(seed); // random number generator
     std::uniform_int_distribution<qInt> distribution(low, high);
 
     return distribution(mt);
+
 }

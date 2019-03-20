@@ -18,6 +18,8 @@ int main(int narg, char *varg[]) {
 
     const qInt N = vm["N"].as<qInt>();
     const int nrep = vm["r"].as<int>();
+    int seed =1;
+    seedQuEST(&seed,1);
 
     syncQuESTEnv(env);
     auto start = std::chrono::steady_clock::now();
