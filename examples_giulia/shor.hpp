@@ -17,7 +17,7 @@ qInt gcdForShor(qInt a, qInt r, qInt y){
 }
 
 // The Algorithm assumes that N is odd and not a power of an integer
-std::vector<qInt> ShorFactoring(QuESTEnv& env,const qInt N, unsigned long int seed = 0) {
+std::vector<qInt> ShorFactoring(QuESTEnv& env,const qInt N, RandomGen &rng) {
     // recursion stopping criteria
     if (N == 1) {
         return {};
@@ -29,7 +29,7 @@ std::vector<qInt> ShorFactoring(QuESTEnv& env,const qInt N, unsigned long int se
     // check if N is odd
     if (N % 2 == 0) {
         std::vector<qInt> factors = {2};
-        auto other_factors = ShorFactoring(env, N/2);
+        auto other_factors = ShorFactoring(env, N/2, rng);
         factors.insert(factors.end(), other_factors.begin(), other_factors.end());
         return factors;
     }
@@ -40,7 +40,7 @@ std::vector<qInt> ShorFactoring(QuESTEnv& env,const qInt N, unsigned long int se
         p = (qInt) std::pow(N,1.0/k);
         auto pk = (qInt) std::pow(p,k);
         if (pk == N) {
-            std::vector<qInt> factors = ShorFactoring(env, p);
+            std::vector<qInt> factors = ShorFactoring(env, p, rng);
             std::vector<qInt> new_factors;
             new_factors.reserve(k * factors.size());
             for (const auto& f : factors) {
@@ -53,27 +53,27 @@ std::vector<qInt> ShorFactoring(QuESTEnv& env,const qInt N, unsigned long int se
     }
 
     // shor's algorithm
-    qInt a = sample_uniformly(2, N-1,seed);
+    qInt a = rng.sampleUniformly(2, N-1);
     qInt b = gcd(a, N);
     if (b > 1){
-        std::vector<qInt> factors = ShorFactoring(env, b);
-        auto other_factors = ShorFactoring(env, N/b);
+        std::vector<qInt> factors = ShorFactoring(env, b, rng);
+        auto other_factors = ShorFactoring(env, N/b, rng);
         factors.insert(factors.end(), other_factors.begin(), other_factors.end());
         return factors;
     }
 
     qInt r = PeriodFinding(env, a, N);
     if (r % 2 == 1) {
-        return ShorFactoring(env, N);
+        return ShorFactoring(env, N, rng);
     }
     r /= 2;
     // b = (qInt) std::pow(a,r); qInt s = gcd(b - 1, N); // --> get overflow...
     qInt s = gcdForShor(a, r, N);
     if (s == 1){
-        return ShorFactoring(env, N);
+        return ShorFactoring(env, N, rng);
     }
-    std::vector<qInt> factors = ShorFactoring(env, s);
-    auto other_factors = ShorFactoring(env, N/s);
+    std::vector<qInt> factors = ShorFactoring(env, s, rng);
+    auto other_factors = ShorFactoring(env, N/s, rng);
     factors.insert(factors.end(), other_factors.begin(), other_factors.end());
     return factors;
 }

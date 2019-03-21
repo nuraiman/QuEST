@@ -74,19 +74,21 @@ std::pair<T, T> computeStatistics(std::vector<T> vec) {
 
 const double pi = 3.14159265358979323846;
 
-qInt sample_uniformly(qInt low = 0, qInt high = 1, unsigned long int s=0) {
-    // use random device to seed the random number generator named mt.
-    // it requests random data from the operating system
-    // static means that it will be created only once and then will be reused
-    // in all further calls of this function
-    static std::random_device rd;
-    unsigned long int seed = s;
-    if (s == 0) {
-        seed = rd();
+struct RandomGen {
+    std::mt19937 mt;
+    std::random_device rd;
+    unsigned long int seed=0;
+
+    RandomGen(){
+        setSeed(rd());
     }
-    static std::mt19937 mt(seed); // random number generator
-    std::uniform_int_distribution<qInt> distribution(low, high);
 
-    return distribution(mt);
-
-}
+    qInt sampleUniformly(qInt low = 0, qInt high = 1){
+        std::uniform_int_distribution<qInt> distribution(low, high);
+        return distribution(mt);
+    }
+    void setSeed (unsigned long int sd){
+        seed = sd;
+        mt.seed(seed);
+    }
+};

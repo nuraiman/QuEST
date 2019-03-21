@@ -3,6 +3,7 @@
 int main(int narg, char *varg[]) {
     //load quest
     QuESTEnv env = createQuESTEnv();
+    // command lines
     cxxopts::Options desc(varg[0], "Allowed Options");
     desc.add_options()
         ("help", "produce help message")
@@ -19,6 +20,9 @@ int main(int narg, char *varg[]) {
     const qInt N = vm["N"].as<qInt>();
     const int nrep = vm["r"].as<int>();
 
+    // create RNG
+    RandomGen rng;
+
     unsigned long int seed =1;
     seedQuEST(&seed,1);
 
@@ -28,10 +32,11 @@ int main(int narg, char *varg[]) {
     std::vector<qInt> factors;
 
     for (int i = 0; i < nrep; ++i) {
+        rng.setSeed(1);
         factors.clear();
         syncQuESTEnv(env);
         auto start = std::chrono::steady_clock::now();
-        factors = ShorFactoring(env, N);
+        factors = ShorFactoring(env, N,rng);
         syncQuESTEnv(env);
         auto end = std::chrono::steady_clock::now();
         auto duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();

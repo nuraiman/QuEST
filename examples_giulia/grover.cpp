@@ -20,6 +20,9 @@ int main(int narg, char *varg[]) {
     const qInt N = vm["N"].as<qInt>();
     const int nrep = vm["r"].as<int>();
 
+    // Create RNG
+    RandomGen rng;
+
     unsigned long int seed =1;
     seedQuEST(&seed,1);
 
@@ -29,9 +32,10 @@ int main(int narg, char *varg[]) {
 
     std::vector<qInt> factors;
 
-    qInt result = 0;
+    qInt outputresult = 0;
     qreal success = 0;
     for (int i = 0; i < nrep; ++i) {
+        rng.setSeed(1);
         syncQuESTEnv(env);
         auto start = std::chrono::steady_clock::now();
         // find smallest natural number n such that N <= 2^n
@@ -39,7 +43,7 @@ int main(int narg, char *varg[]) {
 
         std::cout << "n = " << n << std::endl;
         // choose marked element at random
-        qInt x0 = sample_uniformly(0,N-1,seed);
+        qInt x0 = rng.sampleUniformly(0,N-1);
         std::cout << "Test x0 = " << x0 << std::endl;
 
 
@@ -60,7 +64,7 @@ int main(int narg, char *varg[]) {
         // measure all the qubits and save their values in the variable 'result'
         success = getProbAmp(qureg, x0);
 
-        //qInt result = 0;
+        qInt result = 0;
         int a;
         for (int j = 0; j < n ; ++j) {
             a = measure(qureg,j);
@@ -73,10 +77,11 @@ int main(int narg, char *varg[]) {
         auto end = std::chrono::steady_clock::now();
         auto duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
         times.push_back(duration);
+        outputresult = result;
         destroyQureg(qureg, env);
     }
 
-    std::cout << "The algorithm found x0 = " << result << " with success probability " << success << std::endl;
+    std::cout << "The algorithm found x0 = " << outputresult << " with success probability " << success << std::endl;
 
     // output the duration vector over repetitions
     std::cout << "Duration [ns] = ";
