@@ -7,6 +7,7 @@
 #include <random>
 #include "cxxopts.hpp"
 #include <algorithm>
+#include <tuple>
 
 typedef long long qInt;
 
@@ -54,6 +55,21 @@ qInt modExp(qInt a, qInt N, qInt x){
 template<typename T>
 T ceil_log2(T n) {
     return std::ceil(std::log2<T>(n));
+}
+
+template<typename T>
+std::pair<T, T> computeStatistics(std::vector<T> vec) {
+    T sum = 0, mean = 0, standardDeviation = 0;
+    for (int i = 0; i < vec.size(); ++i) {
+        sum += vec[i];
+    }
+    mean = 1.0 * sum / vec.size();
+
+    for (int i = 0; i < vec.size(); ++i) {
+        standardDeviation += std::pow(vec[i] - mean, 2);
+    }
+    standardDeviation = std::sqrt(1.0 * standardDeviation / vec.size());
+    return {mean, standardDeviation};
 }
 
 const double pi = 3.14159265358979323846;

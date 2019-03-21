@@ -18,25 +18,47 @@ int main(int narg, char *varg[]) {
 
     const qInt N = vm["N"].as<qInt>();
     const int nrep = vm["r"].as<int>();
-    int seed =1;
+
+    unsigned long int seed =1;
     seedQuEST(&seed,1);
 
-    syncQuESTEnv(env);
-    auto start = std::chrono::steady_clock::now();
-    std::vector<qInt> factors = ShorFactoring(env, N);
-    syncQuESTEnv(env);
-    auto end = std::chrono::steady_clock::now();
-    auto duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
+    std::vector<long long> times;
+    times.reserve(nrep);
+
+    std::vector<qInt> factors;
+
+    for (int i = 0; i < nrep; ++i) {
+        factors.clear();
+        syncQuESTEnv(env);
+        auto start = std::chrono::steady_clock::now();
+        factors = ShorFactoring(env, N);
+        syncQuESTEnv(env);
+        auto end = std::chrono::steady_clock::now();
+        auto duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
+        times.push_back(duration);
+    }
 
     if (env.rank == 0) {
         std::sort(factors.begin(), factors.end());
+        // output the prime factors that are found
         std::cout << "Factors are: ";
         for (const auto& f : factors) {
             std::cout << f << "; ";
         }
         std::cout << std::endl;
 
-        std::cout << "Duration [ns] = " << duration << std::endl;
+        // output the duration vector over repetitions
+        std::cout << "Duration [ns] = ";
+        for (int i = 0; i < nrep; ++i) {
+            std::cout << times[i];
+            if (i < nrep - 1) {
+                std::cout << ", ";
+            }
+        }
+        std::cout << std::endl;
+
+        auto statistics = computeStatistics(times);
+        std::cout << "Avg time [ns] = " << statistics.first << ", Std deviation = " << statistics.second << std::endl;
     }
 
     destroyQuESTEnv(env);
