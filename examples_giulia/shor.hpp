@@ -17,7 +17,7 @@ qInt gcdForShor(qInt a, qInt r, qInt y){
 }
 
 // The Algorithm assumes that N is odd and not a power of an integer
-std::vector<qInt> ShorFactoring(QuESTEnv& env,const qInt N) {
+std::vector<qInt> ShorFactoring(QuESTEnv& env,const qInt N, unsigned long int seed = 0) {
     // recursion stopping criteria
     if (N == 1) {
         return {};
@@ -53,7 +53,7 @@ std::vector<qInt> ShorFactoring(QuESTEnv& env,const qInt N) {
     }
 
     // shor's algorithm
-    qInt a = sample_uniformly(2, N-1);
+    qInt a = sample_uniformly(2, N-1,seed);
     qInt b = gcd(a, N);
     if (b > 1){
         std::vector<qInt> factors = ShorFactoring(env, b);
