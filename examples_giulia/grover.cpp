@@ -7,7 +7,7 @@ int main(int narg, char *varg[]) {
     cxxopts::Options desc(varg[0], "Allowed Options");
     desc.add_options()
             ("help", "produce help message")
-            ("N,number", "Size of the array with one marked element", cxxopts::value<qInt>()->default_value("1<<13"))
+            ("N,number", "Size of the array with one marked element", cxxopts::value<qInt>()->default_value("10000"))
             ("r,repetitions", "Number of repetitions", cxxopts::value<int>()->default_value("1"));
 
     auto vm = desc.parse(narg, varg);

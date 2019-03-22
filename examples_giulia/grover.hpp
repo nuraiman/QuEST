@@ -29,15 +29,15 @@ void GroverStep(Qureg &qr, int n){
         hadamard(qr,i);
         pauliX(qr,i);
     }
-   // std::vector<int> controlqubits(n-1);
-   // std::iota(controlqubits.begin(), controlqubits.end(), 0);
-   // multiControlledPhaseFlip(qr, controlqubits.data(), n-1); // --> gives wrong result!
+    std::vector<int> controlqubits(n);
+    std::iota(controlqubits.begin(), controlqubits.end(), 0);
+    multiControlledPhaseFlip(qr, controlqubits.data(), n); //
 
    // representing 'multiControlledPhaseFlip()'
-    Complex amp = getAmp(qr,(1<<n)-1);
-    amp.real = -amp.real;
-    amp.imag = -amp.imag;
-    setAmps(qr, (1<<n)-1, &amp.real, &amp.imag,1);
+//    Complex amp = getAmp(qr,(1<<n)-1);
+//    amp.real = -amp.real;
+//    amp.imag = -amp.imag;
+//    setAmps(qr, (1<<n)-1, &amp.real, &amp.imag,1);
 
     for (int j = 0; j < n; ++j) {
         pauliX(qr,j);
@@ -45,12 +45,12 @@ void GroverStep(Qureg &qr, int n){
 
     }
 
-    // apply -id operator
-    for (qInt k = 0; k < (1<<n) ; ++k) {
-        amp = getAmp(qr,k);
-        amp.real = -amp.real;
-        amp.imag = -amp.imag;
-        setAmps(qr, k, &amp.real, &amp.imag,1);
-    }
+//    // apply -id operator
+//    for (qInt k = 0; k < (1<<n) ; ++k) {
+//        amp = getAmp(qr,k);
+//        amp.real = -amp.real;
+//        amp.imag = -amp.imag;
+//        setAmps(qr, k, &amp.real, &amp.imag,1);
+//    }
 } // one could also use 'createDensityQureg()' in order to build the operator Id - 2 |00..0><0..00|
 
