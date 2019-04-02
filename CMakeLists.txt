@@ -31,6 +31,7 @@ if (NOT DEFINED ${QuEST_LIB_PATH})
 endif()
 
 add_subdirectory("examples_giulia")
+add_subdirectory("randomQC")
 
 # -----------------------------------------------------------------------------
 # ----- USER EXECUTABLE -------------------------------------------------------
