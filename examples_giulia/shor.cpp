@@ -39,7 +39,7 @@ int main(int narg, char *varg[]) {
         factors = ShorFactoring(env, N,rng);
         syncQuESTEnv(env);
         auto end = std::chrono::steady_clock::now();
-        auto duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
+        auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
         times.push_back(duration);
     }
 
@@ -53,7 +53,7 @@ int main(int narg, char *varg[]) {
         std::cout << std::endl;
 
         // output the duration vector over repetitions
-        std::cout << "Duration [ns] = ";
+        std::cout << "Duration [ms] = ";
         for (int i = 0; i < nrep; ++i) {
             std::cout << times[i];
             if (i < nrep - 1) {
@@ -63,7 +63,7 @@ int main(int narg, char *varg[]) {
         std::cout << std::endl;
 
         auto statistics = computeStatistics(times);
-        std::cout << "Avg time [ns] = " << statistics.first << ", Std deviation = " << statistics.second << std::endl;
+        std::cout << "Avg time [ms] = " << statistics.first << ", Std deviation = " << statistics.second << std::endl;
     }
 
     destroyQuESTEnv(env);

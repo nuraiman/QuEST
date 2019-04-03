@@ -99,7 +99,7 @@ qInt PeriodFinding(QuESTEnv& env, qInt a, qInt N){
     for (int j = 0; j < m ; ++j) {
         result = measure(qureg,j);
         if (result==1){
-            y = y | (1 << j);
+            y = y | (1ll << j);
         }
     }
 

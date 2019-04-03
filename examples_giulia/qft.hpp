@@ -22,7 +22,7 @@ void QFT(Qureg &qr, int numQubits, int smallest=0){
     // qft circuit
     for (int j = smallest; j < numQubits ; ++j) {
         for (int k = smallest; k < j; ++k) {
-            controlledPhaseShift(qr, (numQubits-1)-j, (numQubits-1)-k, pi/(1<<(j-k)));
+            controlledPhaseShift(qr, (numQubits-1)-j, (numQubits-1)-k, pi/(1ll<<(j-k)));
         }
         hadamard(qr, (numQubits-1)-j);
     }
@@ -40,7 +40,7 @@ void invQFT(Qureg &qr, int numQubits, int smallest=0){
     // qft circuit
     for (int j = smallest; j < numQubits ; ++j) {
         for (int k = smallest; k < j; ++k) {
-            controlledPhaseShift(qr, k, j, pi/(1<<(j-k)));
+            controlledPhaseShift(qr, k, j, pi/(1ll<<(j-k)));
         }
         hadamard(qr, j);
     }
