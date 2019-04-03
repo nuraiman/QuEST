@@ -1,0 +1,452 @@
+=============================
+  LOADING MODULES
+=============================
+=============================
+  BUILDING AND COMPILATION
+=============================
+-- Cray Programming Environment 2.5.15 C
+-- Cray Programming Environment 2.5.15 CXX
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /scratch/snx3000/mazzolag/qsim/QuEST/build
+[ 30%] Built target QuEST
+[ 42%] Built target shor
+[ 46%] Built target gtest
+[ 57%] Built target ghadamard
+[ 69%] Built target period-finding
+[ 69%] Built target demo
+[ 76%] Built target grover
+Scanning dependencies of target dj
+[ 80%] Building CXX object examples_giulia/CMakeFiles/dj.dir/dj.cpp.o
+[ 88%] Built target approx-pf
+[ 96%] Built target bernstein
+[100%] Linking CXX executable dj
+[100%] Built target dj
+================================
+       RUNNING BENCHMARKS
+================================
+CONFIGURATION: N = 30, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+srun: error: nid00051: tasks 0-31: Killed
+srun: Terminating job step 12744818.0
+srun: Force Terminated job step 12744818.0
+
+CONFIGURATION: N = 30, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+srun: error: nid00051: task 0: Killed
+srun: Terminating job step 12744818.1
+slurmstepd: error: *** STEP 12744818.1 ON nid00051 CANCELLED AT 2019-04-03T10:14:43 ***
+srun: error: nid00052: task 24: Killed
+srun: error: nid00052: tasks 22-23,26: Killed
+srun: error: nid00051: tasks 1-8,10-14: Killed
+srun: error: nid00052: tasks 16,18,20,27-30: Killed
+srun: error: nid00052: tasks 17,21,25,31: Killed
+srun: error: nid00051: tasks 9,15: Killed
+srun: error: nid00052: task 19: Killed
+srun: Force Terminated job step 12744818.1
+
+CONFIGURATION: N = 30, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Duration [ms] = 40212, 41633, 34595, 40073, 17345, 18518, 17291, 41019, 42751, 38474
+Avg time [ms] = 33191, Std deviation = 10342
+CONFIGURATION: N = 30, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 27734, 28681, 24747, 28084, 14733, 15559, 14694, 28664, 29275, 27090
+Avg time [ms] = 23926, Std deviation = 5965
+CONFIGURATION: N = 30, nodes = 16
+Duration [ms] = 12599, 13426, 10773, 12823, 4679, 5304, 4695, 13335, 13836, 12265
+Avg time [ms] = 10373, Std deviation = 3676
+
+================================
+
+CONFIGURATION: N = 31, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+srun: error: nid00051: tasks 0-31: Killed
+srun: Terminating job step 12744818.5
+srun: Force Terminated job step 12744818.5
+srun: error: nid00051: tasks 0-31: Killed
+srun: error: Task 0 reported exit for a second time.
+srun: error: Task 1 reported exit for a second time.
+srun: error: Task 2 reported exit for a second time.
+srun: error: Task 3 reported exit for a second time.
+srun: error: Task 4 reported exit for a second time.
+srun: error: Task 5 reported exit for a second time.
+srun: error: Task 6 reported exit for a second time.
+srun: error: Task 7 reported exit for a second time.
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 9 reported exit for a second time.
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: Task 12 reported exit for a second time.
+srun: error: Task 13 reported exit for a second time.
+srun: error: Task 14 reported exit for a second time.
+srun: error: Task 15 reported exit for a second time.
+srun: error: Task 16 reported exit for a second time.
+srun: error: Task 17 reported exit for a second time.
+srun: error: Task 18 reported exit for a second time.
+srun: error: Task 19 reported exit for a second time.
+srun: error: Task 20 reported exit for a second time.
+srun: error: Task 21 reported exit for a second time.
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+srun: error: Task 24 reported exit for a second time.
+srun: error: Task 25 reported exit for a second time.
+srun: error: Task 26 reported exit for a second time.
+srun: error: Task 27 reported exit for a second time.
+srun: error: Task 28 reported exit for a second time.
+srun: error: Task 29 reported exit for a second time.
+srun: error: Task 30 reported exit for a second time.
+srun: error: Task 31 reported exit for a second time.
+
+CONFIGURATION: N = 31, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+srun: error: nid00052: task 24: Killed
+srun: Terminating job step 12744818.6
+srun: error: nid00051: task 3: Killed
+srun: error: nid00052: task 24: Killed
+srun: error: Task 24 reported exit for a second time.
+srun: error: nid00051: task 3: Killed
+srun: error: Task 3 reported exit for a second time.
+srun: error: nid00052: task 24: Killed
+srun: error: Task 24 reported exit for a second time.
+srun: error: nid00051: task 3: Killed
+srun: error: Task 3 reported exit for a second time.
+srun: error: nid00052: task 24: Killed
+srun: error: Task 24 reported exit for a second time.
+srun: error: nid00051: task 3: Killed
+srun: error: Task 3 reported exit for a second time.
+slurmstepd: error: *** STEP 12744818.6 ON nid00051 CANCELLED AT 2019-04-03T10:27:23 ***
+srun: error: nid00052: task 24: Killed
+srun: error: Task 24 reported exit for a second time.
+srun: error: nid00051: task 3: Killed
+srun: error: Task 3 reported exit for a second time.
+srun: error: nid00052: tasks 16-23,25-31: Killed
+srun: error: nid00051: tasks 0-2,4-15: Killed
+srun: Force Terminated job step 12744818.6
+
+CONFIGURATION: N = 31, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+srun: error: nid00302: task 24: Killed
+srun: Terminating job step 12744818.7
+srun: error: nid00051: task 6: Killed
+slurmstepd: error: *** STEP 12744818.7 ON nid00051 CANCELLED AT 2019-04-03T10:33:11 ***
+srun: error: nid00302: task 30: Killed
+srun: error: nid00053: tasks 16-23: Killed
+srun: error: nid00052: tasks 8-15: Killed
+srun: error: nid00051: tasks 0-4,7: Killed
+srun: error: nid00302: task 27: Killed
+srun: error: nid00051: task 5: Killed
+srun: error: nid00302: tasks 25-26,28-29,31: Killed
+srun: Force Terminated job step 12744818.7
+
+CONFIGURATION: N = 31, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 57704, 58173, 49460, 56517, 30034, 31570, 29947, 57922, 60609, 55196
+Avg time [ms] = 48713, Std deviation = 12227
+CONFIGURATION: N = 31, nodes = 16
+Duration [ms] = 26447, 26538, 21397, 25109, 9347, 10567, 9282, 26092, 27596, 24079
+Avg time [ms] = 20645, Std deviation = 7327
+
+================================
+
+CONFIGURATION: N = 32, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+srun: error: nid00051: tasks 0-31: Killed
+srun: Terminating job step 12744818.10
+srun: Force Terminated job step 12744818.10
+srun: error: nid00051: tasks 0-31: Killed
+srun: error: Task 0 reported exit for a second time.
+srun: error: Task 1 reported exit for a second time.
+srun: error: Task 2 reported exit for a second time.
+srun: error: Task 3 reported exit for a second time.
+srun: error: Task 4 reported exit for a second time.
+srun: error: Task 5 reported exit for a second time.
+srun: error: Task 6 reported exit for a second time.
+srun: error: Task 7 reported exit for a second time.
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 9 reported exit for a second time.
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: Task 12 reported exit for a second time.
+srun: error: Task 13 reported exit for a second time.
+srun: error: Task 14 reported exit for a second time.
+srun: error: Task 15 reported exit for a second time.
+srun: error: Task 16 reported exit for a second time.
+srun: error: Task 17 reported exit for a second time.
+srun: error: Task 18 reported exit for a second time.
+srun: error: Task 19 reported exit for a second time.
+srun: error: Task 20 reported exit for a second time.
+srun: error: Task 21 reported exit for a second time.
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+srun: error: Task 24 reported exit for a second time.
+srun: error: Task 25 reported exit for a second time.
+srun: error: Task 26 reported exit for a second time.
+srun: error: Task 27 reported exit for a second time.
+srun: error: Task 28 reported exit for a second time.
+srun: error: Task 29 reported exit for a second time.
+srun: error: Task 30 reported exit for a second time.
+srun: error: Task 31 reported exit for a second time.
+
+CONFIGURATION: N = 32, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+srun: error: nid00052: tasks 16,18,20-24,26-30: Killed
+srun: Terminating job step 12744818.11
+srun: error: nid00051: tasks 0-2,4,6-15: Killed
+slurmstepd: error: *** STEP 12744818.11 ON nid00051 CANCELLED AT 2019-04-03T10:45:11 ***
+srun: error: nid00051: tasks 3,5: Killed
+srun: error: nid00052: tasks 17,19,25,31: Killed
+srun: Force Terminated job step 12744818.11
+
+CONFIGURATION: N = 32, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+srun: error: nid00053: task 16: Killed
+slurmstepd: error: Failed to send MESSAGE_TASK_EXIT: Resource temporarily unavailable
+srun: Terminating job step 12744818.12
+slurmstepd: error: Failed to send MESSAGE_TASK_EXIT: Resource temporarily unavailable
+srun: error: nid00052: tasks 8-9: Killed
+srun: error: nid00053: task 16: Killed
+srun: error: Task 16 reported exit for a second time.
+srun: error: nid00052: tasks 8-9: Killed
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 9 reported exit for a second time.
+srun: error: nid00053: task 16: Killed
+srun: error: Task 16 reported exit for a second time.
+srun: error: nid00052: tasks 8-9: Killed
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 9 reported exit for a second time.
+slurmstepd: error: *** STEP 12744818.12 ON nid00051 CANCELLED AT 2019-04-03T10:45:44 ***
+srun: error: nid00053: task 16: Killed
+srun: error: Task 16 reported exit for a second time.
+srun: error: nid00052: tasks 8-9: Killed
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 9 reported exit for a second time.
+srun: error: nid00053: task 16: Killed
+srun: error: Task 16 reported exit for a second time.
+srun: error: nid00052: tasks 8-9: Killed
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 9 reported exit for a second time.
+srun: error: nid00053: task 16: Killed
+srun: error: Task 16 reported exit for a second time.
+srun: error: nid00052: tasks 8-9: Killed
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 9 reported exit for a second time.
+srun: error: nid00053: tasks 17-23: Killed
+srun: error: nid00052: tasks 10-15: Killed
+srun: error: nid00053: tasks 17-23: Killed
+srun: error: Task 17 reported exit for a second time.
+srun: error: Task 18 reported exit for a second time.
+srun: error: Task 19 reported exit for a second time.
+srun: error: Task 20 reported exit for a second time.
+srun: error: Task 21 reported exit for a second time.
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+srun: error: nid00052: tasks 10-15: Killed
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: Task 12 reported exit for a second time.
+srun: error: Task 13 reported exit for a second time.
+srun: error: Task 14 reported exit for a second time.
+srun: error: Task 15 reported exit for a second time.
+srun: error: nid00053: tasks 17-23: Killed
+srun: error: Task 17 reported exit for a second time.
+srun: error: Task 18 reported exit for a second time.
+srun: error: Task 19 reported exit for a second time.
+srun: error: Task 20 reported exit for a second time.
+srun: error: Task 21 reported exit for a second time.
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+srun: error: nid00052: tasks 10-15: Killed
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: Task 12 reported exit for a second time.
+srun: error: Task 13 reported exit for a second time.
+srun: error: Task 14 reported exit for a second time.
+srun: error: Task 15 reported exit for a second time.
+srun: error: nid00053: tasks 17-23: Killed
+srun: error: Task 17 reported exit for a second time.
+srun: error: Task 18 reported exit for a second time.
+srun: error: Task 19 reported exit for a second time.
+srun: error: Task 20 reported exit for a second time.
+srun: error: Task 21 reported exit for a second time.
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+srun: error: nid00052: tasks 10-15: Killed
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: Task 12 reported exit for a second time.
+srun: error: Task 13 reported exit for a second time.
+srun: error: Task 14 reported exit for a second time.
+srun: error: Task 15 reported exit for a second time.
+srun: error: nid00053: tasks 17-23: Killed
+srun: error: Task 17 reported exit for a second time.
+srun: error: Task 18 reported exit for a second time.
+srun: error: Task 19 reported exit for a second time.
+srun: error: Task 20 reported exit for a second time.
+srun: error: Task 21 reported exit for a second time.
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+srun: error: nid00052: tasks 10-15: Killed
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: Task 12 reported exit for a second time.
+srun: error: Task 13 reported exit for a second time.
+srun: error: Task 14 reported exit for a second time.
+srun: error: Task 15 reported exit for a second time.
+srun: error: nid00053: tasks 17-23: Killed
+srun: error: Task 17 reported exit for a second time.
+srun: error: Task 18 reported exit for a second time.
+srun: error: Task 19 reported exit for a second time.
+srun: error: Task 20 reported exit for a second time.
+srun: error: Task 21 reported exit for a second time.
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+srun: error: nid00052: tasks 10-15: Killed
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: Task 12 reported exit for a second time.
+srun: error: Task 13 reported exit for a second time.
+srun: error: Task 14 reported exit for a second time.
+srun: error: Task 15 reported exit for a second time.
+srun: error: nid00051: tasks 2,4,6: Killed
+srun: error: nid00051: tasks 0-1,3,5,7: Killed
+srun: error: nid00302: tasks 24-31: Terminated
+srun: Force Terminated job step 12744818.12
+
+CONFIGURATION: N = 32, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+srun: error: nid00053: tasks 8,10: Killed
+srun: Terminating job step 12744818.13
+slurmstepd: error: *** STEP 12744818.13 ON nid00051 CANCELLED AT 2019-04-03T10:54:07 ***
+srun: error: nid00303: task 18: Killed
+srun: error: nid00302: task 15: Killed
+srun: error: nid00303: task 16: Killed
+srun: error: nid00052: task 6: Killed
+srun: error: nid00051: tasks 0,2: Killed
+srun: error: nid00530: task 30: Killed
+srun: error: nid00530: task 28: Killed
+srun: error: nid00305: tasks 24,26: Killed
+srun: error: nid00052: task 4: Killed
+srun: error: nid00304: tasks 20-23: Killed
+srun: error: nid00302: tasks 12,14: Killed
+srun: error: nid00305: tasks 25,27: Killed
+srun: error: nid00053: tasks 9,11: Killed
+srun: error: nid00303: tasks 17,19: Killed
+srun: error: nid00302: task 13: Killed
+srun: error: nid00051: tasks 1,3: Killed
+srun: error: nid00052: tasks 5,7: Killed
+srun: error: nid00530: tasks 29,31: Killed
+srun: Force Terminated job step 12744818.13
+
+CONFIGURATION: N = 32, nodes = 16
+Duration [ms] = 52153, 52369, 43156, 52442, 18641, 21248, 18619, 56662, 54422, 47266
+Avg time [ms] = 41697, Std deviation = 14966
+
+================================
+
+CONFIGURATION: N = 33, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+srun: error: nid00051: tasks 0-31: Killed
+srun: Terminating job step 12744818.15
+srun: Force Terminated job step 12744818.15
+srun: error: nid00051: tasks 0-31: Killed
+srun: error: Task 0 reported exit for a second time.
+srun: error: Task 1 reported exit for a second time.
+srun: error: Task 2 reported exit for a second time.
+srun: error: Task 3 reported exit for a second time.
+srun: error: Task 4 reported exit for a second time.
+srun: error: Task 5 reported exit for a second time.
+srun: error: Task 6 reported exit for a second time.
+srun: error: Task 7 reported exit for a second time.
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 9 reported exit for a second time.
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: Task 12 reported exit for a second time.
+srun: error: Task 13 reported exit for a second time.
+srun: error: Task 14 reported exit for a second time.
+srun: error: Task 15 reported exit for a second time.
+srun: error: Task 16 reported exit for a second time.
+srun: error: Task 17 reported exit for a second time.
+srun: error: Task 18 reported exit for a second time.
+srun: error: Task 19 reported exit for a second time.
+srun: error: Task 20 reported exit for a second time.
+srun: error: Task 21 reported exit for a second time.
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+srun: error: Task 24 reported exit for a second time.
+srun: error: Task 25 reported exit for a second time.
+srun: error: Task 26 reported exit for a second time.
+srun: error: Task 27 reported exit for a second time.
+srun: error: Task 28 reported exit for a second time.
+srun: error: Task 29 reported exit for a second time.
+srun: error: Task 30 reported exit for a second time.
+srun: error: Task 31 reported exit for a second time.
+
+CONFIGURATION: N = 33, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+srun: error: nid00052: tasks 16,18-22,24-26,28-30: Killed
+srun: Terminating job step 12744818.16
+slurmstepd: error: *** STEP 12744818.16 ON nid00051 CANCELLED AT 2019-04-03T11:01:32 ***
+srun: error: nid00052: tasks 17,23,27,31: Killed
+srun: error: nid00051: tasks 0-15: Killed
+srun: Force Terminated job step 12744818.16
+
+CONFIGURATION: N = 33, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+srun: error: nid00302: tasks 24-31: Killed
+srun: Terminating job step 12744818.17
+srun: error: nid00053: tasks 16-23: Killed
+srun: error: nid00052: tasks 8-15: Killed
+srun: error: nid00051: tasks 0-7: Killed
+srun: Force Terminated job step 12744818.17
+
+CONFIGURATION: N = 33, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+srun: error: nid00302: task 13: Killed
+srun: Terminating job step 12744818.18
+srun: error: nid00305: tasks 24,26: Killed
+srun: error: nid00052: task 4: Killed
+srun: error: nid00051: task 3: Killed
+srun: error: nid00304: task 21: Killed
+srun: error: nid00302: task 15: Killed
+slurmstepd: error: *** STEP 12744818.18 ON nid00051 CANCELLED AT 2019-04-03T11:02:02 ***
+srun: error: nid00305: tasks 25,27: Killed
+srun: error: nid00302: tasks 12,14: Killed
+srun: error: nid00052: tasks 5-7: Killed
+srun: error: nid00304: task 23: Killed
+srun: error: nid00051: task 0: Killed
+srun: error: nid00304: tasks 20,22: Killed
+srun: error: nid00051: tasks 1-2: Killed
+srun: error: nid00303: task 16: Terminated
+srun: error: nid00053: tasks 8-11: Terminated
+srun: error: nid00303: tasks 17-19: Terminated
+srun: First task exited 30s ago
+srun: step:12744818.18 tasks 28-31: running
+srun: step:12744818.18 tasks 0-27: exited abnormally
+srun: Terminating job step 12744818.18
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: error: Timed out waiting for job step to complete
+
+CONFIGURATION: N = 33, nodes = 16
+srun: Job 12744818 step creation temporarily disabled, retrying
+srun: error: Unable to create step for job 12744818: Job/step already completing or completed
+slurmstepd: error: *** JOB 12744818 ON nid00051 CANCELLED AT 2019-04-03T11:14:32 ***
+ 
+Batch Job Summary Report for Job "run-dj.sh" (12744818) on daint
+-----------------------------------------------------------------------------------------------------
+             Submit            Eligible               Start                 End    Elapsed  Timelimit 
+------------------- ------------------- ------------------- ------------------- ---------- ---------- 
+2019-04-03T09:55:31 2019-04-03T09:55:31 2019-04-03T10:09:34 2019-04-03T11:14:32   01:04:58   05:00:00 
+-----------------------------------------------------------------------------------------------------
+Username    Account     Partition   NNodes   Energy
+----------  ----------  ----------  ------  --------------
+mazzolag    csstaff     normal          16          joules
+ 
+This job did not utilize any GPUs
+ 
+----------------------------------------------------------
+Scratch File System        Files       Quota
+--------------------  ----------  ----------
+/scratch/snx3000           10281     1000000
+ 

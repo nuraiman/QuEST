@@ -44,7 +44,9 @@ int main(int narg, char *varg[]) {
         //std::cout << "n = " << n << std::endl;
         // choose marked element at random
         qInt x0 = rng.sampleUniformly(0,N-1);
-        std::cout << "Rep "<< i+1 << ": Test x0 = " << x0 << std::endl;
+	if (env.rank == 0){
+        	std::cout << "Rep "<< i+1 << ": Test x0 = " << x0 << std::endl;
+	}
 
 
         // Create quantumregister and initialize in the |++...+> state
@@ -52,8 +54,10 @@ int main(int narg, char *varg[]) {
         initPlusState(qureg);
 
         // calculate optimal number T of iterations
-        int T = int(round(pi*0.25*sqrt(1<<n)-0.5));
-        std::cout << "T = " << T << std::endl;
+        int T = int(round(pi*0.25*sqrt(1ll<<n)-0.5));
+	if (env.rank == 0){
+        	std::cout << "T = " << T << std::endl;
+	}
 
         // Grover algorithm
         for (int j = 0; j < T ; ++j) {
@@ -69,7 +73,7 @@ int main(int narg, char *varg[]) {
         for (int j = 0; j < n ; ++j) {
             a = measure(qureg,j);
             if (a==1){
-                result = result | (1 << j);
+                result = result | (1ll << j);
             }
         }
 
@@ -78,7 +82,10 @@ int main(int narg, char *varg[]) {
         auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
         times.push_back(duration);
         outputresult = result;
-        std::cout << "Found x0 = " << outputresult << " with success probability " << success << std::endl;
+	if (env.rank == 0){
+        	std::cout << "Found x0 = " << outputresult << " with success probability " << success << std::endl;
+	}
+
         destroyQureg(qureg, env);
     }
 

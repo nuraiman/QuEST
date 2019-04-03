@@ -1,0 +1,877 @@
+=============================
+  LOADING MODULES
+=============================
+=============================
+  BUILDING AND COMPILATION
+=============================
+-- Cray Programming Environment 2.5.15 C
+-- Cray Programming Environment 2.5.15 CXX
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /scratch/snx3000/mazzolag/qsim/QuEST/build
+[ 30%] Built target QuEST
+[ 57%] Built target shor
+[ 69%] Built target grover
+[ 73%] Built target gtest
+[ 76%] Built target dj
+[ 76%] Built target demo
+[ 76%] Built target approx-pf
+[ 84%] Built target period-finding
+[ 92%] Built target ghadamard
+[100%] Built target bernstein
+================================
+       RUNNING BENCHMARKS
+================================
+CONFIGURATION: N = 16, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+Duration [ms] = 7, 5, 4, 4, 3, 3, 3, 4, 4, 4
+Avg time [ms] = 4, Std deviation = 1
+CONFIGURATION: N = 16, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+Duration [ms] = 66, 5, 5, 4, 3, 3, 3, 4, 5, 4
+Avg time [ms] = 10, Std deviation = 18
+CONFIGURATION: N = 16, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Duration [ms] = 21, 5, 5, 4, 2, 3, 2, 4, 5, 4
+Avg time [ms] = 5, Std deviation = 5
+CONFIGURATION: N = 16, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 17, 4, 4, 3, 2, 2, 2, 3, 4, 3
+Avg time [ms] = 4, Std deviation = 4
+CONFIGURATION: N = 16, nodes = 16
+Duration [ms] = 25, 0, 0, 0, 0, 0, 0, 0, 0, 0
+Avg time [ms] = 2, Std deviation = 7
+
+================================
+
+CONFIGURATION: N = 19, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+Duration [ms] = 17, 14, 13, 13, 10, 10, 10, 14, 13, 13
+Avg time [ms] = 12, Std deviation = 2
+CONFIGURATION: N = 19, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+Duration [ms] = 42, 37, 21, 21, 7, 8, 7, 28, 21, 24
+Avg time [ms] = 21, Std deviation = 11
+CONFIGURATION: N = 19, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Duration [ms] = 31, 28, 16, 16, 6, 7, 6, 20, 16, 18
+Avg time [ms] = 16, Std deviation = 8
+CONFIGURATION: N = 19, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 28, 19, 12, 12, 6, 7, 6, 15, 14, 15
+Avg time [ms] = 13, Std deviation = 6
+CONFIGURATION: N = 19, nodes = 16
+Duration [ms] = 27, 10, 4, 3, 1, 1, 1, 5, 4, 4
+Avg time [ms] = 6, Std deviation = 7
+
+================================
+
+CONFIGURATION: N = 22, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+Duration [ms] = 163, 158, 152, 151, 89, 98, 88, 181, 172, 169
+Avg time [ms] = 142, Std deviation = 34
+CONFIGURATION: N = 22, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+Duration [ms] = 233, 218, 173, 174, 47, 57, 47, 229, 217, 206
+Avg time [ms] = 160, Std deviation = 74
+CONFIGURATION: N = 22, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Duration [ms] = 145, 150, 123, 121, 42, 49, 41, 158, 149, 144
+Avg time [ms] = 112, Std deviation = 45
+CONFIGURATION: N = 22, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 93, 93, 75, 73, 38, 41, 38, 90, 86, 84
+Avg time [ms] = 71, Std deviation = 21
+CONFIGURATION: N = 22, nodes = 16
+Duration [ms] = 56, 48, 33, 31, 10, 12, 10, 43, 37, 36
+Avg time [ms] = 31, Std deviation = 15
+
+================================
+
+CONFIGURATION: N = 24, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+Duration [ms] = 752, 717, 690, 716, 401, 445, 402, 781, 796, 733
+Avg time [ms] = 643, Std deviation = 152
+CONFIGURATION: N = 24, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+Duration [ms] = 2369, 809, 680, 721, 214, 253, 214, 836, 876, 764
+Avg time [ms] = 773, Std deviation = 589
+CONFIGURATION: N = 24, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Duration [ms] = 1738, 496, 412, 435, 177, 199, 177, 495, 514, 462
+Avg time [ms] = 510, Std deviation = 429
+CONFIGURATION: N = 24, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 369, 352, 298, 311, 155, 168, 154, 348, 357, 321
+Avg time [ms] = 283, Std deviation = 84
+CONFIGURATION: N = 24, nodes = 16
+Duration [ms] = 172, 153, 126, 125, 37, 44, 37, 145, 147, 128
+Avg time [ms] = 111, Std deviation = 49
+
+================================
+
+CONFIGURATION: N = 26, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+Duration [ms] = 3058, 2895, 2793, 2919, 1684, 1857, 1683, 3301, 3371, 3002
+Avg time [ms] = 2656, Std deviation = 623
+CONFIGURATION: N = 26, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+Duration [ms] = 3417, 3270, 3119, 3199, 1193, 1420, 1191, 3904, 4037, 3345
+Avg time [ms] = 2809, Std deviation = 1048
+CONFIGURATION: N = 26, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Duration [ms] = 2508, 2004, 1920, 1994, 998, 1072, 997, 2314, 2388, 2075
+Avg time [ms] = 1827, Std deviation = 555
+CONFIGURATION: N = 26, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 1539, 1482, 1443, 1501, 851, 898, 851, 1708, 1715, 1529
+Avg time [ms] = 1351, Std deviation = 328
+CONFIGURATION: N = 26, nodes = 16
+Duration [ms] = 677, 655, 598, 625, 270, 308, 271, 739, 772, 656
+Avg time [ms] = 557, Std deviation = 185
+
+================================
+
+CONFIGURATION: N = 27, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+Duration [ms] = 6331, 5994, 5770, 5981, 3621, 3980, 3626, 6803, 6810, 6402
+Avg time [ms] = 5531, Std deviation = 1216
+CONFIGURATION: N = 27, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+Duration [ms] = 6874, 6640, 6291, 6639, 2549, 2728, 2548, 7861, 8182, 7236
+Avg time [ms] = 5754, Std deviation = 2129
+CONFIGURATION: N = 27, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Duration [ms] = 4203, 4055, 3904, 4084, 2030, 2170, 2030, 4655, 4840, 4411
+Avg time [ms] = 3638, Std deviation = 1056
+CONFIGURATION: N = 27, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 3512, 2991, 2898, 3023, 1716, 1823, 1720, 3388, 3481, 3226
+Avg time [ms] = 2777, Std deviation = 698
+CONFIGURATION: N = 27, nodes = 16
+Duration [ms] = 1316, 1257, 1191, 1253, 552, 625, 559, 1484, 1550, 1393
+Avg time [ms] = 1118, Std deviation = 367
+
+================================
+
+CONFIGURATION: N = 28, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+Duration [ms] = 12927, 12275, 11872, 12337, 7590, 8258, 7548, 14367, 14401, 13105
+Avg time [ms] = 11468, Std deviation = 2531
+CONFIGURATION: N = 28, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+Duration [ms] = 14387, 13292, 12747, 13346, 5326, 5606, 5326, 16389, 17004, 14674
+Avg time [ms] = 11809, Std deviation = 4368
+CONFIGURATION: N = 28, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Duration [ms] = 8439, 8172, 7865, 8146, 4141, 4402, 4131, 9691, 10003, 8773
+Avg time [ms] = 7376, Std deviation = 2159
+CONFIGURATION: N = 28, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 15641, 6136, 5862, 6159, 3514, 3712, 3521, 7009, 7291, 6543
+Avg time [ms] = 6538, Std deviation = 3326
+CONFIGURATION: N = 28, nodes = 16
+Duration [ms] = 2723, 2559, 2423, 2586, 1123, 1265, 1119, 3099, 3176, 2792
+Avg time [ms] = 2286, Std deviation = 764
+
+================================
+
+CONFIGURATION: N = 29, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+Duration [ms] = 28724, 24750, 24527, 28565, 15467, 16844, 15466, 29042, 29046, 26082
+Avg time [ms] = 23851, Std deviation = 5439
+CONFIGURATION: N = 29, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+Duration [ms] = 31597, 26714, 25593, 31936, 10853, 11372, 10847, 33094, 34399, 29111
+Avg time [ms] = 24551, Std deviation = 9218
+CONFIGURATION: N = 29, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Duration [ms] = 18919, 16553, 15862, 19046, 8461, 8979, 8463, 19666, 20322, 17854
+Avg time [ms] = 15412, Std deviation = 4616
+CONFIGURATION: N = 29, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 13986, 12334, 12029, 14079, 7193, 7550, 7180, 14461, 14828, 13126
+Avg time [ms] = 11676, Std deviation = 2979
+CONFIGURATION: N = 29, nodes = 16
+Duration [ms] = 5988, 5168, 4788, 5927, 2241, 2516, 2239, 6203, 6315, 5519
+Avg time [ms] = 4690, Std deviation = 1606
+
+================================
+
+CONFIGURATION: N = 30, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+slurmstepd: error: Step 12738292.40 exceeded memory limit (67170923 > 62464000), being killed
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: *** STEP 12738292.40 ON nid01290 CANCELLED AT 2019-04-02T21:33:45 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: error: nid01290: task 11: Killed
+srun: Terminating job step 12738292.40
+srun: error: nid01290: tasks 0-10,12-31: Killed
+
+CONFIGURATION: N = 30, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+Duration [ms] = 64972, 66956, 54112, 63747, 22256, 23547, 22257, 67068, 69027, 62173
+Avg time [ms] = 51611, Std deviation = 19319
+CONFIGURATION: N = 30, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Duration [ms] = 38295, 39860, 33406, 38849, 17284, 18287, 17243, 39609, 40895, 37502
+Avg time [ms] = 32123, Std deviation = 9694
+CONFIGURATION: N = 30, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 29385, 29463, 25479, 28328, 14654, 15550, 14673, 29128, 29723, 27306
+Avg time [ms] = 24368, Std deviation = 6277
+CONFIGURATION: N = 30, nodes = 16
+Duration [ms] = 11818, 12523, 10169, 12111, 4504, 5097, 4511, 12391, 12849, 11501
+Avg time [ms] = 9747, Std deviation = 3376
+
+================================
+
+CONFIGURATION: N = 31, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+srun: error: nid01290: tasks 0-31: Killed
+srun: Terminating job step 12738292.45
+srun: Force Terminated job step 12738292.45
+
+CONFIGURATION: N = 31, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+slurmstepd: error: Step 12738292.46 exceeded memory limit (67222448 > 62464000), being killed
+slurmstepd: error: Step 12738292.46 exceeded memory limit (67222471 > 62464000), being killed
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 12738292.46 ON nid01290 CANCELLED AT 2019-04-02T21:54:56 ***
+srun: error: nid01290: task 8: Killed
+srun: Terminating job step 12738292.46
+srun: error: nid01291: task 20: Killed
+srun: error: nid01290: task 8: Killed
+srun: error: Task 8 reported exit for a second time.
+srun: error: nid01291: task 20: Killed
+srun: error: Task 20 reported exit for a second time.
+srun: error: nid01291: tasks 16-19,21-31: Killed
+srun: error: nid01290: tasks 0-7,9-15: Killed
+
+CONFIGURATION: N = 31, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+srun: error: nid01291: task 12: Exited with exit code 4
+srun: Terminating job step 12738292.47
+srun: error: nid01290: tasks 0,2,4,6: Exited with exit code 4
+slurmstepd: error: *** STEP 12738292.47 ON nid01290 CANCELLED AT 2019-04-02T21:56:23 ***
+srun: error: nid01290: tasks 3,7: Exited with exit code 4
+srun: error: nid01291: tasks 8,10-11,14-15: Exited with exit code 4
+srun: error: nid01291: task 9: Exited with exit code 4
+srun: error: nid01293: tasks 24-26,28-31: Exited with exit code 4
+srun: error: nid01291: task 13: Exited with exit code 4
+srun: error: nid01290: tasks 1,5: Exited with exit code 4
+srun: error: nid01292: tasks 16-23: Exited with exit code 4
+srun: error: nid01293: task 27: Exited with exit code 4
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+CONFIGURATION: N = 31, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+srun: error: nid01290: tasks 0,2: Exited with exit code 4
+srun: Terminating job step 12738292.48
+srun: error: nid01291: tasks 4,6: Exited with exit code 4
+srun: error: nid01292: task 10: Exited with exit code 4
+srun: error: nid01293: task 14: Exited with exit code 4
+srun: error: nid01295: tasks 20,22: Exited with exit code 4
+srun: error: nid01294: tasks 16,18: Exited with exit code 4
+srun: error: nid01297: tasks 28,30: Exited with exit code 4
+srun: error: nid01296: tasks 24,26-27: Exited with exit code 4
+slurmstepd: error: *** STEP 12738292.48 ON nid01290 CANCELLED AT 2019-04-02T21:57:29 ***
+srun: error: nid01290: tasks 0,2: Exited with exit code 4
+srun: error: Task 0 reported exit for a second time.
+srun: error: Task 2 reported exit for a second time.
+srun: error: nid01291: tasks 4,6: Exited with exit code 4
+srun: error: Task 4 reported exit for a second time.
+srun: error: Task 6 reported exit for a second time.
+srun: error: nid01297: tasks 29,31: Exited with exit code 4
+srun: error: nid01293: tasks 12-13,15: Exited with exit code 4
+srun: error: nid01295: tasks 21,23: Exited with exit code 4
+srun: error: nid01292: tasks 8-9,11: Exited with exit code 4
+srun: error: nid01294: tasks 17,19: Exited with exit code 4
+srun: error: nid01296: task 25: Exited with exit code 4
+srun: error: nid01291: tasks 5,7: Exited with exit code 4
+srun: error: nid01290: tasks 1,3: Exited with exit code 4
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+CONFIGURATION: N = 31, nodes = 16
+srun: error: nid01290: task 0: Exited with exit code 4
+srun: Terminating job step 12738292.49
+slurmstepd: error: *** STEP 12738292.49 ON nid01290 CANCELLED AT 2019-04-02T21:57:58 ***
+srun: error: nid01305: task 30: Exited with exit code 4
+srun: error: nid01301: task 23: Exited with exit code 4
+srun: error: nid01291: task 2: Exited with exit code 4
+srun: error: nid01299: task 18: Exited with exit code 4
+srun: error: nid01295: task 10: Exited with exit code 4
+srun: error: nid01300: tasks 20-21: Exited with exit code 4
+srun: error: nid01304: tasks 28-29: Exited with exit code 4
+srun: error: nid01297: tasks 14-15: Exited with exit code 4
+srun: error: nid01303: tasks 26-27: Exited with exit code 4
+srun: error: nid01293: tasks 6-7: Exited with exit code 4
+srun: error: nid01301: task 22: Exited with exit code 4
+srun: error: nid01305: task 31: Exited with exit code 4
+srun: error: nid01291: task 3: Exited with exit code 4
+srun: error: nid01290: task 1: Exited with exit code 4
+srun: error: nid01299: task 19: Exited with exit code 4
+srun: error: nid01296: tasks 12-13: Exited with exit code 4
+srun: error: nid01298: tasks 16-17: Exited with exit code 4
+srun: error: nid01302: tasks 24-25: Exited with exit code 4
+srun: error: nid01295: task 11: Exited with exit code 4
+srun: error: nid01292: tasks 4-5: Exited with exit code 4
+srun: error: nid01294: tasks 8-9: Exited with exit code 4
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+!!!
+QuEST Error in function getProbAmp: Invalid state index. Must be >=0 and <2^numQubits.
+!!!
+exiting..
+
+================================
+
+CONFIGURATION: N = 33, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+srun: error: nid01290: tasks 0-31: Killed
+srun: Terminating job step 12738292.50
+srun: Force Terminated job step 12738292.50
+
+CONFIGURATION: N = 33, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+srun: error: nid01291: tasks 16-30: Killed
+srun: Terminating job step 12738292.51
+srun: error: nid01290: tasks 0-15: Killed
+srun: error: nid01291: task 31: Killed
+srun: Force Terminated job step 12738292.51
+
+CONFIGURATION: N = 33, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+slurmstepd: error: Failed to send MESSAGE_TASK_EXIT: Resource temporarily unavailable
+slurmstepd: error: Failed to send MESSAGE_TASK_EXIT: Resource temporarily unavailable
+srun: error: nid01291: task 14: Killed
+srun: Terminating job step 12738292.52
+srun: error: nid01291: task 14: Killed
+srun: error: Task 14 reported exit for a second time.
+srun: error: nid01291: task 14: Killed
+srun: error: Task 14 reported exit for a second time.
+srun: error: nid01292: task 18: Killed
+srun: error: nid01292: task 18: Killed
+srun: error: Task 18 reported exit for a second time.
+srun: error: nid01291: task 14: Killed
+srun: error: Task 14 reported exit for a second time.
+srun: error: nid01292: task 18: Killed
+srun: error: Task 18 reported exit for a second time.
+srun: error: nid01291: task 14: Killed
+srun: error: Task 14 reported exit for a second time.
+srun: error: nid01292: task 18: Killed
+srun: error: Task 18 reported exit for a second time.
+srun: error: nid01291: task 14: Killed
+srun: error: Task 14 reported exit for a second time.
+srun: error: nid01292: task 18: Killed
+srun: error: Task 18 reported exit for a second time.
+srun: error: nid01291: tasks 8-13,15: Killed
+srun: error: nid01292: task 18: Killed
+srun: error: Task 18 reported exit for a second time.
+srun: error: nid01291: tasks 8-13,15: Killed
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 9 reported exit for a second time.
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: Task 12 reported exit for a second time.
+srun: error: Task 13 reported exit for a second time.
+srun: error: Task 15 reported exit for a second time.
+srun: error: nid01291: tasks 8-13,15: Killed
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 9 reported exit for a second time.
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: Task 12 reported exit for a second time.
+srun: error: Task 13 reported exit for a second time.
+srun: error: Task 15 reported exit for a second time.
+srun: error: nid01292: tasks 16-17,19-23: Killed
+srun: error: nid01292: tasks 16-17,19-23: Killed
+srun: error: Task 16 reported exit for a second time.
+srun: error: Task 17 reported exit for a second time.
+srun: error: Task 19 reported exit for a second time.
+srun: error: Task 20 reported exit for a second time.
+srun: error: Task 21 reported exit for a second time.
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+srun: error: nid01291: tasks 8-13,15: Killed
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 9 reported exit for a second time.
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: Task 12 reported exit for a second time.
+srun: error: Task 13 reported exit for a second time.
+srun: error: Task 15 reported exit for a second time.
+srun: error: nid01292: tasks 16-17,19-23: Killed
+srun: error: Task 16 reported exit for a second time.
+srun: error: Task 17 reported exit for a second time.
+srun: error: Task 19 reported exit for a second time.
+srun: error: Task 20 reported exit for a second time.
+srun: error: Task 21 reported exit for a second time.
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+srun: error: nid01291: tasks 8-13,15: Killed
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 9 reported exit for a second time.
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: Task 12 reported exit for a second time.
+srun: error: Task 13 reported exit for a second time.
+srun: error: Task 15 reported exit for a second time.
+srun: error: nid01292: tasks 16-17,19-23: Killed
+srun: error: Task 16 reported exit for a second time.
+srun: error: Task 17 reported exit for a second time.
+srun: error: Task 19 reported exit for a second time.
+srun: error: Task 20 reported exit for a second time.
+srun: error: Task 21 reported exit for a second time.
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+srun: error: nid01291: tasks 8-13,15: Killed
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 9 reported exit for a second time.
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: Task 12 reported exit for a second time.
+srun: error: Task 13 reported exit for a second time.
+srun: error: Task 15 reported exit for a second time.
+srun: error: nid01292: tasks 16-17,19-23: Killed
+srun: error: Task 16 reported exit for a second time.
+srun: error: Task 17 reported exit for a second time.
+srun: error: Task 19 reported exit for a second time.
+srun: error: Task 20 reported exit for a second time.
+srun: error: Task 21 reported exit for a second time.
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+slurmstepd: error: *** STEP 12738292.52 ON nid01290 CANCELLED AT 2019-04-02T21:58:57 ***
+srun: error: nid01292: tasks 16-17,19-23: Killed
+srun: error: Task 16 reported exit for a second time.
+srun: error: Task 17 reported exit for a second time.
+srun: error: Task 19 reported exit for a second time.
+srun: error: Task 20 reported exit for a second time.
+srun: error: Task 21 reported exit for a second time.
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+srun: error: nid01293: task 24: Killed
+srun: error: nid01293: task 30: Killed
+srun: error: nid01293: tasks 25-29,31: Killed
+srun: error: nid01290: task 0: Killed
+srun: error: nid01290: task 2: Killed
+srun: error: nid01290: tasks 1,3-7: Killed
+srun: Force Terminated job step 12738292.52
+
+CONFIGURATION: N = 33, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+slurmstepd: error: Step 12738292.53 exceeded memory limit (67138675 > 62464000), being killed
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: *** STEP 12738292.53 ON nid01290 CANCELLED AT 2019-04-02T21:59:33 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: error: nid01290: tasks 0-3: Killed
+srun: Terminating job step 12738292.53
+srun: error: nid01296: tasks 24-27: Killed
+srun: error: nid01297: tasks 28-31: Killed
+srun: error: nid01294: tasks 16-19: Killed
+srun: error: nid01292: tasks 8-11: Killed
+srun: error: nid01293: tasks 13,15: Killed
+srun: error: nid01295: tasks 20-23: Killed
+srun: error: nid01291: tasks 4-7: Killed
+srun: error: nid01293: tasks 12,14: Killed
+
+CONFIGURATION: N = 33, nodes = 16
+Duration [ms] = 45999, 47382, 47381, 47230, 38174, 43531, 38364, 47473, 47478, 47421
+Avg time [ms] = 45043, Std deviation = 3580
+
+================================
+
+ 
+Batch Job Summary Report for Job "run-dj.sh" (12738292) on daint
+-----------------------------------------------------------------------------------------------------
+             Submit            Eligible               Start                 End    Elapsed  Timelimit 
+------------------- ------------------- ------------------- ------------------- ---------- ---------- 
+2019-04-02T20:58:27 2019-04-02T20:58:27 2019-04-02T20:58:37 2019-04-02T22:08:38   01:10:01   05:00:00 
+-----------------------------------------------------------------------------------------------------
+Username    Account     Partition   NNodes   Energy
+----------  ----------  ----------  ------  --------------
+mazzolag    csstaff     normal          16    6.00M joules
+ 
+This job did not utilize any GPUs
+ 
+----------------------------------------------------------
+Scratch File System        Files       Quota
+--------------------  ----------  ----------
+/scratch/snx3000           10264     1000000
+ 

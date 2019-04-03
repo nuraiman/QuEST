@@ -1,0 +1,171 @@
+CONFIGURATION: N = 1000000, nodes = 1
+Rep 1: Test x0 = 548937
+T = 804
+Found x0 = 548937 with success probability 1
+Rep 2: Test x0 = 592978
+T = 804
+Found x0 = 592978 with success probability 1
+Rep 3: Test x0 = 715350
+T = 804
+Found x0 = 715350 with success probability 1
+Rep 4: Test x0 = 844455
+T = 804
+Found x0 = 844455 with success probability 1
+Rep 5: Test x0 = 602899
+T = 804
+Found x0 = 602899 with success probability 1
+Rep 6: Test x0 = 858138
+T = 804
+Found x0 = 858138 with success probability 1
+Rep 7: Test x0 = 545005
+T = 804
+Found x0 = 545005 with success probability 1
+Rep 8: Test x0 = 847442
+T = 804
+Found x0 = 847442 with success probability 1
+Rep 9: Test x0 = 423750
+T = 804
+Found x0 = 423750 with success probability 1
+Rep 10: Test x0 = 623704
+T = 804
+Found x0 = 623704 with success probability 1
+Duration [ms] = 21362, 21461, 21464, 21453, 21443, 21453, 21437, 21454, 21440, 21444
+Avg time [ms] = 21441, Std deviation = 27
+--------------------------------
+CONFIGURATION: N = 1000000, nodes = 2
+Rep 1: Test x0 = 548937
+T = 804
+Found x0 = 548937 with success probability 1
+Rep 2: Test x0 = 592978
+T = 804
+Found x0 = 592978 with success probability 1
+Rep 3: Test x0 = 715350
+T = 804
+Found x0 = 715350 with success probability 1
+Rep 4: Test x0 = 844455
+T = 804
+Found x0 = 844455 with success probability 1
+Rep 5: Test x0 = 602899
+T = 804
+Found x0 = 602899 with success probability 1
+Rep 6: Test x0 = 858138
+T = 804
+Found x0 = 858138 with success probability 1
+Rep 7: Test x0 = 545005
+T = 804
+Found x0 = 545005 with success probability 1
+Rep 8: Test x0 = 847442
+T = 804
+Found x0 = 847442 with success probability 1
+Rep 9: Test x0 = 423750
+T = 804
+Found x0 = 423750 with success probability 1
+Rep 10: Test x0 = 623704
+T = 804
+Found x0 = 623704 with success probability 1
+Duration [ms] = 24544, 24809, 24804, 24911, 24778, 24771, 24730, 24774, 24776, 24786
+Avg time [ms] = 24768, Std deviation = 86
+--------------------------------
+CONFIGURATION: N = 1000000, nodes = 4
+Rep 1: Test x0 = 548937
+T = 804
+Found x0 = 548937 with success probability 1
+Rep 2: Test x0 = 592978
+T = 804
+Found x0 = 592978 with success probability 1
+Rep 3: Test x0 = 715350
+T = 804
+Found x0 = 715350 with success probability 1
+Rep 4: Test x0 = 844455
+T = 804
+Found x0 = 844455 with success probability 1
+Rep 5: Test x0 = 602899
+T = 804
+Found x0 = 602899 with success probability 1
+Rep 6: Test x0 = 858138
+T = 804
+Found x0 = 858138 with success probability 1
+Rep 7: Test x0 = 545005
+T = 804
+Found x0 = 545005 with success probability 1
+Rep 8: Test x0 = 847442
+T = 804
+Found x0 = 847442 with success probability 1
+Rep 9: Test x0 = 423750
+T = 804
+Found x0 = 423750 with success probability 1
+Rep 10: Test x0 = 623704
+T = 804
+Found x0 = 623704 with success probability 1
+Duration [ms] = 23182, 23434, 23466, 23369, 23398, 23330, 23391, 23392, 23280, 23283
+Avg time [ms] = 23352, Std deviation = 80
+--------------------------------
+CONFIGURATION: N = 1000000, nodes = 8
+Rep 1: Test x0 = 548937
+T = 804
+Found x0 = 548937 with success probability 1
+Rep 2: Test x0 = 592978
+T = 804
+Found x0 = 592978 with success probability 1
+Rep 3: Test x0 = 715350
+T = 804
+Found x0 = 715350 with success probability 1
+Rep 4: Test x0 = 844455
+T = 804
+Found x0 = 844455 with success probability 1
+Rep 5: Test x0 = 602899
+T = 804
+Found x0 = 602899 with success probability 1
+Rep 6: Test x0 = 858138
+T = 804
+Found x0 = 858138 with success probability 1
+Rep 7: Test x0 = 545005
+T = 804
+Found x0 = 545005 with success probability 1
+Rep 8: Test x0 = 847442
+T = 804
+Found x0 = 847442 with success probability 1
+Rep 9: Test x0 = 423750
+T = 804
+Found x0 = 423750 with success probability 1
+Rep 10: Test x0 = 623704
+T = 804
+Found x0 = 623704 with success probability 1
+Duration [ms] = 20799, 21205, 21177, 21114, 21176, 21062, 21362, 21227, 21379, 21318
+Avg time [ms] = 21181, Std deviation = 160
+--------------------------------
+CONFIGURATION: N = 1000000, nodes = 16
+Rep 1: Test x0 = 548937
+T = 804
+Found x0 = 548937 with success probability 1
+Rep 2: Test x0 = 592978
+T = 804
+Found x0 = 592978 with success probability 1
+Rep 3: Test x0 = 715350
+T = 804
+Found x0 = 715350 with success probability 1
+Rep 4: Test x0 = 844455
+T = 804
+Found x0 = 844455 with success probability 1
+Rep 5: Test x0 = 602899
+T = 804
+Found x0 = 602899 with success probability 1
+Rep 6: Test x0 = 858138
+T = 804
+Found x0 = 858138 with success probability 1
+Rep 7: Test x0 = 545005
+T = 804
+Found x0 = 545005 with success probability 1
+Rep 8: Test x0 = 847442
+T = 804
+Found x0 = 847442 with success probability 1
+Rep 9: Test x0 = 423750
+T = 804
+Found x0 = 423750 with success probability 1
+Rep 10: Test x0 = 623704
+T = 804
+Found x0 = 623704 with success probability 1
+Duration [ms] = 6916, 7252, 7200, 6956, 6932, 7240, 7322, 7371, 7287, 7121
+Avg time [ms] = 7159, Std deviation = 160
+--------------------------------
+CONFIGURATION: N = 5000000, nodes = 1
