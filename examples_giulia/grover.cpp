@@ -34,17 +34,17 @@ int main(int narg, char *varg[]) {
 
     qInt outputresult = 0;
     qreal success = 0;
+    rng.setSeed(0);
     for (int i = 0; i < nrep; ++i) {
-        rng.setSeed(1);
         syncQuESTEnv(env);
         auto start = std::chrono::steady_clock::now();
         // find smallest natural number n such that N <= 2^n
         int n = int(ceil(log2(N)));
 
-        std::cout << "n = " << n << std::endl;
+        //std::cout << "n = " << n << std::endl;
         // choose marked element at random
         qInt x0 = rng.sampleUniformly(0,N-1);
-        std::cout << "Test x0 = " << x0 << std::endl;
+        std::cout << "Rep "<< i+1 << ": Test x0 = " << x0 << std::endl;
 
 
         // Create quantumregister and initialize in the |++...+> state
@@ -75,26 +75,29 @@ int main(int narg, char *varg[]) {
 
         syncQuESTEnv(env);
         auto end = std::chrono::steady_clock::now();
-        auto duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
+        auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
         times.push_back(duration);
         outputresult = result;
+        std::cout << "Found x0 = " << outputresult << " with success probability " << success << std::endl;
         destroyQureg(qureg, env);
     }
 
-    std::cout << "The algorithm found x0 = " << outputresult << " with success probability " << success << std::endl;
+//    std::cout << "The algorithm found x0 = " << outputresult << " with success probability " << success << std::endl;
 
     // output the duration vector over repetitions
-    std::cout << "Duration [ns] = ";
-    for (int i = 0; i < nrep; ++i) {
-        std::cout << times[i];
-        if (i < nrep - 1) {
-            std::cout << ", ";
+    if (env.rank == 0) {
+        std::cout << "Duration [ms] = ";
+        for (int i = 0; i < nrep; ++i) {
+            std::cout << times[i];
+            if (i < nrep - 1) {
+               std::cout << ", ";
+            }
         }
-    }
-    std::cout << std::endl;
+        std::cout << std::endl;
 
-    auto statistics = computeStatistics(times);
-    std::cout << "Avg time [ns] = " << statistics.first << ", Std deviation = " << statistics.second << std::endl;
+        auto statistics = computeStatistics(times);
+        std::cout << "Avg time [ms] = " << statistics.first << ", Std deviation = " << statistics.second << std::endl;
+    }
 
     destroyQuESTEnv(env);
     return 0;
