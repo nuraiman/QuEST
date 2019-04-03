@@ -7,7 +7,7 @@ int main(int narg, char *varg[]) {
     cxxopts::Options desc(varg[0], "Allowed Options");
     desc.add_options()
             ("help", "produce help message")
-            ("N,number", "Number of qubits / length of the boolean function", cxxopts::value<int>()->default_value("29"))
+            ("N,number", "Number of qubits / length of the boolean function", cxxopts::value<int>()->default_value("13"))
             ("r,repetitions", "Number of repetitions", cxxopts::value<int>()->default_value("1"));
 
     auto vm = desc.parse(narg, varg);
@@ -30,9 +30,10 @@ int main(int narg, char *varg[]) {
 
     std::vector<qInt> factors;
 
-    for (int i = 0; i < nrep; ++i) {
-        rng.setSeed(0);
-        syncQuESTEnv(env);
+    rng.setSeed(0);
+    for (int i = 0; i < nrep; ++i) {	
+	// rng.setSeed(0);
+	syncQuESTEnv(env);
         auto start = std::chrono::steady_clock::now();
         dj(env, n, rng);
         syncQuESTEnv(env);

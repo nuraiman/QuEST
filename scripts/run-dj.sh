@@ -3,11 +3,11 @@
 # this part will be ignored if:
 # - nodes are preallocated with salloc
 # - and the file is executed as just run.sh (not sbatch run.sh)
-#SBATCH --nodes=10
+#SBATCH --nodes=16
 #SBATCH --ntasks-per-node=2
 #SBATCH --constraint=mc
-#SBATCH --partition=normal
-#SBATCH --time=500
+#SBATCH --partiition=normal
+#SBATCH --time=300
 
 # loading necessary modules
 echo "============================="
@@ -33,11 +33,11 @@ echo "================================"
 echo "       RUNNING BENCHMARKS"
 echo "================================"
 
-number_of_nodes=(1 2 3 4 5 6 7 8 9 10)
+number_of_nodes=(1 2 4 8 16)
 ranks_per_node=2
 
 n_repetitions=10
-N=(13 16 19 22 24 25 26 27 28 29)
+N=(16 19 22 24 26 27 28 29 30 31 33)
 
 export OMP_NUM_THREADS=18
 
@@ -51,10 +51,12 @@ do
     do
 
         echo "CONFIGURATION: N = ${arg}, nodes = ${nodes}"
+        echo "CONFIGURATION: N = ${arg}, nodes = ${nodes}" >> ../benchmarks/dj-benchmark.txt
 
         output=$(srun -u -N $nodes --ntasks-per-node=$ranks_per_node ${path_to_executable} -N ${arg} -r ${n_repetitions})
+        echo "$output" >> ../benchmarks/dj-benchmark.txt
         echo "$output"
-        echo "--------------------------------"
+        echo "--------------------------------" >> ../benchmarks/dj-benchmark.txt
     done
     echo ""
     echo "================================"
