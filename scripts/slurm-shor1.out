@@ -1,0 +1,79 @@
+=============================
+  LOADING MODULES
+=============================
+=============================
+  BUILDING AND COMPILATION
+=============================
+-- Cray Programming Environment 2.5.15 C
+-- Cray Programming Environment 2.5.15 CXX
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /scratch/snx3000/mazzolag/qsim/QuEST/build
+[ 30%] Built target QuEST
+[ 50%] Built target approx-pf
+[ 53%] Built target grover
+[ 53%] Built target shor
+[ 69%] Built target gtest
+[ 73%] Built target period-finding
+[ 76%] Built target bernstein
+[ 84%] Built target dj
+[ 92%] Built target ghadamard
+[100%] Built target demo
+================================
+       RUNNING BENCHMARKS
+================================
+CONFIGURATION: N = 203, nodes = 16
+Factors are: 7; 29; 
+Duration [ms] = 118534, 39527, 118726, 118857, 118897, 39590, 39531, 118500, 118573, 39422
+Avg time [ms] = 87015, Std deviation = 38782
+CONFIGURATION: N = 203, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Factors are: 7; 29; 
+Duration [ms] = 133665, 44645, 133665, 133523, 133292, 44535, 44429, 133446, 133494, 44537
+Avg time [ms] = 97923, Std deviation = 43590
+CONFIGURATION: N = 203, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Factors are: 7; 29; 
+Duration [ms] = 146509, 48713, 146280, 146303, 146273, 48994, 48726, 146322, 146238, 48747
+Avg time [ms] = 107310, Std deviation = 47777
+CONFIGURATION: N = 203, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+Factors are: 7; 29; 
+Duration [ms] = 167089, 55776, 167099, 167128, 166754, 55708, 55507, 166961, 166887, 55490
+Avg time [ms] = 122439, Std deviation = 54558
+CONFIGURATION: N = 203, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+Factors are: 7; 29; 
+Duration [ms] = 169111, 56449, 169133, 169178, 169047, 56405, 56422, 169035, 169061, 56351
+Avg time [ms] = 124019, Std deviation = 55205
+
+================================
+
+CONFIGURATION: N = 273, nodes = 16
+Factors are: 3; 7; 13; 
+Duration [ms] = 2890297, 2327947, 581325, 581004, 2890575, 580448, 580416, 1744333, 1743345, 2887456
+Avg time [ms] = 1680714, Std deviation = 982304
+CONFIGURATION: N = 273, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+slurmstepd: error: *** STEP 12752539.6 ON nid00496 CANCELLED AT 2019-04-04T03:32:26 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 12752539 ON nid00496 CANCELLED AT 2019-04-04T03:32:26 DUE TO TIME LIMIT ***
+srun: got SIGCONT
+srun: forcing job termination
+ 
+Batch Job Summary Report for Job "run-shor.sh" (12752539) on daint
+-----------------------------------------------------------------------------------------------------
+             Submit            Eligible               Start                 End    Elapsed  Timelimit 
+------------------- ------------------- ------------------- ------------------- ---------- ---------- 
+2019-04-03T19:04:37 2019-04-03T19:04:37 2019-04-03T19:11:29 2019-04-04T03:32:25   08:20:56   08:20:00 
+-----------------------------------------------------------------------------------------------------
+Username    Account     Partition   NNodes   Energy
+----------  ----------  ----------  ------  --------------
+mazzolag    csstaff     normal          16   69.61M joules
+ 
+This job did not utilize any GPUs
+ 
+----------------------------------------------------------
+Scratch File System        Files       Quota
+--------------------  ----------  ----------
+/scratch/snx3000           10361     1000000
+ 
