@@ -587,5 +587,5 @@ CONFIGURATION: N = 33, nodes = 8
 --------------------------------
 CONFIGURATION: N = 33, nodes = 16
 Duration [ms] = 45999, 47382, 47381, 47230, 38174, 43531, 38364, 47473, 47478, 47421
-Avg time [ms] = 45043, Std deviation = 3580
+// Avg time [ms] = 45043, Std deviation = 3580
 --------------------------------

@@ -36,7 +36,7 @@ int main(int narg, char *varg[]) {
         factors.clear();
         syncQuESTEnv(env);
         auto start = std::chrono::steady_clock::now();
-        factors = ShorFactoring(env, N,rng);
+        factors = ShorFactoring(env, N, rng);
         syncQuESTEnv(env);
         auto end = std::chrono::steady_clock::now();
         auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();

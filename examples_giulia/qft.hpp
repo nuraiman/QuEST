@@ -27,8 +27,9 @@ void QFT(Qureg &qr, int numQubits, int smallest=0){
         hadamard(qr, (numQubits-1)-j);
     }
     //reverse the order of the qubits
+    #pragma omp parallel for
     for (int i = 0; i < numQubits/2 ; ++i) {
-        swap(qr, i, (numQubits-1)-i);
+        swap(qr, i, (numQubits - 1) - i);
     }
 }
 // Implementation of the inverse QFT (Same circuit as QFT, just reversed order)
