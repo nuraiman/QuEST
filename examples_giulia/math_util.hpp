@@ -8,6 +8,7 @@
 #include "cxxopts.hpp"
 #include <algorithm>
 #include <tuple>
+#include <omp.h>
 
 typedef long long qInt;
 

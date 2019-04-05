@@ -1,0 +1,31 @@
+CONFIGURATION: N = 203, nodes = 16
+Factors are: 7; 29; 
+Duration [ms] = 118534, 39527, 118726, 118857, 118897, 39590, 39531, 118500, 118573, 39422
+Avg time [ms] = 87015, Std deviation = 38782
+--------------------------------
+CONFIGURATION: N = 203, nodes = 8
+Factors are: 7; 29; 
+Duration [ms] = 133665, 44645, 133665, 133523, 133292, 44535, 44429, 133446, 133494, 44537
+Avg time [ms] = 97923, Std deviation = 43590
+--------------------------------
+CONFIGURATION: N = 203, nodes = 4
+Factors are: 7; 29; 
+Duration [ms] = 146509, 48713, 146280, 146303, 146273, 48994, 48726, 146322, 146238, 48747
+Avg time [ms] = 107310, Std deviation = 47777
+--------------------------------
+CONFIGURATION: N = 203, nodes = 2
+Factors are: 7; 29; 
+Duration [ms] = 167089, 55776, 167099, 167128, 166754, 55708, 55507, 166961, 166887, 55490
+Avg time [ms] = 122439, Std deviation = 54558
+--------------------------------
+CONFIGURATION: N = 203, nodes = 1
+Factors are: 7; 29; 
+Duration [ms] = 169111, 56449, 169133, 169178, 169047, 56405, 56422, 169035, 169061, 56351
+Avg time [ms] = 124019, Std deviation = 55205
+--------------------------------
+CONFIGURATION: N = 273, nodes = 16
+Factors are: 3; 7; 13; 
+Duration [ms] = 2890297, 2327947, 581325, 581004, 2890575, 580448, 580416, 1744333, 1743345, 2887456
+Avg time [ms] = 1680714, Std deviation = 982304
+--------------------------------
+CONFIGURATION: N = 273, nodes = 8
