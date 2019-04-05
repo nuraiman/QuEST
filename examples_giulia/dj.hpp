@@ -14,7 +14,7 @@ void dj(QuESTEnv& env, int n, RandomGen &rng) {
     // std::cout << "The oracle returns " << type << std::endl;
 
     // choose a balanced function at random and represent it by the long long value f
-    qInt f = rng.sampleUniformly(1, (1 << n) - 1);
+    qInt f = rng.sampleUniformly(1, (1ll << n) - 1);
     // std::cout << "f = " << f << std::endl;
 
     // Construct the circuit
@@ -31,7 +31,7 @@ void dj(QuESTEnv& env, int n, RandomGen &rng) {
     }
     else {
         for (int i = 0; i < n ; ++i) { // this represents a way to define balanced functions which are represented by f
-            if (f & (1 << i)){
+            if (f & (1ll << i)){
                 controlledNot(qureg,i,n);
             }
 
@@ -45,7 +45,7 @@ void dj(QuESTEnv& env, int n, RandomGen &rng) {
     }
 
     // measure the qubits
-    qreal realprob = getProbAmp(qureg, 0) + getProbAmp(qureg,1<<n); // get the probability amplitude of state |00.....0>
+    qreal realprob = getProbAmp(qureg, 0) + getProbAmp(qureg,1ll<<n); // get the probability amplitude of state |00.....0>
     // TODO: find a better way to ignore the ancilla qubit!
     // NOTE: If the algorithm runs with real hardware backend, need to change the above line and measure all qubits separately.
 

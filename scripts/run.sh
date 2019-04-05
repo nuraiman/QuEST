@@ -16,6 +16,7 @@ echo "============================="
 module load daint-mc
 module swap PrgEnv-cray PrgEnv-gnu
 module load CMake
+module load intel
 
 export CC=`which cc`
 export CXX=`which CC`
@@ -36,8 +37,8 @@ echo "================================"
 nodes=1
 ranks_per_node=1
 
-n_repetitions=2
-N=(100 191 253)
+n_repetitions=3
+N=(52 100 126 286 568 602)
 threads_per_rank=(1 2 4 8 16 32)
 
 path_to_executable="./examples_giulia/shor"

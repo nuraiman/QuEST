@@ -6,8 +6,8 @@
 #SBATCH --nodes=16
 #SBATCH --ntasks-per-node=2
 #SBATCH --constraint=mc
-#SBATCH --partiition=normal
-#SBATCH --time=300
+#SBATCH --partition=normal
+#SBATCH --time=200
 
 # loading necessary modules
 echo "============================="
@@ -33,11 +33,11 @@ echo "================================"
 echo "       RUNNING BENCHMARKS"
 echo "================================"
 
-number_of_nodes=(1 2 4 8 16)
+number_of_nodes=(16 8)
 ranks_per_node=2
 
 n_repetitions=10
-N=(50 100 500 1000 5000 10000 30000 60000 100000 200000 400000 600000)
+N2=(5000000 10000000 50000000 100000000 500000000 1000000000 3000000000 6000000000 10000000000)
 
 export OMP_NUM_THREADS=18
 
@@ -51,12 +51,12 @@ do
     do
 
         echo "CONFIGURATION: N = ${arg}, nodes = ${nodes}"
-        echo "CONFIGURATION: N = ${arg}, nodes = ${nodes}" >> ../benchmarks/grover-benchmark.txt
+        echo "CONFIGURATION: N = ${arg}, nodes = ${nodes}" >> ../benchmarks/grover-benchmark-part2.txt
 
         output=$(srun -u -N $nodes --ntasks-per-node=$ranks_per_node ${path_to_executable} -N ${arg} -r ${n_repetitions})
-        echo "$output" >> ../benchmarks/grover-benchmark.txt
+        echo "$output" >> ../benchmarks/grover-benchmark-part2.txt
         echo "$output"
-        echo "--------------------------------" >> ../benchmarks/grover-benchmark.txt
+        echo "--------------------------------" >> ../benchmarks/grover-benchmark-part2.txt
     done
     echo ""
     echo "================================"
