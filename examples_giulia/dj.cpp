@@ -32,8 +32,8 @@ int main(int narg, char *varg[]) {
 
     rng.setSeed(0);
     for (int i = 0; i < nrep; ++i) {	
-	// rng.setSeed(0);
-	syncQuESTEnv(env);
+	    // rng.setSeed(0);
+	    syncQuESTEnv(env);
         auto start = std::chrono::steady_clock::now();
         dj(env, n, rng);
         syncQuESTEnv(env);
