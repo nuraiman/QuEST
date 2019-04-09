@@ -20,6 +20,7 @@ module load CMake
 export CC=`which cc`
 export CXX=`which CC`
 export CRAYPE_LINK_TYPE=dynamic
+export PREFIX=scrpt
 
 echo "============================="
 echo "  BUILDING AND COMPILATION"
@@ -37,8 +38,8 @@ number_of_nodes=(16 8 4 2 1)
 ranks_per_node=2
 
 n_repetitions=4
-N=(4 4 5 5 6)
-depth=(15 20 25 35)
+N=(4 5 6)
+depth=(20 40 60)
 
 export OMP_NUM_THREADS=18
 

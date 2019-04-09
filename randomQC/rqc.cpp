@@ -118,9 +118,15 @@ int main(int narg, char *varg[]){
 
     // add prefix for path variable
     std::string prefix = "../../";
-    if (std::getenv("PREFIX")){
+    const char * pf = std::getenv("PREFIX");
+    std::string s(pf, 5);
+    if (s == "local") {
         prefix += "../";
     }
+
+    if (s == "scrpt") {
+	prefix = "../";
+    } 
 
     // read gate configurations from Boixo files (Google)
     std::string config = std::to_string(rows) + "x" + std::to_string(cols);
