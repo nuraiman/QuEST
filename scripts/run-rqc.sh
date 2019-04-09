@@ -16,11 +16,11 @@ echo "============================="
 module load daint-mc
 module swap PrgEnv-cray PrgEnv-gnu
 module load CMake
+module load intel
 
 export CC=`which cc`
 export CXX=`which CC`
 export CRAYPE_LINK_TYPE=dynamic
-export PREFIX=scrpt
 
 echo "============================="
 echo "  BUILDING AND COMPILATION"
@@ -42,6 +42,7 @@ N=(4 5 6)
 depth=(20 40 60)
 
 export OMP_NUM_THREADS=18
+export PREFIX=scrpt
 
 path_to_executable="./randomQC/rqc"
 
