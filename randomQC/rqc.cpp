@@ -120,6 +120,7 @@ int main(int narg, char *varg[]){
     std::string prefix = "../../";
     const char * pf = std::getenv("PREFIX");
     std::string s(pf, 5);
+    // std::cout << "path s = " << s << std::endl;
     if (s == "local") {
         prefix += "../";
     }

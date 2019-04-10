@@ -1,0 +1,329 @@
+CONFIGURATION: n x m = 4x4, depth = 20, nodes = 16
+
+--------------------------------
+CONFIGURATION: n x m = 4x4, depth = 20, nodes = 8
+Duration [ms] = 48, 28, 28, 29
+Avg time [ms] = 33, Std deviation = 8
+--------------------------------
+CONFIGURATION: n x m = 4x4, depth = 20, nodes = 4
+Duration [ms] = 52, 32, 30, 31
+Avg time [ms] = 36, Std deviation = 9
+--------------------------------
+CONFIGURATION: n x m = 4x4, depth = 20, nodes = 2
+Duration [ms] = 61, 35, 34, 34
+Avg time [ms] = 41, Std deviation = 11
+--------------------------------
+CONFIGURATION: n x m = 4x4, depth = 20, nodes = 1
+Duration [ms] = 61, 35, 35, 35
+Avg time [ms] = 41, Std deviation = 11
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 20, nodes = 16
+Duration [ms] = 8880, 18, 11, 11
+Avg time [ms] = 2230, Std deviation = 3839
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 20, nodes = 8
+Duration [ms] = 105, 73, 67, 67
+Avg time [ms] = 78, Std deviation = 15
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 20, nodes = 4
+Duration [ms] = 102, 86, 74, 74
+Avg time [ms] = 84, Std deviation = 11
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 20, nodes = 2
+Duration [ms] = 14178, 10146, 84, 83
+Avg time [ms] = 6122, Std deviation = 6205
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 20, nodes = 1
+Duration [ms] = 755, 84, 82, 82
+Avg time [ms] = 250, Std deviation = 291
+--------------------------------
+CONFIGURATION: n x m = 4x4, depth = 40, nodes = 16
+Duration [ms] = 2911, 3, 3, 3
+Avg time [ms] = 730, Std deviation = 1259
+--------------------------------
+CONFIGURATION: n x m = 4x4, depth = 40, nodes = 8
+Duration [ms] = 93, 50, 50, 50
+Avg time [ms] = 60, Std deviation = 18
+--------------------------------
+CONFIGURATION: n x m = 4x4, depth = 40, nodes = 4
+Duration [ms] = 89, 60, 57, 61
+Avg time [ms] = 66, Std deviation = 12
+--------------------------------
+CONFIGURATION: n x m = 4x4, depth = 40, nodes = 2
+Duration [ms] = 334, 63, 62, 62
+Avg time [ms] = 130, Std deviation = 117
+--------------------------------
+CONFIGURATION: n x m = 4x4, depth = 40, nodes = 1
+Duration [ms] = 79, 62, 62, 62
+Avg time [ms] = 66, Std deviation = 7
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 40, nodes = 16
+Duration [ms] = 42, 26, 19, 19
+Avg time [ms] = 26, Std deviation = 9
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 40, nodes = 8
+Duration [ms] = 165, 126, 120, 120
+Avg time [ms] = 132, Std deviation = 18
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 40, nodes = 4
+Duration [ms] = 175, 145, 133, 132
+Avg time [ms] = 146, Std deviation = 17
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 40, nodes = 2
+Duration [ms] = 182, 165, 152, 149
+Avg time [ms] = 162, Std deviation = 13
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 40, nodes = 1
+Duration [ms] = 334, 147, 146, 145
+Avg time [ms] = 193, Std deviation = 81
+--------------------------------
+CONFIGURATION: n x m = 4x4, depth = 60, nodes = 16
+Duration [ms] = 33, 5, 9, 5
+Avg time [ms] = 13, Std deviation = 11
+--------------------------------
+CONFIGURATION: n x m = 4x4, depth = 60, nodes = 8
+Duration [ms] = 106, 71, 71, 71
+Avg time [ms] = 79, Std deviation = 15
+--------------------------------
+CONFIGURATION: n x m = 4x4, depth = 60, nodes = 4
+Duration [ms] = 105, 78, 78, 78
+Avg time [ms] = 84, Std deviation = 11
+--------------------------------
+CONFIGURATION: n x m = 4x4, depth = 60, nodes = 2
+Duration [ms] = 118, 89, 89, 89
+Avg time [ms] = 96, Std deviation = 12
+--------------------------------
+CONFIGURATION: n x m = 4x4, depth = 60, nodes = 1
+Duration [ms] = 102, 90, 89, 89
+Avg time [ms] = 92, Std deviation = 5
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 60, nodes = 16
+Duration [ms] = 54, 35, 30, 31
+Avg time [ms] = 37, Std deviation = 9
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 60, nodes = 8
+Duration [ms] = 192, 181, 175, 173
+Avg time [ms] = 180, Std deviation = 7
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 60, nodes = 4
+Duration [ms] = 212, 202, 191, 193
+Avg time [ms] = 199, Std deviation = 8
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 60, nodes = 2
+Duration [ms] = 252, 230, 216, 216
+Avg time [ms] = 228, Std deviation = 14
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 60, nodes = 1
+Duration [ms] = 214, 209, 209, 210
+Avg time [ms] = 210, Std deviation = 2
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 20, nodes = 16
+Duration [ms] = 327, 299, 249, 248
+Avg time [ms] = 280, Std deviation = 33
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 20, nodes = 8
+Duration [ms] = 1442, 1436, 1384, 1386
+Avg time [ms] = 1412, Std deviation = 27
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 20, nodes = 4
+Duration [ms] = 1715, 1693, 1631, 1627
+Avg time [ms] = 1666, Std deviation = 38
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 20, nodes = 2
+Duration [ms] = 2104, 2090, 2000, 2009
+Avg time [ms] = 2050, Std deviation = 46
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 20, nodes = 1
+Duration [ms] = 2984, 2954, 2956, 2964
+Avg time [ms] = 2964, Std deviation = 11
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 20, nodes = 16
+Duration [ms] = 11791, 11931, 11911, 11929
+Avg time [ms] = 11890, Std deviation = 57
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 20, nodes = 8
+Duration [ms] = 53929, 54529, 53869, 53863
+Avg time [ms] = 54047, Std deviation = 279
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 20, nodes = 4
+Duration [ms] = 60947, 61139, 61024, 61147
+Avg time [ms] = 61064, Std deviation = 83
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 20, nodes = 2
+Duration [ms] = 76570, 76790, 76713, 76811
+Avg time [ms] = 76721, Std deviation = 94
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 20, nodes = 1
+Duration [ms] = 109958, 109754, 110041, 109914
+Avg time [ms] = 109916, Std deviation = 104
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 16
+Duration [ms] = 526, 509, 484, 465
+Avg time [ms] = 496, Std deviation = 23
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 8
+Duration [ms] = 2605, 2553, 2515, 2513
+Avg time [ms] = 2546, Std deviation = 37
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 4
+Duration [ms] = 3035, 2992, 2937, 2938
+Avg time [ms] = 2975, Std deviation = 40
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 2
+Duration [ms] = 3751, 3711, 3624, 3642
+Avg time [ms] = 3682, Std deviation = 51
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 1
+Duration [ms] = 5344, 5307, 5306, 5309
+Avg time [ms] = 5316, Std deviation = 15
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 16
+Duration [ms] = 20761, 20909, 20836, 20844
+Avg time [ms] = 20837, Std deviation = 52
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 8
+Duration [ms] = 94287, 94550, 94426, 94403
+Avg time [ms] = 94416, Std deviation = 93
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 4
+Duration [ms] = 106293, 106455, 106321, 106383
+Avg time [ms] = 106363, Std deviation = 62
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 2
+Duration [ms] = 133851, 134100, 134061, 134043
+Avg time [ms] = 134013, Std deviation = 96
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 1
+Duration [ms] = 193750, 193873, 193756, 193984
+Avg time [ms] = 193840, Std deviation = 96
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 60, nodes = 16
+Duration [ms] = 782, 717, 682, 678
+Avg time [ms] = 714, Std deviation = 41
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 60, nodes = 8
+Duration [ms] = 3708, 3699, 3652, 3652
+Avg time [ms] = 3677, Std deviation = 25
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 60, nodes = 4
+Duration [ms] = 4405, 4335, 4379, 4341
+Avg time [ms] = 4365, Std deviation = 28
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 60, nodes = 2
+Duration [ms] = 5345, 5311, 5228, 5205
+Avg time [ms] = 5272, Std deviation = 57
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 60, nodes = 1
+Duration [ms] = 7720, 7649, 7645, 7637
+Avg time [ms] = 7662, Std deviation = 33
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 60, nodes = 16
+Duration [ms] = 29978, 30108, 29888, 30148
+Avg time [ms] = 30030, Std deviation = 103
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 60, nodes = 8
+Duration [ms] = 136218, 136114, 136518, 136361
+Avg time [ms] = 136302, Std deviation = 152
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 60, nodes = 4
+Duration [ms] = 153404, 153433, 153384, 153397
+Avg time [ms] = 153404, Std deviation = 17
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 60, nodes = 2
+Duration [ms] = 193179, 193070, 193310, 193284
+Avg time [ms] = 193210, Std deviation = 94
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 60, nodes = 1
+Duration [ms] = 279162, 279179, 279038, 279297
+Avg time [ms] = 279169, Std deviation = 91
+--------------------------------
+CONFIGURATION: n x m = 6x6, depth = 20, nodes = 16
+
+--------------------------------
+CONFIGURATION: n x m = 6x6, depth = 20, nodes = 8
+
+--------------------------------
+CONFIGURATION: n x m = 6x6, depth = 20, nodes = 4
+
+--------------------------------
+CONFIGURATION: n x m = 6x6, depth = 20, nodes = 2
+
+--------------------------------
+CONFIGURATION: n x m = 6x6, depth = 20, nodes = 1
+
+--------------------------------
+CONFIGURATION: n x m = 6x7, depth = 20, nodes = 16
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+--------------------------------
+CONFIGURATION: n x m = 6x7, depth = 20, nodes = 8
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+--------------------------------
+CONFIGURATION: n x m = 6x7, depth = 20, nodes = 4
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+--------------------------------
+CONFIGURATION: n x m = 6x7, depth = 20, nodes = 2
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+--------------------------------
+CONFIGURATION: n x m = 6x7, depth = 20, nodes = 1
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+--------------------------------
+CONFIGURATION: n x m = 6x6, depth = 40, nodes = 16
+
+--------------------------------
+CONFIGURATION: n x m = 6x6, depth = 40, nodes = 8
+
+--------------------------------
+CONFIGURATION: n x m = 6x6, depth = 40, nodes = 4
+
+--------------------------------
+CONFIGURATION: n x m = 6x6, depth = 40, nodes = 2
+
+--------------------------------
+CONFIGURATION: n x m = 6x6, depth = 40, nodes = 1
+
+--------------------------------
+CONFIGURATION: n x m = 6x7, depth = 40, nodes = 16
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+--------------------------------
+CONFIGURATION: n x m = 6x7, depth = 40, nodes = 8
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+--------------------------------
+CONFIGURATION: n x m = 6x7, depth = 40, nodes = 4
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+--------------------------------
+CONFIGURATION: n x m = 6x7, depth = 40, nodes = 2
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+--------------------------------
+CONFIGURATION: n x m = 6x7, depth = 40, nodes = 1
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+--------------------------------
+CONFIGURATION: n x m = 6x6, depth = 60, nodes = 16
+
+--------------------------------
+CONFIGURATION: n x m = 6x6, depth = 60, nodes = 8
+
+--------------------------------
+CONFIGURATION: n x m = 6x6, depth = 60, nodes = 4
+
+--------------------------------
+CONFIGURATION: n x m = 6x6, depth = 60, nodes = 2
+
+--------------------------------
+CONFIGURATION: n x m = 6x6, depth = 60, nodes = 1
+
+--------------------------------
+CONFIGURATION: n x m = 6x7, depth = 60, nodes = 16
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+--------------------------------
+CONFIGURATION: n x m = 6x7, depth = 60, nodes = 8
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+--------------------------------
+CONFIGURATION: n x m = 6x7, depth = 60, nodes = 4
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+--------------------------------
+CONFIGURATION: n x m = 6x7, depth = 60, nodes = 2
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+--------------------------------
+CONFIGURATION: n x m = 6x7, depth = 60, nodes = 1
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+--------------------------------

@@ -1,0 +1,1021 @@
+=============================
+  LOADING MODULES
+=============================
+=============================
+  BUILDING AND COMPILATION
+=============================
+-- Cray Programming Environment 2.5.15 C
+-- Cray Programming Environment 2.5.15 CXX
+-- Found OpenMP_C: -fopenmp  
+-- Found OpenMP_CXX: -fopenmp  
+-- Found OpenMP_C: -fopenmp  
+-- Found OpenMP_CXX: -fopenmp  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /scratch/snx3000/mazzolag/qsim/QuEST/build
+[ 28%] Built target QuEST
+[ 35%] Built target approx-pf
+[ 46%] Built target demo
+[ 53%] Built target bernstein
+[ 60%] Built target grover
+[ 67%] Built target dj
+[ 78%] Built target gtest
+[ 78%] Built target shor
+[ 96%] Built target rqc
+[ 96%] Built target period-finding
+[100%] Built target ghadamard
+================================
+       RUNNING BENCHMARKS
+================================
+CONFIGURATION: n x m = 4x4, depth = 20, nodes = 16
+srun: error: Unable to confirm allocation for job 12836840: Socket timed out on send/recv operation
+srun: Check SLURM_JOB_ID environment variable. Expired or invalid job 12836840
+
+CONFIGURATION: n x m = 4x4, depth = 20, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 48, 28, 28, 29
+Avg time [ms] = 33, Std deviation = 8
+CONFIGURATION: n x m = 4x4, depth = 20, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Duration [ms] = 52, 32, 30, 31
+Avg time [ms] = 36, Std deviation = 9
+CONFIGURATION: n x m = 4x4, depth = 20, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+Duration [ms] = 61, 35, 34, 34
+Avg time [ms] = 41, Std deviation = 11
+CONFIGURATION: n x m = 4x4, depth = 20, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+Duration [ms] = 61, 35, 35, 35
+Avg time [ms] = 41, Std deviation = 11
+
+================================
+
+CONFIGURATION: n x m = 4x5, depth = 20, nodes = 16
+Duration [ms] = 8880, 18, 11, 11
+Avg time [ms] = 2230, Std deviation = 3839
+CONFIGURATION: n x m = 4x5, depth = 20, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 105, 73, 67, 67
+Avg time [ms] = 78, Std deviation = 15
+CONFIGURATION: n x m = 4x5, depth = 20, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Duration [ms] = 102, 86, 74, 74
+Avg time [ms] = 84, Std deviation = 11
+CONFIGURATION: n x m = 4x5, depth = 20, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+Duration [ms] = 14178, 10146, 84, 83
+Avg time [ms] = 6122, Std deviation = 6205
+CONFIGURATION: n x m = 4x5, depth = 20, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+Duration [ms] = 755, 84, 82, 82
+Avg time [ms] = 250, Std deviation = 291
+
+================================
+
+CONFIGURATION: n x m = 4x4, depth = 40, nodes = 16
+Duration [ms] = 2911, 3, 3, 3
+Avg time [ms] = 730, Std deviation = 1259
+CONFIGURATION: n x m = 4x4, depth = 40, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 93, 50, 50, 50
+Avg time [ms] = 60, Std deviation = 18
+CONFIGURATION: n x m = 4x4, depth = 40, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Duration [ms] = 89, 60, 57, 61
+Avg time [ms] = 66, Std deviation = 12
+CONFIGURATION: n x m = 4x4, depth = 40, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+Duration [ms] = 334, 63, 62, 62
+Avg time [ms] = 130, Std deviation = 117
+CONFIGURATION: n x m = 4x4, depth = 40, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+Duration [ms] = 79, 62, 62, 62
+Avg time [ms] = 66, Std deviation = 7
+
+================================
+
+CONFIGURATION: n x m = 4x5, depth = 40, nodes = 16
+Duration [ms] = 42, 26, 19, 19
+Avg time [ms] = 26, Std deviation = 9
+CONFIGURATION: n x m = 4x5, depth = 40, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 165, 126, 120, 120
+Avg time [ms] = 132, Std deviation = 18
+CONFIGURATION: n x m = 4x5, depth = 40, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Duration [ms] = 175, 145, 133, 132
+Avg time [ms] = 146, Std deviation = 17
+CONFIGURATION: n x m = 4x5, depth = 40, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+Duration [ms] = 182, 165, 152, 149
+Avg time [ms] = 162, Std deviation = 13
+CONFIGURATION: n x m = 4x5, depth = 40, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+Duration [ms] = 334, 147, 146, 145
+Avg time [ms] = 193, Std deviation = 81
+
+================================
+
+CONFIGURATION: n x m = 4x4, depth = 60, nodes = 16
+Duration [ms] = 33, 5, 9, 5
+Avg time [ms] = 13, Std deviation = 11
+CONFIGURATION: n x m = 4x4, depth = 60, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 106, 71, 71, 71
+Avg time [ms] = 79, Std deviation = 15
+CONFIGURATION: n x m = 4x4, depth = 60, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Duration [ms] = 105, 78, 78, 78
+Avg time [ms] = 84, Std deviation = 11
+CONFIGURATION: n x m = 4x4, depth = 60, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+Duration [ms] = 118, 89, 89, 89
+Avg time [ms] = 96, Std deviation = 12
+CONFIGURATION: n x m = 4x4, depth = 60, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+Duration [ms] = 102, 90, 89, 89
+Avg time [ms] = 92, Std deviation = 5
+
+================================
+
+CONFIGURATION: n x m = 4x5, depth = 60, nodes = 16
+Duration [ms] = 54, 35, 30, 31
+Avg time [ms] = 37, Std deviation = 9
+CONFIGURATION: n x m = 4x5, depth = 60, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 192, 181, 175, 173
+Avg time [ms] = 180, Std deviation = 7
+CONFIGURATION: n x m = 4x5, depth = 60, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Duration [ms] = 212, 202, 191, 193
+Avg time [ms] = 199, Std deviation = 8
+CONFIGURATION: n x m = 4x5, depth = 60, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+Duration [ms] = 252, 230, 216, 216
+Avg time [ms] = 228, Std deviation = 14
+CONFIGURATION: n x m = 4x5, depth = 60, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+Duration [ms] = 214, 209, 209, 210
+Avg time [ms] = 210, Std deviation = 2
+
+================================
+
+CONFIGURATION: n x m = 5x5, depth = 20, nodes = 16
+Duration [ms] = 327, 299, 249, 248
+Avg time [ms] = 280, Std deviation = 33
+CONFIGURATION: n x m = 5x5, depth = 20, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 1442, 1436, 1384, 1386
+Avg time [ms] = 1412, Std deviation = 27
+CONFIGURATION: n x m = 5x5, depth = 20, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Duration [ms] = 1715, 1693, 1631, 1627
+Avg time [ms] = 1666, Std deviation = 38
+CONFIGURATION: n x m = 5x5, depth = 20, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+Duration [ms] = 2104, 2090, 2000, 2009
+Avg time [ms] = 2050, Std deviation = 46
+CONFIGURATION: n x m = 5x5, depth = 20, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+Duration [ms] = 2984, 2954, 2956, 2964
+Avg time [ms] = 2964, Std deviation = 11
+
+================================
+
+CONFIGURATION: n x m = 5x6, depth = 20, nodes = 16
+Duration [ms] = 11791, 11931, 11911, 11929
+Avg time [ms] = 11890, Std deviation = 57
+CONFIGURATION: n x m = 5x6, depth = 20, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 53929, 54529, 53869, 53863
+Avg time [ms] = 54047, Std deviation = 279
+CONFIGURATION: n x m = 5x6, depth = 20, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Duration [ms] = 60947, 61139, 61024, 61147
+Avg time [ms] = 61064, Std deviation = 83
+CONFIGURATION: n x m = 5x6, depth = 20, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+Duration [ms] = 76570, 76790, 76713, 76811
+Avg time [ms] = 76721, Std deviation = 94
+CONFIGURATION: n x m = 5x6, depth = 20, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+Duration [ms] = 109958, 109754, 110041, 109914
+Avg time [ms] = 109916, Std deviation = 104
+
+================================
+
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 16
+Duration [ms] = 526, 509, 484, 465
+Avg time [ms] = 496, Std deviation = 23
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 2605, 2553, 2515, 2513
+Avg time [ms] = 2546, Std deviation = 37
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Duration [ms] = 3035, 2992, 2937, 2938
+Avg time [ms] = 2975, Std deviation = 40
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+Duration [ms] = 3751, 3711, 3624, 3642
+Avg time [ms] = 3682, Std deviation = 51
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+Duration [ms] = 5344, 5307, 5306, 5309
+Avg time [ms] = 5316, Std deviation = 15
+
+================================
+
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 16
+Duration [ms] = 20761, 20909, 20836, 20844
+Avg time [ms] = 20837, Std deviation = 52
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 94287, 94550, 94426, 94403
+Avg time [ms] = 94416, Std deviation = 93
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Duration [ms] = 106293, 106455, 106321, 106383
+Avg time [ms] = 106363, Std deviation = 62
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+Duration [ms] = 133851, 134100, 134061, 134043
+Avg time [ms] = 134013, Std deviation = 96
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+Duration [ms] = 193750, 193873, 193756, 193984
+Avg time [ms] = 193840, Std deviation = 96
+
+================================
+
+CONFIGURATION: n x m = 5x5, depth = 60, nodes = 16
+Duration [ms] = 782, 717, 682, 678
+Avg time [ms] = 714, Std deviation = 41
+CONFIGURATION: n x m = 5x5, depth = 60, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 3708, 3699, 3652, 3652
+Avg time [ms] = 3677, Std deviation = 25
+CONFIGURATION: n x m = 5x5, depth = 60, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Duration [ms] = 4405, 4335, 4379, 4341
+Avg time [ms] = 4365, Std deviation = 28
+CONFIGURATION: n x m = 5x5, depth = 60, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+Duration [ms] = 5345, 5311, 5228, 5205
+Avg time [ms] = 5272, Std deviation = 57
+CONFIGURATION: n x m = 5x5, depth = 60, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+Duration [ms] = 7720, 7649, 7645, 7637
+Avg time [ms] = 7662, Std deviation = 33
+
+================================
+
+CONFIGURATION: n x m = 5x6, depth = 60, nodes = 16
+Duration [ms] = 29978, 30108, 29888, 30148
+Avg time [ms] = 30030, Std deviation = 103
+CONFIGURATION: n x m = 5x6, depth = 60, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+Duration [ms] = 136218, 136114, 136518, 136361
+Avg time [ms] = 136302, Std deviation = 152
+CONFIGURATION: n x m = 5x6, depth = 60, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+Duration [ms] = 153404, 153433, 153384, 153397
+Avg time [ms] = 153404, Std deviation = 17
+CONFIGURATION: n x m = 5x6, depth = 60, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+Duration [ms] = 193179, 193070, 193310, 193284
+Avg time [ms] = 193210, Std deviation = 94
+CONFIGURATION: n x m = 5x6, depth = 60, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+Duration [ms] = 279162, 279179, 279038, 279297
+Avg time [ms] = 279169, Std deviation = 91
+
+================================
+
+CONFIGURATION: n x m = 6x6, depth = 20, nodes = 16
+slurmstepd: error: Step 12836840.59 exceeded memory limit (67125066 > 62464000), being killed
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: *** STEP 12836840.59 ON nid01582 CANCELLED AT 2019-04-10T13:05:32 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: error: nid01588: task 13: Killed
+srun: Terminating job step 12836840.59
+srun: error: nid01590: tasks 16-17: Killed
+srun: error: nid01582: tasks 0-1: Killed
+srun: error: nid01587: tasks 10-11: Killed
+srun: error: nid01594: tasks 24-25: Killed
+srun: error: nid01595: tasks 26-27: Killed
+srun: error: nid01585: tasks 6-7: Killed
+srun: error: nid01597: tasks 30-31: Killed
+srun: error: nid01593: tasks 22-23: Killed
+srun: error: nid01583: tasks 2-3: Killed
+srun: error: nid01592: tasks 20-21: Killed
+srun: error: nid01584: tasks 4-5: Killed
+srun: error: nid01588: task 12: Killed
+srun: error: nid01596: tasks 28-29: Killed
+srun: error: nid01589: tasks 14-15: Killed
+srun: error: nid01586: tasks 8-9: Killed
+srun: error: nid01591: tasks 18-19: Killed
+
+CONFIGURATION: n x m = 6x6, depth = 20, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+srun: error: nid01589: tasks 28-31: Killed
+srun: Terminating job step 12836840.60
+srun: error: nid01585: tasks 12-15: Killed
+srun: error: nid01587: tasks 20-23: Killed
+srun: error: nid01586: tasks 16-19: Killed
+srun: error: nid01584: tasks 8-11: Killed
+slurmstepd: error: *** STEP 12836840.60 ON nid01582 CANCELLED AT 2019-04-10T13:05:56 ***
+srun: error: nid01583: tasks 4-7: Killed
+srun: error: nid01582: tasks 0-3: Killed
+srun: error: nid01588: tasks 24-27: Killed
+srun: Force Terminated job step 12836840.60
+
+CONFIGURATION: n x m = 6x6, depth = 20, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+srun: error: nid01582: tasks 0-7: Killed
+srun: Terminating job step 12836840.61
+srun: error: nid01585: tasks 24-31: Killed
+srun: error: nid01583: tasks 8-15: Killed
+srun: error: nid01584: tasks 16-23: Killed
+srun: Force Terminated job step 12836840.61
+
+CONFIGURATION: n x m = 6x6, depth = 20, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+srun: error: nid01583: tasks 16-20,22-28,30: Killed
+srun: Terminating job step 12836840.62
+srun: error: nid01582: tasks 0-15: Killed
+srun: error: nid01583: tasks 21,29,31: Killed
+srun: Force Terminated job step 12836840.62
+
+CONFIGURATION: n x m = 6x6, depth = 20, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+srun: error: nid01582: tasks 0-31: Killed
+srun: Terminating job step 12836840.63
+srun: Force Terminated job step 12836840.63
+
+
+================================
+
+CONFIGURATION: n x m = 6x7, depth = 20, nodes = 16
+srun: error: nid01583: tasks 2-3: Exited with exit code 1
+srun: Terminating job step 12836840.64
+srun: error: nid01586: tasks 8-9: Exited with exit code 1
+srun: error: nid01590: tasks 16-17: Exited with exit code 1
+srun: error: nid01588: tasks 12-13: Exited with exit code 1
+srun: error: nid01585: tasks 6-7: Exited with exit code 1
+srun: error: nid01587: tasks 10-11: Exited with exit code 1
+srun: error: nid01593: tasks 22-23: Exited with exit code 1
+srun: error: nid01592: tasks 20-21: Exited with exit code 1
+srun: error: nid01584: tasks 4-5: Exited with exit code 1
+srun: error: nid01582: tasks 0-1: Exited with exit code 1
+srun: error: nid01591: tasks 18-19: Exited with exit code 1
+srun: error: nid01595: tasks 26-27: Exited with exit code 1
+srun: error: nid01596: tasks 28-29: Exited with exit code 1
+srun: error: nid01594: tasks 24-25: Exited with exit code 1
+srun: error: nid01597: tasks 30-31: Exited with exit code 1
+srun: error: nid01589: tasks 14-15: Exited with exit code 1
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+CONFIGURATION: n x m = 6x7, depth = 20, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+srun: error: nid01586: tasks 16-19: Exited with exit code 1
+srun: Terminating job step 12836840.65
+srun: error: nid01585: tasks 12-15: Exited with exit code 1
+srun: error: nid01588: tasks 24-27: Exited with exit code 1
+srun: error: nid01587: tasks 20-23: Exited with exit code 1
+srun: error: nid01582: tasks 0-3: Exited with exit code 1
+srun: error: nid01583: tasks 4-7: Exited with exit code 1
+srun: error: nid01584: tasks 8-11: Exited with exit code 1
+srun: error: nid01589: tasks 28-31: Exited with exit code 1
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+CONFIGURATION: n x m = 6x7, depth = 20, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+srun: error: nid01585: tasks 24-31: Exited with exit code 1
+srun: Terminating job step 12836840.66
+srun: error: nid01582: tasks 0-7: Exited with exit code 1
+srun: error: nid01584: tasks 16-23: Exited with exit code 1
+srun: error: nid01583: tasks 8-15: Exited with exit code 1
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+CONFIGURATION: n x m = 6x7, depth = 20, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+srun: error: nid01583: tasks 16-24,26-31: Exited with exit code 1
+srun: Terminating job step 12836840.67
+srun: error: nid01582: tasks 0-2,4-15: Exited with exit code 1
+slurmstepd: error: *** STEP 12836840.67 ON nid01582 CANCELLED AT 2019-04-10T13:06:41 ***
+srun: error: nid01583: task 25: Exited with exit code 1
+srun: error: nid01582: task 3: Exited with exit code 1
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+CONFIGURATION: n x m = 6x7, depth = 20, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+srun: error: nid01582: tasks 0-31: Exited with exit code 1
+srun: Terminating job step 12836840.68
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+
+================================
+
+CONFIGURATION: n x m = 6x6, depth = 40, nodes = 16
+slurmstepd: error: Step 12836840.69 exceeded memory limit (67125080 > 62464000), being killed
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: *** STEP 12836840.69 ON nid01582 CANCELLED AT 2019-04-10T13:07:17 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: error: nid01594: task 25: Killed
+srun: Terminating job step 12836840.69
+srun: error: nid01595: tasks 26-27: Killed
+srun: error: nid01582: tasks 0-1: Killed
+srun: error: nid01597: tasks 30-31: Killed
+srun: error: nid01590: tasks 16-17: Killed
+srun: error: nid01593: tasks 22-23: Killed
+srun: error: nid01594: task 24: Killed
+srun: error: nid01588: tasks 12-13: Killed
+srun: error: nid01589: tasks 14-15: Killed
+srun: error: nid01592: tasks 20-21: Killed
+srun: error: nid01596: tasks 28-29: Killed
+srun: error: nid01584: tasks 4-5: Killed
+srun: error: nid01585: tasks 6-7: Killed
+srun: error: nid01591: tasks 18-19: Killed
+srun: error: nid01583: tasks 2-3: Killed
+srun: error: nid01586: tasks 8-9: Killed
+srun: error: nid01587: tasks 10-11: Killed
+
+CONFIGURATION: n x m = 6x6, depth = 40, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+srun: error: nid01583: tasks 4-7: Killed
+srun: Terminating job step 12836840.70
+slurmstepd: error: *** STEP 12836840.70 ON nid01582 CANCELLED AT 2019-04-10T13:07:42 ***
+srun: error: nid01589: tasks 28-31: Killed
+srun: error: nid01588: tasks 24-27: Killed
+srun: error: nid01587: tasks 20-23: Killed
+srun: error: nid01585: tasks 12-15: Killed
+srun: error: nid01584: tasks 8-11: Killed
+srun: error: nid01586: tasks 16-19: Killed
+srun: error: nid01582: tasks 0-3: Killed
+srun: Force Terminated job step 12836840.70
+
+CONFIGURATION: n x m = 6x6, depth = 40, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+srun: error: nid01585: tasks 24-31: Killed
+srun: Terminating job step 12836840.71
+srun: error: nid01582: tasks 0-7: Killed
+srun: error: nid01584: tasks 16-23: Killed
+srun: error: nid01583: tasks 8-15: Killed
+srun: Force Terminated job step 12836840.71
+
+CONFIGURATION: n x m = 6x6, depth = 40, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+srun: error: nid01583: tasks 16-24,26-31: Killed
+srun: Terminating job step 12836840.72
+srun: error: nid01582: tasks 0-15: Killed
+srun: error: nid01583: task 25: Killed
+srun: Force Terminated job step 12836840.72
+
+CONFIGURATION: n x m = 6x6, depth = 40, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+srun: error: nid01582: tasks 0-31: Killed
+srun: Terminating job step 12836840.73
+srun: Force Terminated job step 12836840.73
+
+
+================================
+
+CONFIGURATION: n x m = 6x7, depth = 40, nodes = 16
+srun: error: nid01590: tasks 16-17: Exited with exit code 1
+srun: Terminating job step 12836840.74
+srun: error: nid01585: tasks 6-7: Exited with exit code 1
+srun: error: nid01583: tasks 2-3: Exited with exit code 1
+srun: error: nid01586: tasks 8-9: Exited with exit code 1
+srun: error: nid01587: tasks 10-11: Exited with exit code 1
+srun: error: nid01584: tasks 4-5: Exited with exit code 1
+srun: error: nid01593: tasks 22-23: Exited with exit code 1
+srun: error: nid01591: tasks 18-19: Exited with exit code 1
+srun: error: nid01588: tasks 12-13: Exited with exit code 1
+srun: error: nid01592: tasks 20-21: Exited with exit code 1
+srun: error: nid01597: tasks 30-31: Exited with exit code 1
+srun: error: nid01589: tasks 14-15: Exited with exit code 1
+srun: error: nid01594: tasks 24-25: Exited with exit code 1
+srun: error: nid01595: tasks 26-27: Exited with exit code 1
+srun: error: nid01582: tasks 0-1: Exited with exit code 1
+srun: error: nid01596: tasks 28-29: Exited with exit code 1
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+CONFIGURATION: n x m = 6x7, depth = 40, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+srun: error: nid01584: tasks 8-11: Exited with exit code 1
+srun: Terminating job step 12836840.75
+srun: error: nid01583: tasks 4-7: Exited with exit code 1
+srun: error: nid01585: tasks 12-15: Exited with exit code 1
+srun: error: nid01586: tasks 16-19: Exited with exit code 1
+srun: error: nid01588: tasks 24-27: Exited with exit code 1
+srun: error: nid01587: tasks 20-23: Exited with exit code 1
+srun: error: nid01582: tasks 0-3: Exited with exit code 1
+srun: error: nid01589: tasks 28-31: Exited with exit code 1
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+CONFIGURATION: n x m = 6x7, depth = 40, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+srun: error: nid01585: tasks 24-31: Exited with exit code 1
+srun: Terminating job step 12836840.76
+srun: error: nid01583: tasks 8-15: Exited with exit code 1
+srun: error: nid01582: tasks 0-7: Exited with exit code 1
+srun: error: nid01584: tasks 16-23: Exited with exit code 1
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+CONFIGURATION: n x m = 6x7, depth = 40, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+srun: error: nid01583: tasks 16-31: Exited with exit code 1
+srun: Terminating job step 12836840.77
+srun: error: nid01582: tasks 0-15: Exited with exit code 1
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+CONFIGURATION: n x m = 6x7, depth = 40, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+srun: error: nid01582: tasks 0-31: Exited with exit code 1
+srun: Terminating job step 12836840.78
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+
+================================
+
+CONFIGURATION: n x m = 6x6, depth = 60, nodes = 16
+slurmstepd: error: Step 12836840.79 exceeded memory limit (67125080 > 62464000), being killed
+slurmstepd: error: Step 12836840.79 exceeded memory limit (67125127 > 62464000), being killed
+slurmstepd: error: Step 12836840.79 exceeded memory limit (67125141 > 62464000), being killed
+slurmstepd: error: Step 12836840.79 exceeded memory limit (67125129 > 62464000), being killed
+slurmstepd: error: Step 12836840.79 exceeded memory limit (67125128 > 62464000), being killed
+slurmstepd: error: Step 12836840.79 exceeded memory limit (67125129 > 62464000), being killed
+slurmstepd: error: Step 12836840.79 exceeded memory limit (67125129 > 62464000), being killed
+slurmstepd: error: Step 12836840.79 exceeded memory limit (67125140 > 62464000), being killed
+slurmstepd: error: Step 12836840.79 exceeded memory limit (67125128 > 62464000), being killed
+slurmstepd: error: Step 12836840.79 exceeded memory limit (67125141 > 62464000), being killed
+slurmstepd: error: Step 12836840.79 exceeded memory limit (67125141 > 62464000), being killed
+slurmstepd: error: Step 12836840.79 exceeded memory limit (67125128 > 62464000), being killed
+slurmstepd: error: Step 12836840.79 exceeded memory limit (67125129 > 62464000), being killed
+slurmstepd: error: Step 12836840.79 exceeded memory limit (67125141 > 62464000), being killed
+slurmstepd: error: Step 12836840.79 exceeded memory limit (67125141 > 62464000), being killed
+slurmstepd: error: Step 12836840.79 exceeded memory limit (67125141 > 62464000), being killed
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: *** STEP 12836840.79 ON nid01582 CANCELLED AT 2019-04-10T13:09:00 ***
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: error: nid01586: task 9: Killed
+srun: Terminating job step 12836840.79
+srun: error: nid01585: task 7: Killed
+srun: error: nid01584: task 5: Killed
+srun: error: nid01582: task 1: Killed
+srun: error: nid01592: task 21: Killed
+srun: error: nid01595: task 27: Killed
+srun: error: nid01586: task 8: Killed
+srun: error: nid01593: tasks 22-23: Killed
+srun: error: nid01585: task 6: Killed
+srun: error: nid01582: task 0: Killed
+srun: error: nid01590: tasks 16-17: Killed
+srun: error: nid01584: task 4: Killed
+srun: error: nid01583: tasks 2-3: Killed
+srun: error: nid01591: tasks 18-19: Killed
+srun: error: nid01588: tasks 12-13: Killed
+srun: error: nid01589: tasks 14-15: Killed
+srun: error: nid01594: tasks 24-25: Killed
+srun: error: nid01592: task 20: Killed
+srun: error: nid01587: tasks 10-11: Killed
+srun: error: nid01597: tasks 30-31: Killed
+srun: error: nid01596: tasks 28-29: Killed
+srun: error: nid01595: task 26: Killed
+
+CONFIGURATION: n x m = 6x6, depth = 60, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+srun: error: nid01583: tasks 4-6: Killed
+srun: Terminating job step 12836840.80
+srun: error: nid01587: tasks 20,22-23: Killed
+srun: error: nid01582: tasks 0-2: Killed
+srun: error: nid01589: tasks 29-31: Killed
+srun: error: nid01584: tasks 8,10-11: Killed
+srun: error: nid01588: tasks 24-25,27: Killed
+srun: error: nid01586: tasks 17-19: Killed
+srun: error: nid01585: tasks 12,14-15: Killed
+srun: error: nid01583: tasks 4-6: Killed
+srun: error: Task 4 reported exit for a second time.
+srun: error: Task 5 reported exit for a second time.
+srun: error: Task 6 reported exit for a second time.
+srun: error: nid01587: tasks 20,22-23: Killed
+srun: error: Task 20 reported exit for a second time.
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+srun: error: nid01582: tasks 0-2: Killed
+srun: error: Task 0 reported exit for a second time.
+srun: error: Task 1 reported exit for a second time.
+srun: error: Task 2 reported exit for a second time.
+srun: error: nid01589: tasks 29-31: Killed
+srun: error: Task 29 reported exit for a second time.
+srun: error: Task 30 reported exit for a second time.
+srun: error: Task 31 reported exit for a second time.
+srun: error: nid01584: tasks 8,10-11: Killed
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: nid01588: tasks 24-25,27: Killed
+srun: error: Task 24 reported exit for a second time.
+srun: error: Task 25 reported exit for a second time.
+srun: error: Task 27 reported exit for a second time.
+srun: error: nid01586: tasks 17-19: Killed
+srun: error: Task 17 reported exit for a second time.
+srun: error: Task 18 reported exit for a second time.
+srun: error: Task 19 reported exit for a second time.
+srun: error: nid01585: tasks 12,14-15: Killed
+srun: error: Task 12 reported exit for a second time.
+srun: error: Task 14 reported exit for a second time.
+srun: error: Task 15 reported exit for a second time.
+srun: error: nid01583: tasks 4-6: Killed
+srun: error: Task 4 reported exit for a second time.
+srun: error: Task 5 reported exit for a second time.
+srun: error: Task 6 reported exit for a second time.
+srun: error: nid01587: tasks 20,22-23: Killed
+srun: error: Task 20 reported exit for a second time.
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+srun: error: nid01582: tasks 0-2: Killed
+srun: error: Task 0 reported exit for a second time.
+srun: error: Task 1 reported exit for a second time.
+srun: error: Task 2 reported exit for a second time.
+srun: error: nid01589: tasks 29-31: Killed
+srun: error: Task 29 reported exit for a second time.
+srun: error: Task 30 reported exit for a second time.
+srun: error: Task 31 reported exit for a second time.
+srun: error: nid01584: tasks 8,10-11: Killed
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: nid01588: tasks 24-25,27: Killed
+srun: error: Task 24 reported exit for a second time.
+srun: error: Task 25 reported exit for a second time.
+srun: error: Task 27 reported exit for a second time.
+srun: error: nid01586: tasks 17-19: Killed
+srun: error: Task 17 reported exit for a second time.
+srun: error: Task 18 reported exit for a second time.
+srun: error: Task 19 reported exit for a second time.
+srun: error: nid01585: tasks 12,14-15: Killed
+srun: error: Task 12 reported exit for a second time.
+srun: error: Task 14 reported exit for a second time.
+srun: error: Task 15 reported exit for a second time.
+srun: error: nid01583: tasks 4-6: Killed
+srun: error: Task 4 reported exit for a second time.
+srun: error: Task 5 reported exit for a second time.
+srun: error: Task 6 reported exit for a second time.
+srun: error: nid01587: tasks 20,22-23: Killed
+srun: error: Task 20 reported exit for a second time.
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+srun: error: nid01582: tasks 0-2: Killed
+srun: error: Task 0 reported exit for a second time.
+srun: error: Task 1 reported exit for a second time.
+srun: error: Task 2 reported exit for a second time.
+srun: error: nid01589: tasks 29-31: Killed
+srun: error: Task 29 reported exit for a second time.
+srun: error: Task 30 reported exit for a second time.
+srun: error: Task 31 reported exit for a second time.
+srun: error: nid01584: tasks 8,10-11: Killed
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: nid01588: tasks 24-25,27: Killed
+srun: error: Task 24 reported exit for a second time.
+srun: error: Task 25 reported exit for a second time.
+srun: error: Task 27 reported exit for a second time.
+srun: error: nid01586: tasks 17-19: Killed
+srun: error: Task 17 reported exit for a second time.
+srun: error: Task 18 reported exit for a second time.
+srun: error: Task 19 reported exit for a second time.
+srun: error: nid01585: tasks 12,14-15: Killed
+srun: error: Task 12 reported exit for a second time.
+srun: error: Task 14 reported exit for a second time.
+srun: error: Task 15 reported exit for a second time.
+srun: error: nid01583: tasks 4-6: Killed
+srun: error: Task 4 reported exit for a second time.
+srun: error: Task 5 reported exit for a second time.
+srun: error: Task 6 reported exit for a second time.
+srun: error: nid01587: tasks 20,22-23: Killed
+srun: error: Task 20 reported exit for a second time.
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+srun: error: nid01582: tasks 0-2: Killed
+srun: error: Task 0 reported exit for a second time.
+srun: error: Task 1 reported exit for a second time.
+srun: error: Task 2 reported exit for a second time.
+srun: error: nid01589: tasks 29-31: Killed
+srun: error: Task 29 reported exit for a second time.
+srun: error: Task 30 reported exit for a second time.
+srun: error: Task 31 reported exit for a second time.
+srun: error: nid01584: tasks 8,10-11: Killed
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: nid01588: tasks 24-25,27: Killed
+srun: error: Task 24 reported exit for a second time.
+srun: error: Task 25 reported exit for a second time.
+srun: error: Task 27 reported exit for a second time.
+srun: error: nid01586: tasks 17-19: Killed
+srun: error: Task 17 reported exit for a second time.
+srun: error: Task 18 reported exit for a second time.
+srun: error: Task 19 reported exit for a second time.
+srun: error: nid01585: tasks 12,14-15: Killed
+srun: error: Task 12 reported exit for a second time.
+srun: error: Task 14 reported exit for a second time.
+srun: error: Task 15 reported exit for a second time.
+srun: error: nid01583: tasks 4-6: Killed
+srun: error: Task 4 reported exit for a second time.
+srun: error: Task 5 reported exit for a second time.
+srun: error: Task 6 reported exit for a second time.
+srun: error: nid01587: tasks 20,22-23: Killed
+srun: error: Task 20 reported exit for a second time.
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+srun: error: nid01582: tasks 0-2: Killed
+srun: error: Task 0 reported exit for a second time.
+srun: error: Task 1 reported exit for a second time.
+srun: error: Task 2 reported exit for a second time.
+srun: error: nid01589: tasks 29-31: Killed
+srun: error: Task 29 reported exit for a second time.
+srun: error: Task 30 reported exit for a second time.
+srun: error: Task 31 reported exit for a second time.
+srun: error: nid01584: tasks 8,10-11: Killed
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: nid01588: tasks 24-25,27: Killed
+srun: error: Task 24 reported exit for a second time.
+srun: error: Task 25 reported exit for a second time.
+srun: error: Task 27 reported exit for a second time.
+srun: error: nid01585: task 13: Killed
+srun: error: nid01586: tasks 17-19: Killed
+srun: error: Task 17 reported exit for a second time.
+srun: error: Task 18 reported exit for a second time.
+srun: error: Task 19 reported exit for a second time.
+srun: error: nid01587: task 21: Killed
+srun: error: nid01583: task 7: Killed
+srun: error: nid01584: task 9: Killed
+srun: error: nid01589: task 28: Killed
+srun: error: nid01588: task 26: Killed
+srun: error: nid01582: task 3: Killed
+srun: error: nid01586: task 16: Killed
+srun: Force Terminated job step 12836840.80
+
+CONFIGURATION: n x m = 6x6, depth = 60, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+srun: error: nid01585: tasks 24,26-31: Killed
+srun: Terminating job step 12836840.81
+srun: error: nid01584: tasks 16-23: Killed
+srun: error: nid01583: tasks 8-14: Killed
+srun: error: nid01582: tasks 0-7: Killed
+srun: error: nid01585: tasks 24,26-31: Killed
+srun: error: Task 24 reported exit for a second time.
+srun: error: Task 26 reported exit for a second time.
+srun: error: Task 27 reported exit for a second time.
+srun: error: Task 28 reported exit for a second time.
+srun: error: Task 29 reported exit for a second time.
+srun: error: Task 30 reported exit for a second time.
+srun: error: Task 31 reported exit for a second time.
+srun: error: nid01584: tasks 16-23: Killed
+srun: error: Task 16 reported exit for a second time.
+srun: error: Task 17 reported exit for a second time.
+srun: error: Task 18 reported exit for a second time.
+srun: error: Task 19 reported exit for a second time.
+srun: error: Task 20 reported exit for a second time.
+srun: error: Task 21 reported exit for a second time.
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+srun: error: nid01583: tasks 8-14: Killed
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 9 reported exit for a second time.
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: Task 12 reported exit for a second time.
+srun: error: Task 13 reported exit for a second time.
+srun: error: Task 14 reported exit for a second time.
+srun: error: nid01582: tasks 0-7: Killed
+srun: error: Task 0 reported exit for a second time.
+srun: error: Task 1 reported exit for a second time.
+srun: error: Task 2 reported exit for a second time.
+srun: error: Task 3 reported exit for a second time.
+srun: error: Task 4 reported exit for a second time.
+srun: error: Task 5 reported exit for a second time.
+srun: error: Task 6 reported exit for a second time.
+srun: error: Task 7 reported exit for a second time.
+srun: error: nid01585: tasks 24,26-31: Killed
+srun: error: Task 24 reported exit for a second time.
+srun: error: Task 26 reported exit for a second time.
+srun: error: Task 27 reported exit for a second time.
+srun: error: Task 28 reported exit for a second time.
+srun: error: Task 29 reported exit for a second time.
+srun: error: Task 30 reported exit for a second time.
+srun: error: Task 31 reported exit for a second time.
+srun: error: nid01584: tasks 16-23: Killed
+srun: error: Task 16 reported exit for a second time.
+srun: error: Task 17 reported exit for a second time.
+srun: error: Task 18 reported exit for a second time.
+srun: error: Task 19 reported exit for a second time.
+srun: error: Task 20 reported exit for a second time.
+srun: error: Task 21 reported exit for a second time.
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+srun: error: nid01583: tasks 8-14: Killed
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 9 reported exit for a second time.
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: Task 12 reported exit for a second time.
+srun: error: Task 13 reported exit for a second time.
+srun: error: Task 14 reported exit for a second time.
+srun: error: nid01582: tasks 0-7: Killed
+srun: error: Task 0 reported exit for a second time.
+srun: error: Task 1 reported exit for a second time.
+srun: error: Task 2 reported exit for a second time.
+srun: error: Task 3 reported exit for a second time.
+srun: error: Task 4 reported exit for a second time.
+srun: error: Task 5 reported exit for a second time.
+srun: error: Task 6 reported exit for a second time.
+srun: error: Task 7 reported exit for a second time.
+srun: error: nid01585: tasks 24,26-31: Killed
+srun: error: Task 24 reported exit for a second time.
+srun: error: Task 26 reported exit for a second time.
+srun: error: Task 27 reported exit for a second time.
+srun: error: Task 28 reported exit for a second time.
+srun: error: Task 29 reported exit for a second time.
+srun: error: Task 30 reported exit for a second time.
+srun: error: Task 31 reported exit for a second time.
+srun: error: nid01584: tasks 16-23: Killed
+srun: error: Task 16 reported exit for a second time.
+srun: error: Task 17 reported exit for a second time.
+srun: error: Task 18 reported exit for a second time.
+srun: error: Task 19 reported exit for a second time.
+srun: error: Task 20 reported exit for a second time.
+srun: error: Task 21 reported exit for a second time.
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+srun: error: nid01583: tasks 8-14: Killed
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 9 reported exit for a second time.
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: Task 12 reported exit for a second time.
+srun: error: Task 13 reported exit for a second time.
+srun: error: Task 14 reported exit for a second time.
+srun: error: nid01582: tasks 0-7: Killed
+srun: error: Task 0 reported exit for a second time.
+srun: error: Task 1 reported exit for a second time.
+srun: error: Task 2 reported exit for a second time.
+srun: error: Task 3 reported exit for a second time.
+srun: error: Task 4 reported exit for a second time.
+srun: error: Task 5 reported exit for a second time.
+srun: error: Task 6 reported exit for a second time.
+srun: error: Task 7 reported exit for a second time.
+srun: error: nid01585: task 25: Killed
+srun: error: nid01583: task 15: Killed
+srun: Force Terminated job step 12836840.81
+
+CONFIGURATION: n x m = 6x6, depth = 60, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+srun: error: nid01582: tasks 0,2-4,6,8,10,12,14: Killed
+srun: Terminating job step 12836840.82
+slurmstepd: error: *** STEP 12836840.82 ON nid01582 CANCELLED AT 2019-04-10T13:10:12 ***
+srun: error: nid01583: tasks 16-20,22-31: Killed
+srun: error: nid01582: tasks 5,7,9,11,13,15: Killed
+srun: error: nid01582: task 1: Killed
+srun: error: nid01583: task 21: Killed
+srun: Force Terminated job step 12836840.82
+
+CONFIGURATION: n x m = 6x6, depth = 60, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+srun: error: nid01582: tasks 0-31: Killed
+srun: Terminating job step 12836840.83
+srun: Force Terminated job step 12836840.83
+
+
+================================
+
+CONFIGURATION: n x m = 6x7, depth = 60, nodes = 16
+srun: error: nid01593: tasks 22-23: Exited with exit code 1
+srun: Terminating job step 12836840.84
+srun: error: nid01582: tasks 0-1: Exited with exit code 1
+srun: error: nid01583: tasks 2-3: Exited with exit code 1
+srun: error: nid01586: tasks 8-9: Exited with exit code 1
+srun: error: nid01588: tasks 12-13: Exited with exit code 1
+srun: error: nid01587: tasks 10-11: Exited with exit code 1
+srun: error: nid01584: tasks 4-5: Exited with exit code 1
+srun: error: nid01590: tasks 16-17: Exited with exit code 1
+srun: error: nid01585: tasks 6-7: Exited with exit code 1
+srun: error: nid01591: tasks 18-19: Exited with exit code 1
+srun: error: nid01597: tasks 30-31: Exited with exit code 1
+srun: error: nid01589: tasks 14-15: Exited with exit code 1
+srun: error: nid01592: tasks 20-21: Exited with exit code 1
+srun: error: nid01594: tasks 24-25: Exited with exit code 1
+srun: error: nid01596: tasks 28-29: Exited with exit code 1
+srun: error: nid01595: tasks 26-27: Exited with exit code 1
+srun: error: nid01593: tasks 22-23: Exited with exit code 1
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+CONFIGURATION: n x m = 6x7, depth = 60, nodes = 8
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+srun: error: nid01583: tasks 4-7: Exited with exit code 1
+srun: Terminating job step 12836840.85
+srun: error: nid01584: tasks 8-11: Exited with exit code 1
+srun: error: nid01586: tasks 16-19: Exited with exit code 1
+srun: error: nid01588: tasks 24-27: Exited with exit code 1
+srun: error: nid01587: tasks 20-23: Exited with exit code 1
+srun: error: nid01585: tasks 12-15: Exited with exit code 1
+srun: error: nid01589: tasks 28-31: Exited with exit code 1
+srun: error: nid01582: tasks 0-3: Exited with exit code 1
+srun: error: nid01583: tasks 4-7: Exited with exit code 1
+srun: error: Task 4 reported exit for a second time.
+srun: error: Task 5 reported exit for a second time.
+srun: error: Task 6 reported exit for a second time.
+srun: error: Task 7 reported exit for a second time.
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+CONFIGURATION: n x m = 6x7, depth = 60, nodes = 4
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+srun: error: nid01583: tasks 8-15: Exited with exit code 1
+srun: Terminating job step 12836840.86
+srun: error: nid01584: tasks 16-23: Exited with exit code 1
+srun: error: nid01582: tasks 0-7: Exited with exit code 1
+srun: error: nid01585: tasks 24-31: Exited with exit code 1
+srun: error: nid01583: tasks 8-15: Exited with exit code 1
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 9 reported exit for a second time.
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: Task 12 reported exit for a second time.
+srun: error: Task 13 reported exit for a second time.
+srun: error: Task 14 reported exit for a second time.
+srun: error: Task 15 reported exit for a second time.
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+CONFIGURATION: n x m = 6x7, depth = 60, nodes = 2
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 2. Ignoring --ntasks-per-node.
+srun: error: nid01582: tasks 0-15: Exited with exit code 1
+srun: Terminating job step 12836840.87
+srun: error: nid01583: tasks 16-31: Exited with exit code 1
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+CONFIGURATION: n x m = 6x7, depth = 60, nodes = 1
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 32 with the number of requested nodes 1. Ignoring --ntasks-per-node.
+srun: error: nid01582: tasks 0-31: Exited with exit code 1
+srun: Terminating job step 12836840.88
+srun: error: nid01582: tasks 0-31: Exited with exit code 1
+srun: error: Task 0 reported exit for a second time.
+srun: error: Task 1 reported exit for a second time.
+srun: error: Task 2 reported exit for a second time.
+srun: error: Task 3 reported exit for a second time.
+srun: error: Task 4 reported exit for a second time.
+srun: error: Task 5 reported exit for a second time.
+srun: error: Task 6 reported exit for a second time.
+srun: error: Task 7 reported exit for a second time.
+srun: error: Task 8 reported exit for a second time.
+srun: error: Task 9 reported exit for a second time.
+srun: error: Task 10 reported exit for a second time.
+srun: error: Task 11 reported exit for a second time.
+srun: error: Task 12 reported exit for a second time.
+srun: error: Task 13 reported exit for a second time.
+srun: error: Task 14 reported exit for a second time.
+srun: error: Task 15 reported exit for a second time.
+srun: error: Task 16 reported exit for a second time.
+srun: error: Task 17 reported exit for a second time.
+srun: error: Task 18 reported exit for a second time.
+srun: error: Task 19 reported exit for a second time.
+srun: error: Task 20 reported exit for a second time.
+srun: error: Task 21 reported exit for a second time.
+srun: error: Task 22 reported exit for a second time.
+srun: error: Task 23 reported exit for a second time.
+srun: error: Task 24 reported exit for a second time.
+srun: error: Task 25 reported exit for a second time.
+srun: error: Task 26 reported exit for a second time.
+srun: error: Task 27 reported exit for a second time.
+srun: error: Task 28 reported exit for a second time.
+srun: error: Task 29 reported exit for a second time.
+srun: error: Task 30 reported exit for a second time.
+srun: error: Task 31 reported exit for a second time.
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+
+================================
+
+ 
+Batch Job Summary Report for Job "run-rqc.sh" (12836840) on daint
+-----------------------------------------------------------------------------------------------------
+             Submit            Eligible               Start                 End    Elapsed  Timelimit 
+------------------- ------------------- ------------------- ------------------- ---------- ---------- 
+2019-04-10T10:32:46 2019-04-10T10:32:46 2019-04-10T10:42:24 2019-04-10T13:11:01   02:28:37   08:20:00 
+-----------------------------------------------------------------------------------------------------
+Username    Account     Partition   NNodes   Energy
+----------  ----------  ----------  ------  --------------
+mazzolag    csstaff     normal          16   11.60M joules
+ 
+This job did not utilize any GPUs
+ 
+----------------------------------------------------------
+Scratch File System        Files       Quota
+--------------------  ----------  ----------
+/scratch/snx3000           22298     1000000
+ 
