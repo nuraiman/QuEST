@@ -1,5 +1,5 @@
 CONFIGURATION: n x m = 4x4, depth = 20, nodes = 16
-
+Avg time [ms] = 0, Std deviation = 0
 --------------------------------
 CONFIGURATION: n x m = 4x4, depth = 20, nodes = 8
 Duration [ms] = 48, 28, 28, 29
