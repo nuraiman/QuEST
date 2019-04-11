@@ -46,6 +46,7 @@ plt.figure()
 dimx = int(np.round(np.sqrt(len(y))))
 dimy = dimx if dimx*dimx >= len(y) else dimx+1
 for i in range(len(y)):
+    y[i] = [x*1e-3 for x in y[i]]
     plt.subplot(dimx, dimy, i+1)
     if i == 0:
         plt.plot(a[:-1], y[i][:-1], linestyle='dashed', marker='.', markerfacecolor='black', markersize=7, label="n = %a " % (numQubits[i]))
