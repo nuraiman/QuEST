@@ -37,7 +37,7 @@ number_of_nodes=(1 2 4 8 16 32)
 ranks_per_node=2
 
 n_repetitions=4
-arg=4
+arg=5
 depth=(30 40 50 60 70 80)
 
 export OMP_NUM_THREADS=18

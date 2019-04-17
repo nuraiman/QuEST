@@ -1,0 +1,89 @@
+=============================
+  LOADING MODULES
+=============================
+=============================
+  BUILDING AND COMPILATION
+=============================
+-- Cray Programming Environment 2.5.15 C
+-- Cray Programming Environment 2.5.15 CXX
+-- Found OpenMP_C: -fopenmp  
+-- Found OpenMP_CXX: -fopenmp  
+-- Found OpenMP_C: -fopenmp  
+-- Found OpenMP_CXX: -fopenmp  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /scratch/snx3000/mazzolag/qsim/QuEST/build
+[ 28%] Built target QuEST
+[ 35%] Built target dj
+[ 42%] Built target grover
+[ 50%] Built target shor
+[ 57%] Built target demo
+[ 64%] Built target approx-pf
+[ 71%] Built target rqc
+[ 78%] Built target ghadamard
+[ 85%] Built target bernstein
+[ 92%] Built target gtest
+[100%] Built target period-finding
+================================
+       RUNNING BENCHMARKS
+================================
+CONFIGURATION: n x m = 5x5, depth = 30, nodes = 1
+Duration [ms] = 4796, 4746, 4750, 4741
+Avg time [ms] = 4758, Std deviation = 22
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 2
+Duration [ms] = 3585, 3642, 3580, 3656
+Avg time [ms] = 3615, Std deviation = 33
+CONFIGURATION: n x m = 5x5, depth = 50, nodes = 4
+Duration [ms] = 2339, 2300, 2304, 2312
+Avg time [ms] = 2313, Std deviation = 15
+CONFIGURATION: n x m = 5x5, depth = 60, nodes = 8
+Duration [ms] = 1374, 1341, 1263, 1270
+Avg time [ms] = 1312, Std deviation = 47
+CONFIGURATION: n x m = 5x5, depth = 70, nodes = 16
+Duration [ms] = 921, 876, 833, 835
+Avg time [ms] = 866, Std deviation = 35
+CONFIGURATION: n x m = 5x5, depth = 80, nodes = 32
+Duration [ms] = 814, 611, 613, 586
+Avg time [ms] = 656, Std deviation = 91
+
+================================
+
+CONFIGURATION: n x m = 5x6, depth = 30, nodes = 1
+Duration [ms] = 178001, 178029, 177867, 177765
+Avg time [ms] = 177915, Std deviation = 106
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 2
+Duration [ms] = 124829, 125430, 125352, 125323
+Avg time [ms] = 125233, Std deviation = 236
+CONFIGURATION: n x m = 5x6, depth = 50, nodes = 4
+Duration [ms] = 88840, 89513, 89547, 89539
+Avg time [ms] = 89359, Std deviation = 300
+CONFIGURATION: n x m = 5x6, depth = 60, nodes = 8
+Duration [ms] = 59322, 59441, 59561, 59390
+Avg time [ms] = 59428, Std deviation = 87
+CONFIGURATION: n x m = 5x6, depth = 70, nodes = 16
+Duration [ms] = 35790, 36178, 35939, 36208
+Avg time [ms] = 36028, Std deviation = 172
+CONFIGURATION: n x m = 5x6, depth = 80, nodes = 32
+Duration [ms] = 22727, 22460, 22936, 22775
+Avg time [ms] = 22724, Std deviation = 171
+
+================================
+
+ 
+Batch Job Summary Report for Job "weak-rqc.sh" (13013148) on daint
+-----------------------------------------------------------------------------------------------------
+             Submit            Eligible               Start                 End    Elapsed  Timelimit 
+------------------- ------------------- ------------------- ------------------- ---------- ---------- 
+2019-04-17T16:59:24 2019-04-17T16:59:24 2019-04-17T17:01:37 2019-04-17T17:38:43   00:37:06   08:20:00 
+-----------------------------------------------------------------------------------------------------
+Username    Account     Partition   NNodes   Energy
+----------  ----------  ----------  ------  --------------
+mazzolag    csstaff     normal          32    5.53M joules
+ 
+This job did not utilize any GPUs
+ 
+----------------------------------------------------------
+Scratch File System        Files       Quota
+--------------------  ----------  ----------
+/scratch/snx3000           26132     1000000
+ 
