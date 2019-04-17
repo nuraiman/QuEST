@@ -1,0 +1,28 @@
+CONFIGURATION: N = 29, nodes = 1
+Duration [ms] = 64768, 54631, 52363, 65195
+Avg time [ms] = 59239, Std deviation = 5799
+--------------------------------
+CONFIGURATION: N = 30, nodes = 2
+Duration [ms] = 70350, 74328, 61269, 71452
+Avg time [ms] = 69349, Std deviation = 4886
+--------------------------------
+CONFIGURATION: N = 31, nodes = 4
+Duration [ms] = 88840, 90338, 74048, 86660
+Avg time [ms] = 84971, Std deviation = 6440
+--------------------------------
+CONFIGURATION: N = 32, nodes = 8
+Duration [ms] = 91657, 92765, 77096, 93405
+Avg time [ms] = 88730, Std deviation = 6746
+--------------------------------
+CONFIGURATION: N = 33, nodes = 16
+
+--------------------------------
+CONFIGURATION: N = 34, nodes = 32
+
+--------------------------------
+CONFIGURATION: N = 33, nodes = 16
+
+--------------------------------
+CONFIGURATION: N = 34, nodes = 32
+
+--------------------------------

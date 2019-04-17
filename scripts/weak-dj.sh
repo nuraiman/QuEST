@@ -6,7 +6,7 @@
 #SBATCH --nodes=32
 #SBATCH --constraint=mc
 #SBATCH --partition=normal
-#SBATCH --time=500
+#SBATCH --time=300
 
 # loading necessary modules
 echo "============================="
@@ -34,12 +34,12 @@ echo "================================"
 
 number_of_nodes=(1 2 4 8 16 32)
 ranks_per_node=2
-N=(30 31 32 33 34 35)
-n_repetitions=4
+N=(28 29 30 31 32 33)
+n_repetitions=10
 export OMP_NUM_THREADS=18
 
 path_to_executable="./examples_giulia/dj"
-path_to_file="../benchmarks/weak-dj-bench.txt"
+path_to_file="../benchmarks/weak-dj-bench-part2.txt"
 
 # iterate over the values of nodes
 for i in "${!number_of_nodes[@]}"

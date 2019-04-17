@@ -1,0 +1,169 @@
+=============================
+  LOADING MODULES
+=============================
+=============================
+  BUILDING AND COMPILATION
+=============================
+-- Cray Programming Environment 2.5.15 C
+-- Cray Programming Environment 2.5.15 CXX
+-- Found OpenMP_C: -fopenmp  
+-- Found OpenMP_CXX: -fopenmp  
+-- Found OpenMP_C: -fopenmp  
+-- Found OpenMP_CXX: -fopenmp  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /scratch/snx3000/mazzolag/qsim/QuEST/build
+[ 28%] Built target QuEST
+[ 42%] Built target period-finding
+[ 42%] Built target approx-pf
+[ 50%] Built target gtest
+[ 60%] Built target dj
+[ 82%] Built target bernstein
+[ 85%] Built target shor
+[ 85%] Built target rqc
+[ 85%] Built target demo
+[100%] Built target ghadamard
+[100%] Built target grover
+================================
+       RUNNING BENCHMARKS
+================================
+CONFIGURATION: N = 29, nodes = 1
+Duration [ms] = 64768, 54631, 52363, 65195
+Avg time [ms] = 59239, Std deviation = 5799
+
+================================
+
+CONFIGURATION: N = 30, nodes = 2
+Duration [ms] = 70350, 74328, 61269, 71452
+Avg time [ms] = 69349, Std deviation = 4886
+
+================================
+
+CONFIGURATION: N = 31, nodes = 4
+Duration [ms] = 88840, 90338, 74048, 86660
+Avg time [ms] = 84971, Std deviation = 6440
+
+================================
+
+CONFIGURATION: N = 32, nodes = 8
+Duration [ms] = 91657, 92765, 77096, 93405
+Avg time [ms] = 88730, Std deviation = 6746
+
+================================
+
+CONFIGURATION: N = 33, nodes = 16
+srun: error: nid00814: task 30: Killed
+srun: Terminating job step 12962192.4
+srun: error: nid00801: tasks 4-5: Killed
+slurmstepd: error: *** STEP 12962192.4 ON nid00799 CANCELLED AT 2019-04-16T14:39:40 ***
+srun: error: nid00802: task 6: Killed
+srun: error: nid00813: tasks 28-29: Killed
+srun: error: nid00800: task 2: Killed
+srun: error: nid00811: task 24: Killed
+srun: error: nid00809: tasks 20-21: Killed
+srun: error: nid00799: task 1: Killed
+srun: error: nid00804: task 11: Killed
+srun: error: nid00803: task 8: Killed
+srun: error: nid00807: task 17: Killed
+srun: error: nid00808: task 19: Killed
+srun: error: nid00804: task 10: Killed
+srun: error: nid00800: task 3: Killed
+srun: error: nid00799: task 0: Killed
+srun: error: nid00803: task 9: Killed
+srun: error: nid00806: task 15: Killed
+srun: error: nid00805: tasks 12-13: Killed
+srun: error: nid00811: task 25: Killed
+srun: error: nid00806: task 14: Killed
+srun: error: nid00802: task 7: Killed
+srun: error: nid00808: task 18: Killed
+srun: error: nid00812: tasks 26-27: Killed
+srun: error: nid00807: task 16: Killed
+srun: error: nid00814: task 31: Killed
+srun: error: nid00810: tasks 22-23: Killed
+srun: Force Terminated job step 12962192.4
+
+
+================================
+
+CONFIGURATION: N = 34, nodes = 32
+srun: error: nid00810: tasks 22-23: Killed
+srun: Terminating job step 12962192.5
+srun: error: nid00827: tasks 56-57: Killed
+srun: error: nid00815: tasks 32-33: Killed
+srun: error: nid00811: task 25: Killed
+srun: error: nid00800: task 2: Killed
+srun: error: nid00801: task 5: Killed
+slurmstepd: error: *** STEP 12962192.5 ON nid00799 CANCELLED AT 2019-04-16T14:44:19 ***
+srun: error: nid00805: task 13: Killed
+srun: error: nid00812: task 27: Killed
+srun: error: nid00804: task 10: Killed
+srun: error: nid00799: task 1: Killed
+srun: error: nid00803: task 9: Killed
+srun: error: nid00951: task 60: Killed
+srun: error: nid00828: task 59: Killed
+srun: error: nid00821: task 45: Killed
+srun: error: nid00806: tasks 14-15: Killed
+srun: error: nid00952: task 62: Killed
+srun: error: nid00819: task 41: Killed
+srun: error: nid00826: task 54: Killed
+srun: error: nid00818: task 39: Killed
+srun: error: nid00814: task 30: Killed
+srun: error: nid00811: task 24: Killed
+srun: error: nid00800: task 3: Killed
+srun: error: nid00813: task 28: Killed
+srun: error: nid00807: task 16: Killed
+srun: error: nid00801: task 4: Killed
+srun: error: nid00805: task 12: Killed
+srun: error: nid00825: task 53: Killed
+srun: error: nid00814: task 31: Killed
+srun: error: nid00812: task 26: Killed
+srun: error: nid00804: task 11: Killed
+srun: error: nid00803: task 8: Killed
+srun: error: nid00799: task 0: Killed
+srun: error: nid00821: task 44: Killed
+srun: error: nid00951: task 61: Killed
+srun: error: nid00809: tasks 20-21: Killed
+srun: error: nid00813: task 29: Killed
+srun: error: nid00828: task 58: Killed
+srun: error: nid00807: task 17: Killed
+srun: error: nid00817: task 37: Killed
+srun: error: nid00823: task 48: Killed
+srun: error: nid00952: task 63: Killed
+srun: error: nid00824: task 51: Killed
+srun: error: nid00825: task 52: Killed
+srun: error: nid00819: task 40: Killed
+srun: error: nid00818: task 38: Killed
+srun: error: nid00802: task 6: Killed
+srun: error: nid00826: task 55: Killed
+srun: error: nid00820: tasks 42-43: Killed
+srun: error: nid00822: task 46: Killed
+srun: error: nid00816: tasks 34-35: Killed
+srun: error: nid00817: task 36: Killed
+srun: error: nid00808: tasks 18-19: Killed
+srun: error: nid00823: task 49: Killed
+srun: error: nid00824: task 50: Killed
+srun: error: nid00802: task 7: Killed
+srun: error: nid00822: task 47: Killed
+srun: Force Terminated job step 12962192.5
+
+
+================================
+
+ 
+Batch Job Summary Report for Job "weak-dj.sh" (12962192) on daint
+-----------------------------------------------------------------------------------------------------
+             Submit            Eligible               Start                 End    Elapsed  Timelimit 
+------------------- ------------------- ------------------- ------------------- ---------- ---------- 
+2019-04-16T14:02:26 2019-04-16T14:02:26 2019-04-16T14:13:32 2019-04-16T14:44:21   00:30:49   08:20:00 
+-----------------------------------------------------------------------------------------------------
+Username    Account     Partition   NNodes   Energy
+----------  ----------  ----------  ------  --------------
+mazzolag    csstaff     normal          32    4.91M joules
+ 
+This job did not utilize any GPUs
+ 
+----------------------------------------------------------
+Scratch File System        Files       Quota
+--------------------  ----------  ----------
+/scratch/snx3000           26104     1000000
+ 
