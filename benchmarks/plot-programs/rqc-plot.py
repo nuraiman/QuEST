@@ -42,26 +42,56 @@ for i, filename in enumerate(filenames):
         y.append(temp_avg)
     print(y)
 
-plt.figure()
+filenames2 = ["../output-files/rqc-benchmark-intel.txt"]
+master_data2 = []
+data2 = [master_data2]
+
+for i, filename in enumerate(filenames2):
+    f2 = open(filename, 'r')
+    data2[i] = f2.read()
+    f2.close()
+
+    temp2 = data2[i].split('\n')
+
+    avg_times2 = [row.split(' ')[4] for row in temp2 if row.startswith("Avg")]
+    avg_times2 = [k.split(',')[0] for k in avg_times2]  # get rid of the commas in the list of avg_times
+
+    avg_times2 = [float(num) for num in avg_times2]
+
+    lenThr = len(nodes)
+    y2 = []
+    for j in range(len(numQubits)):
+        temp_avg2 = avg_times2[j*lenThr:(j*lenThr + lenThr)]
+        temp_avg2.reverse()
+        y2.append(temp_avg2)
+    print(y2)
+
+
+plt.figure(figsize=(12, 10))
 dimx = int(np.round(np.sqrt(len(y))))
 dimy = dimx if dimx*dimx >= len(y) else dimx+1
 for i in range(len(y)):
     y[i] = [x*1e-3 for x in y[i]]
+    y2[i] = [x*1e-3 for x in y2[i]]
     plt.subplot(dimx, dimy, i+1)
     if i == 0:
-        plt.plot(a[:-1], y[i][:-1], linestyle='dashed', marker='.', markerfacecolor='black', markersize=7, label="n = %a " % (numQubits[i]))
+        plt.plot(a[:-1], y[i][:-1], linestyle='dashed', marker='.', markerfacecolor='black', markersize=7, label="QuEST")
+        plt.plot(a[:-1], y2[i][:-1], linestyle='dashed', marker='.', markerfacecolor='black', markersize=7, label="Intel-QS")
         plt.title("Qubits n = %a" "\n" "depth d = %a" % (numQubits[i], deptharr[i]), fontsize=10)
         plt.xticks(a[:-1], nodes[:-1])
+        plt.xlabel('number of nodes')
+        plt.ylabel('time [s]')
+        plt.legend(loc='best')
     else:
-        plt.plot(a, y[i], linestyle='dashed', marker='.', markerfacecolor='black', markersize=7, label="n = %a " % (numQubits[i]))
+        plt.plot(a, y[i], linestyle='dashed', marker='.', markerfacecolor='black', markersize=7, label="QuEST")
+        plt.plot(a, y2[i], linestyle='dashed', marker='.', markerfacecolor='black', markersize=7, label="Intel-QS")
         plt.title("Qubits n = %i" "\n" "depth d = %a" %(numQubits[i], deptharr[i]), size=10)
         plt.xticks(a, nodes)
         plt.xlabel('number of nodes')
         plt.ylabel('time [s]')
-        #plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.05))
-plt.suptitle('QuEST benchmark for RQC algortihm (over nodes)')
+        plt.legend(loc='best')
+plt.suptitle('RQC-algortihm, strong scaling')
 plt.tight_layout()
 plt.subplots_adjust(top=0.86)
-plt.savefig('../plots/rqc-benchmark-nodes.pdf')
-plt.savefig('../plots/rqc-benchmark-nodes')
+plt.savefig('../plots/rqc-benchmark.pdf')
 plt.show()

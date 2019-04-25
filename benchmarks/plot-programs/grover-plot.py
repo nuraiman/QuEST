@@ -46,7 +46,7 @@ for i in range(len(y)):
     plt.xlabel('number of nodes')
     plt.ylabel('time [ms]')
     #plt.legend(loc='best')
-plt.suptitle('benchmark for GROVER algortihm (over nodes)')
+plt.suptitle('GROVER algortihm, strong scaling (QuEST)')
 plt.tight_layout()
 plt.subplots_adjust(top=0.86)
 plt.savefig('../plots/grover-benchmark-nodes.pdf')

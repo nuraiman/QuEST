@@ -43,7 +43,7 @@ for i in range(len(y)):
     plt.xlabel('number of nodes')
     plt.ylabel('time [s]')
     #plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.05))
-plt.suptitle('benchmark for SHOR algortihm (over nodes)')
+plt.suptitle('SHOR algortihm, strong scaling (QuEST)')
 plt.tight_layout()
 plt.subplots_adjust(top=0.86)
 plt.savefig('../plots/shor-benchmark-nodes.pdf')
