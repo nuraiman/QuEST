@@ -6,7 +6,7 @@
 #SBATCH --nodes=128
 #SBATCH --constraint=mc
 #SBATCH --partition=normal
-#SBATCH --time=200
+#SBATCH --time=120
 
 # loading necessary modules
 echo "============================="
