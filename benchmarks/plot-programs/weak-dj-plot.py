@@ -1,12 +1,12 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-nodes = [1, 2, 4, 8, 16, 32]  # number of threads
-numQubits = [28, 29, 30, 31, 32, 33]  # input number n
-a = [1, 2, 3, 4, 5, 6]  # needed for plotting
+nodes = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]  # number of threads
+numQubits = [28, 29, 30, 31, 32, 33, 34, 35, 36, 37]  # input number n
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  # needed for plotting
 
 # readout data from textfile
-filenames = ["../output-files/weak-dj-bench-part2.txt"]
+filenames = ["../output-files/weak-dj-bench.txt"]
 master_data = []
 data = [master_data]
 
