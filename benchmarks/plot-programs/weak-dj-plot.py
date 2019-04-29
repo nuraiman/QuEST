@@ -6,7 +6,7 @@ numQubits = [28, 29, 30, 31, 32, 33, 34, 35, 36, 37]  # input number n
 a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  # needed for plotting
 
 # readout data from textfile
-filenames = ["../output-files/weak-dj-bench.txt"]
+filenames = ["../output-files/weak-dj-bench-data2.txt"]
 master_data = []
 data = [master_data]
 
