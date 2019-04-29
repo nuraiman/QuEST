@@ -1,0 +1,110 @@
+=============================
+  LOADING MODULES
+=============================
+=============================
+  BUILDING AND COMPILATION
+=============================
+-- Cray Programming Environment 2.5.15 C
+-- Cray Programming Environment 2.5.15 CXX
+-- Found OpenMP_C: -fopenmp  
+-- Found OpenMP_CXX: -fopenmp  
+-- Found OpenMP_C: -fopenmp  
+-- Found OpenMP_CXX: -fopenmp  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /scratch/snx3000/mazzolag/qsim/QuEST/build
+[ 28%] Built target QuEST
+[ 46%] Built target period-finding
+[ 50%] Built target ghadamard
+[ 50%] Built target demo
+Scanning dependencies of target dj
+[ 78%] Built target gtest
+[ 96%] Built target rqc
+[ 96%] Building CXX object examples_giulia/CMakeFiles/dj.dir/dj.cpp.o
+[ 96%] Built target grover
+[ 96%] Built target approx-pf
+[ 96%] Built target shor
+[ 96%] Built target bernstein
+[100%] Linking CXX executable dj
+[100%] Built target dj
+================================
+       RUNNING BENCHMARKS
+================================
+CONFIGURATION: N = 28, nodes = 1
+Duration [ms] = 28103, 26893, 25805, 26984, 5539, 13336, 5564, 32823, 33971, 29379
+Avg time [ms] = 22839, Std deviation = 10121
+
+================================
+
+CONFIGURATION: N = 29, nodes = 2
+Duration [ms] = 34834, 30302, 28996, 35407, 13315, 15408, 13325, 36499, 37961, 32783
+Avg time [ms] = 27883, Std deviation = 9442
+
+================================
+
+CONFIGURATION: N = 30, nodes = 4
+Duration [ms] = 41943, 44232, 36688, 42901, 15000, 17385, 14991, 44532, 46026, 41114
+Avg time [ms] = 34481, Std deviation = 12475
+
+================================
+
+CONFIGURATION: N = 31, nodes = 8
+Duration [ms] = 46629, 47209, 39160, 45719, 16721, 19105, 16748, 47453, 50366, 44136
+Avg time [ms] = 37324, Std deviation = 13255
+
+================================
+
+CONFIGURATION: N = 32, nodes = 16
+Duration [ms] = 49338, 49609, 41111, 50383, 18358, 20965, 18339, 54795, 53208, 46525
+Avg time [ms] = 40263, Std deviation = 14225
+
+================================
+
+CONFIGURATION: N = 33, nodes = 32
+Duration [ms] = 46039, 55636, 22799, 20252, 42581, 62082, 44887, 20245, 20231, 53658
+Avg time [ms] = 38841, Std deviation = 15617
+
+================================
+
+CONFIGURATION: N = 34, nodes = 64
+Duration [ms] = 53956, 65769, 25521, 23077, 52902, 73503, 54020, 23122, 23327, 66120
+Avg time [ms] = 46131, Std deviation = 19259
+
+================================
+
+CONFIGURATION: N = 35, nodes = 128
+Duration [ms] = 63662, 73985, 29463, 26826, 62223, 82979, 64021, 26299, 26686, 75526
+Avg time [ms] = 53167, Std deviation = 21933
+
+================================
+
+CONFIGURATION: N = 36, nodes = 256
+Duration [ms] = 72335, 80999, 35809, 33202, 67473, 88353, 69503, 33074, 32794, 83631
+Avg time [ms] = 59717, Std deviation = 22066
+
+================================
+
+CONFIGURATION: N = 37, nodes = 512
+Duration [ms] = 80705, 93502, 38721, 35991, 76038, 100387, 82462, 37105, 35749, 98027
+Avg time [ms] = 67868, Std deviation = 26291
+
+================================
+
+ 
+Batch Job Summary Report for Job "weak-dj.sh" (13346228) on daint
+-----------------------------------------------------------------------------------------------------
+             Submit            Eligible               Start                 End    Elapsed  Timelimit 
+------------------- ------------------- ------------------- ------------------- ---------- ---------- 
+2019-04-26T15:33:17 2019-04-26T15:33:17 2019-04-26T20:40:04 2019-04-26T21:53:33   01:13:29   02:00:00 
+-----------------------------------------------------------------------------------------------------
+Username    Account     Partition   NNodes   Energy
+----------  ----------  ----------  ------  --------------
+mazzolag    csstaff     normal         512          joules
+ 
+This job did not utilize any GPUs
+ 
+----------------------------------------------------------
+Scratch File System        Files       Quota
+--------------------  ----------  ----------
+/scratch/snx3000           19708     1000000
+ 

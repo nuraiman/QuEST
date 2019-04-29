@@ -28,7 +28,6 @@ int main(int narg, char *varg[]) {
     std::vector<long long> times;
     times.reserve(nrep);
 
-    std::vector<qInt> factors;
 
     rng.setSeed(0);
     for (int i = 0; i < nrep; ++i) {	

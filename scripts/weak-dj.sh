@@ -15,6 +15,7 @@ echo "============================="
 module load daint-mc
 module swap PrgEnv-cray PrgEnv-gnu
 module load CMake
+module load intel
 
 export CC=`which cc`
 export CXX=`which CC`
