@@ -1,0 +1,1596 @@
+=============================
+  LOADING MODULES
+=============================
+=============================
+  BUILDING AND COMPILATION
+=============================
+-- Cray Programming Environment 2.5.15 C
+-- Cray Programming Environment 2.5.15 CXX
+-- Found OpenMP_C: -fopenmp  
+-- Found OpenMP_CXX: -fopenmp  
+-- Found OpenMP_C: -fopenmp  
+-- Found OpenMP_CXX: -fopenmp  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /scratch/snx3000/mazzolag/qsim/QuEST/build
+[ 26%] Built target QuEST
+[ 50%] Built target single-qubit-gates
+[ 50%] Built target demo
+[ 63%] Built target bernstein
+[ 73%] Built target rqc
+[ 90%] Built target period-finding
+[100%] Built target dj
+[100%] Built target gtest
+[100%] Built target ghadamard
+[100%] Built target approx-pf
+[100%] Built target grover
+[100%] Built target shor
+================================
+       RUNNING BENCHMARKS
+================================
+CONFIGURATION: N = 33, nodes = 8
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+srun: error: nid00323: task 3: Aborted
+srun: Terminating job step 13441500.0
+srun: error: nid00330: task 6: Aborted
+srun: error: nid00321: task 1: Aborted
+srun: error: nid00329: task 5: Aborted
+srun: error: nid00331: task 7: Aborted
+srun: error: nid00328: task 4: Aborted
+srun: error: nid00322: task 2: Aborted
+srun: error: nid00320: task 0: Aborted
+
+
+================================
+
+CONFIGURATION: N = 34, nodes = 16
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+srun: error: nid00336: task 12: Aborted
+srun: Terminating job step 13441500.1
+srun: error: nid00335: task 11: Aborted
+srun: error: nid00323: task 3: Aborted
+srun: error: nid00330: task 6: Aborted
+srun: error: nid00338: task 14: Aborted
+srun: error: nid00337: task 13: Aborted
+srun: error: nid00329: task 5: Aborted
+srun: error: nid00321: task 1: Aborted
+srun: error: nid00328: task 4: Aborted
+srun: error: nid00334: task 10: Aborted
+srun: error: nid00320: task 0: Aborted
+srun: error: nid00322: task 2: Aborted
+srun: error: nid00339: task 15: Aborted
+srun: error: nid00331: task 7: Aborted
+srun: error: nid00332: task 8: Aborted
+srun: error: nid00333: task 9: Aborted
+
+
+================================
+
+CONFIGURATION: N = 35, nodes = 32
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+srun: error: nid00336: task 12: Aborted
+srun: Terminating job step 13441500.2
+srun: error: nid00335: task 11: Aborted
+srun: error: nid00338: task 14: Aborted
+srun: error: nid00337: task 13: Aborted
+srun: error: nid00330: task 6: Aborted
+srun: error: nid00323: task 3: Aborted
+srun: error: nid00321: task 1: Aborted
+srun: error: nid00350: task 26: Aborted
+srun: error: nid00329: task 5: Aborted
+srun: error: nid00346: task 22: Aborted
+srun: error: nid00341: task 17: Aborted
+srun: error: nid00328: task 4: Aborted
+srun: error: nid00333: task 9: Aborted
+srun: error: nid00334: task 10: Aborted
+srun: error: nid00331: task 7: Aborted
+srun: error: nid00340: task 16: Aborted
+srun: error: nid00339: task 15: Aborted
+srun: error: nid00355: task 31: Aborted
+srun: error: nid00352: task 28: Aborted
+srun: error: nid00353: task 29: Aborted
+srun: error: nid00332: task 8: Aborted
+srun: error: nid00354: task 30: Aborted
+srun: error: nid00344: task 20: Aborted
+srun: error: nid00322: task 2: Aborted
+srun: error: nid00348: task 24: Aborted
+srun: error: nid00343: task 19: Aborted
+srun: error: nid00342: task 18: Aborted
+srun: error: nid00351: task 27: Aborted
+srun: error: nid00345: task 21: Aborted
+srun: error: nid00320: task 0: Aborted
+srun: error: nid00349: task 25: Aborted
+srun: error: nid00347: task 23: Aborted
+
+
+================================
+
+CONFIGURATION: N = 36, nodes = 64
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+srun: error: nid00335: task 11: Aborted
+srun: Terminating job step 13441500.3
+srun: error: nid00338: task 14: Aborted
+srun: error: nid00337: task 13: Aborted
+srun: error: nid00336: task 12: Aborted
+srun: error: nid00323: task 3: Aborted
+srun: error: nid00370: task 46: Aborted
+srun: error: nid00381: task 57: Aborted
+srun: error: nid00330: task 6: Aborted
+srun: error: nid00390: task 61: Aborted
+srun: error: nid00389: task 60: Aborted
+srun: error: nid00321: task 1: Aborted
+srun: error: nid00350: task 26: Aborted
+srun: error: nid00365: task 41: Aborted
+srun: error: nid00378: task 54: Aborted
+srun: error: nid00329: task 5: Aborted
+srun: error: nid00346: task 22: Aborted
+srun: error: nid00363: task 39: Aborted
+srun: error: nid00382: task 58: Aborted
+srun: error: nid00341: task 17: Aborted
+srun: error: nid00340: task 16: Aborted
+srun: error: nid00333: task 9: Aborted
+srun: error: nid00362: task 38: Aborted
+srun: error: nid00388: task 59: Aborted
+srun: error: nid00342: task 18: Aborted
+srun: error: nid00392: task 63: Aborted
+srun: error: nid00374: task 50: Aborted
+srun: error: nid00371: task 47: Aborted
+srun: error: nid00334: task 10: Aborted
+srun: error: nid00377: task 53: Aborted
+srun: error: nid00328: task 4: Aborted
+srun: error: nid00331: task 7: Aborted
+srun: error: nid00376: task 52: Aborted
+srun: error: nid00357: task 33: Aborted
+srun: error: nid00368: task 44: Aborted
+srun: error: nid00353: task 29: Aborted
+srun: error: nid00354: task 30: Aborted
+srun: error: nid00351: task 27: Aborted
+srun: error: nid00352: task 28: Aborted
+srun: error: nid00355: task 31: Aborted
+srun: error: nid00356: task 32: Aborted
+srun: error: nid00359: task 35: Aborted
+srun: error: nid00344: task 20: Aborted
+srun: error: nid00343: task 19: Aborted
+srun: error: nid00332: task 8: Aborted
+srun: error: nid00345: task 21: Aborted
+srun: error: nid00348: task 24: Aborted
+srun: error: nid00379: task 55: Aborted
+srun: error: nid00380: task 56: Aborted
+srun: error: nid00349: task 25: Aborted
+srun: error: nid00372: task 48: Aborted
+srun: error: nid00361: task 37: Aborted
+srun: error: nid00322: task 2: Aborted
+srun: error: nid00369: task 45: Aborted
+srun: error: nid00358: task 34: Aborted
+srun: error: nid00367: task 43: Aborted
+srun: error: nid00320: task 0: Aborted
+srun: error: nid00373: task 49: Aborted
+srun: error: nid00366: task 42: Aborted
+srun: error: nid00339: task 15: Aborted
+srun: error: nid00360: task 36: Aborted
+srun: error: nid00347: task 23: Aborted
+srun: error: nid00364: task 40: Aborted
+srun: error: nid00375: task 51: Aborted
+srun: error: nid00391: task 62: Aborted
+
+
+================================
+
+CONFIGURATION: N = 37, nodes = 128
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+srun: error: nid00389: task 60: Aborted
+srun: Terminating job step 13441500.4
+srun: error: nid00338: task 14: Aborted
+srun: error: nid00382: task 58: Aborted
+srun: error: nid00323: task 3: Aborted
+srun: error: nid00362: task 38: Aborted
+srun: error: nid00378: task 54: Aborted
+srun: error: nid00330: task 6: Aborted
+srun: error: nid00371: task 47: Aborted
+srun: error: nid00388: task 59: Aborted
+srun: error: nid00505: task 78: Aborted
+srun: error: nid00510: task 83: Aborted
+srun: error: nid00359: task 35: Aborted
+srun: error: nid00370: task 46: Aborted
+srun: error: nid00346: task 22: Aborted
+srun: error: nid00354: task 30: Aborted
+srun: error: nid00379: task 55: Aborted
+srun: error: nid00335: task 11: Aborted
+srun: error: nid00374: task 50: Aborted
+srun: error: nid00328: task 4: Aborted
+srun: error: nid00340: task 16: Aborted
+srun: error: nid00538: task 106: Aborted
+srun: error: nid00376: task 52: Aborted
+srun: error: nid00363: task 39: Aborted
+srun: error: nid00506: task 79: Aborted
+srun: error: nid00332: task 8: Aborted
+srun: error: nid00343: task 19: Aborted
+srun: error: nid00518: task 86: Aborted
+srun: error: nid00403: task 74: Aborted
+srun: error: nid00555: task 123: Aborted
+srun: error: nid00367: task 43: Aborted
+srun: error: nid00380: task 56: Aborted
+srun: error: nid00334: task 10: Aborted
+srun: error: nid00390: task 61: Aborted
+srun: error: nid00358: task 34: Aborted
+srun: error: nid00336: task 12: Aborted
+srun: error: nid00321: task 1: Aborted
+srun: error: nid00342: task 18: Aborted
+srun: error: nid00348: task 24: Aborted
+srun: error: nid00364: task 40: Aborted
+srun: error: nid00375: task 51: Aborted
+srun: error: nid00539: task 107: Aborted
+srun: error: nid00351: task 27: Aborted
+srun: error: nid00344: task 20: Aborted
+srun: error: nid00365: task 41: Aborted
+srun: error: nid00381: task 57: Aborted
+srun: error: nid00516: task 84: Aborted
+srun: error: nid00337: task 13: Aborted
+srun: error: nid00372: task 48: Aborted
+srun: error: nid00559: task 127: Aborted
+srun: error: nid00392: task 63: Aborted
+srun: error: nid00356: task 32: Aborted
+srun: error: nid00395: task 66: Aborted
+srun: error: nid00504: task 77: Aborted
+srun: error: nid00509: task 82: Aborted
+srun: error: nid00391: task 62: Aborted
+srun: error: nid00341: task 17: Aborted
+srun: error: nid00360: task 36: Aborted
+srun: error: nid00350: task 26: Aborted
+srun: error: nid00520: task 88: Aborted
+srun: error: nid00377: task 53: Aborted
+srun: error: nid00397: task 68: Aborted
+srun: error: nid00353: task 29: Aborted
+srun: error: nid00399: task 70: Aborted
+srun: error: nid00368: task 44: Aborted
+srun: error: nid00320: task 0: Aborted
+srun: error: nid00401: task 72: Aborted
+srun: error: nid00508: task 81: Aborted
+srun: error: nid00355: task 31: Aborted
+srun: error: nid00556: task 124: Aborted
+srun: error: nid00400: task 71: Aborted
+srun: error: nid00329: task 5: Aborted
+srun: error: nid00369: task 45: Aborted
+srun: error: nid00361: task 37: Aborted
+srun: error: nid00529: task 97: Aborted
+srun: error: nid00402: task 73: Aborted
+srun: error: nid00544: task 112: Aborted
+srun: error: nid00349: task 25: Aborted
+srun: error: nid00558: task 126: Aborted
+srun: error: nid00531: task 99: Aborted
+srun: error: nid00534: task 102: Aborted
+srun: error: nid00352: task 28: Aborted
+srun: error: nid00546: task 114: Aborted
+srun: error: nid00517: task 85: Aborted
+srun: error: nid00552: task 120: Aborted
+srun: error: nid00398: task 69: Aborted
+srun: error: nid00331: task 7: Aborted
+srun: error: nid00366: task 42: Aborted
+srun: error: nid00507: task 80: Aborted
+srun: error: nid00550: task 118: Aborted
+srun: error: nid00542: task 110: Aborted
+srun: error: nid00519: task 87: Aborted
+srun: error: nid00522: task 90: Aborted
+srun: error: nid00547: task 115: Aborted
+srun: error: nid00540: task 108: Aborted
+srun: error: nid00523: task 91: Aborted
+srun: error: nid00535: task 103: Aborted
+srun: error: nid00537: task 105: Aborted
+srun: error: nid00357: task 33: Aborted
+srun: error: nid00543: task 111: Aborted
+srun: error: nid00533: task 101: Aborted
+srun: error: nid00322: task 2: Aborted
+srun: error: nid00557: task 125: Aborted
+srun: error: nid00526: task 94: Aborted
+srun: error: nid00521: task 89: Aborted
+srun: error: nid00394: task 65: Aborted
+srun: error: nid00527: task 95: Aborted
+srun: error: nid00541: task 109: Aborted
+srun: error: nid00553: task 121: Aborted
+srun: error: nid00545: task 113: Aborted
+srun: error: nid00549: task 117: Aborted
+srun: error: nid00339: task 15: Aborted
+srun: error: nid00396: task 67: Aborted
+srun: error: nid00536: task 104: Aborted
+srun: error: nid00333: task 9: Aborted
+srun: error: nid00548: task 116: Aborted
+srun: error: nid00525: task 93: Aborted
+srun: error: nid00551: task 119: Aborted
+srun: error: nid00524: task 92: Aborted
+srun: error: nid00393: task 64: Aborted
+srun: error: nid00345: task 21: Aborted
+srun: error: nid00532: task 100: Aborted
+srun: error: nid00528: task 96: Aborted
+srun: error: nid00554: task 122: Aborted
+srun: error: nid00503: task 76: Aborted
+srun: error: nid00373: task 49: Aborted
+srun: error: nid00347: task 23: Aborted
+srun: error: nid00530: task 98: Aborted
+srun: error: nid00404: task 75: Aborted
+
+
+================================
+
+CONFIGURATION: N = 38, nodes = 256
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_errorterminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+terminate called after throwing an instance of 'std::regex_error'
+  what():  regex_error
+srun: error: nid00320: task 0: Aborted
+srun: Terminating job step 13441500.5
+srun: error: nid00336: task 12: Aborted
+srun: error: nid00390: task 61: Aborted
+srun: error: nid00338: task 14: Aborted
+srun: error: nid00323: task 3: Aborted
+srun: error: nid00382: task 58: Aborted
+srun: error: nid00365: task 41: Aborted
+srun: error: nid00330: task 6: Aborted
+srun: error: nid00337: task 13: Aborted
+srun: error: nid00362: task 38: Aborted
+srun: error: nid00363: task 39: Aborted
+srun: error: nid00370: task 46: Aborted
+srun: error: nid00504: task 77: Aborted
+srun: error: nid00505: task 78: Aborted
+srun: error: nid00529: task 97: Aborted
+srun: error: nid00350: task 26: Aborted
+srun: error: nid00369: task 45: Aborted
+srun: error: nid00376: task 52: Aborted
+srun: error: nid00335: task 11: Aborted
+srun: error: nid00811: task 150: Aborted
+srun: error: nid00355: task 31: Aborted
+srun: error: nid00819: task 158: Aborted
+srun: error: nid00392: task 63: Aborted
+srun: error: nid00821: task 160: Aborted
+srun: error: nid00510: task 83: Aborted
+srun: error: nid00389: task 60: Aborted
+srun: error: nid00321: task 1: Aborted
+srun: error: nid00518: task 86: Aborted
+srun: error: nid00555: task 123: Aborted
+srun: error: nid00352: task 28: Aborted
+srun: error: nid00371: task 47: Aborted
+srun: error: nid00911: task 240: Aborted
+srun: error: nid00343: task 19: Aborted
+srun: error: nid00391: task 62: Aborted
+srun: error: nid00381: task 57: Aborted
+srun: error: nid00509: task 82: Aborted
+srun: error: nid00388: task 59: Aborted
+srun: error: nid00378: task 54: Aborted
+srun: error: nid00517: task 85: Aborted
+srun: error: nid00884: task 218: Aborted
+srun: error: nid00351: task 27: Aborted
+srun: error: nid00520: task 88: Aborted
+srun: error: nid00400: task 71: Aborted
+srun: error: nid00372: task 48: Aborted
+srun: error: nid00361: task 37: Aborted
+srun: error: nid00524: task 92: Aborted
+srun: error: nid00519: task 87: Aborted
+srun: error: nid00340: task 16: Aborted
+srun: error: nid00816: task 155: Aborted
+srun: error: nid00546: task 114: Aborted
+srun: error: nid00396: task 67: Aborted
+srun: error: nid00572: task 140: Aborted
+srun: error: nid00345: task 21: Aborted
+srun: error: nid00358: task 34: Aborted
+srun: error: nid00341: task 17: Aborted
+srun: error: nid00401: task 72: Aborted
+srun: error: nid00553: task 121: Aborted
+srun: error: nid00542: task 110: Aborted
+srun: error: nid00339: task 15: Aborted
+srun: error: nid00538: task 106: Aborted
+srun: error: nid00377: task 53: Aborted
+srun: error: nid00395: task 66: Aborted
+srun: error: nid00506: task 79: Aborted
+srun: error: nid00356: task 32: Aborted
+srun: error: nid00908: task 237: Aborted
+srun: error: nid00526: task 94: Aborted
+srun: error: nid00353: task 29: Aborted
+srun: error: nid00354: task 30: Aborted
+srun: error: nid00535: task 103: Aborted
+srun: error: nid00374: task 50: Aborted
+srun: error: nid00867: task 201: Aborted
+srun: error: nid00556: task 124: Aborted
+srun: error: nid00804: task 143: Aborted
+srun: error: nid00534: task 102: Aborted
+srun: error: nid00379: task 55: Aborted
+srun: error: nid00507: task 80: Aborted
+srun: error: nid00814: task 153: Aborted
+srun: error: nid00815: task 154: Aborted
+srun: error: nid00359: task 35: Aborted
+srun: error: nid00817: task 156: Aborted
+srun: error: nid00349: task 25: Aborted
+srun: error: nid00907: task 236: Aborted
+srun: error: nid00849: task 183: Aborted
+srun: error: nid00886: task 220: Aborted
+srun: error: nid00539: task 107: Aborted
+srun: error: nid00528: task 96: Aborted
+srun: error: nid00523: task 91: Aborted
+srun: error: nid00554: task 122: Aborted
+srun: error: nid00949: task 249: Aborted
+srun: error: nid00532: task 100: Aborted
+srun: error: nid00810: task 149: Aborted
+srun: error: nid00522: task 90: Aborted
+srun: error: nid00547: task 115: Aborted
+srun: error: nid00813: task 152: Aborted
+srun: error: nid00525: task 93: Aborted
+srun: error: nid00346: task 22: Aborted
+srun: error: nid00881: task 215: Aborted
+srun: error: nid00870: task 204: Aborted
+srun: error: nid00367: task 43: Aborted
+srun: error: nid00403: task 74: Aborted
+srun: error: nid00398: task 69: Aborted
+srun: error: nid00809: task 148: Aborted
+srun: error: nid00527: task 95: Aborted
+srun: error: nid00342: task 18: Aborted
+srun: error: nid00331: task 7: Aborted
+srun: error: nid00344: task 20: Aborted
+srun: error: nid00333: task 9: Aborted
+srun: error: nid00544: task 112: Aborted
+srun: error: nid00557: task 125: Aborted
+srun: error: nid00366: task 42: Aborted
+srun: error: nid00947: task 247: Aborted
+srun: error: nid00368: task 44: Aborted
+srun: error: nid00891: task 225: Aborted
+srun: error: nid00868: task 202: Aborted
+srun: error: nid00329: task 5: Aborted
+srun: error: nid00952: task 252: Aborted
+srun: error: nid00847: task 181: Aborted
+srun: error: nid00825: task 164: Aborted
+srun: error: nid00508: task 81: Aborted
+srun: error: nid00803: task 142: Aborted
+srun: error: nid00545: task 113: Aborted
+srun: error: nid00840: task 174: Aborted
+srun: error: nid00818: task 157: Aborted
+srun: error: nid00866: task 200: Aborted
+srun: error: nid00531: task 99: Aborted
+srun: error: nid00562: task 130: Aborted
+srun: error: nid00828: task 167: Aborted
+srun: error: nid00805: task 144: Aborted
+srun: error: nid00912: task 241: Aborted
+srun: error: nid00397: task 68: Aborted
+srun: error: nid00543: task 111: Aborted
+srun: error: nid00334: task 10: Aborted
+srun: error: nid00347: task 23: Aborted
+srun: error: nid00882: task 216: Aborted
+srun: error: nid00541: task 109: Aborted
+srun: error: nid00380: task 56: Aborted
+srun: error: nid00885: task 219: Aborted
+srun: error: nid00950: task 250: Aborted
+srun: error: nid00910: task 239: Aborted
+srun: error: nid00540: task 108: Aborted
+srun: error: nid00889: task 223: Aborted
+srun: error: nid00848: task 182: Aborted
+srun: error: nid00861: task 195: Aborted
+srun: error: nid00328: task 4: Aborted
+srun: error: nid00521: task 89: Aborted
+srun: error: nid00552: task 120: Aborted
+srun: error: nid00402: task 73: Aborted
+srun: error: nid00901: task 230: Aborted
+srun: error: nid00537: task 105: Aborted
+srun: error: nid00393: task 64: Aborted
+srun: error: nid00551: task 119: Aborted
+srun: error: nid00516: task 84: Aborted
+srun: error: nid00859: task 193: Aborted
+srun: error: nid00548: task 116: Aborted
+srun: error: nid00404: task 75: Aborted
+srun: error: nid00909: task 238: Aborted
+srun: error: nid00857: task 191: Aborted
+srun: error: nid00858: task 192: Aborted
+srun: error: nid00812: task 151: Aborted
+srun: error: nid00566: task 134: Aborted
+srun: error: nid00549: task 117: Aborted
+srun: error: nid00550: task 118: Aborted
+srun: error: nid00845: task 179: Aborted
+srun: error: nid00558: task 126: Aborted
+srun: error: nid00841: task 175: Aborted
+srun: error: nid00942: task 242: Aborted
+srun: error: nid00820: task 159: Aborted
+srun: error: nid00844: task 178: Aborted
+srun: error: nid00887: task 221: Aborted
+srun: error: nid00946: task 246: Aborted
+srun: error: nid00865: task 199: Aborted
+srun: error: nid00332: task 8: Aborted
+srun: error: nid00826: task 165: Aborted
+srun: error: nid00399: task 70: Aborted
+srun: error: nid00533: task 101: Aborted
+srun: error: nid00888: task 222: Aborted
+srun: error: nid00559: task 127: Aborted
+srun: error: nid00842: task 176: Aborted
+srun: error: nid00879: task 213: Aborted
+srun: error: nid00364: task 40: Aborted
+srun: error: nid00563: task 131: Aborted
+srun: error: nid00360: task 36: Aborted
+srun: error: nid00906: task 235: Aborted
+srun: error: nid00832: task 170: Aborted
+srun: error: nid00833: task 171: Aborted
+srun: error: nid00874: task 208: Aborted
+srun: error: nid00394: task 65: Aborted
+srun: error: nid00348: task 24: Aborted
+srun: error: nid00373: task 49: Aborted
+srun: error: nid00890: task 224: Aborted
+srun: error: nid00357: task 33: Aborted
+srun: error: nid00503: task 76: Aborted
+srun: error: nid00569: task 137: Aborted
+srun: error: nid00876: task 210: Aborted
+srun: error: nid00953: task 253: Aborted
+srun: error: nid00860: task 194: Aborted
+srun: error: nid00567: task 135: Aborted
+srun: error: nid00944: task 244: Aborted
+srun: error: nid00869: task 203: Aborted
+srun: error: nid00564: task 132: Aborted
+srun: error: nid00824: task 163: Aborted
+srun: error: nid00807: task 146: Aborted
+srun: error: nid00902: task 231: Aborted
+srun: error: nid00892: task 226: Aborted
+srun: error: nid00835: task 173: Aborted
+srun: error: nid00829: task 168: Aborted
+srun: error: nid00565: task 133: Aborted
+srun: error: nid00954: task 254: Aborted
+srun: error: nid00808: task 147: Aborted
+srun: error: nid00827: task 166: Aborted
+srun: error: nid00904: task 233: Aborted
+srun: error: nid00823: task 162: Aborted
+srun: error: nid00571: task 139: Aborted
+srun: error: nid00854: task 188: Aborted
+srun: error: nid00375: task 51: Aborted
+srun: error: nid00850: task 184: Aborted
+srun: error: nid00875: task 209: Aborted
+srun: error: nid00846: task 180: Aborted
+srun: error: nid00900: task 229: Aborted
+srun: error: nid00560: task 128: Aborted
+srun: error: nid00943: task 243: Aborted
+srun: error: nid00856: task 190: Aborted
+srun: error: nid00945: task 245: Aborted
+srun: error: nid00894: task 228: Aborted
+srun: error: nid00871: task 205: Aborted
+srun: error: nid00948: task 248: Aborted
+srun: error: nid00561: task 129: Aborted
+srun: error: nid00862: task 196: Aborted
+srun: error: nid00893: task 227: Aborted
+srun: error: nid00905: task 234: Aborted
+srun: error: nid00830: task 169: Aborted
+srun: error: nid00322: task 2: Aborted
+srun: error: nid00843: task 177: Aborted
+srun: error: nid00834: task 172: Aborted
+srun: error: nid00951: task 251: Aborted
+srun: error: nid00864: task 198: Aborted
+srun: error: nid00883: task 217: Aborted
+srun: error: nid00530: task 98: Aborted
+srun: error: nid00873: task 207: Aborted
+srun: error: nid00568: task 136: Aborted
+srun: error: nid00863: task 197: Aborted
+srun: error: nid00570: task 138: Aborted
+srun: error: nid00806: task 145: Aborted
+srun: error: nid00878: task 212: Aborted
+srun: error: nid00573: task 141: Aborted
+srun: error: nid00880: task 214: Aborted
+srun: error: nid00851: task 185: Aborted
+srun: error: nid00852: task 186: Aborted
+srun: error: nid00877: task 211: Aborted
+srun: error: nid00872: task 206: Aborted
+srun: error: nid00855: task 189: Aborted
+srun: error: nid00903: task 232: Aborted
+srun: error: nid00822: task 161: Aborted
+srun: error: nid00853: task 187: Aborted
+srun: error: nid00536: task 104: Aborted
+srun: error: nid00955: task 255: Aborted
+
+
+================================
+
+ 
+Batch Job Summary Report for Job "weak-single-qubit-gates.sh" (13441500) on daint
+-----------------------------------------------------------------------------------------------------
+             Submit            Eligible               Start                 End    Elapsed  Timelimit 
+------------------- ------------------- ------------------- ------------------- ---------- ---------- 
+2019-04-29T16:54:00 2019-04-29T16:54:00 2019-04-29T17:01:35 2019-04-29T17:03:15   00:01:40   02:30:00 
+-----------------------------------------------------------------------------------------------------
+Username    Account     Partition   NNodes   Energy
+----------  ----------  ----------  ------  --------------
+mazzolag    csstaff     normal         256  897.48K joules
+ 
+This job did not utilize any GPUs
+ 
+----------------------------------------------------------
+Scratch File System        Files       Quota
+--------------------  ----------  ----------
+/scratch/snx3000           18720     1000000
+ 

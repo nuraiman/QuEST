@@ -6,7 +6,7 @@
 #SBATCH --nodes=256
 #SBATCH --constraint=mc
 #SBATCH --partition=normal
-#SBATCH --time=120
+#SBATCH --time=150
 
 # loading necessary modules
 echo "============================="
@@ -33,14 +33,16 @@ echo "================================"
 echo "       RUNNING BENCHMARKS"
 echo "================================"
 
-number_of_nodes=(16 32 64 128 256)
-ranks_per_node=2
-N=(34 35 36 37 38)
-n_repetitions=21
-export OMP_NUM_THREADS=18
+#number_of_nodes=(8 16 32 64 128 256)
+number_of_nodes=(256)
+ranks_per_node=1
+#N=(33 34 35 36 37 38)
+N=(38)
+n_repetitions=16
+export OMP_NUM_THREADS=36
 
 path_to_executable="./examples_giulia/single-qubit-gates"
-path_to_file="../benchmarks/weak-single-qubit-gates.txt"
+path_to_file="../benchmarks/weak-single-qubit-gates-1-36.txt"
 
 # iterate over the values of nodes
 for i in "${!number_of_nodes[@]}"

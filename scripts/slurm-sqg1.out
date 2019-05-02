@@ -1,0 +1,523 @@
+=============================
+  LOADING MODULES
+=============================
+=============================
+  BUILDING AND COMPILATION
+=============================
+-- Cray Programming Environment 2.5.15 C
+-- Cray Programming Environment 2.5.15 CXX
+-- Found OpenMP_C: -fopenmp  
+-- Found OpenMP_CXX: -fopenmp  
+-- Found OpenMP_C: -fopenmp  
+-- Found OpenMP_CXX: -fopenmp  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /scratch/snx3000/mazzolag/qsim/QuEST/build
+[ 26%] Built target QuEST
+[ 33%] Built target bernstein
+[ 40%] Built target demo
+Scanning dependencies of target grover
+Scanning dependencies of target ghadamard
+Scanning dependencies of target shor
+Scanning dependencies of target dj
+Scanning dependencies of target period-finding
+Scanning dependencies of target single-qubit-gates
+Scanning dependencies of target approx-pf
+Scanning dependencies of target gtest
+Scanning dependencies of target rqc
+[ 63%] Building CXX object examples_giulia/CMakeFiles/grover.dir/grover.cpp.o
+[ 63%] Building CXX object examples_giulia/CMakeFiles/ghadamard.dir/ghadamard.cpp.o
+[ 63%] Building CXX object examples_giulia/CMakeFiles/single-qubit-gates.dir/single-qubit-gates.cpp.o
+[ 63%] Building CXX object examples_giulia/CMakeFiles/dj.dir/dj.cpp.o
+[ 63%] Building CXX object examples_giulia/CMakeFiles/shor.dir/shor.cpp.o
+[ 63%] Building CXX object examples_giulia/CMakeFiles/approx-pf.dir/approx-pf.cpp.o
+[ 66%] Building CXX object examples_giulia/CMakeFiles/period-finding.dir/period-finding.cpp.o
+[ 66%] Building CXX object examples_giulia/CMakeFiles/gtest.dir/gtest.cpp.o
+[ 70%] Building CXX object randomQC/CMakeFiles/rqc.dir/rqc.cpp.o
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/single-qubit-gates.cpp:6:9: warning: #pragma once in main file
+ #pragma once
+         ^~~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/approx-pf.cpp: In function 'int main(int, char**)':
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/approx-pf.cpp:8:5: error: 'cxxopts' has not been declared
+     cxxopts::Options desc(varg[0], "Allowed Options");
+     ^~~~~~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/approx-pf.cpp:9:5: error: 'desc' was not declared in this scope
+     desc.add_options()
+     ^~~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/approx-pf.cpp:11:69: error: 'cxxopts' has not been declared
+             ("a,base", "First parameter of the function a^x mod N", cxxopts::value<qInt>()->default_value("10"))
+                                                                     ^~~~~~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/approx-pf.cpp:11:88: error: expected primary-expression before '>' token
+             ("a,base", "First parameter of the function a^x mod N", cxxopts::value<qInt>()->default_value("10"))
+                                                                                        ^
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/approx-pf.cpp:11:90: error: expected primary-expression before ')' token
+             ("a,base", "First parameter of the function a^x mod N", cxxopts::value<qInt>()->default_value("10"))
+                                                                                          ^
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/approx-pf.cpp:12:72: error: 'cxxopts' has not been declared
+             ("N,number", "second parameter of the function a^x mod N", cxxopts::value<qInt>()->default_value("21"))
+                                                                        ^~~~~~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/approx-pf.cpp:12:91: error: expected primary-expression before '>' token
+             ("N,number", "second parameter of the function a^x mod N", cxxopts::value<qInt>()->default_value("21"))
+                                                                                           ^
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/approx-pf.cpp:12:93: error: expected primary-expression before ')' token
+             ("N,number", "second parameter of the function a^x mod N", cxxopts::value<qInt>()->default_value("21"))
+                                                                                             ^
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/approx-pf.cpp:13:56: error: 'cxxopts' has not been declared
+             ("r,repetitions", "Number of repetitions", cxxopts::value<int>()->default_value("100"));
+                                                        ^~~~~~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/approx-pf.cpp:13:71: error: expected primary-expression before 'int'
+             ("r,repetitions", "Number of repetitions", cxxopts::value<int>()->default_value("100"));
+                                                                       ^~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/approx-pf.cpp:22:35: error: expected primary-expression before '>' token
+     const qInt a = vm["a"].as<qInt>();
+                                   ^
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/approx-pf.cpp:22:37: error: expected primary-expression before ')' token
+     const qInt a = vm["a"].as<qInt>();
+                                     ^
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/approx-pf.cpp:23:35: error: expected primary-expression before '>' token
+     const qInt N = vm["N"].as<qInt>();
+                                   ^
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/approx-pf.cpp:23:37: error: expected primary-expression before ')' token
+     const qInt N = vm["N"].as<qInt>();
+                                     ^
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/approx-pf.cpp:24:34: error: expected primary-expression before 'int'
+     const int n_rep = vm["r"].as<int>();
+                                  ^~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/grover.cpp: In function 'int main(int, char**)':
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/grover.cpp:7:5: error: 'cxxopts' has not been declared
+     cxxopts::Options desc(varg[0], "Allowed Options");
+     ^~~~~~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/grover.cpp:8:5: error: 'desc' was not declared in this scope
+     desc.add_options()
+     ^~~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/grover.cpp:10:71: error: 'cxxopts' has not been declared
+             ("N,number", "Size of the array with one marked element", cxxopts::value<qInt>()->default_value("10000"))
+                                                                       ^~~~~~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/ghadamard.cpp: In function 'int main(int, char**)':
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/ghadamard.cpp:16:5: error: 'cxxopts' has not been declared
+     cxxopts::Options desc(varg[0], "Allowed Options");
+     ^~~~~~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/grover.cpp:10:90: error: expected primary-expression before '>' token
+             ("N,number", "Size of the array with one marked element", cxxopts::value<qInt>()->default_value("10000"))
+                                                                                          ^
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/ghadamard.cpp:17:5: error: 'desc' was not declared in this scope
+     desc.add_options()
+     ^~~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/grover.cpp:10:92: error: expected primary-expression before ')' token
+             ("N,number", "Size of the array with one marked element", cxxopts::value<qInt>()->default_value("10000"))
+                                                                                            ^
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/ghadamard.cpp:19:46: error: 'cxxopts' has not been declared
+             ("N,number", "Number of qubits", cxxopts::value<int>()->default_value("5"))
+                                              ^~~~~~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/grover.cpp:11:56: error: 'cxxopts' has not been declared
+             ("r,repetitions", "Number of repetitions", cxxopts::value<int>()->default_value("1"));
+                                                        ^~~~~~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/ghadamard.cpp:19:61: error: expected primary-expression before 'int'
+             ("N,number", "Number of qubits", cxxopts::value<int>()->default_value("5"))
+                                                             ^~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/grover.cpp:11:71: error: expected primary-expression before 'int'
+             ("r,repetitions", "Number of repetitions", cxxopts::value<int>()->default_value("1"));
+                                                                       ^~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/ghadamard.cpp:20:56: error: 'cxxopts' has not been declared
+             ("r,repetitions", "Number of repetitions", cxxopts::value<int>()->default_value("1"));
+                                                        ^~~~~~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/ghadamard.cpp:20:71: error: expected primary-expression before 'int'
+             ("r,repetitions", "Number of repetitions", cxxopts::value<int>()->default_value("1"));
+                                                                       ^~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/grover.cpp:20:35: error: expected primary-expression before '>' token
+     const qInt N = vm["N"].as<qInt>();
+                                   ^
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/grover.cpp:20:37: error: expected primary-expression before ')' token
+     const qInt N = vm["N"].as<qInt>();
+                                     ^
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/ghadamard.cpp:29:30: error: expected primary-expression before 'int'
+     const int n = vm["N"].as<int>();
+                              ^~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/grover.cpp:21:33: error: expected primary-expression before 'int'
+     const int nrep = vm["r"].as<int>();
+                                 ^~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/ghadamard.cpp:30:33: error: expected primary-expression before 'int'
+     const int nrep = vm["r"].as<int>();
+                                 ^~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/dj.cpp: In function 'int main(int, char**)':
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/dj.cpp:7:5: error: 'cxxopts' has not been declared
+     cxxopts::Options desc(varg[0], "Allowed Options");
+     ^~~~~~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/dj.cpp:8:5: error: 'desc' was not declared in this scope
+     desc.add_options()
+     ^~~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/dj.cpp:10:79: error: 'cxxopts' has not been declared
+             ("N,number", "Number of qubits / length of the boolean function", cxxopts::value<int>()->default_value("13"))
+                                                                               ^~~~~~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/dj.cpp:10:94: error: expected primary-expression before 'int'
+             ("N,number", "Number of qubits / length of the boolean function", cxxopts::value<int>()->default_value("13"))
+                                                                                              ^~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/dj.cpp:11:56: error: 'cxxopts' has not been declared
+             ("r,repetitions", "Number of repetitions", cxxopts::value<int>()->default_value("1"));
+                                                        ^~~~~~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/dj.cpp:11:71: error: expected primary-expression before 'int'
+             ("r,repetitions", "Number of repetitions", cxxopts::value<int>()->default_value("1"));
+                                                                       ^~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/dj.cpp:20:30: error: expected primary-expression before 'int'
+     const int n = vm["N"].as<int>();
+                              ^~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/dj.cpp:21:33: error: expected primary-expression before 'int'
+     const int nrep = vm["r"].as<int>();
+                                 ^~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/shor.cpp: In function 'int main(int, char**)':
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/shor.cpp:7:5: error: 'cxxopts' has not been declared
+     cxxopts::Options desc(varg[0], "Allowed Options");
+     ^~~~~~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/shor.cpp:8:5: error: 'desc' was not declared in this scope
+     desc.add_options()
+     ^~~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/shor.cpp:10:46: error: 'cxxopts' has not been declared
+         ("N,number", "Number to factorize.", cxxopts::value<qInt>()->default_value("21"))
+                                              ^~~~~~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/shor.cpp:10:65: error: expected primary-expression before '>' token
+         ("N,number", "Number to factorize.", cxxopts::value<qInt>()->default_value("21"))
+                                                                 ^
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/shor.cpp:10:67: error: expected primary-expression before ')' token
+         ("N,number", "Number to factorize.", cxxopts::value<qInt>()->default_value("21"))
+                                                                   ^
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/shor.cpp:11:52: error: 'cxxopts' has not been declared
+         ("r,repetitions", "Number of repetitions", cxxopts::value<int>()->default_value("1"));
+                                                    ^~~~~~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/shor.cpp:11:67: error: expected primary-expression before 'int'
+         ("r,repetitions", "Number of repetitions", cxxopts::value<int>()->default_value("1"));
+                                                                   ^~~
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/shor.cpp:20:35: error: expected primary-expression before '>' token
+     const qInt N = vm["N"].as<qInt>();
+                                   ^
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/shor.cpp:20:37: error: expected primary-expression before ')' token
+     const qInt N = vm["N"].as<qInt>();
+                                     ^
+/scratch/snx3000/mazzolag/qsim/QuEST/examples_giulia/shor.cpp:21:33: error: expected primary-expression before 'int'
+     const int nrep = vm["r"].as<int>();
+                                 ^~~
+examples_giulia/CMakeFiles/approx-pf.dir/build.make:62: recipe for target 'examples_giulia/CMakeFiles/approx-pf.dir/approx-pf.cpp.o' failed
+make[2]: *** [examples_giulia/CMakeFiles/approx-pf.dir/approx-pf.cpp.o] Error 1
+CMakeFiles/Makefile2:419: recipe for target 'examples_giulia/CMakeFiles/approx-pf.dir/all' failed
+make[1]: *** [examples_giulia/CMakeFiles/approx-pf.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+examples_giulia/CMakeFiles/ghadamard.dir/build.make:62: recipe for target 'examples_giulia/CMakeFiles/ghadamard.dir/ghadamard.cpp.o' failed
+make[2]: *** [examples_giulia/CMakeFiles/ghadamard.dir/ghadamard.cpp.o] Error 1
+CMakeFiles/Makefile2:456: recipe for target 'examples_giulia/CMakeFiles/ghadamard.dir/all' failed
+make[1]: *** [examples_giulia/CMakeFiles/ghadamard.dir/all] Error 2
+examples_giulia/CMakeFiles/dj.dir/build.make:62: recipe for target 'examples_giulia/CMakeFiles/dj.dir/dj.cpp.o' failed
+make[2]: *** [examples_giulia/CMakeFiles/dj.dir/dj.cpp.o] Error 1
+CMakeFiles/Makefile2:382: recipe for target 'examples_giulia/CMakeFiles/dj.dir/all' failed
+make[1]: *** [examples_giulia/CMakeFiles/dj.dir/all] Error 2
+examples_giulia/CMakeFiles/grover.dir/build.make:62: recipe for target 'examples_giulia/CMakeFiles/grover.dir/grover.cpp.o' failed
+make[2]: *** [examples_giulia/CMakeFiles/grover.dir/grover.cpp.o] Error 1
+CMakeFiles/Makefile2:345: recipe for target 'examples_giulia/CMakeFiles/grover.dir/all' failed
+make[1]: *** [examples_giulia/CMakeFiles/grover.dir/all] Error 2
+examples_giulia/CMakeFiles/shor.dir/build.make:62: recipe for target 'examples_giulia/CMakeFiles/shor.dir/shor.cpp.o' failed
+make[2]: *** [examples_giulia/CMakeFiles/shor.dir/shor.cpp.o] Error 1
+CMakeFiles/Makefile2:308: recipe for target 'examples_giulia/CMakeFiles/shor.dir/all' failed
+make[1]: *** [examples_giulia/CMakeFiles/shor.dir/all] Error 2
+[ 73%] Linking CXX executable period-finding
+[ 76%] Linking CXX executable single-qubit-gates
+[ 80%] Linking CXX executable gtest
+[ 80%] Built target period-finding
+[ 80%] Built target single-qubit-gates
+[ 80%] Built target gtest
+[ 83%] Linking CXX executable rqc
+[ 83%] Built target rqc
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2
+================================
+       RUNNING BENCHMARKS
+================================
+CONFIGURATION: N = 33, nodes = 8
+Gate H:
+Duration [ms] = 5269, 5271, 5270, 5269, 5269, 5269, 5268, 5267, 5267, 5273, 5268, 5266, 5270, 5269, 5267
+Avg time [ms] = 5268, Std deviation = 1 (Position k = 0)
+Duration [ms] = 5255, 5262, 5258, 5255, 5258, 5255, 5260, 5254, 5255, 5257, 5258, 5255, 5254, 5258, 5255
+Avg time [ms] = 5256, Std deviation = 2 (Position k = 1)
+Duration [ms] = 5239, 5230, 5229, 5233, 5229, 5231, 5227, 5224, 5224, 5235, 5232, 5236, 5228, 5226, 5229
+Avg time [ms] = 5230, Std deviation = 4 (Position k = 2)
+Duration [ms] = 5198, 5193, 5195, 5195, 5195, 5193, 5193, 5195, 5199, 5199, 5189, 5194, 5195, 5195, 5190
+Avg time [ms] = 5194, Std deviation = 2 (Position k = 3)
+Duration [ms] = 5069, 5070, 5074, 5069, 5069, 5073, 5070, 5069, 5071, 5070, 5069, 5070, 5074, 5069, 5071
+Avg time [ms] = 5070, Std deviation = 1 (Position k = 4)
+Duration [ms] = 5875, 5875, 5874, 5874, 5875, 5873, 5876, 5876, 5877, 5876, 5873, 5875, 5874, 5877, 5875
+Avg time [ms] = 5875, Std deviation = 1 (Position k = 5)
+Duration [ms] = 5922, 5918, 5918, 5916, 5917, 5917, 5916, 5918, 5914, 5917, 5920, 5916, 5917, 5917, 5917
+Avg time [ms] = 5917, Std deviation = 1 (Position k = 6)
+Duration [ms] = 6366, 6381, 6419, 6464, 6432, 6429, 6383, 6402, 6378, 6466, 6518, 6437, 6430, 6450, 6419
+Avg time [ms] = 6424, Std deviation = 38 (Position k = 7)
+
+Gate X:
+Duration [ms] = 4675, 4673, 4677, 4673, 4673, 4675, 4673, 4673, 4674, 4673, 4674, 4674, 4678, 4673, 4674
+Avg time [ms] = 4674, Std deviation = 1 (Position k = 0)
+Duration [ms] = 4665, 4666, 4665, 4664, 4666, 4665, 4667, 4665, 4665, 4666, 4665, 4666, 4666, 4668, 4665
+Avg time [ms] = 4665, Std deviation = 1 (Position k = 1)
+Duration [ms] = 4649, 4646, 4649, 4650, 4649, 4648, 4646, 4647, 4648, 4647, 4648, 4649, 4647, 4647, 4647
+Avg time [ms] = 4647, Std deviation = 1 (Position k = 2)
+Duration [ms] = 4626, 4624, 4627, 4625, 4627, 4628, 4623, 4624, 4625, 4623, 4626, 4631, 4634, 4628, 4625
+Avg time [ms] = 4626, Std deviation = 2 (Position k = 3)
+Duration [ms] = 4518, 4537, 4520, 4518, 4519, 4524, 4518, 4518, 4520, 4518, 4519, 4519, 4518, 4519, 4519
+Avg time [ms] = 4520, Std deviation = 4 (Position k = 4)
+Duration [ms] = 5901, 5900, 5903, 5901, 5899, 5901, 5900, 5900, 5899, 5902, 5901, 5900, 5901, 5900, 5900
+Avg time [ms] = 5900, Std deviation = 1 (Position k = 5)
+Duration [ms] = 5939, 5935, 5936, 5940, 5941, 5937, 5941, 5938, 5938, 5939, 5941, 5940, 5942, 5940, 5939
+Avg time [ms] = 5939, Std deviation = 1 (Position k = 6)
+Duration [ms] = 6433, 6438, 6434, 6415, 6431, 6437, 6418, 6479, 6469, 6459, 6411, 6466, 6454, 6429, 6459
+Avg time [ms] = 6442, Std deviation = 20 (Position k = 7)
+
+Gate T:
+Duration [ms] = 1159, 1162, 1159, 1157, 1154, 1154, 1163, 1159, 1170, 1160, 1153, 1160, 1159, 1157, 1159
+Avg time [ms] = 1159, Std deviation = 4 (Position k = 0)
+Duration [ms] = 1162, 1173, 1172, 1168, 1156, 1160, 1158, 1158, 1154, 1166, 1159, 1163, 1161, 1160, 1163
+Avg time [ms] = 1162, Std deviation = 5 (Position k = 1)
+Duration [ms] = 1174, 1168, 1168, 1163, 1183, 1168, 1161, 1169, 1167, 1174, 1172, 1167, 1162, 1166, 1160
+Avg time [ms] = 1168, Std deviation = 5 (Position k = 2)
+Duration [ms] = 1176, 1173, 1176, 1184, 1169, 1172, 1172, 1174, 1165, 1186, 1175, 1172, 1185, 1174, 1172
+Avg time [ms] = 1175, Std deviation = 5 (Position k = 3)
+Duration [ms] = 1172, 1171, 1177, 1173, 1183, 1182, 1179, 1169, 1177, 1172, 1173, 1173, 1173, 1178, 1173
+Avg time [ms] = 1175, Std deviation = 3 (Position k = 4)
+Duration [ms] = 1781, 1782, 1781, 1784, 1782, 1782, 1782, 1783, 1781, 1781, 1779, 1781, 1781, 1782, 1782
+Avg time [ms] = 1781, Std deviation = 1 (Position k = 5)
+Duration [ms] = 1805, 1782, 1781, 1782, 1781, 1781, 1781, 1780, 1781, 1781, 1783, 1782, 1782, 1781, 1781
+Avg time [ms] = 1782, Std deviation = 6 (Position k = 6)
+Duration [ms] = 1782, 1780, 1780, 1781, 1780, 1781, 1781, 1783, 1782, 1782, 1782, 1781, 1782, 1781, 1785
+Avg time [ms] = 1781, Std deviation = 1 (Position k = 7)
+
+
+================================
+
+CONFIGURATION: N = 34, nodes = 16
+Gate H:
+Duration [ms] = 5275, 5270, 5268, 5269, 5271, 5268, 5267, 5270, 5268, 5269, 5270, 5268, 5270, 5267, 5271
+Avg time [ms] = 5269, Std deviation = 2 (Position k = 0)
+Duration [ms] = 5255, 5259, 5254, 5256, 5259, 5268, 5257, 5256, 5256, 5258, 5261, 5257, 5257, 5255, 5257
+Avg time [ms] = 5257, Std deviation = 3 (Position k = 1)
+Duration [ms] = 5233, 5231, 5231, 5232, 5229, 5236, 5235, 5232, 5233, 5231, 5230, 5226, 5236, 5232, 5233
+Avg time [ms] = 5232, Std deviation = 2 (Position k = 2)
+Duration [ms] = 5195, 5200, 5195, 5231, 5199, 5196, 5199, 5199, 5194, 5195, 5195, 5194, 5196, 5205, 5199
+Avg time [ms] = 5199, Std deviation = 8 (Position k = 3)
+Duration [ms] = 5071, 5070, 5070, 5099, 5071, 5071, 5073, 5072, 5069, 5071, 5072, 5072, 5073, 5070, 5083
+Avg time [ms] = 5073, Std deviation = 7 (Position k = 4)
+Duration [ms] = 5876, 5882, 5875, 5883, 5876, 5882, 5878, 5879, 5876, 5876, 5873, 5880, 5881, 5878, 5882
+Avg time [ms] = 5878, Std deviation = 3 (Position k = 5)
+Duration [ms] = 5896, 5897, 5906, 5908, 5903, 5897, 5900, 5905, 5901, 5903, 5901, 5909, 5903, 5906, 5902
+Avg time [ms] = 5902, Std deviation = 3 (Position k = 6)
+Duration [ms] = 6390, 6389, 6412, 6341, 6368, 6389, 6382, 6433, 6437, 6477, 6473, 6374, 6418, 6466, 6449
+Avg time [ms] = 6413, Std deviation = 40 (Position k = 7)
+Duration [ms] = 6531, 6479, 6452, 6511, 6623, 6529, 6498, 6534, 6429, 6515, 6555, 6504, 6569, 6596, 6595
+Avg time [ms] = 6528, Std deviation = 51 (Position k = 8)
+
+Gate X:
+Duration [ms] = 4674, 4674, 4678, 4675, 4675, 4674, 4680, 4673, 4674, 4676, 4674, 4676, 4674, 4674, 4699
+Avg time [ms] = 4676, Std deviation = 6 (Position k = 0)
+Duration [ms] = 4666, 4667, 4665, 4667, 4665, 4665, 4666, 4669, 4666, 4664, 4665, 4665, 4666, 4666, 4667
+Avg time [ms] = 4665, Std deviation = 1 (Position k = 1)
+Duration [ms] = 4655, 4648, 4647, 4649, 4650, 4648, 4651, 4647, 4648, 4647, 4651, 4649, 4648, 4650, 4649
+Avg time [ms] = 4649, Std deviation = 2 (Position k = 2)
+Duration [ms] = 4625, 4634, 4627, 4627, 4628, 4626, 4626, 4628, 4628, 4625, 4624, 4628, 4628, 4626, 4626
+Avg time [ms] = 4627, Std deviation = 2 (Position k = 3)
+Duration [ms] = 4519, 4519, 4519, 4518, 4521, 4518, 4519, 4519, 4519, 4520, 4519, 4520, 4524, 4519, 4519
+Avg time [ms] = 4519, Std deviation = 1 (Position k = 4)
+Duration [ms] = 5901, 5902, 5906, 5902, 5904, 5901, 5905, 5900, 5905, 5904, 5900, 5906, 5903, 5904, 5903
+Avg time [ms] = 5903, Std deviation = 1 (Position k = 5)
+Duration [ms] = 5933, 5930, 5929, 5930, 5926, 5932, 5926, 5928, 5930, 5925, 5927, 5924, 5924, 5933, 5925
+Avg time [ms] = 5928, Std deviation = 3 (Position k = 6)
+Duration [ms] = 6426, 6485, 6405, 6379, 6432, 6468, 6391, 6404, 6465, 6450, 6409, 6448, 6381, 6445, 6471
+Avg time [ms] = 6430, Std deviation = 33 (Position k = 7)
+Duration [ms] = 6594, 6532, 6592, 6483, 6593, 6489, 6563, 6617, 6575, 6598, 6575, 6528, 6580, 6569, 6545
+Avg time [ms] = 6562, Std deviation = 38 (Position k = 8)
+
+Gate T:
+Duration [ms] = 1159, 1162, 1163, 1160, 1160, 1161, 1165, 1165, 1162, 1169, 1160, 1160, 1161, 1157, 1163
+Avg time [ms] = 1161, Std deviation = 2 (Position k = 0)
+Duration [ms] = 1169, 1169, 1163, 1165, 1161, 1163, 1163, 1163, 1164, 1167, 1167, 1159, 1161, 1157, 1161
+Avg time [ms] = 1163, Std deviation = 3 (Position k = 1)
+Duration [ms] = 1173, 1170, 1171, 1170, 1176, 1176, 1168, 1169, 1177, 1169, 1168, 1173, 1175, 1170, 1167
+Avg time [ms] = 1171, Std deviation = 3 (Position k = 2)
+Duration [ms] = 1187, 1175, 1176, 1187, 1176, 1177, 1180, 1177, 1184, 1186, 1184, 1182, 1174, 1182, 1183
+Avg time [ms] = 1180, Std deviation = 4 (Position k = 3)
+Duration [ms] = 1185, 1180, 1173, 1172, 1176, 1184, 1175, 1177, 1177, 1182, 1188, 1174, 1176, 1184, 1174
+Avg time [ms] = 1178, Std deviation = 4 (Position k = 4)
+Duration [ms] = 1781, 1782, 1786, 1782, 1781, 1782, 1782, 1781, 1782, 1781, 1781, 1780, 1782, 1781, 1782
+Avg time [ms] = 1781, Std deviation = 1 (Position k = 5)
+Duration [ms] = 1781, 1788, 1780, 1782, 1782, 1781, 1782, 1782, 1781, 1782, 1782, 1782, 1787, 1782, 1782
+Avg time [ms] = 1782, Std deviation = 2 (Position k = 6)
+Duration [ms] = 1798, 1783, 1782, 1782, 1788, 1782, 1784, 1784, 1783, 1782, 1783, 1782, 1782, 1785, 1783
+Avg time [ms] = 1784, Std deviation = 4 (Position k = 7)
+Duration [ms] = 1782, 1787, 1783, 1782, 1782, 1783, 1782, 1782, 1782, 1783, 1783, 1783, 1783, 1782, 1785
+Avg time [ms] = 1782, Std deviation = 1 (Position k = 8)
+
+
+================================
+
+CONFIGURATION: N = 35, nodes = 32
+Gate H:
+Duration [ms] = 5268, 5269, 5269, 5270, 5267, 5272, 5272, 5271, 5273, 5269, 5273, 5271, 5268, 5285, 5272
+Avg time [ms] = 5271, Std deviation = 4 (Position k = 0)
+Duration [ms] = 5260, 5258, 5264, 5259, 5258, 5258, 5257, 5260, 5261, 5257, 5257, 5258, 5256, 5257, 5258
+Avg time [ms] = 5258, Std deviation = 2 (Position k = 1)
+Duration [ms] = 5236, 5237, 5236, 5232, 5239, 5235, 5240, 5232, 5231, 5233, 5234, 5232, 5233, 5231, 5231
+Avg time [ms] = 5234, Std deviation = 2 (Position k = 2)
+Duration [ms] = 5199, 5202, 5202, 5204, 5198, 5195, 5195, 5193, 5222, 5201, 5199, 5194, 5199, 5202, 5203
+Avg time [ms] = 5200, Std deviation = 6 (Position k = 3)
+Duration [ms] = 5074, 5071, 5072, 5077, 5071, 5070, 5072, 5071, 5072, 5071, 5075, 5075, 5072, 5080, 5079
+Avg time [ms] = 5073, Std deviation = 3 (Position k = 4)
+Duration [ms] = 5881, 5882, 5881, 5884, 5883, 5893, 5883, 5890, 5889, 5886, 5883, 5885, 5881, 5882, 5886
+Avg time [ms] = 5884, Std deviation = 3 (Position k = 5)
+Duration [ms] = 5904, 5914, 5911, 5908, 5913, 5922, 5917, 5911, 5912, 5907, 5914, 5908, 5910, 5908, 5912
+Avg time [ms] = 5911, Std deviation = 4 (Position k = 6)
+Duration [ms] = 6531, 6605, 6530, 6594, 6557, 6450, 6518, 6507, 6595, 6577, 6565, 6588, 6600, 6656, 6584
+Avg time [ms] = 6563, Std deviation = 48 (Position k = 7)
+Duration [ms] = 6685, 6700, 6672, 6662, 6686, 6630, 6608, 6639, 6632, 6609, 6624, 6672, 6600, 6613, 6597
+Avg time [ms] = 6641, Std deviation = 33 (Position k = 8)
+Duration [ms] = 6524, 6586, 6583, 6590, 6635, 6598, 6612, 6631, 6620, 6580, 6552, 6587, 6606, 6566, 6618
+Avg time [ms] = 6592, Std deviation = 29 (Position k = 9)
+
+Gate X:
+Duration [ms] = 4679, 4675, 4674, 4678, 4677, 4675, 4675, 4677, 4675, 4674, 4675, 4675, 4675, 4674, 4674
+Avg time [ms] = 4675, Std deviation = 1 (Position k = 0)
+Duration [ms] = 4664, 4668, 4669, 4666, 4666, 4667, 4673, 4666, 4667, 4666, 4666, 4666, 4666, 4668, 4666
+Avg time [ms] = 4666, Std deviation = 2 (Position k = 1)
+Duration [ms] = 4651, 4655, 4648, 4649, 4648, 4647, 4657, 4648, 4649, 4647, 4652, 4651, 4650, 4649, 4649
+Avg time [ms] = 4650, Std deviation = 2 (Position k = 2)
+Duration [ms] = 4628, 4628, 4627, 4626, 4627, 4629, 4627, 4637, 4630, 4627, 4627, 4629, 4628, 4628, 4627
+Avg time [ms] = 4628, Std deviation = 2 (Position k = 3)
+Duration [ms] = 4518, 4522, 4520, 4519, 4518, 4522, 4521, 4519, 4519, 4519, 4519, 4519, 4520, 4550, 4519
+Avg time [ms] = 4521, Std deviation = 7 (Position k = 4)
+Duration [ms] = 5906, 5907, 5912, 5912, 5908, 5907, 5908, 5907, 5906, 5906, 5906, 5904, 5907, 5907, 5913
+Avg time [ms] = 5907, Std deviation = 2 (Position k = 5)
+Duration [ms] = 5940, 5939, 5937, 5937, 5937, 5934, 5936, 5935, 5934, 5934, 5930, 5937, 5934, 5932, 5936
+Avg time [ms] = 5935, Std deviation = 2 (Position k = 6)
+Duration [ms] = 6607, 6545, 6544, 6582, 6553, 6529, 6491, 6613, 6571, 6612, 6599, 6582, 6593, 6600, 6571
+Avg time [ms] = 6572, Std deviation = 33 (Position k = 7)
+Duration [ms] = 6748, 6663, 6596, 6712, 6686, 6670, 6675, 6637, 6655, 6727, 6611, 6630, 6666, 6622, 6615
+Avg time [ms] = 6660, Std deviation = 42 (Position k = 8)
+Duration [ms] = 6558, 6636, 6624, 6768, 6591, 6611, 6590, 6604, 6620, 6623, 6606, 6673, 6618, 6625, 6657
+Avg time [ms] = 6626, Std deviation = 46 (Position k = 9)
+
+Gate T:
+Duration [ms] = 1166, 1165, 1164, 1170, 1160, 1165, 1167, 1163, 1160, 1166, 1160, 1166, 1161, 1167, 1166
+Avg time [ms] = 1164, Std deviation = 2 (Position k = 0)
+Duration [ms] = 1169, 1176, 1166, 1168, 1159, 1165, 1160, 1162, 1166, 1167, 1169, 1165, 1163, 1166, 1161
+Avg time [ms] = 1165, Std deviation = 4 (Position k = 1)
+Duration [ms] = 1177, 1175, 1171, 1176, 1171, 1170, 1173, 1175, 1176, 1173, 1176, 1171, 1181, 1172, 1171
+Avg time [ms] = 1173, Std deviation = 3 (Position k = 2)
+Duration [ms] = 1186, 1179, 1180, 1178, 1188, 1177, 1184, 1177, 1183, 1177, 1191, 1180, 1185, 1180, 1183
+Avg time [ms] = 1181, Std deviation = 4 (Position k = 3)
+Duration [ms] = 1182, 1179, 1187, 1188, 1187, 1186, 1180, 1181, 1185, 1182, 1191, 1177, 1177, 1177, 1182
+Avg time [ms] = 1182, Std deviation = 4 (Position k = 4)
+Duration [ms] = 1782, 1783, 1783, 1782, 1782, 1788, 1784, 1782, 1782, 1782, 1782, 1782, 1784, 1783, 1782
+Avg time [ms] = 1782, Std deviation = 1 (Position k = 5)
+Duration [ms] = 1783, 1782, 1782, 1785, 1789, 1781, 1782, 1783, 1782, 1783, 1782, 1784, 1782, 1783, 1781
+Avg time [ms] = 1782, Std deviation = 2 (Position k = 6)
+Duration [ms] = 1782, 1781, 1783, 1783, 1783, 1782, 1785, 1782, 1782, 1782, 1783, 1781, 1783, 1783, 1789
+Avg time [ms] = 1782, Std deviation = 2 (Position k = 7)
+Duration [ms] = 1781, 1788, 1781, 1782, 1783, 1782, 1783, 1782, 1783, 1784, 1783, 1782, 1785, 1783, 1782
+Avg time [ms] = 1782, Std deviation = 1 (Position k = 8)
+Duration [ms] = 1788, 1781, 1781, 1783, 1783, 1782, 1781, 1783, 1781, 1782, 1782, 1788, 1783, 1782, 1782
+Avg time [ms] = 1782, Std deviation = 2 (Position k = 9)
+
+
+================================
+
+CONFIGURATION: N = 36, nodes = 64
+Gate H:
+Duration [ms] = 5270, 5270, 5269, 5271, 5268, 5271, 5271, 5271, 5270, 5277, 5270, 5280, 5272, 5270, 5269
+Avg time [ms] = 5271, Std deviation = 3 (Position k = 0)
+Duration [ms] = 5260, 5260, 5258, 5256, 5279, 5257, 5259, 5260, 5259, 5258, 5260, 5257, 5258, 5261, 5259
+Avg time [ms] = 5260, Std deviation = 5 (Position k = 1)
+Duration [ms] = 5234, 5237, 5238, 5237, 5238, 5234, 5233, 5232, 5239, 5237, 5234, 5236, 5244, 5237, 5233
+Avg time [ms] = 5236, Std deviation = 2 (Position k = 2)
+Duration [ms] = 5198, 5201, 5198, 5199, 5202, 5203, 5200, 5202, 5201, 5203, 5200, 5200, 5199, 5202, 5198
+Avg time [ms] = 5200, Std deviation = 1 (Position k = 3)
+Duration [ms] = 5071, 5072, 5071, 5076, 5071, 5072, 5072, 5070, 5072, 5075, 5073, 5073, 5072, 5072, 5072
+Avg time [ms] = 5072, Std deviation = 1 (Position k = 4)
+Duration [ms] = 6024, 6061, 6045, 6056, 6056, 6037, 6046, 6049, 6040, 6037, 6084, 6046, 6049, 6042, 6006
+Avg time [ms] = 6045, Std deviation = 16 (Position k = 5)
+Duration [ms] = 6019, 6069, 6026, 6026, 6044, 6017, 6033, 6017, 6043, 6038, 6023, 6045, 6005, 6005, 5991
+Avg time [ms] = 6026, Std deviation = 18 (Position k = 6)
+Duration [ms] = 6725, 6794, 6724, 6736, 6797, 6681, 6730, 6653, 6592, 6660, 6672, 6792, 6719, 6603, 6600
+Avg time [ms] = 6698, Std deviation = 66 (Position k = 7)
+Duration [ms] = 6779, 6899, 6788, 6856, 6796, 6787, 6870, 6816, 6772, 6794, 6795, 6790, 6780, 6689, 6697
+Avg time [ms] = 6793, Std deviation = 53 (Position k = 8)
+Duration [ms] = 6760, 6841, 6801, 6766, 6787, 6855, 6769, 6760, 6759, 6792, 6809, 6845, 6781, 6854, 6713
+Avg time [ms] = 6792, Std deviation = 40 (Position k = 9)
+Duration [ms] = 6750, 6741, 6706, 6731, 6721, 6669, 6673, 6698, 6735, 6684, 6746, 6676, 6704, 6649, 6669
+Avg time [ms] = 6703, Std deviation = 31 (Position k = 10)
+
+Gate X:
+Duration [ms] = 4675, 4701, 4675, 4674, 4676, 4676, 4675, 4675, 4678, 4675, 4676, 4675, 4676, 4675, 4684
+Avg time [ms] = 4677, Std deviation = 6 (Position k = 0)
+Duration [ms] = 4667, 4682, 4666, 4666, 4666, 4668, 4668, 4667, 4666, 4668, 4666, 4668, 4669, 4667, 4666
+Avg time [ms] = 4668, Std deviation = 3 (Position k = 1)
+Duration [ms] = 4649, 4651, 4650, 4648, 4649, 4649, 4722, 4651, 4652, 4652, 4651, 4648, 4648, 4649, 4649
+Avg time [ms] = 4654, Std deviation = 18 (Position k = 2)
+Duration [ms] = 4627, 4627, 4631, 4629, 4628, 4628, 4646, 4627, 4629, 4628, 4628, 4632, 4628, 4631, 4628
+Avg time [ms] = 4629, Std deviation = 4 (Position k = 3)
+Duration [ms] = 4520, 4519, 4519, 4521, 4522, 4521, 4591, 4520, 4519, 4520, 4521, 4520, 4520, 4520, 4519
+Avg time [ms] = 4524, Std deviation = 17 (Position k = 4)
+Duration [ms] = 6064, 6064, 6075, 6049, 6057, 6066, 6054, 6053, 6068, 6068, 6082, 6059, 6033, 6030, 6026
+Avg time [ms] = 6056, Std deviation = 15 (Position k = 5)
+Duration [ms] = 6067, 6054, 6045, 6053, 6021, 6056, 6035, 6069, 6046, 6031, 6053, 6021, 6014, 6017, 6008
+Avg time [ms] = 6039, Std deviation = 19 (Position k = 6)
+Duration [ms] = 6829, 6809, 6693, 6745, 6701, 6711, 6749, 6729, 6753, 6710, 6652, 6722, 6642, 6668, 6692
+Avg time [ms] = 6720, Std deviation = 50 (Position k = 7)
+Duration [ms] = 6928, 6827, 6837, 6776, 6813, 6871, 6914, 6860, 6773, 6900, 6780, 6853, 6710, 6795, 6727
+Avg time [ms] = 6824, Std deviation = 62 (Position k = 8)
+Duration [ms] = 6963, 6878, 6829, 6817, 6821, 6805, 6786, 6806, 6778, 6840, 6794, 6901, 6749, 6836, 6850
+Avg time [ms] = 6830, Std deviation = 51 (Position k = 9)
+Duration [ms] = 6801, 6790, 6752, 6736, 6745, 6721, 6717, 6732, 6741, 6743, 6717, 6720, 6695, 6699, 6717
+Avg time [ms] = 6735, Std deviation = 28 (Position k = 10)
+
+Gate T:
+Duration [ms] = 1173, 1161, 1167, 1164, 1163, 1168, 1168, 1168, 1163, 1165, 1163, 1170, 1167, 1162, 1162
+Avg time [ms] = 1165, Std deviation = 3 (Position k = 0)
+Duration [ms] = 1165, 1167, 1169, 1162, 1167, 1165, 1166, 1163, 1172, 1165, 1166, 1171, 1167, 1164, 1166
+Avg time [ms] = 1166, Std deviation = 2 (Position k = 1)
+Duration [ms] = 1175, 1177, 1183, 1176, 1176, 1185, 1183, 1172, 1170, 1180, 1180, 1174, 1174, 1172, 1178
+Avg time [ms] = 1177, Std deviation = 4 (Position k = 2)
+Duration [ms] = 1188, 1178, 1180, 1182, 1182, 1181, 1186, 1183, 1185, 1177, 1182, 1179, 1178, 1184, 1181
+Avg time [ms] = 1181, Std deviation = 3 (Position k = 3)
+Duration [ms] = 1182, 1186, 1189, 1183, 1183, 1188, 1189, 1191, 1186, 1188, 1187, 1183, 1192, 1185, 1189
+Avg time [ms] = 1186, Std deviation = 3 (Position k = 4)
+Duration [ms] = 1782, 1788, 1782, 1784, 1782, 1784, 1785, 1784, 1783, 1783, 1782, 1782, 1782, 1783, 1782
+Avg time [ms] = 1783, Std deviation = 1 (Position k = 5)
+Duration [ms] = 1784, 1782, 1783, 1783, 1783, 1782, 1783, 1783, 1782, 1783, 1783, 1782, 1783, 1782, 1783
+Avg time [ms] = 1782, Std deviation = 0 (Position k = 6)
+Duration [ms] = 1782, 1800, 1781, 1782, 1782, 1781, 1782, 1784, 1782, 1782, 1783, 1782, 1782, 1790, 1783
+Avg time [ms] = 1783, Std deviation = 4 (Position k = 7)
+Duration [ms] = 1783, 1784, 1788, 1784, 1782, 1783, 1782, 1784, 1789, 1783, 1787, 1783, 1783, 1783, 1782
+Avg time [ms] = 1784, Std deviation = 2 (Position k = 8)
+Duration [ms] = 1782, 1782, 1800, 1782, 1783, 1783, 1783, 1782, 1783, 1782, 1783, 1782, 1784, 1783, 1783
+Avg time [ms] = 1783, Std deviation = 4 (Position k = 9)
+Duration [ms] = 1782, 1782, 1782, 1784, 1782, 1781, 1781, 1783, 1782, 1782, 1782, 1783, 1782, 1782, 1782
+Avg time [ms] = 1782, Std deviation = 0 (Position k = 10)
+
+
+================================
+
+CONFIGURATION: N = 37, nodes = 128
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 13442280 ON nid00320 CANCELLED AT 2019-04-29T23:03:54 ***
+srun: got SIGCONT
+srun: forcing job termination
+slurmstepd: error: *** STEP 13442280.4 ON nid00320 CANCELLED AT 2019-04-29T23:03:54 ***
+ 
+Batch Job Summary Report for Job "weak-single-qubit-gates.sh" (13442280) on daint
+-----------------------------------------------------------------------------------------------------
+             Submit            Eligible               Start                 End    Elapsed  Timelimit 
+------------------- ------------------- ------------------- ------------------- ---------- ---------- 
+2019-04-29T17:56:55 2019-04-29T17:56:55 2019-04-29T19:53:27 2019-04-29T23:03:53   03:10:26   03:20:00 
+-----------------------------------------------------------------------------------------------------
+Username    Account     Partition   NNodes   Energy
+----------  ----------  ----------  ------  --------------
+mazzolag    csstaff     normal         256  178.14M joules
+ 
+This job did not utilize any GPUs
+ 
+----------------------------------------------------------
+Scratch File System        Files       Quota
+--------------------  ----------  ----------
+/scratch/snx3000           18747     1000000
+ 

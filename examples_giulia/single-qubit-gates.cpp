@@ -30,10 +30,11 @@ void printAvgTimes(std::vector<long long> &times, int steps, int nrep){
     std::cout << std::endl;
 }
 
-int main(int narg, char *varg[]) {
+int main(int argc, char **argv) {
     //load quest
     QuESTEnv env = createQuESTEnv();
-    // command line arguments
+  
+    /* // command line arguments
     cxxopts::Options desc(varg[0], "Allowed Options");
     desc.add_options()
             ("help", "produce help message")
@@ -51,6 +52,29 @@ int main(int narg, char *varg[]) {
     const int n = vm["N"].as<int>();
     const int startPos = vm["p"].as<int>();
     const int nrep = vm["r"].as<int>();
+*/
+
+    // command line arguments
+    int n = 13;
+    int startPos = 0;
+    int nrep = 2;
+    while ((argc > 1) && (argv[1][0] == '-')){
+        switch (argv[1][1]){
+            case 'N':  // Number of qubits
+                n = std::atoi(argv[2]);
+                break;
+            case 'p':  // Index of the starting position
+                startPos = std::atoi(argv[2]);
+                break;
+            case 'r':  // Number of repetitions
+                nrep = std::atoi(argv[2]);
+                break;
+            default:
+                std::cout << "Wrong Argument: " << argv[1] << std::endl;
+        }
+        argv += 2;
+        argc -= 2;
+    }
 
     int steps = n - startPos;
     if (steps <= 0){
