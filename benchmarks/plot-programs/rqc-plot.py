@@ -40,7 +40,7 @@ for i, filename in enumerate(filenames):
         temp_avg = avg_times[j*lenThr:(j*lenThr + lenThr)]
         temp_avg.reverse()
         y.append(temp_avg)
-    print(y)
+    #print(y)
 
 filenames2 = ["../output-files/rqc-benchmark-intel.txt"]
 master_data2 = []
@@ -64,7 +64,7 @@ for i, filename in enumerate(filenames2):
         temp_avg2 = avg_times2[j*lenThr:(j*lenThr + lenThr)]
         temp_avg2.reverse()
         y2.append(temp_avg2)
-    print(y2)
+    #print(y2)
 
 
 plt.figure(figsize=(12, 10))
@@ -75,20 +75,22 @@ for i in range(len(y)):
     y2[i] = [x*1e-3 for x in y2[i]]
     plt.subplot(dimx, dimy, i+1)
     if i == 0:
-        plt.plot(a[:-1], y[i][:-1], linestyle='dashed', marker='.', markerfacecolor='black', markersize=7, label="QuEST")
-        plt.plot(a[:-1], y2[i][:-1], linestyle='dashed', marker='.', markerfacecolor='black', markersize=7, label="Intel-QS")
+        plt.plot(nodes[:-1], y[i][:-1], marker='.', markerfacecolor='black', markersize=10, label="QuEST")
+        plt.plot(nodes[:-1], y2[i][:-1], marker='.', markerfacecolor='black', markersize=10, label="Intel-QS")
         plt.title("Qubits n = %a" "\n" "depth d = %a" % (numQubits[i], deptharr[i]), fontsize=10)
-        plt.xticks(a[:-1], nodes[:-1])
+        plt.xticks(nodes[:-1])
         plt.xlabel('number of nodes')
         plt.ylabel('time [s]')
+        plt.grid()
         plt.legend(loc='best')
     else:
-        plt.plot(a, y[i], linestyle='dashed', marker='.', markerfacecolor='black', markersize=7, label="QuEST")
-        plt.plot(a, y2[i], linestyle='dashed', marker='.', markerfacecolor='black', markersize=7, label="Intel-QS")
+        plt.plot(nodes, y[i],  marker='.', markerfacecolor='black', markersize=10, label="QuEST")
+        plt.plot(nodes, y2[i], marker='.', markerfacecolor='black', markersize=10, label="Intel-QS")
         plt.title("Qubits n = %i" "\n" "depth d = %a" %(numQubits[i], deptharr[i]), size=10)
-        plt.xticks(a, nodes)
+        plt.xticks(nodes)
         plt.xlabel('number of nodes')
         plt.ylabel('time [s]')
+        plt.grid()
         plt.legend(loc='best')
 plt.suptitle('RQC-algortihm, strong scaling')
 plt.tight_layout()
