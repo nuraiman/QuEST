@@ -1,0 +1,426 @@
+CONFIGURATION: N = 33, nodes = 8
+Gate H:
+Duration [ms] = 5268, 5268, 5269, 5267, 5264, 5264, 5265, 5269, 5268, 5272, 5262, 5264, 5266, 5269, 5268
+Avg time [ms] = 5266, Std deviation = 2 (Position k = 0)
+Duration [ms] = 5253, 5256, 5254, 5256, 5254, 5255, 5257, 5256, 5253, 5256, 5257, 5256, 5254, 5255, 5256
+Avg time [ms] = 5255, Std deviation = 1 (Position k = 1)
+Duration [ms] = 5238, 5225, 5230, 5228, 5225, 5228, 5229, 5229, 5230, 5225, 5226, 5227, 5234, 5228, 5229
+Avg time [ms] = 5228, Std deviation = 3 (Position k = 2)
+Duration [ms] = 5190, 5195, 5197, 5187, 5190, 5189, 5191, 5189, 5196, 5188, 5189, 5188, 5193, 5194, 5195
+Avg time [ms] = 5191, Std deviation = 3 (Position k = 3)
+Duration [ms] = 5069, 5071, 5072, 5070, 5070, 5069, 5069, 5069, 5070, 5072, 5070, 5070, 5069, 5068, 5073
+Avg time [ms] = 5070, Std deviation = 1 (Position k = 4)
+Duration [ms] = 5882, 5882, 5884, 5885, 5890, 5883, 5884, 5889, 5887, 5884, 5891, 5891, 5889, 5884, 5886
+Avg time [ms] = 5886, Std deviation = 3 (Position k = 5)
+Duration [ms] = 5896, 5893, 5892, 5894, 5897, 5893, 5894, 5900, 5892, 5890, 5892, 5897, 5894, 5891, 5894
+Avg time [ms] = 5893, Std deviation = 2 (Position k = 6)
+Duration [ms] = 7071, 6604, 6525, 6753, 6446, 6730, 6485, 6583, 6451, 6774, 6705, 6459, 6416, 6399, 6532
+Avg time [ms] = 6595, Std deviation = 176 (Position k = 7)
+
+Gate X:
+Duration [ms] = 4673, 4675, 4676, 4678, 4673, 4673, 4673, 4672, 4673, 4675, 4673, 4673, 4673, 4674, 4674
+Avg time [ms] = 4673, Std deviation = 1 (Position k = 0)
+Duration [ms] = 4664, 4664, 4664, 4667, 4665, 4683, 4664, 4664, 4664, 4665, 4667, 4665, 4665, 4664, 4665
+Avg time [ms] = 4666, Std deviation = 4 (Position k = 1)
+Duration [ms] = 4647, 4648, 4646, 4645, 4644, 4646, 4648, 4648, 4648, 4646, 4646, 4645, 4649, 4646, 4649
+Avg time [ms] = 4646, Std deviation = 1 (Position k = 2)
+Duration [ms] = 4622, 4626, 4623, 4624, 4624, 4624, 4622, 4624, 4623, 4630, 4623, 4623, 4624, 4630, 4624
+Avg time [ms] = 4624, Std deviation = 2 (Position k = 3)
+Duration [ms] = 4517, 4516, 4517, 4517, 4520, 4519, 4519, 4518, 4517, 4518, 4518, 4517, 4518, 4517, 4519
+Avg time [ms] = 4517, Std deviation = 1 (Position k = 4)
+Duration [ms] = 5908, 5905, 5915, 5907, 5915, 5916, 5920, 5907, 5912, 5919, 5908, 5907, 5915, 5915, 5908
+Avg time [ms] = 5911, Std deviation = 4 (Position k = 5)
+Duration [ms] = 5919, 5915, 5963, 5918, 5915, 5914, 5918, 5920, 5919, 5918, 5916, 5918, 5917, 5917, 5921
+Avg time [ms] = 5920, Std deviation = 11 (Position k = 6)
+Duration [ms] = 6932, 6641, 6471, 6811, 6499, 6714, 6479, 6817, 6639, 7037, 6467, 7219, 6555, 6684, 6518
+Avg time [ms] = 6698, Std deviation = 219 (Position k = 7)
+
+Gate T:
+Duration [ms] = 1164, 1164, 1205, 1155, 1162, 1164, 1160, 1163, 1162, 1160, 1158, 1159, 1165, 1166, 1159
+Avg time [ms] = 1164, Std deviation = 11 (Position k = 0)
+Duration [ms] = 1175, 1167, 1169, 1172, 1171, 1165, 1168, 1170, 1174, 1187, 1170, 1164, 1164, 1167, 1168
+Avg time [ms] = 1170, Std deviation = 5 (Position k = 1)
+Duration [ms] = 1174, 1176, 1174, 1175, 1175, 1181, 1175, 1180, 1173, 1179, 1180, 1169, 1174, 1179, 1174
+Avg time [ms] = 1175, Std deviation = 3 (Position k = 2)
+Duration [ms] = 1171, 1176, 1177, 1176, 1182, 1175, 1181, 1179, 1175, 1170, 1177, 1173, 1175, 1180, 1173
+Avg time [ms] = 1176, Std deviation = 3 (Position k = 3)
+Duration [ms] = 1171, 1173, 1173, 1177, 1172, 1177, 1173, 1178, 1173, 1181, 1180, 1181, 1176, 1183, 1174
+Avg time [ms] = 1176, Std deviation = 3 (Position k = 4)
+Duration [ms] = 1781, 1780, 1783, 1781, 1781, 1781, 1781, 1780, 1781, 1780, 1781, 1781, 1782, 1780, 1782
+Avg time [ms] = 1781, Std deviation = 0 (Position k = 5)
+Duration [ms] = 1784, 1782, 1781, 1782, 1781, 1782, 1783, 1782, 1781, 1781, 1781, 1782, 1783, 1782, 1782
+Avg time [ms] = 1781, Std deviation = 1 (Position k = 6)
+Duration [ms] = 1781, 1782, 1781, 1780, 1787, 1780, 1781, 1782, 1780, 1781, 1781, 1781, 1781, 1780, 1781
+Avg time [ms] = 1781, Std deviation = 1 (Position k = 7)
+
+--------------------------------
+CONFIGURATION: N = 34, nodes = 16
+Gate H:
+Duration [ms] = 5266, 5268, 5267, 5267, 5267, 5268, 5268, 5267, 5269, 5269, 5266, 5267, 5267, 5270, 5268
+Avg time [ms] = 5267, Std deviation = 1 (Position k = 0)
+Duration [ms] = 5253, 5253, 5257, 5256, 5255, 5255, 5256, 5254, 5253, 5254, 5256, 5255, 5256, 5255, 5253
+Avg time [ms] = 5254, Std deviation = 1 (Position k = 1)
+Duration [ms] = 5232, 5232, 5231, 5230, 5228, 5229, 5228, 5232, 5226, 5231, 5232, 5231, 5236, 5229, 5234
+Avg time [ms] = 5230, Std deviation = 2 (Position k = 2)
+Duration [ms] = 5191, 5192, 5193, 5192, 5197, 5196, 5194, 5190, 5192, 5191, 5200, 5198, 5193, 5191, 5196
+Avg time [ms] = 5193, Std deviation = 2 (Position k = 3)
+Duration [ms] = 5069, 5069, 5070, 5069, 5070, 5070, 5073, 5069, 5071, 5070, 5187, 5071, 5071, 5072, 5069
+Avg time [ms] = 5078, Std deviation = 29 (Position k = 4)
+Duration [ms] = 5882, 5881, 5881, 5885, 5877, 5883, 5880, 5877, 5884, 5880, 5886, 5881, 5880, 5879, 5879
+Avg time [ms] = 5881, Std deviation = 2 (Position k = 5)
+Duration [ms] = 6133, 6113, 6069, 6097, 6113, 6184, 6066, 6126, 6091, 6035, 6161, 6065, 6088, 6069, 6052
+Avg time [ms] = 6097, Std deviation = 39 (Position k = 6)
+Duration [ms] = 6496, 6825, 6822, 6590, 6974, 6478, 6611, 6879, 6528, 6535, 6975, 6585, 7012, 6658, 6602
+Avg time [ms] = 6704, Std deviation = 183 (Position k = 7)
+Duration [ms] = 6580, 6936, 6444, 6664, 6525, 6510, 6913, 7080, 6631, 7149, 6608, 6981, 7002, 6467, 6576
+Avg time [ms] = 6737, Std deviation = 234 (Position k = 8)
+
+Gate X:
+Duration [ms] = 4673, 4675, 4674, 4674, 4672, 4674, 4674, 4673, 4675, 4674, 4676, 4674, 4674, 4673, 4674
+Avg time [ms] = 4673, Std deviation = 1 (Position k = 0)
+Duration [ms] = 4666, 4666, 4665, 4666, 4666, 4666, 4665, 4667, 4665, 4665, 4666, 4665, 4666, 4665, 4668
+Avg time [ms] = 4665, Std deviation = 1 (Position k = 1)
+Duration [ms] = 4646, 4647, 4648, 4646, 4647, 4647, 4646, 4646, 4647, 4648, 4647, 4649, 4649, 4645, 4649
+Avg time [ms] = 4647, Std deviation = 1 (Position k = 2)
+Duration [ms] = 4624, 4631, 4624, 4623, 4626, 4625, 4624, 4623, 4624, 4622, 4623, 4624, 4624, 4626, 4631
+Avg time [ms] = 4624, Std deviation = 2 (Position k = 3)
+Duration [ms] = 4518, 4523, 4517, 4519, 4518, 4518, 4518, 4519, 4520, 4517, 4529, 4518, 4518, 4519, 4519
+Avg time [ms] = 4519, Std deviation = 2 (Position k = 4)
+Duration [ms] = 5903, 5904, 5903, 5906, 5905, 5908, 5906, 5903, 5906, 5903, 5904, 5901, 5922, 5906, 5904
+Avg time [ms] = 5905, Std deviation = 4 (Position k = 5)
+Duration [ms] = 6201, 6121, 6131, 6196, 6083, 6110, 6117, 6061, 6089, 6112, 6072, 6118, 6098, 6134, 6130
+Avg time [ms] = 6118, Std deviation = 37 (Position k = 6)
+Duration [ms] = 6601, 6915, 7040, 6504, 6701, 6774, 6612, 6559, 6507, 6852, 6785, 6605, 7015, 6603, 6638
+Avg time [ms] = 6714, Std deviation = 169 (Position k = 7)
+Duration [ms] = 6638, 6699, 6789, 6713, 6898, 6531, 7162, 6762, 6631, 6714, 6534, 6679, 6875, 6556, 6613
+Avg time [ms] = 6719, Std deviation = 159 (Position k = 8)
+
+Gate T:
+Duration [ms] = 1164, 1164, 1163, 1166, 1159, 1161, 1163, 1160, 1168, 1169, 1166, 1161, 1166, 1162, 1161
+Avg time [ms] = 1163, Std deviation = 2 (Position k = 0)
+Duration [ms] = 1175, 1175, 1174, 1168, 1167, 1165, 1168, 1169, 1168, 1168, 1166, 1165, 1172, 1169, 1169
+Avg time [ms] = 1169, Std deviation = 3 (Position k = 1)
+Duration [ms] = 1176, 1172, 1181, 1174, 1174, 1174, 1177, 1180, 1174, 1189, 1173, 1171, 1177, 1179, 1172
+Avg time [ms] = 1176, Std deviation = 4 (Position k = 2)
+Duration [ms] = 1173, 1179, 1179, 1185, 1180, 1176, 1180, 1176, 1189, 1180, 1175, 1177, 1177, 1176, 1176
+Avg time [ms] = 1178, Std deviation = 3 (Position k = 3)
+Duration [ms] = 1197, 1181, 1177, 1180, 1180, 1173, 1176, 1174, 1175, 1173, 1174, 1185, 1172, 1176, 1182
+Avg time [ms] = 1178, Std deviation = 6 (Position k = 4)
+Duration [ms] = 1780, 1781, 1782, 1780, 1782, 1781, 1781, 1782, 1780, 1780, 1780, 1781, 1792, 1782, 1780
+Avg time [ms] = 1781, Std deviation = 2 (Position k = 5)
+Duration [ms] = 1783, 1785, 1781, 1782, 1782, 1784, 1787, 1784, 1782, 1782, 1783, 1781, 1786, 1783, 1782
+Avg time [ms] = 1783, Std deviation = 1 (Position k = 6)
+Duration [ms] = 1787, 1786, 1780, 1781, 1780, 1782, 1780, 1783, 1790, 1782, 1782, 1780, 1785, 1782, 1782
+Avg time [ms] = 1782, Std deviation = 2 (Position k = 7)
+Duration [ms] = 1780, 1780, 1780, 1784, 1779, 1781, 1778, 1780, 1780, 1780, 1784, 1779, 1783, 1780, 1779
+Avg time [ms] = 1780, Std deviation = 1 (Position k = 8)
+
+--------------------------------
+CONFIGURATION: N = 35, nodes = 32
+Gate H:
+Duration [ms] = 5268, 5268, 5269, 5266, 5267, 5286, 5269, 5268, 5277, 5267, 5267, 5269, 5266, 5267, 5268
+Avg time [ms] = 5269, Std deviation = 5 (Position k = 0)
+Duration [ms] = 5255, 5256, 5255, 5254, 5256, 5256, 5254, 5258, 5256, 5256, 5258, 5257, 5256, 5253, 5257
+Avg time [ms] = 5255, Std deviation = 1 (Position k = 1)
+Duration [ms] = 5233, 5229, 5232, 5226, 5233, 5227, 5234, 5227, 5233, 5233, 5233, 5229, 5231, 5230, 5258
+Avg time [ms] = 5232, Std deviation = 7 (Position k = 2)
+Duration [ms] = 5193, 5195, 5196, 5193, 5193, 5197, 5192, 5197, 5194, 5191, 5193, 5197, 5195, 5194, 5223
+Avg time [ms] = 5196, Std deviation = 7 (Position k = 3)
+Duration [ms] = 5068, 5086, 5068, 5072, 5070, 5072, 5070, 5071, 5069, 5070, 5069, 5072, 5072, 5070, 5096
+Avg time [ms] = 5073, Std deviation = 7 (Position k = 4)
+Duration [ms] = 5883, 5880, 5882, 5885, 5883, 5880, 5884, 5880, 5877, 5883, 5887, 5882, 5879, 5881, 5889
+Avg time [ms] = 5882, Std deviation = 3 (Position k = 5)
+Duration [ms] = 6640, 6564, 6688, 6600, 6668, 6784, 6595, 6667, 6635, 6762, 6606, 6709, 6618, 6668, 6638
+Avg time [ms] = 6656, Std deviation = 58 (Position k = 6)
+Duration [ms] = 6729, 6803, 6750, 6671, 6678, 6615, 6610, 6762, 6708, 6640, 6672, 6708, 6662, 6684, 6634
+Avg time [ms] = 6688, Std deviation = 53 (Position k = 7)
+Duration [ms] = 6751, 6735, 6695, 6643, 6695, 6769, 6778, 6737, 6762, 6707, 6721, 6741, 6738, 6770, 6607
+Avg time [ms] = 6723, Std deviation = 46 (Position k = 8)
+Duration [ms] = 6650, 6648, 6664, 6617, 6674, 6661, 6655, 6621, 6657, 6613, 6611, 6651, 6592, 6616, 6674
+Avg time [ms] = 6640, Std deviation = 25 (Position k = 9)
+
+Gate X:
+Duration [ms] = 4673, 4676, 4675, 4675, 4673, 4674, 4734, 4674, 4677, 4673, 4675, 4674, 4675, 4674, 4675
+Avg time [ms] = 4678, Std deviation = 14 (Position k = 0)
+Duration [ms] = 4670, 4665, 4666, 4666, 4733, 4666, 4692, 4666, 4665, 4664, 4666, 4665, 4666, 4667, 4666
+Avg time [ms] = 4672, Std deviation = 17 (Position k = 1)
+Duration [ms] = 4647, 4646, 4646, 4647, 4647, 4650, 4658, 4647, 4645, 4647, 4646, 4648, 4647, 4647, 4647
+Avg time [ms] = 4647, Std deviation = 3 (Position k = 2)
+Duration [ms] = 4623, 4625, 4625, 4624, 4625, 4625, 4647, 4624, 4623, 4624, 4625, 4626, 4625, 4626, 4625
+Avg time [ms] = 4626, Std deviation = 5 (Position k = 3)
+Duration [ms] = 4518, 4517, 4520, 4519, 4519, 4518, 4525, 4519, 4520, 4520, 4518, 4518, 4520, 4519, 4521
+Avg time [ms] = 4519, Std deviation = 1 (Position k = 4)
+Duration [ms] = 5906, 5906, 5906, 5904, 5907, 5910, 5905, 5910, 5903, 5910, 5903, 5907, 5905, 5911, 5911
+Avg time [ms] = 5906, Std deviation = 2 (Position k = 5)
+Duration [ms] = 6694, 6778, 6780, 6866, 6747, 6639, 6730, 6734, 6653, 6755, 6662, 6782, 6747, 6822, 6694
+Avg time [ms] = 6738, Std deviation = 61 (Position k = 6)
+Duration [ms] = 6730, 6689, 6682, 6698, 6805, 6716, 6684, 6645, 6727, 6749, 6772, 6782, 6751, 6778, 6775
+Avg time [ms] = 6732, Std deviation = 44 (Position k = 7)
+Duration [ms] = 6801, 6699, 6771, 6767, 6710, 6777, 6704, 6773, 6703, 6776, 6848, 6715, 6766, 6750, 6755
+Avg time [ms] = 6754, Std deviation = 40 (Position k = 8)
+Duration [ms] = 6686, 6669, 6655, 6618, 6703, 6712, 6677, 6649, 6766, 6709, 6665, 6650, 6589, 6688, 6681
+Avg time [ms] = 6674, Std deviation = 40 (Position k = 9)
+
+Gate T:
+Duration [ms] = 1163, 1162, 1162, 1162, 1162, 1168, 1161, 1162, 1166, 1163, 1162, 1164, 1162, 1163, 1163
+Avg time [ms] = 1163, Std deviation = 1 (Position k = 0)
+Duration [ms] = 1176, 1176, 1182, 1175, 1169, 1170, 1170, 1183, 1170, 1173, 1174, 1174, 1171, 1171, 1168
+Avg time [ms] = 1173, Std deviation = 4 (Position k = 1)
+Duration [ms] = 1178, 1182, 1179, 1181, 1180, 1180, 1177, 1182, 1178, 1178, 1181, 1178, 1178, 1182, 1179
+Avg time [ms] = 1179, Std deviation = 1 (Position k = 2)
+Duration [ms] = 1173, 1181, 1183, 1178, 1182, 1173, 1183, 1179, 1179, 1177, 1172, 1177, 1178, 1182, 1178
+Avg time [ms] = 1178, Std deviation = 3 (Position k = 3)
+Duration [ms] = 1187, 1181, 1177, 1183, 1179, 1179, 1176, 1175, 1177, 1181, 1180, 1181, 1180, 1182, 1183
+Avg time [ms] = 1180, Std deviation = 3 (Position k = 4)
+Duration [ms] = 1783, 1783, 1788, 1782, 1782, 1782, 1782, 1781, 1785, 1781, 1783, 1782, 1782, 1783, 1782
+Avg time [ms] = 1782, Std deviation = 1 (Position k = 5)
+Duration [ms] = 1782, 1789, 1783, 1783, 1782, 1783, 1782, 1782, 1782, 1783, 1782, 1782, 1782, 1782, 1783
+Avg time [ms] = 1782, Std deviation = 1 (Position k = 6)
+Duration [ms] = 1783, 1783, 1782, 1783, 1782, 1782, 1782, 1783, 1783, 1781, 1782, 1782, 1783, 1789, 1782
+Avg time [ms] = 1782, Std deviation = 1 (Position k = 7)
+Duration [ms] = 1782, 1782, 1782, 1782, 1782, 1781, 1788, 1782, 1783, 1783, 1782, 1781, 1781, 1782, 1782
+Avg time [ms] = 1782, Std deviation = 1 (Position k = 8)
+Duration [ms] = 1781, 1783, 1782, 1783, 1782, 1789, 1783, 1783, 1782, 1782, 1795, 1782, 1782, 1792, 1783
+Avg time [ms] = 1784, Std deviation = 4 (Position k = 9)
+
+--------------------------------
+CONFIGURATION: N = 36, nodes = 64
+Gate H:
+Duration [ms] = 5284, 5274, 5268, 5268, 5269, 5268, 5270, 5269, 5270, 5268, 5270, 5270, 5269, 5269, 5269
+Avg time [ms] = 5270, Std deviation = 3 (Position k = 0)
+Duration [ms] = 5334, 5256, 5255, 5254, 5258, 5258, 5263, 5258, 5254, 5258, 5257, 5259, 5259, 5258, 5289
+Avg time [ms] = 5264, Std deviation = 20 (Position k = 1)
+Duration [ms] = 5305, 5231, 5230, 5233, 5231, 5230, 5243, 5231, 5230, 5230, 5232, 5230, 5230, 5231, 5234
+Avg time [ms] = 5236, Std deviation = 18 (Position k = 2)
+Duration [ms] = 5193, 5194, 5195, 5195, 5198, 5195, 5233, 5191, 5202, 5193, 5197, 5194, 5194, 5194, 5200
+Avg time [ms] = 5197, Std deviation = 9 (Position k = 3)
+Duration [ms] = 5070, 5071, 5071, 5070, 5070, 5071, 5103, 5070, 5071, 5072, 5071, 5071, 5070, 5071, 5129
+Avg time [ms] = 5076, Std deviation = 16 (Position k = 4)
+Duration [ms] = 7971, 8042, 8044, 8012, 7971, 8083, 8038, 8179, 8090, 8170, 8087, 8183, 8076, 8198, 8132
+Avg time [ms] = 8085, Std deviation = 72 (Position k = 5)
+Duration [ms] = 7884, 8103, 7994, 8000, 7990, 7952, 8064, 8086, 8076, 8124, 8029, 8060, 8029, 8032, 8120
+Avg time [ms] = 8036, Std deviation = 63 (Position k = 6)
+Duration [ms] = 8423, 8319, 8404, 8454, 8496, 8405, 8457, 8415, 8452, 8436, 8357, 8435, 8395, 8441, 8467
+Avg time [ms] = 8423, Std deviation = 42 (Position k = 7)
+Duration [ms] = 8350, 8370, 8399, 8381, 8341, 8364, 8385, 8460, 8413, 8564, 8421, 8484, 8438, 8435, 8555
+Avg time [ms] = 8424, Std deviation = 65 (Position k = 8)
+Duration [ms] = 8227, 8391, 8321, 8341, 8333, 8263, 8472, 8301, 8419, 8409, 8506, 8395, 8381, 8395, 8416
+Avg time [ms] = 8371, Std deviation = 72 (Position k = 9)
+Duration [ms] = 7480, 7461, 7491, 7561, 7568, 7531, 7543, 7588, 7560, 7693, 7548, 7561, 7622, 7608, 7625
+Avg time [ms] = 7562, Std deviation = 58 (Position k = 10)
+
+Gate X:
+Duration [ms] = 4676, 4703, 4675, 4677, 4675, 4677, 4675, 4681, 4675, 4679, 4675, 4676, 4676, 4677, 4676
+Avg time [ms] = 4678, Std deviation = 6 (Position k = 0)
+Duration [ms] = 4665, 4667, 4665, 4677, 4666, 4665, 4667, 4666, 4666, 4675, 4666, 4666, 4666, 4665, 4666
+Avg time [ms] = 4667, Std deviation = 3 (Position k = 1)
+Duration [ms] = 4659, 4647, 4651, 4647, 4656, 4647, 4647, 4647, 4647, 4648, 4647, 4648, 4649, 4647, 4650
+Avg time [ms] = 4649, Std deviation = 3 (Position k = 2)
+Duration [ms] = 4626, 4624, 4625, 4625, 4624, 4626, 4623, 4624, 4624, 4625, 4623, 4625, 4627, 4626, 4623
+Avg time [ms] = 4624, Std deviation = 1 (Position k = 3)
+Duration [ms] = 4518, 4521, 4520, 4520, 4519, 4519, 4519, 4519, 4520, 4518, 4519, 4518, 4519, 4518, 4520
+Avg time [ms] = 4519, Std deviation = 0 (Position k = 4)
+Duration [ms] = 8065, 8182, 8009, 8044, 8079, 8052, 8084, 8106, 8104, 8153, 8033, 8161, 8127, 8213, 8107
+Avg time [ms] = 8101, Std deviation = 55 (Position k = 5)
+Duration [ms] = 7945, 7969, 8078, 7969, 8050, 8045, 8134, 8034, 8097, 7997, 8038, 8081, 8101, 8037, 8085
+Avg time [ms] = 8044, Std deviation = 52 (Position k = 6)
+Duration [ms] = 8333, 8446, 8373, 8464, 8440, 8425, 8401, 8406, 8566, 8398, 8559, 8500, 8460, 8389, 8439
+Avg time [ms] = 8439, Std deviation = 62 (Position k = 7)
+Duration [ms] = 8318, 8383, 8408, 8482, 8410, 8522, 8417, 8519, 8377, 8549, 8387, 8499, 8399, 8451, 8538
+Avg time [ms] = 8443, Std deviation = 67 (Position k = 8)
+Duration [ms] = 8272, 8396, 8407, 8400, 8271, 8472, 8367, 8341, 8513, 8386, 8533, 8410, 8385, 8459, 8394
+Avg time [ms] = 8400, Std deviation = 71 (Position k = 9)
+Duration [ms] = 7614, 7536, 7553, 7622, 7609, 7586, 7570, 7666, 7613, 7697, 7683, 7610, 7666, 7656, 7564
+Avg time [ms] = 7616, Std deviation = 47 (Position k = 10)
+
+Gate T:
+Duration [ms] = 1162, 1166, 1163, 1164, 1167, 1164, 1163, 1167, 1163, 1169, 1164, 1175, 1167, 1165, 1165
+Avg time [ms] = 1165, Std deviation = 3 (Position k = 0)
+Duration [ms] = 1174, 1170, 1168, 1170, 1172, 1178, 1169, 1173, 1169, 1169, 1173, 1166, 1167, 1176, 1171
+Avg time [ms] = 1171, Std deviation = 3 (Position k = 1)
+Duration [ms] = 1183, 1177, 1181, 1178, 1180, 1182, 1178, 1181, 1177, 1186, 1181, 1175, 1180, 1176, 1178
+Avg time [ms] = 1179, Std deviation = 2 (Position k = 2)
+Duration [ms] = 1175, 1180, 1177, 1175, 1182, 1180, 1183, 1177, 1175, 1179, 1173, 1180, 1182, 1182, 1180
+Avg time [ms] = 1178, Std deviation = 3 (Position k = 3)
+Duration [ms] = 1200, 1175, 1183, 1178, 1179, 1178, 1176, 1177, 1178, 1179, 1178, 1178, 1174, 1182, 1180
+Avg time [ms] = 1179, Std deviation = 5 (Position k = 4)
+Duration [ms] = 1782, 1782, 1783, 1784, 1783, 1783, 1794, 1782, 1789, 1782, 1797, 1782, 1803, 1783, 1784
+Avg time [ms] = 1786, Std deviation = 6 (Position k = 5)
+Duration [ms] = 1784, 1784, 1784, 1784, 1785, 1791, 1785, 1786, 1784, 1784, 1785, 1785, 1784, 1785, 1785
+Avg time [ms] = 1785, Std deviation = 1 (Position k = 6)
+Duration [ms] = 1783, 1782, 1783, 1782, 1782, 1783, 1782, 1783, 1783, 1782, 1783, 1782, 1782, 1781, 1782
+Avg time [ms] = 1782, Std deviation = 0 (Position k = 7)
+Duration [ms] = 1782, 1789, 1783, 1786, 1785, 1783, 1784, 1782, 1782, 1783, 1783, 1782, 1783, 1782, 1783
+Avg time [ms] = 1783, Std deviation = 1 (Position k = 8)
+Duration [ms] = 1783, 1782, 1782, 1783, 1783, 1803, 1781, 1789, 1783, 1789, 1782, 1790, 1782, 1790, 1783
+Avg time [ms] = 1785, Std deviation = 5 (Position k = 9)
+Duration [ms] = 1784, 1788, 1783, 1784, 1786, 1784, 1784, 1785, 1785, 1785, 1785, 1784, 1785, 1785, 1785
+Avg time [ms] = 1784, Std deviation = 1 (Position k = 10)
+
+--------------------------------
+CONFIGURATION: N = 37, nodes = 128
+Gate H:
+Duration [ms] = 5297, 5278, 5282, 5272, 5279, 5273, 5277, 5284, 5279, 5276, 5292, 5279, 5280, 5276, 5278
+Avg time [ms] = 5280, Std deviation = 6 (Position k = 0)
+Duration [ms] = 5291, 5264, 5266, 5261, 5265, 5268, 5263, 5265, 5282, 5266, 5338, 5260, 5265, 5266, 5261
+Avg time [ms] = 5272, Std deviation = 19 (Position k = 1)
+Duration [ms] = 5260, 5233, 5240, 5243, 5236, 5233, 5234, 5239, 5370, 5232, 5272, 5253, 5244, 5239, 5241
+Avg time [ms] = 5251, Std deviation = 33 (Position k = 2)
+Duration [ms] = 5224, 5210, 5205, 5203, 5195, 5203, 5205, 5199, 5250, 5204, 5222, 5201, 5196, 5200, 5204
+Avg time [ms] = 5208, Std deviation = 13 (Position k = 3)
+Duration [ms] = 5080, 5081, 5125, 5079, 5083, 5080, 5080, 5080, 5089, 5083, 5194, 5079, 5082, 5082, 5083
+Avg time [ms] = 5092, Std deviation = 29 (Position k = 4)
+Duration [ms] = 6085, 6010, 6084, 6078, 6081, 6280, 6041, 6030, 6236, 6039, 6112, 6205, 6024, 6135, 6023
+Avg time [ms] = 6097, Std deviation = 80 (Position k = 5)
+Duration [ms] = 6433, 6436, 6464, 6499, 6451, 6454, 6501, 6462, 6606, 6459, 6573, 6631, 6426, 6474, 6462
+Avg time [ms] = 6488, Std deviation = 61 (Position k = 6)
+Duration [ms] = 6746, 6706, 6766, 6810, 6701, 6657, 6819, 6783, 6783, 6724, 6922, 6942, 6799, 6738, 6820
+Avg time [ms] = 6781, Std deviation = 74 (Position k = 7)
+Duration [ms] = 6816, 6769, 6848, 6842, 6826, 6906, 6880, 6825, 6833, 6870, 7028, 7138, 6805, 6878, 6834
+Avg time [ms] = 6873, Std deviation = 90 (Position k = 8)
+Duration [ms] = 6925, 6938, 7116, 6933, 6889, 6960, 6917, 7077, 6865, 7003, 7214, 7036, 6923, 6981, 6905
+Avg time [ms] = 6978, Std deviation = 92 (Position k = 9)
+Duration [ms] = 6863, 6862, 6797, 6802, 6907, 7072, 6786, 6821, 7000, 6817, 7134, 7072, 6937, 6983, 6854
+Avg time [ms] = 6913, Std deviation = 109 (Position k = 10)
+Duration [ms] = 6793, 6813, 6913, 6872, 6882, 6782, 6834, 6984, 7172, 6905, 7191, 6849, 6905, 6856, 6908
+Avg time [ms] = 6910, Std deviation = 117 (Position k = 11)
+
+Gate X:
+Duration [ms] = 4682, 4683, 4686, 4685, 4685, 4683, 4683, 4686, 4685, 4685, 4686, 4683, 4684, 4684, 4684
+Avg time [ms] = 4684, Std deviation = 1 (Position k = 0)
+Duration [ms] = 4677, 4675, 4675, 4673, 4674, 4676, 4675, 4674, 4675, 4675, 4675, 4676, 4675, 4675, 4674
+Avg time [ms] = 4674, Std deviation = 1 (Position k = 1)
+Duration [ms] = 4657, 4658, 4657, 4657, 4658, 4657, 4658, 4656, 4659, 4658, 4656, 4657, 4656, 4656, 4659
+Avg time [ms] = 4657, Std deviation = 1 (Position k = 2)
+Duration [ms] = 4630, 4634, 4634, 4634, 4632, 4637, 4634, 4635, 4632, 4635, 4633, 4632, 4637, 4635, 4631
+Avg time [ms] = 4633, Std deviation = 2 (Position k = 3)
+Duration [ms] = 4526, 4530, 4527, 4527, 4529, 4526, 4527, 4527, 4528, 4528, 4527, 4528, 4527, 4527, 4526
+Avg time [ms] = 4527, Std deviation = 1 (Position k = 4)
+Duration [ms] = 6044, 6042, 6081, 6029, 6037, 6197, 6261, 6078, 6168, 6106, 6121, 6444, 6067, 6070, 6178
+Avg time [ms] = 6128, Std deviation = 106 (Position k = 5)
+Duration [ms] = 6470, 6636, 6542, 6564, 6512, 6507, 6454, 6634, 6548, 6652, 6780, 6476, 6516, 6512, 6571
+Avg time [ms] = 6558, Std deviation = 83 (Position k = 6)
+Duration [ms] = 6770, 6859, 6698, 6790, 6683, 6799, 6816, 6828, 6749, 7007, 6978, 6772, 6708, 6819, 6852
+Avg time [ms] = 6808, Std deviation = 88 (Position k = 7)
+Duration [ms] = 6814, 6837, 6932, 6878, 7168, 6804, 6777, 6940, 6908, 7013, 7007, 6815, 6831, 6858, 6926
+Avg time [ms] = 6900, Std deviation = 99 (Position k = 8)
+Duration [ms] = 6990, 6950, 7116, 6894, 6892, 7063, 6975, 6958, 6899, 7166, 7151, 7215, 6980, 6919, 6981
+Avg time [ms] = 7009, Std deviation = 102 (Position k = 9)
+Duration [ms] = 6875, 6876, 6835, 6898, 6913, 6862, 6935, 7096, 7020, 7068, 7073, 7082, 6926, 6965, 7003
+Avg time [ms] = 6961, Std deviation = 85 (Position k = 10)
+Duration [ms] = 6898, 6942, 7002, 6978, 6874, 6872, 6803, 6846, 6935, 7094, 7212, 6784, 6869, 6981, 6812
+Avg time [ms] = 6926, Std deviation = 111 (Position k = 11)
+
+Gate T:
+Duration [ms] = 1173, 1163, 1166, 1164, 1168, 1162, 1166, 1166, 1161, 1167, 1169, 1165, 1167, 1165, 1164
+Avg time [ms] = 1165, Std deviation = 2 (Position k = 0)
+Duration [ms] = 1172, 1174, 1172, 1174, 1170, 1173, 1175, 1174, 1173, 1171, 1173, 1176, 1175, 1179, 1174
+Avg time [ms] = 1173, Std deviation = 2 (Position k = 1)
+Duration [ms] = 1188, 1183, 1181, 1179, 1179, 1184, 1180, 1179, 1187, 1186, 1180, 1181, 1183, 1183, 1182
+Avg time [ms] = 1182, Std deviation = 2 (Position k = 2)
+Duration [ms] = 1180, 1182, 1180, 1180, 1180, 1183, 1184, 1187, 1186, 1176, 1185, 1188, 1180, 1186, 1181
+Avg time [ms] = 1182, Std deviation = 3 (Position k = 3)
+Duration [ms] = 1177, 1183, 1183, 1177, 1179, 1192, 1186, 1196, 1178, 1184, 1179, 1181, 1180, 1183, 1180
+Avg time [ms] = 1182, Std deviation = 5 (Position k = 4)
+Duration [ms] = 1784, 1785, 1785, 1786, 1791, 1786, 1785, 1786, 1785, 1785, 1785, 1785, 1786, 1785, 1786
+Avg time [ms] = 1785, Std deviation = 1 (Position k = 5)
+Duration [ms] = 1787, 1788, 1787, 1786, 1787, 1786, 1789, 1787, 1787, 1790, 1787, 1786, 1786, 1786, 1786
+Avg time [ms] = 1787, Std deviation = 1 (Position k = 6)
+Duration [ms] = 1782, 1782, 1782, 1783, 1801, 1804, 1782, 1792, 1783, 1782, 1782, 1782, 1789, 1782, 1782
+Avg time [ms] = 1786, Std deviation = 7 (Position k = 7)
+Duration [ms] = 1785, 1786, 1784, 1785, 1785, 1784, 1786, 1785, 1784, 1787, 1786, 1786, 1786, 1786, 1785
+Avg time [ms] = 1785, Std deviation = 0 (Position k = 8)
+Duration [ms] = 1786, 1787, 1790, 1788, 1787, 1786, 1788, 1798, 1787, 1787, 1788, 1787, 1787, 1788, 1786
+Avg time [ms] = 1788, Std deviation = 2 (Position k = 9)
+Duration [ms] = 1788, 1787, 1787, 1788, 1787, 1787, 1786, 1787, 1786, 1786, 1786, 1786, 1789, 1787, 1786
+Avg time [ms] = 1786, Std deviation = 1 (Position k = 10)
+Duration [ms] = 1790, 1786, 1787, 1786, 1786, 1789, 1786, 1787, 1787, 1787, 1787, 1787, 1787, 1786, 1787
+Avg time [ms] = 1787, Std deviation = 1 (Position k = 11)
+
+--------------------------------
+CONFIGURATION: N = 38, nodes = 256
+Gate H:
+Duration [ms] = 5278, 5278, 5277, 5280, 5278, 5283, 5275, 5280, 5282, 5276, 5288, 5276, 5278, 5275, 5279
+Avg time [ms] = 5278, Std deviation = 3 (Position k = 0)
+Duration [ms] = 5266, 5266, 5263, 5267, 5264, 5266, 5265, 5265, 5268, 5263, 5268, 5278, 5262, 5262, 5262
+Avg time [ms] = 5265, Std deviation = 3 (Position k = 1)
+Duration [ms] = 5237, 5235, 5236, 5242, 5237, 5236, 5244, 5235, 5240, 5239, 5235, 5236, 5237, 5241, 5238
+Avg time [ms] = 5237, Std deviation = 2 (Position k = 2)
+Duration [ms] = 5204, 5198, 5200, 5198, 5199, 5200, 5283, 5204, 5198, 5204, 5202, 5199, 5202, 5197, 5206
+Avg time [ms] = 5206, Std deviation = 20 (Position k = 3)
+Duration [ms] = 5081, 5082, 5079, 5081, 5080, 5086, 5099, 5082, 5080, 5083, 5083, 5080, 5082, 5083, 5081
+Avg time [ms] = 5082, Std deviation = 4 (Position k = 4)
+Duration [ms] = 6109, 6094, 6081, 6088, 6087, 6115, 6084, 6867, 6097, 6897, 6081, 6070, 6084, 6955, 6102
+Avg time [ms] = 6254, Std deviation = 326 (Position k = 5)
+Duration [ms] = 6858, 6793, 6842, 6769, 6801, 6904, 6942, 6651, 6632, 6643, 6658, 6689, 6744, 6645, 6957
+Avg time [ms] = 6768, Std deviation = 110 (Position k = 6)
+Duration [ms] = 7092, 7105, 6914, 7122, 7022, 7241, 6995, 6881, 6916, 6852, 6974, 6910, 7006, 7082, 7048
+Avg time [ms] = 7010, Std deviation = 103 (Position k = 7)
+Duration [ms] = 7118, 7169, 7296, 7851, 7176, 7133, 7162, 7131, 7309, 7160, 7034, 7080, 7127, 7074, 7155
+Avg time [ms] = 7198, Std deviation = 188 (Position k = 8)
+Duration [ms] = 7199, 7196, 7147, 7154, 7324, 7353, 7228, 6996, 7019, 7188, 6973, 7161, 7100, 7554, 7247
+Avg time [ms] = 7189, Std deviation = 143 (Position k = 9)
+Duration [ms] = 7101, 7045, 7454, 7036, 7307, 7071, 7160, 7276, 7725, 7093, 7691, 7067, 7139, 7082, 7076
+Avg time [ms] = 7221, Std deviation = 221 (Position k = 10)
+Duration [ms] = 7349, 7429, 7359, 7544, 7448, 7565, 7359, 7311, 7281, 7500, 7406, 7473, 7324, 7180, 7519
+Avg time [ms] = 7403, Std deviation = 104 (Position k = 11)
+Duration [ms] = 6907, 6922, 7631, 6970, 7283, 6947, 6945, 7490, 7554, 6951, 7134, 6945, 6964, 7154, 7002
+Avg time [ms] = 7119, Std deviation = 242 (Position k = 12)
+
+Gate X:
+Duration [ms] = 4686, 4687, 4691, 4686, 4686, 4686, 4687, 4684, 4686, 4686, 4685, 4814, 4685, 4686, 4732
+Avg time [ms] = 4697, Std deviation = 33 (Position k = 0)
+Duration [ms] = 4677, 4674, 4686, 4675, 4674, 4691, 4677, 4675, 4677, 4676, 4675, 4742, 4678, 4676, 4677
+Avg time [ms] = 4682, Std deviation = 16 (Position k = 1)
+Duration [ms] = 4657, 4655, 4654, 4656, 4656, 4655, 4655, 4655, 4656, 4657, 4656, 4655, 4656, 4654, 4657
+Avg time [ms] = 4655, Std deviation = 1 (Position k = 2)
+Duration [ms] = 4633, 4633, 4632, 4633, 4634, 4632, 4634, 4628, 4631, 4633, 4632, 4632, 4631, 4641, 4635
+Avg time [ms] = 4632, Std deviation = 2 (Position k = 3)
+Duration [ms] = 4529, 4529, 4531, 4529, 4528, 4528, 4532, 4528, 4529, 4529, 4530, 4529, 4530, 4529, 4529
+Avg time [ms] = 4529, Std deviation = 1 (Position k = 4)
+Duration [ms] = 6119, 6218, 6184, 6119, 6123, 6220, 6106, 6240, 6135, 6108, 6114, 6114, 6860, 6130, 6894
+Avg time [ms] = 6245, Std deviation = 251 (Position k = 5)
+Duration [ms] = 6816, 6780, 6848, 6989, 6888, 6780, 7041, 6718, 6672, 6779, 6716, 6705, 6674, 6684, 6664
+Avg time [ms] = 6783, Std deviation = 112 (Position k = 6)
+Duration [ms] = 7021, 7042, 7152, 7035, 6949, 6999, 6985, 6898, 7031, 7019, 7041, 6947, 6928, 6988, 7089
+Avg time [ms] = 7008, Std deviation = 62 (Position k = 7)
+Duration [ms] = 7587, 7276, 7240, 7457, 7128, 7240, 7618, 7500, 7090, 7066, 7117, 7093, 6980, 6998, 7092
+Avg time [ms] = 7232, Std deviation = 204 (Position k = 8)
+Duration [ms] = 7207, 7614, 7247, 7363, 7188, 7230, 7059, 7084, 7235, 7252, 7417, 7126, 7101, 7146, 7252
+Avg time [ms] = 7234, Std deviation = 138 (Position k = 9)
+Duration [ms] = 7477, 7117, 7120, 7137, 7198, 7164, 7657, 7280, 7103, 7058, 7151, 7101, 7203, 7225, 7225
+Avg time [ms] = 7214, Std deviation = 152 (Position k = 10)
+Duration [ms] = 7428, 7893, 7409, 7412, 7475, 7477, 7344, 7264, 7351, 7432, 7235, 7598, 7311, 7449, 7452
+Avg time [ms] = 7435, Std deviation = 150 (Position k = 11)
+Duration [ms] = 7606, 6938, 7543, 7016, 7001, 6971, 7156, 7621, 6984, 6986, 7476, 6954, 6989, 7157, 7109
+Avg time [ms] = 7167, Std deviation = 248 (Position k = 12)
+
+Gate T:
+Duration [ms] = 1170, 1170, 1170, 1170, 1170, 1165, 1167, 1167, 1169, 1167, 1170, 1170, 1168, 1167, 1197
+Avg time [ms] = 1170, Std deviation = 7 (Position k = 0)
+Duration [ms] = 1174, 1181, 1174, 1179, 1175, 1181, 1179, 1179, 1173, 1172, 1175, 1176, 1176, 1182, 1178
+Avg time [ms] = 1176, Std deviation = 3 (Position k = 1)
+Duration [ms] = 1186, 1188, 1184, 1185, 1184, 1184, 1183, 1182, 1188, 1187, 1183, 1184, 1184, 1184, 1186
+Avg time [ms] = 1184, Std deviation = 1 (Position k = 2)
+Duration [ms] = 1185, 1181, 1185, 1189, 1180, 1184, 1184, 1185, 1182, 1187, 1183, 1203, 1182, 1186, 1184
+Avg time [ms] = 1185, Std deviation = 5 (Position k = 3)
+Duration [ms] = 1183, 1184, 1182, 1184, 1186, 1184, 1183, 1183, 1183, 1184, 1180, 1185, 1180, 1188, 1182
+Avg time [ms] = 1183, Std deviation = 2 (Position k = 4)
+Duration [ms] = 1791, 1785, 1789, 1787, 1786, 1787, 1787, 1787, 1785, 1787, 1790, 1785, 1787, 1786, 1788
+Avg time [ms] = 1787, Std deviation = 1 (Position k = 5)
+Duration [ms] = 1785, 1785, 1786, 1785, 1787, 1785, 1790, 1785, 1793, 1786, 1786, 1786, 1784, 1784, 1787
+Avg time [ms] = 1786, Std deviation = 2 (Position k = 6)
+Duration [ms] = 1786, 1786, 1785, 1787, 1786, 1786, 1785, 1785, 1787, 1785, 1802, 1786, 1786, 1786, 1787
+Avg time [ms] = 1787, Std deviation = 4 (Position k = 7)
+Duration [ms] = 1787, 1786, 1786, 1786, 1786, 1788, 1786, 1787, 1787, 1786, 1786, 1786, 1789, 1786, 1788
+Avg time [ms] = 1786, Std deviation = 1 (Position k = 8)
+Duration [ms] = 1786, 1786, 1785, 1784, 1784, 1785, 1791, 1785, 1788, 1786, 1784, 1785, 1784, 1784, 1785
+Avg time [ms] = 1785, Std deviation = 1 (Position k = 9)
+Duration [ms] = 1786, 1786, 1785, 1788, 1785, 1790, 1786, 1789, 1786, 1787, 1788, 1785, 1786, 1787, 1784
+Avg time [ms] = 1786, Std deviation = 1 (Position k = 10)
+Duration [ms] = 1788, 1787, 1787, 1786, 1786, 1787, 1785, 1785, 1786, 1787, 1785, 1786, 1786, 1786, 1785
+Avg time [ms] = 1786, Std deviation = 0 (Position k = 11)
+Duration [ms] = 1783, 1797, 1782, 1785, 1783, 1783, 1783, 1783, 1783, 1783, 1782, 1784, 1782, 1783, 1783
+Avg time [ms] = 1783, Std deviation = 3 (Position k = 12)
+
+--------------------------------

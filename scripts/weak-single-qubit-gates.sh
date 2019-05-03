@@ -42,7 +42,7 @@ n_repetitions=16
 export OMP_NUM_THREADS=36
 
 path_to_executable="./examples_giulia/single-qubit-gates"
-path_to_file="../benchmarks/weak-single-qubit-gates-1-36.txt"
+path_to_file="../benchmarks/weak-single-qubit-gates-1-36_quest.txt"
 
 # iterate over the values of nodes
 for i in "${!number_of_nodes[@]}"
