@@ -1,0 +1,56 @@
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 64
+Duration [ms] = 216, 203, 189, 191
+Avg time [ms] = 199, Std deviation = 10
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 32
+Duration [ms] = 347, 317, 301, 301
+Avg time [ms] = 316, Std deviation = 18
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 16
+Duration [ms] = 549, 505, 476, 493
+Avg time [ms] = 505, Std deviation = 27
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 8
+Duration [ms] = 949, 929, 877, 876
+Avg time [ms] = 907, Std deviation = 32
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 4
+Duration [ms] = 1976, 1935, 1938, 1932
+Avg time [ms] = 1945, Std deviation = 17
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 2
+Duration [ms] = 3612, 3586, 3619, 3557
+Avg time [ms] = 3593, Std deviation = 24
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 1
+Duration [ms] = 6021, 6003, 5997, 5998
+Avg time [ms] = 6004, Std deviation = 9
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 64
+Duration [ms] = 6634, 6520, 6546, 6550
+Avg time [ms] = 6562, Std deviation = 42
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 32
+Duration [ms] = 11940, 11942, 11972, 12028
+Avg time [ms] = 11970, Std deviation = 35
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 16
+Duration [ms] = 21725, 21872, 21849, 22072
+Avg time [ms] = 21879, Std deviation = 124
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 8
+Duration [ms] = 40862, 40977, 40869, 41035
+Avg time [ms] = 40935, Std deviation = 73
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 4
+Duration [ms] = 74939, 75368, 75380, 75421
+Avg time [ms] = 75277, Std deviation = 196
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 2
+Duration [ms] = 124230, 124827, 124922, 124815
+Avg time [ms] = 124698, Std deviation = 273
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 1
+Duration [ms] = 225641, 225609, 225940, 225513
+Avg time [ms] = 225675, Std deviation = 159
+--------------------------------
