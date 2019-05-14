@@ -5,7 +5,7 @@
 #include <numeric>
 #include <chrono>
 #include <random>
-// #include "cxxopts.hpp"
+#include "cxxopts.hpp"
 #include <algorithm>
 #include <tuple>
 #include <omp.h>
