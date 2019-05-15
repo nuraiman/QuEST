@@ -2,10 +2,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-nodes = [1, 2, 4, 8, 16, 32, 64]  # number of threads
+nodes = [1, 2, 4, 8, 16, 32, 64, 128, 256]  # number of threads
 row = [5]
 depth = [40]
-a = [1, 2, 3, 4, 5, 6, 7]
+a = np.arange(1, 1+len(nodes), 1)
 
 numQubits = []
 deptharr = []
@@ -111,7 +111,7 @@ for i in range(len(y)):
     plt.semilogy(a, nodes, linestyle='dashed', color='grey', label="ideal")
     plt.title("Qubits n = %i" "\n" "depth d = %a" %(numQubits[i], deptharr[i]), size=10)
     plt.xticks(a, nodes)
-    plt.yticks([1,2,4,8,16,32,64],[1,2,4,8,16,32,64])
+    plt.yticks(nodes,nodes)
     plt.xlabel('number of nodes')
     plt.ylabel('speedup ratio')
     plt.grid()
