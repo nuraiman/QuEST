@@ -1,6 +1,6 @@
 import math
 import os
-import datetime
+import time
 from subprocess import call
 
 # strong benchmark values for DJ, RQC, Grover and Shor
@@ -9,7 +9,7 @@ n_tasks_per_node = 2
 n_threads_per_task = 18
 
 # parameters
-N_grover = [100, 500, 1000, 5000, 10000, 30000, 60000, 100000, 200000, 400000, 600000, 1000000]
+N_grover = [50000, 100000, 200000, 400000, 600000, 1000000, 3000000, 6000000, 10000000]
 N_shor = [203]
 N_dj = [16, 19, 22, 24, 26, 27, 28, 29, 30, 31, 33]
 nrep = 10
@@ -44,7 +44,7 @@ time = "02:00:00"
 template_file = "experiment.sh"
 
 # create a new folder with current date and time
-directory = str(datetime.datetime.now())
+directory = str(time.strftime("%d:%m:%Y-%H:%M:%S"))
 if not os.path.exists(directory):
     os.makedirs(directory)
 
@@ -70,6 +70,8 @@ for node_id, nodes in enumerate(n_nodes):
         line = line.replace("GLOBAL_N_DJ", get_string(N_dj))
         line = line.replace("GLOBAL_N_RQC", get_string(N_rqc))
         line = line.replace("GLOBAL_DEPTH_RQC", get_string(depth_rqc))
+
+        line = line.replace("GLOBAL_DIRECTORY", directory)
 
         output_file.write(line)
 
@@ -99,7 +101,7 @@ m_output.close()
 m_file.close()
 
 # load modules and compile all
-call("source load_compile.sh", shell=True)
+call("source ./load_compile.sh", shell=True)
 
 for f in scripts:
     print("Submitting script " + f)
