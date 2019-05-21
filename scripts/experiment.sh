@@ -10,7 +10,11 @@ echo "================================"
 echo "       RUNNING BENCHMARKS"
 echo "================================"
 
-cd /scratch/snx3000/mazzolag/qsim/QuEST/build/
+directory=GLOBAL_DIRECTORY
+
+prefix=/scratch/snx3000/mazzolag/qsim/QuEST
+
+cd $prefix/build/
 
 run_algo(){
     path_to_executable=$1
@@ -77,17 +81,32 @@ nodes=GLOBAL_NODES
 export OMP_NUM_THREADS=$n_threads_per_task
 
 exec_grover="./examples_giulia/grover"
-results_grover="grover_${nodes}.txt"
+results_grover="prefix/scripts/directory/grover_${nodes}.txt"
 
 exec_shor="./examples_giulia/shor"
-results_shor="shor_${nodes}.txt"
+results_shor="prefix/scripts/directory/shor_${nodes}.txt"
 
 exec_dj="./examples_giulia/dj"
-results_dj="dj_${nodes}.txt"
+results_dj="prefix/scripts/directory/dj_${nodes}.txt"
 
 exec_rqc="./randomQC/rqc"
-results_rqc="rqc_${nodes}.txt"
+results_rqc="prefix/scripts/directory/rqc_${nodes}.txt"
 
+
+# run DJ algorithm
+for arg in "${N_dj[@]}"
+do
+    run_algo ${exec_dj} $nodes ${n_tasks_per_node} $arg $nrep ${results_dj}
+done
+
+# run RQC algorithm
+for arg in "${N_rqc[@]}"
+do
+    for dep in "${depth_rqc[@]}"
+    do
+        run_rqc ${exec_rqc} $nodes ${n_tasks_per_node} $arg $dep $nrep ${results_rqc}
+    done
+done
 
 # run GROVER algorithm
 for arg in "${N_grover[@]}"
@@ -101,14 +120,3 @@ do
     run_algo ${exec_shor} $nodes ${n_tasks_per_node} $arg $nrep ${results_shor}
 done
 
-# run DJ algorithm
-for arg in "${N_dj[@]}"
-do
-    run_algo ${exec_dj} $nodes ${n_tasks_per_node} $arg $nrep ${results_dj}
-done
-
-# run RQC algorithm
-for arg in "${N_rqc[@]}"
-do
-    run_rqc ${exec_rqc} $nodes ${n_tasks_per_node} $arg $depth_rqc $nrep ${results_rqc}
-done
