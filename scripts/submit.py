@@ -76,6 +76,27 @@ for node_id, nodes in enumerate(n_nodes):
     output_file.close()
     tmpl_file.close()
 
+# create the merge script to the directory folder (for merging results output files)
+merge_file = "merge_files.py"
+m_file = open(merge_file, "r")
+m_output_name = directory + "/merge.py"
+m_output = open(m_output_name, "w")
+
+def get_python_array_string(arr):
+    return '[' + ','.join(arr) + ']'
+
+for line in m_file:
+    line = line.replace("NODES", get_python_array_string(n_nodes))
+    line = line.replace("GLOBAL_N_GROVER", get_python_array_string(N_grover))
+    line = line.replace("GLOBAL_N_SHOR", get_python_array_string(N_shor))
+    line = line.replace("GLOBAL_N_DJ", get_python_array_string(N_dj))
+    line = line.replace("GLOBAL_N_RQC", get_python_array_string(N_rqc))
+    line = line.replace("GLOBAL_DEPTH_RQC", get_python_array_string(depth_rqc))
+
+    m_output.write(line)
+
+m_output.close()
+m_file.close()
 
 # load modules and compile all
 call("source load_compile.sh", shell=True)
@@ -85,11 +106,3 @@ for f in scripts:
     # call("chmod a+x " + f, shell=True)
     # call("sbatch " + f, shell=True)
 
-# create a bash script that should be used to merge all the results
-# with open("merge_results.sh", 'w') as merge_file:
-#     merge_file.write("cores=" + get_string(n_tasks) + "\n")
-#     merge_file.write("prefix=./" + directory + "/\n\n")
-#     merge_file.write("for core in ${cores[@]}\n")
-#     merge_file.write("do\n")
-#     merge_file.write("    cat ${prefix}results_${core}.txt >> ${prefix}results.txt\n")
-#     merge_file.write("done\n")
