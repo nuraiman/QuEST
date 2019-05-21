@@ -39,7 +39,7 @@ def get_string_list(str_list):
     print("Result = ", result)
     return result
 
-time = "02:00:00"
+n_time = "03:00:00"
 
 template_file = "experiment.sh"
 
@@ -58,7 +58,7 @@ for node_id, nodes in enumerate(n_nodes):
     output_file = open(output_name, "w")
 
     for line in tmpl_file:
-        line = line.replace("GLOBAL_TIME", time)
+        line = line.replace("GLOBAL_TIME", n_time)
         line = line.replace("GLOBAL_NODES", str(nodes))
         line = line.replace("GLOBAL_TASKS", str(n_tasks_per_node))
         line = line.replace("GLOBAL_THREADS", str(n_threads_per_task))
@@ -85,7 +85,8 @@ m_output_name = directory + "/merge.py"
 m_output = open(m_output_name, "w")
 
 def get_python_array_string(arr):
-    return '[' + ','.join(arr) + ']'
+    sarr = [str(x) for x in arr]
+    return '[' + ','.join(sarr) + ']'
 
 for line in m_file:
     line = line.replace("NODES", get_python_array_string(n_nodes))
@@ -105,6 +106,6 @@ call("source ./load_compile.sh", shell=True)
 
 for f in scripts:
     print("Submitting script " + f)
-    # call("chmod a+x " + f, shell=True)
-    # call("sbatch " + f, shell=True)
+    call("chmod a+x " + f, shell=True)
+    call("sbatch " + f, shell=True)
 
