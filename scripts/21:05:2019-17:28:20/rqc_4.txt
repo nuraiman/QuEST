@@ -1,0 +1,66 @@
+CONFIGURATION: n x m = 4x4, depth = 20, nodes = 4
+Duration [ms] = 26, 3, 3, 3, 3, 3, 3, 3, 3, 3
+Avg time [ms] = 5, Std deviation = 6
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 20, nodes = 4
+Duration [ms] = 63, 37, 30, 28, 29, 27, 27, 27, 27, 27
+Avg time [ms] = 32, Std deviation = 10
+--------------------------------
+CONFIGURATION: n x m = 4x4, depth = 40, nodes = 4
+Duration [ms] = 39, 5, 5, 5, 4, 5, 5, 5, 4, 5
+Avg time [ms] = 8, Std deviation = 10
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 40, nodes = 4
+Duration [ms] = 81, 63, 50, 51, 49, 48, 51, 49, 50, 58
+Avg time [ms] = 55, Std deviation = 9
+--------------------------------
+CONFIGURATION: n x m = 4x4, depth = 60, nodes = 4
+Duration [ms] = 45, 6, 7, 6, 6, 6, 6, 6, 6, 6
+Avg time [ms] = 10, Std deviation = 11
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 60, nodes = 4
+Duration [ms] = 114, 82, 73, 73, 74, 74, 75, 74, 73, 72
+Avg time [ms] = 78, Std deviation = 12
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 20, nodes = 4
+Duration [ms] = 1133, 1098, 1098, 1098, 1098, 1095, 1097, 1097, 1100, 1099
+Avg time [ms] = 1101, Std deviation = 10
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 20, nodes = 4
+Duration [ms] = 43857, 44651, 44403, 44540, 44400, 44561, 44316, 44477, 44299, 44396
+Avg time [ms] = 44390, Std deviation = 206
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 4
+Duration [ms] = 1969, 1935, 1928, 1938, 1939, 1939, 1934, 1934, 1937, 1934
+Avg time [ms] = 1938, Std deviation = 10
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 4
+Duration [ms] = 74945, 75763, 75476, 75747, 75343, 75587, 75486, 75793, 75572, 75820
+Avg time [ms] = 75553, Std deviation = 252
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 60, nodes = 4
+Duration [ms] = 2852, 2775, 2785, 2777, 2788, 2788, 2782, 2779, 2781, 2784
+Avg time [ms] = 2789, Std deviation = 21
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 60, nodes = 4
+Duration [ms] = 109185, 110256, 109845, 110114, 109743, 109992, 109695, 110167, 109920, 110299
+Avg time [ms] = 109921, Std deviation = 314
+--------------------------------
+CONFIGURATION: n x m = 6x6, depth = 20, nodes = 4
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+--------------------------------
+CONFIGURATION: n x m = 6x7, depth = 20, nodes = 4
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+--------------------------------
+CONFIGURATION: n x m = 6x6, depth = 40, nodes = 4
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+--------------------------------
+CONFIGURATION: n x m = 6x7, depth = 40, nodes = 4
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+--------------------------------
+CONFIGURATION: n x m = 6x6, depth = 60, nodes = 4
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+--------------------------------
+CONFIGURATION: n x m = 6x7, depth = 60, nodes = 4
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+--------------------------------

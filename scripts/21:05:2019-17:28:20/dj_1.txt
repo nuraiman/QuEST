@@ -1,0 +1,41 @@
+CONFIGURATION: N = 16, nodes = 1
+Duration [ms] = 20, 4, 4, 4, 1, 2, 1, 4, 5, 3
+Avg time [ms] = 4, Std deviation = 5
+--------------------------------
+CONFIGURATION: N = 19, nodes = 1
+Duration [ms] = 50, 38, 36, 37, 8, 20, 6, 43, 33, 38
+Avg time [ms] = 30, Std deviation = 13
+--------------------------------
+CONFIGURATION: N = 22, nodes = 1
+Duration [ms] = 389, 374, 356, 360, 61, 177, 61, 449, 432, 416
+Avg time [ms] = 307, Std deviation = 142
+--------------------------------
+CONFIGURATION: N = 24, nodes = 1
+Duration [ms] = 1758, 1665, 1593, 1679, 301, 790, 302, 1872, 1958, 1732
+Avg time [ms] = 1365, Std deviation = 610
+--------------------------------
+CONFIGURATION: N = 26, nodes = 1
+Duration [ms] = 6949, 6632, 6375, 6678, 1292, 3219, 1292, 7746, 8127, 6925
+Avg time [ms] = 5523, Std deviation = 2451
+--------------------------------
+CONFIGURATION: N = 27, nodes = 1
+Duration [ms] = 14116, 13517, 12961, 13648, 2676, 6631, 2680, 15886, 16624, 14818
+Avg time [ms] = 11355, Std deviation = 5033
+--------------------------------
+CONFIGURATION: N = 28, nodes = 1
+Duration [ms] = 28233, 26990, 25822, 27211, 5493, 13403, 5518, 32984, 34344, 29496
+Avg time [ms] = 22949, Std deviation = 10216
+--------------------------------
+CONFIGURATION: N = 29, nodes = 1
+Duration [ms] = 65224, 54887, 52404, 65381, 11375, 27187, 11395, 66906, 69551, 59495
+Avg time [ms] = 48380, Std deviation = 21754
+--------------------------------
+CONFIGURATION: N = 30, nodes = 1
+
+--------------------------------
+CONFIGURATION: N = 31, nodes = 1
+
+--------------------------------
+CONFIGURATION: N = 33, nodes = 1
+Could not allocate memory!Could not allocate memory!
+--------------------------------

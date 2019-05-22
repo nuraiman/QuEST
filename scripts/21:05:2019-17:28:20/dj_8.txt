@@ -1,0 +1,43 @@
+CONFIGURATION: N = 16, nodes = 8
+Duration [ms] = 23, 1, 1, 1, 0, 0, 0, 1, 1, 0
+Avg time [ms] = 2, Std deviation = 6
+--------------------------------
+CONFIGURATION: N = 19, nodes = 8
+Duration [ms] = 30, 14, 6, 6, 2, 2, 2, 10, 7, 8
+Avg time [ms] = 8, Std deviation = 8
+--------------------------------
+CONFIGURATION: N = 22, nodes = 8
+Duration [ms] = 82, 69, 50, 49, 15, 18, 15, 62, 59, 59
+Avg time [ms] = 47, Std deviation = 22
+--------------------------------
+CONFIGURATION: N = 24, nodes = 8
+Duration [ms] = 315, 285, 219, 222, 64, 70, 58, 258, 277, 241
+Avg time [ms] = 200, Std deviation = 93
+--------------------------------
+CONFIGURATION: N = 26, nodes = 8
+Duration [ms] = 1263, 1172, 1152, 1191, 502, 575, 501, 1381, 1469, 1369
+Avg time [ms] = 1057, Std deviation = 361
+--------------------------------
+CONFIGURATION: N = 27, nodes = 8
+Duration [ms] = 2527, 2442, 2303, 2425, 1006, 1150, 1017, 2911, 3033, 2635
+Avg time [ms] = 2144, Std deviation = 742
+--------------------------------
+CONFIGURATION: N = 28, nodes = 8
+Duration [ms] = 5137, 4841, 4631, 4865, 2050, 2299, 2067, 6041, 6169, 5296
+Avg time [ms] = 4339, Std deviation = 1515
+--------------------------------
+CONFIGURATION: N = 29, nodes = 8
+Duration [ms] = 11488, 9809, 9686, 11717, 4095, 4633, 4094, 12108, 12193, 10709
+Avg time [ms] = 9053, Std deviation = 3234
+--------------------------------
+CONFIGURATION: N = 30, nodes = 8
+Duration [ms] = 23434, 23962, 19544, 23134, 8265, 9419, 8395, 23840, 24268, 22481
+Avg time [ms] = 18674, Std deviation = 6658
+--------------------------------
+CONFIGURATION: N = 31, nodes = 8
+Duration [ms] = 46636, 48907, 39466, 47043, 16852, 18916, 16665, 47205, 49453, 43907
+Avg time [ms] = 37505, Std deviation = 13388
+--------------------------------
+CONFIGURATION: N = 33, nodes = 8
+
+--------------------------------
