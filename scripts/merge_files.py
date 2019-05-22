@@ -8,9 +8,14 @@ n_nodes = NODES
 N_dj = GLOBAL_N_DJ
 N_grover = GLOBAL_N_GROVER
 N_shor = GLOBAL_N_SHOR
-N_rqc = GLOBAL_N_RQC
+N_rqc_raw = GLOBAL_N_RQC
 depth_rqc = GLOBAL_DEPTH_RQC
 
+N_rqc = []
+for num in N_rqc_raw:
+    for dep in depth_rqc:
+        N_rqc.append(num**2)
+        N_rqc.append(num*(num+1))
 
 exec_names = ["dj", "grover", "shor", "rqc"]
 
@@ -19,7 +24,7 @@ for exe in exec_names:
     N_size = eval(N_size_name)
     output_name = exe + "_full.txt"
     exe_output = open(output_name, "w")
-    cnt = 0
+    cnt = -1
     temp_cnt = 0
     for N in N_size:
 
@@ -29,7 +34,7 @@ for exe in exec_names:
 
             for i, line in enumerate(file):
                 temp_cnt = i
-                if i < cnt:
+                if i <= cnt:
                     continue
                 exe_output.write(line)
                 if line.startswith("--"):
