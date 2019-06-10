@@ -1,0 +1,331 @@
+================================
+       RUNNING BENCHMARKS
+================================
+CONFIGURATION: N = 30, nodes = 32
+Duration [ms] = 6218, 6519, 5477, 6442, 2557, 2797, 2494, 6618, 6764, 6096
+Avg time [ms] = 5198, Std deviation = 1724
+CONFIGURATION: N = 31, nodes = 32
+Duration [ms] = 13066, 13435, 11090, 12967, 4984, 5631, 5041, 13205, 14343, 12950
+Avg time [ms] = 10671, Std deviation = 3651
+CONFIGURATION: N = 33, nodes = 32
+Duration [ms] = 45713, 56139, 22893, 20459, 43268, 61049, 44535, 20460, 20437, 53664
+Avg time [ms] = 38861, Std deviation = 15427
+CONFIGURATION: N = 50000, nodes = 32
+Rep 1: Test x0 = 27440
+T = 201
+Found x0 = 27440 with success probability 0.999988
+Rep 2: Test x0 = 29642
+T = 201
+Found x0 = 29642 with success probability 0.999988
+Rep 3: Test x0 = 35759
+T = 201
+Found x0 = 35759 with success probability 0.999988
+Rep 4: Test x0 = 42213
+T = 201
+Found x0 = 42213 with success probability 0.999988
+Rep 5: Test x0 = 30138
+T = 201
+Found x0 = 30138 with success probability 0.999988
+Rep 6: Test x0 = 42897
+T = 201
+Found x0 = 42897 with success probability 0.999988
+Rep 7: Test x0 = 27244
+T = 201
+Found x0 = 27244 with success probability 0.999988
+Rep 8: Test x0 = 42362
+T = 201
+Found x0 = 42362 with success probability 0.999988
+Rep 9: Test x0 = 21182
+T = 201
+Found x0 = 21182 with success probability 0.999988
+Rep 10: Test x0 = 31178
+T = 201
+Found x0 = 31178 with success probability 0.999988
+Duration [ms] = 217, 172, 168, 186, 178, 168, 186, 177, 170, 181
+Avg time [ms] = 180, Std deviation = 13
+CONFIGURATION: N = 100000, nodes = 32
+Rep 1: Test x0 = 54882
+T = 284
+Found x0 = 54882 with success probability 0.999999
+Rep 2: Test x0 = 59285
+T = 284
+Found x0 = 59285 with success probability 0.999999
+Rep 3: Test x0 = 71520
+T = 284
+Found x0 = 71520 with success probability 0.999999
+Rep 4: Test x0 = 84427
+T = 284
+Found x0 = 84427 with success probability 0.999999
+Rep 5: Test x0 = 60277
+T = 284
+Found x0 = 60277 with success probability 0.999999
+Rep 6: Test x0 = 85795
+T = 284
+Found x0 = 85795 with success probability 0.999999
+Rep 7: Test x0 = 54489
+T = 284
+Found x0 = 54489 with success probability 0.999999
+Rep 8: Test x0 = 84726
+T = 284
+Found x0 = 84726 with success probability 0.999999
+Rep 9: Test x0 = 42366
+T = 284
+Found x0 = 42366 with success probability 0.999999
+Rep 10: Test x0 = 62357
+T = 284
+Found x0 = 62357 with success probability 0.999999
+Duration [ms] = 378, 303, 376, 365, 295, 305, 333, 303, 309, 294
+Avg time [ms] = 326, Std deviation = 32
+CONFIGURATION: N = 200000, nodes = 32
+Rep 1: Test x0 = 109766
+T = 402
+Found x0 = 109766 with success probability 0.999998
+Rep 2: Test x0 = 118573
+T = 402
+Found x0 = 118573 with success probability 0.999998
+Rep 3: Test x0 = 143043
+T = 402
+Found x0 = 143043 with success probability 0.999998
+Rep 4: Test x0 = 168859
+T = 402
+Found x0 = 168859 with success probability 0.999998
+Rep 5: Test x0 = 120557
+T = 402
+Found x0 = 120557 with success probability 0.999998
+Rep 6: Test x0 = 171595
+T = 402
+Found x0 = 171595 with success probability 0.999998
+Rep 7: Test x0 = 108980
+T = 402
+Found x0 = 108980 with success probability 0.999998
+Rep 8: Test x0 = 169456
+T = 402
+Found x0 = 169456 with success probability 0.999998
+Rep 9: Test x0 = 84734
+T = 402
+Found x0 = 84734 with success probability 0.999998
+Rep 10: Test x0 = 124717
+T = 402
+Found x0 = 124717 with success probability 0.999998
+Duration [ms] = 663, 610, 621, 655, 639, 600, 791, 630, 645, 606
+Avg time [ms] = 646, Std deviation = 52
+CONFIGURATION: N = 400000, nodes = 32
+Rep 1: Test x0 = 219533
+T = 568
+Found x0 = 219533 with success probability 1
+Rep 2: Test x0 = 237147
+T = 568
+Found x0 = 237147 with success probability 1
+Rep 3: Test x0 = 286086
+T = 568
+Found x0 = 286086 with success probability 1
+Rep 4: Test x0 = 337719
+T = 568
+Found x0 = 337719 with success probability 1
+Rep 5: Test x0 = 241114
+T = 568
+Found x0 = 241114 with success probability 1
+Rep 6: Test x0 = 343191
+T = 568
+Found x0 = 343191 with success probability 1
+Rep 7: Test x0 = 217961
+T = 568
+Found x0 = 217961 with success probability 1
+Rep 8: Test x0 = 338913
+T = 568
+Found x0 = 338913 with success probability 1
+Rep 9: Test x0 = 169468
+T = 568
+Found x0 = 169468 with success probability 1
+Rep 10: Test x0 = 249435
+T = 568
+Found x0 = 249435 with success probability 1
+Duration [ms] = 1577, 1653, 1487, 1429, 1453, 1451, 1453, 1527, 1424, 1457
+Avg time [ms] = 1491, Std deviation = 69
+CONFIGURATION: N = 600000, nodes = 32
+Rep 1: Test x0 = 329300
+T = 804
+Found x0 = 329300 with success probability 1
+Rep 2: Test x0 = 355720
+T = 804
+Found x0 = 355720 with success probability 1
+Rep 3: Test x0 = 429130
+T = 804
+Found x0 = 429130 with success probability 1
+Rep 4: Test x0 = 506579
+T = 804
+Found x0 = 506579 with success probability 1
+Rep 5: Test x0 = 361672
+T = 804
+Found x0 = 361672 with success probability 1
+Rep 6: Test x0 = 514787
+T = 804
+Found x0 = 514787 with success probability 1
+Rep 7: Test x0 = 326942
+T = 804
+Found x0 = 326942 with success probability 1
+Rep 8: Test x0 = 508370
+T = 804
+Found x0 = 508370 with success probability 1
+Rep 9: Test x0 = 254202
+T = 804
+Found x0 = 254202 with success probability 1
+Rep 10: Test x0 = 374152
+T = 804
+Found x0 = 374152 with success probability 1
+Duration [ms] = 3497, 3659, 3451, 3574, 3557, 3516, 3565, 3503, 3510, 3708
+Avg time [ms] = 3554, Std deviation = 74
+CONFIGURATION: N = 1000000, nodes = 32
+Rep 1: Test x0 = 548937
+T = 804
+Found x0 = 548937 with success probability 1
+Rep 2: Test x0 = 592978
+T = 804
+Found x0 = 592978 with success probability 1
+Rep 3: Test x0 = 715350
+T = 804
+Found x0 = 715350 with success probability 1
+Rep 4: Test x0 = 844455
+T = 804
+Found x0 = 844455 with success probability 1
+Rep 5: Test x0 = 602899
+T = 804
+Found x0 = 602899 with success probability 1
+Rep 6: Test x0 = 858138
+T = 804
+Found x0 = 858138 with success probability 1
+Rep 7: Test x0 = 545005
+T = 804
+Found x0 = 545005 with success probability 1
+Rep 8: Test x0 = 847442
+T = 804
+Found x0 = 847442 with success probability 1
+Rep 9: Test x0 = 423750
+T = 804
+Found x0 = 423750 with success probability 1
+Rep 10: Test x0 = 623704
+T = 804
+Found x0 = 623704 with success probability 1
+Duration [ms] = 3338, 3480, 3529, 3508, 3713, 3637, 3457, 3775, 3493, 3504
+Avg time [ms] = 3543, Std deviation = 122
+CONFIGURATION: N = 3000000, nodes = 32
+Rep 1: Test x0 = 1647194
+T = 1608
+Found x0 = 1647194 with success probability 1
+Rep 2: Test x0 = 1779348
+T = 1608
+Found x0 = 1779348 with success probability 1
+Rep 3: Test x0 = 2146551
+T = 1608
+Found x0 = 2146551 with success probability 1
+Rep 4: Test x0 = 2533957
+T = 1608
+Found x0 = 2533957 with success probability 1
+Rep 5: Test x0 = 1809118
+T = 1608
+Found x0 = 1809118 with success probability 1
+Rep 6: Test x0 = 2575016
+T = 1608
+Found x0 = 2575016 with success probability 1
+Rep 7: Test x0 = 1635398
+T = 1608
+Found x0 = 1635398 with success probability 1
+Rep 8: Test x0 = 2542919
+T = 1608
+Found x0 = 2542919 with success probability 1
+Rep 9: Test x0 = 1271546
+T = 1608
+Found x0 = 1271546 with success probability 1
+Rep 10: Test x0 = 1871548
+T = 1608
+Found x0 = 1871548 with success probability 1
+Duration [ms] = 21672, 23668, 23712, 23747, 23932, 23541, 23716, 23625, 23790, 23841
+Avg time [ms] = 23524, Std deviation = 626
+CONFIGURATION: N = 6000000, nodes = 32
+Rep 1: Test x0 = 3296693
+T = 2274
+Found x0 = 3296693 with success probability 1
+Rep 2: Test x0 = 3561186
+T = 2274
+Found x0 = 3561186 with success probability 1
+Rep 3: Test x0 = 4296104
+T = 2274
+Found x0 = 4296104 with success probability 1
+Rep 4: Test x0 = 5071459
+T = 2274
+Found x0 = 5071459 with success probability 1
+Rep 5: Test x0 = 3620767
+T = 2274
+Found x0 = 3620767 with success probability 1
+Rep 6: Test x0 = 5153634
+T = 2274
+Found x0 = 5153634 with success probability 1
+Rep 7: Test x0 = 3273084
+T = 2274
+Found x0 = 3273084 with success probability 1
+Rep 8: Test x0 = 5089396
+T = 2274
+Found x0 = 5089396 with success probability 1
+Rep 9: Test x0 = 2544872
+T = 2274
+Found x0 = 2544872 with success probability 1
+Rep 10: Test x0 = 3745714
+T = 2274
+Found x0 = 3745714 with success probability 1
+Duration [ms] = 59351, 65714, 65642, 65670, 65544, 65601, 65451, 65407, 65453, 65431
+Avg time [ms] = 64926, Std deviation = 1861
+CONFIGURATION: N = 10000000, nodes = 32
+Rep 1: Test x0 = 5494489
+T = 3216
+Found x0 = 5494489 with success probability 1
+Rep 2: Test x0 = 5935310
+T = 3216
+Found x0 = 5935310 with success probability 1
+Rep 3: Test x0 = 7160174
+T = 3216
+Found x0 = 7160174 with success probability 1
+Rep 4: Test x0 = 8452433
+T = 3216
+Found x0 = 8452433 with success probability 1
+Rep 5: Test x0 = 6034612
+T = 3216
+Found x0 = 6034612 with success probability 1
+Rep 6: Test x0 = 8589390
+T = 3216
+Found x0 = 8589390 with success probability 1
+Rep 7: Test x0 = 5455140
+T = 3216
+Found x0 = 5455140 with success probability 1
+Rep 8: Test x0 = 8482327
+T = 3216
+Found x0 = 8482327 with success probability 1
+Rep 9: Test x0 = 4241453
+T = 3216
+Found x0 = 4241453 with success probability 1
+Rep 10: Test x0 = 6242857
+T = 3216
+Found x0 = 6242857 with success probability 1
+Duration [ms] = 163465, 177817, 178177, 178660, 177449, 178080, 178231, 177876, 177328, 177678
+Avg time [ms] = 176476, Std deviation = 4352
+CONFIGURATION: N = 203, nodes = 32
+Factors are: 7; 29; 
+Duration [ms] = 117808, 39336, 118300, 118428, 119044, 118681, 118474, 118484, 118446, 39656
+Avg time [ms] = 102665, Std deviation = 31586
+ 
+Batch Job Summary Report for Job "script_32.sh" (14223249) on daint
+-----------------------------------------------------------------------------------------------------
+             Submit            Eligible               Start                 End    Elapsed  Timelimit 
+------------------- ------------------- ------------------- ------------------- ---------- ---------- 
+2019-05-24T11:15:42 2019-05-24T11:15:42 2019-05-24T11:22:12 2019-05-24T12:37:30   01:15:18   03:00:00 
+-----------------------------------------------------------------------------------------------------
+Username    Account     Partition   NNodes   Energy
+----------  ----------  ----------  ------  --------------
+mazzolag    csstaff     normal          32   28.61M joules
+ 
+This job did not utilize any GPUs
+ 
+----------------------------------------------------------
+Scratch File System        Files       Quota
+--------------------  ----------  ----------
+/scratch/snx3000           19010     1000000
+ 

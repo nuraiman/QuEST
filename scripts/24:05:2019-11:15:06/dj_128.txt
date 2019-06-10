@@ -1,0 +1,12 @@
+CONFIGURATION: N = 30, nodes = 128
+Duration [ms] = 2491, 2767, 1996, 2483, 838, 979, 805, 2560, 2623, 2285
+Avg time [ms] = 1982, Std deviation = 752
+--------------------------------
+CONFIGURATION: N = 31, nodes = 128
+Duration [ms] = 5277, 5500, 4266, 5281, 1643, 1837, 1630, 4989, 5494, 5127
+Avg time [ms] = 4104, Std deviation = 1606
+--------------------------------
+CONFIGURATION: N = 33, nodes = 128
+Duration [ms] = 17991, 22008, 7032, 6344, 17216, 25001, 17524, 7528, 7207, 22434
+Avg time [ms] = 15028, Std deviation = 6925
+--------------------------------

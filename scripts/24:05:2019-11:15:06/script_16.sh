@@ -1,16 +1,16 @@
 #!/bin/bash -l
-#SBATCH --time=GLOBAL_TIME
-#SBATCH --nodes=GLOBAL_NODES
+#SBATCH --time=03:00:00
+#SBATCH --nodes=16
 #SBATCH --constraint=mc
 #SBATCH --partition=normal
-#SBATCH --output="GLOBAL_DIRECTORY/script_GLOBAL_NODES.out"
+#SBATCH --output="24:05:2019-11:15:06/script_16.out"
 #set -x
 
 echo "================================"
 echo "       RUNNING BENCHMARKS"
 echo "================================"
 
-directory=GLOBAL_DIRECTORY
+directory=24:05:2019-11:15:06
 
 prefix=/scratch/snx3000/mazzolag/qsim/QuEST
 
@@ -64,20 +64,20 @@ run_rqc(){
 
 IFS=
 
-N_grover=GLOBAL_N_GROVER
-N_shor=GLOBAL_N_SHOR
-N_dj=GLOBAL_N_DJ
-nrep=GLOBAL_NREP
+N_grover=(50000 100000 200000 400000 600000 1000000 3000000 6000000 10000000 )
+N_shor=(203 )
+N_dj=(30 31 33 )
+nrep=10
 
-N_rqc=GLOBAL_N_RQC
-depth_rqc=GLOBAL_DEPTH_RQC
-nrep_rqc=GLOBAL_NREP_RQC
+N_rqc=()
+depth_rqc=()
+nrep_rqc=10_RQC
 
 
-n_tasks_per_node=GLOBAL_TASKS
-n_threads_per_task=GLOBAL_THREADS
+n_tasks_per_node=2
+n_threads_per_task=18
 
-nodes=GLOBAL_NODES
+nodes=16
 export OMP_NUM_THREADS=$n_threads_per_task
 
 exec_grover="./examples_giulia/grover"

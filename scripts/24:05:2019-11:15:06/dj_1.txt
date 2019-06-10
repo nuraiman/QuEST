@@ -1,0 +1,9 @@
+CONFIGURATION: N = 30, nodes = 1
+
+--------------------------------
+CONFIGURATION: N = 31, nodes = 1
+
+--------------------------------
+CONFIGURATION: N = 33, nodes = 1
+Could not allocate memory!Could not allocate memory!
+--------------------------------
