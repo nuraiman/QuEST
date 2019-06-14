@@ -1,0 +1,539 @@
+================================
+       RUNNING BENCHMARKS
+================================
+CONFIGURATION: N = 16, nodes = 16
+Duration [ms] = 29, 4, 4, 3, 0, 1, 1, 6, 7, 3
+Avg time [ms] = 5, Std deviation = 8
+CONFIGURATION: N = 19, nodes = 16
+Duration [ms] = 32, 16, 7, 6, 2, 1, 1, 9, 8, 7
+Avg time [ms] = 8, Std deviation = 8
+CONFIGURATION: N = 22, nodes = 16
+Duration [ms] = 57, 47, 34, 35, 11, 12, 10, 45, 42, 40
+Avg time [ms] = 33, Std deviation = 15
+CONFIGURATION: N = 24, nodes = 16
+Duration [ms] = 172, 151, 116, 122, 39, 45, 38, 161, 151, 127
+Avg time [ms] = 112, Std deviation = 49
+CONFIGURATION: N = 26, nodes = 16
+Duration [ms] = 664, 640, 610, 657, 295, 316, 278, 744, 770, 671
+Avg time [ms] = 564, Std deviation = 181
+CONFIGURATION: N = 27, nodes = 16
+Duration [ms] = 1343, 1301, 1412, 1358, 572, 648, 579, 1493, 1591, 1418
+Avg time [ms] = 1171, Std deviation = 382
+CONFIGURATION: N = 28, nodes = 16
+Duration [ms] = 2719, 2622, 2596, 2607, 1166, 1311, 1143, 3137, 3425, 3017
+Avg time [ms] = 2374, Std deviation = 805
+CONFIGURATION: N = 29, nodes = 16
+Duration [ms] = 6050, 5530, 5214, 6173, 2284, 2606, 2383, 6455, 6474, 5985
+Avg time [ms] = 4915, Std deviation = 1671
+CONFIGURATION: N = 30, nodes = 16
+Duration [ms] = 12573, 12671, 10907, 12660, 4624, 5318, 4713, 12523, 14084, 11813
+Avg time [ms] = 10188, Std deviation = 3555
+CONFIGURATION: N = 31, nodes = 16
+Duration [ms] = 24896, 26537, 22841, 25791, 9263, 10459, 9491, 26556, 27094, 23405
+Avg time [ms] = 20633, Std deviation = 7252
+CONFIGURATION: N = 33, nodes = 16
+srun: error: nid00376: tasks 10-11: Killed
+srun: Terminating job step 14162749.10
+srun: error: nid00377: tasks 12-13: Killed
+srun: error: nid00373: task 5: Killed
+slurmstepd: error: *** STEP 14162749.10 ON nid00371 CANCELLED AT 2019-05-21T17:40:39 ***
+srun: error: nid00379: tasks 16-17: Killed
+srun: error: nid00389: task 26: Killed
+srun: error: nid00382: task 22: Killed
+srun: error: nid00375: task 8: Killed
+srun: error: nid00388: task 25: Killed
+srun: error: nid00374: task 7: Killed
+srun: error: nid00373: task 4: Killed
+srun: error: nid00390: task 28: Killed
+srun: error: nid00374: task 6: Killed
+srun: error: nid00371: task 1: Killed
+srun: error: nid00380: task 18: Killed
+srun: error: nid00378: tasks 14-15: Killed
+srun: error: nid00389: task 27: Killed
+srun: error: nid00382: task 23: Killed
+srun: error: nid00381: task 21: Killed
+srun: error: nid00388: task 24: Killed
+srun: error: nid00372: tasks 2-3: Killed
+srun: error: nid00375: task 9: Killed
+srun: error: nid00391: task 30: Killed
+srun: error: nid00380: task 19: Killed
+srun: error: nid00381: task 20: Killed
+srun: error: nid00371: task 0: Killed
+srun: error: nid00391: task 31: Killed
+srun: error: nid00390: task 29: Killed
+srun: Force Terminated job step 14162749.10
+
+CONFIGURATION: n x m = 4x4, depth = 20, nodes = 16
+Duration [ms] = 40, 5, 4, 4, 4, 4, 4, 6, 4, 4
+Avg time [ms] = 7, Std deviation = 10
+CONFIGURATION: n x m = 4x5, depth = 20, nodes = 16
+Duration [ms] = 48, 30, 19, 19, 19, 20, 18, 19, 20, 20
+Avg time [ms] = 23, Std deviation = 8
+CONFIGURATION: n x m = 4x4, depth = 40, nodes = 16
+Duration [ms] = 37, 10, 9, 9, 9, 9, 9, 10, 9, 10
+Avg time [ms] = 12, Std deviation = 8
+CONFIGURATION: n x m = 4x5, depth = 40, nodes = 16
+Duration [ms] = 45, 33, 25, 23, 25, 29, 22, 27, 22, 25
+Avg time [ms] = 27, Std deviation = 6
+CONFIGURATION: n x m = 4x4, depth = 60, nodes = 16
+Duration [ms] = 54, 18, 20, 21, 21, 21, 27, 25, 25, 21
+Avg time [ms] = 25, Std deviation = 9
+CONFIGURATION: n x m = 4x5, depth = 60, nodes = 16
+Duration [ms] = 98, 68, 61, 52, 48, 48, 89, 53, 49, 48
+Avg time [ms] = 61, Std deviation = 17
+CONFIGURATION: n x m = 5x5, depth = 20, nodes = 16
+Duration [ms] = 329, 297, 270, 260, 267, 277, 271, 283, 263, 254
+Avg time [ms] = 277, Std deviation = 20
+CONFIGURATION: n x m = 5x6, depth = 20, nodes = 16
+Duration [ms] = 12467, 12596, 12693, 12532, 12891, 12848, 12665, 12533, 12606, 12521
+Avg time [ms] = 12635, Std deviation = 134
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 16
+Duration [ms] = 555, 520, 481, 516, 488, 505, 486, 485, 560, 485
+Avg time [ms] = 508, Std deviation = 27
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 16
+Duration [ms] = 22077, 21922, 21996, 21949, 21982, 21892, 21894, 22074, 22088, 22067
+Avg time [ms] = 21994, Std deviation = 74
+CONFIGURATION: n x m = 5x5, depth = 60, nodes = 16
+Duration [ms] = 792, 762, 749, 823, 748, 706, 707, 716, 723, 733
+Avg time [ms] = 745, Std deviation = 36
+CONFIGURATION: n x m = 5x6, depth = 60, nodes = 16
+Duration [ms] = 31696, 31917, 31635, 31581, 31607, 31410, 31584, 31995, 31995, 31493
+Avg time [ms] = 31691, Std deviation = 196
+CONFIGURATION: n x m = 6x6, depth = 20, nodes = 16
+srun: error: nid00379: tasks 16-17: Killed
+srun: Terminating job step 14162749.23
+srun: error: nid00376: tasks 10-11: Killed
+srun: error: nid00388: tasks 24-25: Killed
+srun: error: nid00372: tasks 2-3: Killed
+srun: error: nid00380: tasks 18-19: Killed
+srun: error: nid00391: tasks 30-31: Killed
+slurmstepd: error: *** STEP 14162749.23 ON nid00371 CANCELLED AT 2019-05-21T17:52:34 ***
+srun: error: nid00381: tasks 20-21: Killed
+srun: error: nid00375: tasks 8-9: Killed
+srun: error: nid00390: tasks 28-29: Killed
+srun: error: nid00374: tasks 6-7: Killed
+srun: error: nid00378: tasks 14-15: Killed
+srun: error: nid00377: tasks 12-13: Killed
+srun: error: nid00373: tasks 4-5: Killed
+srun: error: nid00389: tasks 26-27: Killed
+srun: error: nid00382: tasks 22-23: Killed
+srun: error: nid00371: tasks 0-1: Killed
+srun: Force Terminated job step 14162749.23
+
+CONFIGURATION: n x m = 6x7, depth = 20, nodes = 16
+srun: error: nid00389: tasks 26-27: Exited with exit code 1
+srun: Terminating job step 14162749.24
+srun: error: nid00378: tasks 14-15: Exited with exit code 1
+srun: error: nid00390: tasks 28-29: Exited with exit code 1
+srun: error: nid00381: tasks 20-21: Exited with exit code 1
+srun: error: nid00382: tasks 22-23: Exited with exit code 1
+srun: error: nid00388: tasks 24-25: Exited with exit code 1
+srun: error: nid00391: tasks 30-31: Exited with exit code 1
+srun: error: nid00371: tasks 0-1: Exited with exit code 1
+srun: error: nid00374: tasks 6-7: Exited with exit code 1
+srun: error: nid00380: tasks 18-19: Exited with exit code 1
+srun: error: nid00372: tasks 2-3: Exited with exit code 1
+srun: error: nid00373: tasks 4-5: Exited with exit code 1
+srun: error: nid00377: tasks 12-13: Exited with exit code 1
+srun: error: nid00376: tasks 10-11: Exited with exit code 1
+srun: error: nid00379: tasks 16-17: Exited with exit code 1
+srun: error: nid00375: tasks 8-9: Exited with exit code 1
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+CONFIGURATION: n x m = 6x6, depth = 40, nodes = 16
+srun: error: nid00380: tasks 18-19: Killed
+srun: Terminating job step 14162749.25
+srun: error: nid00389: tasks 26-27: Killed
+srun: error: nid00391: tasks 30-31: Killed
+srun: error: nid00377: tasks 12-13: Killed
+srun: error: nid00388: tasks 24-25: Killed
+srun: error: nid00378: tasks 14-15: Killed
+srun: error: nid00390: tasks 28-29: Killed
+srun: error: nid00376: tasks 10-11: Killed
+srun: error: nid00375: tasks 8-9: Killed
+srun: error: nid00381: tasks 20-21: Killed
+srun: error: nid00371: tasks 0-1: Killed
+srun: error: nid00379: tasks 16-17: Killed
+srun: error: nid00382: tasks 22-23: Killed
+srun: error: nid00373: tasks 4-5: Killed
+srun: error: nid00372: tasks 2-3: Killed
+srun: error: nid00374: tasks 6-7: Killed
+srun: Force Terminated job step 14162749.25
+
+CONFIGURATION: n x m = 6x7, depth = 40, nodes = 16
+srun: error: nid00389: tasks 26-27: Exited with exit code 1
+srun: Terminating job step 14162749.26
+srun: error: nid00390: tasks 28-29: Exited with exit code 1
+srun: error: nid00382: tasks 22-23: Exited with exit code 1
+srun: error: nid00378: tasks 14-15: Exited with exit code 1
+srun: error: nid00381: tasks 20-21: Exited with exit code 1
+srun: error: nid00388: tasks 24-25: Exited with exit code 1
+srun: error: nid00391: tasks 30-31: Exited with exit code 1
+srun: error: nid00376: tasks 10-11: Exited with exit code 1
+srun: error: nid00379: tasks 16-17: Exited with exit code 1
+srun: error: nid00377: tasks 12-13: Exited with exit code 1
+srun: error: nid00372: tasks 2-3: Exited with exit code 1
+srun: error: nid00374: tasks 6-7: Exited with exit code 1
+srun: error: nid00380: tasks 18-19: Exited with exit code 1
+srun: error: nid00373: tasks 4-5: Exited with exit code 1
+srun: error: nid00375: tasks 8-9: Exited with exit code 1
+srun: error: nid00371: tasks 0-1: Exited with exit code 1
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+CONFIGURATION: n x m = 6x6, depth = 60, nodes = 16
+srun: error: nid00377: tasks 12-13: Killed
+srun: Terminating job step 14162749.27
+srun: error: nid00389: tasks 26-27: Killed
+srun: error: nid00382: tasks 22-23: Killed
+srun: error: nid00374: tasks 6-7: Killed
+srun: error: nid00380: tasks 18-19: Killed
+slurmstepd: error: *** STEP 14162749.27 ON nid00371 CANCELLED AT 2019-05-21T17:52:55 ***
+srun: error: nid00388: tasks 24-25: Killed
+srun: error: nid00376: tasks 10-11: Killed
+srun: error: nid00379: tasks 16-17: Killed
+srun: error: nid00378: tasks 14-15: Killed
+srun: error: nid00381: tasks 20-21: Killed
+srun: error: nid00373: tasks 4-5: Killed
+srun: error: nid00372: tasks 2-3: Killed
+srun: error: nid00390: tasks 28-29: Killed
+srun: error: nid00391: tasks 30-31: Killed
+srun: error: nid00375: tasks 8-9: Killed
+srun: error: nid00371: tasks 0-1: Killed
+srun: Force Terminated job step 14162749.27
+
+CONFIGURATION: n x m = 6x7, depth = 60, nodes = 16
+srun: error: nid00389: tasks 26-27: Exited with exit code 1
+srun: Terminating job step 14162749.28
+srun: error: nid00390: tasks 28-29: Exited with exit code 1
+srun: error: nid00381: tasks 20-21: Exited with exit code 1
+srun: error: nid00382: tasks 22-23: Exited with exit code 1
+srun: error: nid00376: tasks 10-11: Exited with exit code 1
+srun: error: nid00388: tasks 24-25: Exited with exit code 1
+srun: error: nid00391: tasks 30-31: Exited with exit code 1
+srun: error: nid00379: tasks 16-17: Exited with exit code 1
+srun: error: nid00373: tasks 4-5: Exited with exit code 1
+srun: error: nid00377: tasks 12-13: Exited with exit code 1
+srun: error: nid00378: tasks 14-15: Exited with exit code 1
+srun: error: nid00380: tasks 18-19: Exited with exit code 1
+srun: error: nid00372: tasks 2-3: Exited with exit code 1
+srun: error: nid00374: tasks 6-7: Exited with exit code 1
+srun: error: nid00371: tasks 0-1: Exited with exit code 1
+srun: error: nid00375: tasks 8-9: Exited with exit code 1
+Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!Could not allocate memory!
+CONFIGURATION: N = 50000, nodes = 16
+Rep 1: Test x0 = 27440
+T = 201
+Found x0 = 27440 with success probability 0.999988
+Rep 2: Test x0 = 29642
+T = 201
+Found x0 = 29642 with success probability 0.999988
+Rep 3: Test x0 = 35759
+T = 201
+Found x0 = 35759 with success probability 0.999988
+Rep 4: Test x0 = 42213
+T = 201
+Found x0 = 42213 with success probability 0.999988
+Rep 5: Test x0 = 30138
+T = 201
+Found x0 = 30138 with success probability 0.999988
+Rep 6: Test x0 = 42897
+T = 201
+Found x0 = 42897 with success probability 0.999988
+Rep 7: Test x0 = 27244
+T = 201
+Found x0 = 27244 with success probability 0.999988
+Rep 8: Test x0 = 42362
+T = 201
+Found x0 = 42362 with success probability 0.999988
+Rep 9: Test x0 = 21182
+T = 201
+Found x0 = 21182 with success probability 0.999988
+Rep 10: Test x0 = 31178
+T = 201
+Found x0 = 31178 with success probability 0.999988
+Duration [ms] = 418, 434, 376, 418, 743, 632, 495, 424, 588, 471
+Avg time [ms] = 499, Std deviation = 111
+CONFIGURATION: N = 100000, nodes = 16
+Rep 1: Test x0 = 54882
+T = 284
+Found x0 = 54882 with success probability 0.999999
+Rep 2: Test x0 = 59285
+T = 284
+Found x0 = 59285 with success probability 0.999999
+Rep 3: Test x0 = 71520
+T = 284
+Found x0 = 71520 with success probability 0.999999
+Rep 4: Test x0 = 84427
+T = 284
+Found x0 = 84427 with success probability 0.999999
+Rep 5: Test x0 = 60277
+T = 284
+Found x0 = 60277 with success probability 0.999999
+Rep 6: Test x0 = 85795
+T = 284
+Found x0 = 85795 with success probability 0.999999
+Rep 7: Test x0 = 54489
+T = 284
+Found x0 = 54489 with success probability 0.999999
+Rep 8: Test x0 = 84726
+T = 284
+Found x0 = 84726 with success probability 0.999999
+Rep 9: Test x0 = 42366
+T = 284
+Found x0 = 42366 with success probability 0.999999
+Rep 10: Test x0 = 62357
+T = 284
+Found x0 = 62357 with success probability 0.999999
+Duration [ms] = 690, 600, 1472, 874, 821, 820, 672, 710, 763, 696
+Avg time [ms] = 811, Std deviation = 233
+CONFIGURATION: N = 200000, nodes = 16
+Rep 1: Test x0 = 109766
+T = 402
+Found x0 = 109766 with success probability 0.999998
+Rep 2: Test x0 = 118573
+T = 402
+Found x0 = 118573 with success probability 0.999998
+Rep 3: Test x0 = 143043
+T = 402
+Found x0 = 143043 with success probability 0.999998
+Rep 4: Test x0 = 168859
+T = 402
+Found x0 = 168859 with success probability 0.999998
+Rep 5: Test x0 = 120557
+T = 402
+Found x0 = 120557 with success probability 0.999998
+Rep 6: Test x0 = 171595
+T = 402
+Found x0 = 171595 with success probability 0.999998
+Rep 7: Test x0 = 108980
+T = 402
+Found x0 = 108980 with success probability 0.999998
+Rep 8: Test x0 = 169456
+T = 402
+Found x0 = 169456 with success probability 0.999998
+Rep 9: Test x0 = 84734
+T = 402
+Found x0 = 84734 with success probability 0.999998
+Rep 10: Test x0 = 124717
+T = 402
+Found x0 = 124717 with success probability 0.999998
+Duration [ms] = 1770, 1378, 1425, 1525, 1537, 1557, 1351, 1568, 1278, 1251
+Avg time [ms] = 1464, Std deviation = 149
+CONFIGURATION: N = 400000, nodes = 16
+Rep 1: Test x0 = 219533
+T = 568
+Found x0 = 219533 with success probability 1
+Rep 2: Test x0 = 237147
+T = 568
+Found x0 = 237147 with success probability 1
+Rep 3: Test x0 = 286086
+T = 568
+Found x0 = 286086 with success probability 1
+Rep 4: Test x0 = 337719
+T = 568
+Found x0 = 337719 with success probability 1
+Rep 5: Test x0 = 241114
+T = 568
+Found x0 = 241114 with success probability 1
+Rep 6: Test x0 = 343191
+T = 568
+Found x0 = 343191 with success probability 1
+Rep 7: Test x0 = 217961
+T = 568
+Found x0 = 217961 with success probability 1
+Rep 8: Test x0 = 338913
+T = 568
+Found x0 = 338913 with success probability 1
+Rep 9: Test x0 = 169468
+T = 568
+Found x0 = 169468 with success probability 1
+Rep 10: Test x0 = 249435
+T = 568
+Found x0 = 249435 with success probability 1
+Duration [ms] = 3333, 2963, 2705, 3842, 2646, 2865, 3041, 2725, 2856, 3232
+Avg time [ms] = 3020, Std deviation = 346
+CONFIGURATION: N = 600000, nodes = 16
+Rep 1: Test x0 = 329300
+T = 804
+Found x0 = 329300 with success probability 1
+Rep 2: Test x0 = 355720
+T = 804
+Found x0 = 355720 with success probability 1
+Rep 3: Test x0 = 429130
+T = 804
+Found x0 = 429130 with success probability 1
+Rep 4: Test x0 = 506579
+T = 804
+Found x0 = 506579 with success probability 1
+Rep 5: Test x0 = 361672
+T = 804
+Found x0 = 361672 with success probability 1
+Rep 6: Test x0 = 514787
+T = 804
+Found x0 = 514787 with success probability 1
+Rep 7: Test x0 = 326942
+T = 804
+Found x0 = 326942 with success probability 1
+Rep 8: Test x0 = 508370
+T = 804
+Found x0 = 508370 with success probability 1
+Rep 9: Test x0 = 254202
+T = 804
+Found x0 = 254202 with success probability 1
+Rep 10: Test x0 = 374152
+T = 804
+Found x0 = 374152 with success probability 1
+Duration [ms] = 6251, 6277, 6365, 7692, 6536, 6232, 6699, 5921, 6236, 6094
+Avg time [ms] = 6430, Std deviation = 467
+CONFIGURATION: N = 1000000, nodes = 16
+Rep 1: Test x0 = 548937
+T = 804
+Found x0 = 548937 with success probability 1
+Rep 2: Test x0 = 592978
+T = 804
+Found x0 = 592978 with success probability 1
+Rep 3: Test x0 = 715350
+T = 804
+Found x0 = 715350 with success probability 1
+Rep 4: Test x0 = 844455
+T = 804
+Found x0 = 844455 with success probability 1
+Rep 5: Test x0 = 602899
+T = 804
+Found x0 = 602899 with success probability 1
+Rep 6: Test x0 = 858138
+T = 804
+Found x0 = 858138 with success probability 1
+Rep 7: Test x0 = 545005
+T = 804
+Found x0 = 545005 with success probability 1
+Rep 8: Test x0 = 847442
+T = 804
+Found x0 = 847442 with success probability 1
+Rep 9: Test x0 = 423750
+T = 804
+Found x0 = 423750 with success probability 1
+Rep 10: Test x0 = 623704
+T = 804
+Found x0 = 623704 with success probability 1
+Duration [ms] = 7276, 7435, 6204, 6821, 6214, 6363, 6309, 6333, 6780, 6647
+Avg time [ms] = 6638, Std deviation = 417
+CONFIGURATION: N = 3000000, nodes = 16
+Rep 1: Test x0 = 1647194
+T = 1608
+Found x0 = 1647194 with success probability 1
+Rep 2: Test x0 = 1779348
+T = 1608
+Found x0 = 1779348 with success probability 1
+Rep 3: Test x0 = 2146551
+T = 1608
+Found x0 = 2146551 with success probability 1
+Rep 4: Test x0 = 2533957
+T = 1608
+Found x0 = 2533957 with success probability 1
+Rep 5: Test x0 = 1809118
+T = 1608
+Found x0 = 1809118 with success probability 1
+Rep 6: Test x0 = 2575016
+T = 1608
+Found x0 = 2575016 with success probability 1
+Rep 7: Test x0 = 1635398
+T = 1608
+Found x0 = 1635398 with success probability 1
+Rep 8: Test x0 = 2542919
+T = 1608
+Found x0 = 2542919 with success probability 1
+Rep 9: Test x0 = 1271546
+T = 1608
+Found x0 = 1271546 with success probability 1
+Rep 10: Test x0 = 1871548
+T = 1608
+Found x0 = 1871548 with success probability 1
+Duration [ms] = 39148, 41247, 40414, 40853, 40828, 41335, 40510, 41386, 40684, 40947
+Avg time [ms] = 40735, Std deviation = 615
+CONFIGURATION: N = 6000000, nodes = 16
+Rep 1: Test x0 = 3296693
+T = 2274
+Found x0 = 3296693 with success probability 1
+Rep 2: Test x0 = 3561186
+T = 2274
+Found x0 = 3561186 with success probability 1
+Rep 3: Test x0 = 4296104
+T = 2274
+Found x0 = 4296104 with success probability 1
+Rep 4: Test x0 = 5071459
+T = 2274
+Found x0 = 5071459 with success probability 1
+Rep 5: Test x0 = 3620767
+T = 2274
+Found x0 = 3620767 with success probability 1
+Rep 6: Test x0 = 5153634
+T = 2274
+Found x0 = 5153634 with success probability 1
+Rep 7: Test x0 = 3273084
+T = 2274
+Found x0 = 3273084 with success probability 1
+Rep 8: Test x0 = 5089396
+T = 2274
+Found x0 = 5089396 with success probability 1
+Rep 9: Test x0 = 2544872
+T = 2274
+Found x0 = 2544872 with success probability 1
+Rep 10: Test x0 = 3745714
+T = 2274
+Found x0 = 3745714 with success probability 1
+Duration [ms] = 103824, 112061, 110127, 112069, 111033, 112164, 110717, 111431, 111392, 110995
+Avg time [ms] = 110581, Std deviation = 2335
+CONFIGURATION: N = 10000000, nodes = 16
+Rep 1: Test x0 = 5494489
+T = 3216
+Found x0 = 5494489 with success probability 1
+Rep 2: Test x0 = 5935310
+T = 3216
+Found x0 = 5935310 with success probability 1
+Rep 3: Test x0 = 7160174
+T = 3216
+Found x0 = 7160174 with success probability 1
+Rep 4: Test x0 = 8452433
+T = 3216
+Found x0 = 8452433 with success probability 1
+Rep 5: Test x0 = 6034612
+T = 3216
+Found x0 = 6034612 with success probability 1
+Rep 6: Test x0 = 8589390
+T = 3216
+Found x0 = 8589390 with success probability 1
+Rep 7: Test x0 = 5455140
+T = 3216
+Found x0 = 5455140 with success probability 1
+Rep 8: Test x0 = 8482327
+T = 3216
+Found x0 = 8482327 with success probability 1
+Rep 9: Test x0 = 4241453
+T = 3216
+Found x0 = 4241453 with success probability 1
+Rep 10: Test x0 = 6242857
+T = 3216
+Found x0 = 6242857 with success probability 1
+Duration [ms] = 271883, 271685, 269304, 269758, 269080, 270371, 267921, 267512, 268861, 269608
+Avg time [ms] = 269598, Std deviation = 1351
+CONFIGURATION: N = 203, nodes = 16
+Factors are: 7; 29; 
+Duration [ms] = 122360, 40489, 121927, 122308, 121770, 40492, 122022, 121732, 121910, 40523
+Avg time [ms] = 97553, Std deviation = 37349
+ 
+Batch Job Summary Report for Job "script_16.sh" (14162749) on daint
+-----------------------------------------------------------------------------------------------------
+             Submit            Eligible               Start                 End    Elapsed  Timelimit 
+------------------- ------------------- ------------------- ------------------- ---------- ---------- 
+2019-05-21T17:28:32 2019-05-21T17:28:32 2019-05-21T17:28:52 2019-05-21T19:22:56   01:54:04   03:00:00 
+-----------------------------------------------------------------------------------------------------
+Username    Account     Partition   NNodes   Energy
+----------  ----------  ----------  ------  --------------
+mazzolag    csstaff     normal          16   22.40M joules
+ 
+This job did not utilize any GPUs
+ 
+----------------------------------------------------------
+Scratch File System        Files       Quota
+--------------------  ----------  ----------
+/scratch/snx3000           18830     1000000
+ 

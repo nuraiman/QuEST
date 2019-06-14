@@ -1,0 +1,169 @@
+================================
+       RUNNING BENCHMARKS
+================================
+CONFIGURATION: N = 30, nodes = 8
+Duration [ms] = 21772, 23111, 18960, 22332, 8089, 9362, 8058, 23140, 23986, 21321
+Avg time [ms] = 18013, Std deviation = 6363
+CONFIGURATION: N = 31, nodes = 8
+Duration [ms] = 46338, 46700, 38471, 44350, 16266, 18724, 16257, 46142, 48703, 42927
+Avg time [ms] = 36487, Std deviation = 12979
+CONFIGURATION: N = 33, nodes = 8
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125676 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125739 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125738 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125739 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125739 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125739 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125739 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125739 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125676 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125739 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125739 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125739 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125739 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125739 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125738 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125739 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125676 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125739 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125738 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125739 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125739 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125739 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125739 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125739 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125747 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125747 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125746 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125747 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125747 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125747 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125684 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125747 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125751 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125751 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125751 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125751 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125751 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125750 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125686 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125749 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125751 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125749 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125751 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125751 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125751 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125748 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125688 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125751 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125688 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125751 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125751 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125750 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125751 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125751 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125751 > 62464000), being killed
+slurmstepd: error: Step 14223243.2 exceeded memory limit (67125751 > 62464000), being killed
+slurmstepd: error: *** STEP 14223243.2 ON nid01605 CANCELLED AT 2019-05-24T11:35:49 ***
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+ 
+slurmstepd: error: Exceeded job memory limit
+Batch Job Summary Report for Job "script_8.sh" (14223243) on daint
+-----------------------------------------------------------------------------------------------------
+             Submit            Eligible               Start                 End    Elapsed  Timelimit 
+------------------- ------------------- ------------------- ------------------- ---------- ---------- 
+2019-05-24T11:15:31 2019-05-24T11:15:31 2019-05-24T11:22:12 2019-05-24T11:35:49   00:13:37   03:00:00 
+-----------------------------------------------------------------------------------------------------
+Username    Account     Partition   NNodes   Energy
+----------  ----------  ----------  ------  --------------
+mazzolag    csstaff     normal           8          joules
+ 
+This job did not utilize any GPUs
+ 
+----------------------------------------------------------
+Scratch File System        Files       Quota
+--------------------  ----------  ----------
+/scratch/snx3000           19021     1000000
+ 
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+srun: error: nid01612: task 15: Killed
+srun: Terminating job step 14223243.2
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+srun: error: nid01609: task 9: Killed
+srun: error: nid01608: task 7: Killed
+srun: error: nid01611: tasks 12-13: Killed
+srun: error: nid01610: tasks 10-11: Killed
+srun: error: nid01605: tasks 0-1: Killed
+srun: error: nid01607: tasks 4-5: Killed
+srun: error: nid01606: tasks 2-3: Killed
+srun: error: nid01612: task 15: Killed
+srun: error: Task 15 reported exit for a second time.
+srun: error: nid01609: task 9: Killed
+srun: error: Task 9 reported exit for a second time.
+srun: error: nid01608: task 7: Killed
+srun: error: Task 7 reported exit for a second time.
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+srun: error: nid01609: task 8: Killed
+slurmstepd: error: Exceeded job memory limit
+srun: error: nid01608: task 6: Killed
+slurmstepd: error: Exceeded job memory limit
+srun: error: nid01612: task 14: Killed
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: *** JOB 14223243 ON nid01605 CANCELLED AT 2019-05-24T11:35:55 ***

@@ -1,9 +1,0 @@
-CONFIGURATION: N = 30, nodes = 8
-Duration [ms] = 21772, 23111, 18960, 22332, 8089, 9362, 8058, 23140, 23986, 21321
-Avg time [ms] = 18013, Std deviation = 6363
---------------------------------
-CONFIGURATION: N = 31, nodes = 8
-Duration [ms] = 46338, 46700, 38471, 44350, 16266, 18724, 16257, 46142, 48703, 42927
-Avg time [ms] = 36487, Std deviation = 12979
---------------------------------
-CONFIGURATION: N = 33, nodes = 8

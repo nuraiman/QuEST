@@ -1,0 +1,26 @@
+CONFIGURATION: N = 203, nodes = 4
+CONFIGURATION: N = 203, nodes = 8
+Factors are: 7; 29;
+Duration [ms] = 116802, 116945, 38931, 116819, 38893, 116650, 116718, 38920, 116952, 117041
+Avg time [ms] = 93467, Std deviation = 35713
+--------------------------------
+CONFIGURATION: N = 203, nodes = 16
+Factors are: 7; 29; 
+Duration [ms] = 118010, 39173, 118123, 39290, 117684, 116699, 39261, 117681, 117729, 117746
+Avg time [ms] = 94139, Std deviation = 35941
+--------------------------------
+CONFIGURATION: N = 203, nodes = 32
+Factors are: 7; 29; 
+Duration [ms] = 117808, 39336, 118300, 118428, 119044, 118681, 118474, 118484, 118446, 39656
+Avg time [ms] = 102665, Std deviation = 31586
+--------------------------------
+CONFIGURATION: N = 203, nodes = 64
+Factors are: 7; 29; 
+Duration [ms] = 117711, 39127, 117671, 117729, 39308, 117680, 117976, 117688, 117670, 117862
+Avg time [ms] = 102042, Std deviation = 31412
+--------------------------------
+CONFIGURATION: N = 203, nodes = 128
+Factors are: 7; 29; 
+Duration [ms] = 118856, 118822, 118724, 118749, 118802, 119108, 39640, 118869, 39642, 118980
+Avg time [ms] = 103019, Std deviation = 31689
+--------------------------------
