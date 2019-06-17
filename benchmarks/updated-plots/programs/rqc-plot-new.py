@@ -58,11 +58,12 @@ def read_file(f_name):
 
 def plot_data(y_quest, y_intel, strong=False, speedup=False, parEff=False):
 
-    plt.figure(figsize=(14, 10))
+    plt.figure(figsize=(12, 10))
     end = len(y_quest)
     dimx = int(np.round(np.sqrt(end)))
     dimy = dimx if dimx*dimx >= end else dimx+1
-    order = [1, 2, 5, 6, 9, 10, 3, 4, 7, 8, 11, 12]  # hardcoded order for this specific data output
+    #order = [1, 2, 5, 6, 9, 10, 3, 4, 7, 8, 11, 12]  # hardcoded order for this specific data output
+    order = [1, 4, 7, 2, 3, 5, 6, 8, 9]  # hardcoded order for this specific data output, without numQub = 16 plots
     for i in range(end):
         plt.subplot(dimx, dimy, order[i])
         y_quest[i], y_intel[i], time_label = scale_time(y_quest[i], y_intel[i])
@@ -113,6 +114,14 @@ def plot_data(y_quest, y_intel, strong=False, speedup=False, parEff=False):
 
 times_quest = read_file("../files/rqc_full_quest.txt")
 times_intel = read_file("../files/rqc_full_intel.txt")
+
+# delete data with numQub = 16
+index = [0, 1, 2]
+for ind in index:
+    times_quest.pop(ind)
+    times_intel.pop(ind)
+    numQubits.pop(ind)
+    deptharr.pop(ind)
 
 plot_data(times_quest, times_intel, strong=True)
 plot_data(times_quest, times_intel, speedup=True)
