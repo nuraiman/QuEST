@@ -51,7 +51,8 @@ def read_file(f_name):
 
 def plot_data(inputN, numq, numIt, y_quest):
 
-    plt.figure(figsize=(12, 8))
+    #plt.figure(figsize=(12, 8))
+    plt.figure(figsize=(6, 5))
     end = len(y_quest)
     dimx = int(np.round(np.sqrt(end)))
     dimy = dimx if dimx*dimx >= end else dimx+1
@@ -80,12 +81,20 @@ def plot_data(inputN, numq, numIt, y_quest):
 
     plt.suptitle("GROVER-algorithm, strong scaling (QuEST) \n (2 ranks/node, 18 threads)")
     plt.tight_layout()
-    plt.subplots_adjust(top=0.86)
-    plt.savefig('../grover-strong-new.pdf')
+    plt.subplots_adjust(top=0.79)
+    #plt.savefig('../grover-strong-new.pdf')
+    plt.savefig('../grover-cscs.pdf')
     #plt.show()
 
 
 input_q, times_q, numQub, numT = read_file("../files/grover_full_quest.txt")
 
-plot_data(input_q, numQub, numT, times_q)
+# plot for the interview
+cscs_q = [input_q[-1]]
+cscs_times = [times_q[-1]]
+cscs_numq = [numQub[-1]]
+cscs_numT = [numT[-1]]
+
+#plot_data(input_q, numQub, numT, times_q)
+plot_data(cscs_q, cscs_numq, cscs_numT, cscs_times)
 

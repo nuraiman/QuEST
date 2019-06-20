@@ -58,15 +58,17 @@ def read_file(f_name):
 
 
 def plot_data(numq, y_quest, y_intel, strong=False, speedup=False, parEff=False):
-    if strong:
-        plt.figure(figsize=(12, 8))
-        end = len(y_quest)
-    elif speedup:
-        plt.figure(figsize=(10, 10))
-        end = len(y_quest)-2
-    elif parEff:
-        plt.figure(figsize=(10, 10))
-        end = len(y_quest)-2
+    # if strong:
+    #     plt.figure(figsize=(12, 8))
+    #     end = len(y_quest)
+    # elif speedup:
+    #     plt.figure(figsize=(10, 10))
+    #     end = len(y_quest)-2
+    # elif parEff:
+    #     plt.figure(figsize=(10, 10))
+    #     end = len(y_quest)-2
+    plt.figure(figsize=(12, 8))
+    end = len(y_quest)
     dimx = int(np.round(np.sqrt(end)))
     dimy = dimx if dimx*dimx >= end else dimx+1
     for i in range(end):
@@ -88,24 +90,48 @@ def plot_data(numq, y_quest, y_intel, strong=False, speedup=False, parEff=False)
                 plt.plot(a[2:], y_quest[i],  marker='.', markerfacecolor='black', markersize=10, label="QuEST")
                 plt.plot(a[2:], y_intel[i], marker='.', markerfacecolor='black', markersize=10, label="Intel-QS")
                 plt.ylabel(time_label)
-                plt.title('Qubits n = %a ' % (numq[i]), fontsize=10)
-                plt.xticks(a[2:], nodes[2:])
-                plt.xlabel('number of nodes')
-                plt.grid()
-                plt.legend(loc='best')
-                #plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.05))
+            elif speedup:
+                nodes_plot = [int(x/4) for x in nodes]
+                plt.semilogy(a[2:], q_speedup, basey=2, marker='.', markerfacecolor='black', markersize=10, label="QuEST")
+                plt.semilogy(a[2:], i_speedup, marker='.', markerfacecolor='black', markersize=10, label="Intel-QS")
+                plt.semilogy(a[2:], nodes_plot[2:], linestyle='dashed', color='grey', label="ideal")
+                plt.yticks(nodes_plot[2:], nodes_plot[2:])
+                plt.ylabel('speedup ratio')
+            elif parEff:
+                plt.plot(a[2:], q_Eff, marker='.', markerfacecolor='black', markersize=10, label="QuEST")
+                plt.plot(a[2:], i_Eff, marker='.', markerfacecolor='black', markersize=10, label="Intel-QS")
+                plt.plot(a[2:], a_ideal[2:], linestyle='dashed', color='grey', label="ideal")
+                plt.ylabel('parallel efficiency')
+            plt.title('Qubits n = %a ' % (numq[i]), fontsize=10)
+            plt.xticks(a[2:], nodes[2:])
+            plt.xlabel('number of nodes')
+            plt.grid()
+            plt.legend(loc='best')
+            #plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.05))
 
         elif i == len(y_quest)-1:
             if strong:
                 plt.plot(a[3:], y_quest[i],  marker='.', markerfacecolor='black', markersize=10, label="QuEST")
                 plt.plot(a[3:], y_intel[i], marker='.', markerfacecolor='black', markersize=10, label="Intel-QS")
                 plt.ylabel(time_label)
-                plt.title('Qubits n = %a ' % (numq[i]), fontsize=10)
-                plt.xticks(a[3:], nodes[3:])
-                plt.xlabel('number of nodes')
-                plt.grid()
-                plt.legend(loc='best')
-                #plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.05))
+            elif speedup:
+                nodes_plot = [int(x/8) for x in nodes]
+                plt.semilogy(a[3:], q_speedup, basey=2, marker='.', markerfacecolor='black', markersize=10, label="QuEST")
+                plt.semilogy(a[3:], i_speedup, marker='.', markerfacecolor='black', markersize=10, label="Intel-QS")
+                plt.semilogy(a[3:], nodes_plot[3:], linestyle='dashed', color='grey', label="ideal")
+                plt.yticks(nodes_plot[3:], nodes_plot[3:])
+                plt.ylabel('speedup ratio')
+            elif parEff:
+                plt.plot(a[3:], q_Eff, marker='.', markerfacecolor='black', markersize=10, label="QuEST")
+                plt.plot(a[3:], i_Eff, marker='.', markerfacecolor='black', markersize=10, label="Intel-QS")
+                plt.plot(a[3:], a_ideal[3:], linestyle='dashed', color='grey', label="ideal")
+                plt.ylabel('parallel efficiency')
+            plt.title('Qubits n = %a ' % (numq[i]), fontsize=10)
+            plt.xticks(a[3:], nodes[3:])
+            plt.xlabel('number of nodes')
+            plt.grid()
+            plt.legend(loc='best')
+            #plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.05))
         else:
             if strong:
                 plt.plot(a, y_quest[i],  marker='.', markerfacecolor='black', markersize=10, label="QuEST")
@@ -143,7 +169,10 @@ def plot_data(numq, y_quest, y_intel, strong=False, speedup=False, parEff=False)
 
 times_quest = read_file("../files/dj_full_quest.txt")
 times_intel = read_file("../files/dj_full_intel.txt")
+times_quest = times_quest[1:]
+times_intel = times_intel[1:]
+numQ = numQubits[1:]
 
-plot_data(numQubits, times_quest, times_intel, strong=True)
-plot_data(numQubits, times_quest, times_intel, speedup=True)
-plot_data(numQubits, times_quest, times_intel, parEff=True)
+plot_data(numQ, times_quest, times_intel, strong=True)
+plot_data(numQ, times_quest, times_intel, speedup=True)
+plot_data(numQ, times_quest, times_intel, parEff=True)
